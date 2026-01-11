@@ -1,12 +1,4 @@
 # Service(LoadBalancer)
-
-> 来源: Kubernetes
-> 创建时间: 2022-09-22T21:20:26+08:00
-> 更新时间: 2026-01-11T09:07:17.569160+08:00
-> 阅读量: 1823 | 点赞: 0
-
----
-
 ## LoadBalancer简介
 1. 这种类型建构在NodePort类型之上，<font style="color:rgb(18, 18, 18);">大部分情况下只适用于支持外部负载均衡器的云提供商（AWS,阿里云,华为云等）使用</font>，由它接入外部客户端的请求并调度至集群节点相应的NodePort之上。因此LoadBalancer一样具有NodePort和ClusterIP。
 2. 简而言之，一个LoadBalancer类型的Service会指向关联至Kubernetes集群外部的、切实存在的某个负载均衡设备，该设备通过工作节点之上的NodePort向集群内部发送请求流量。

@@ -1,10 +1,4 @@
 # RadosGW介绍
-
-> 分类: Ceph > Ceph对象存储
-> 更新时间: 2026-01-10T23:35:17.077234+08:00
-
----
-
 参考文档：[https://docs.ceph.com/en/latest/radosgw/](https://docs.ceph.com/en/latest/radosgw/)
 
 # RadosGW简介

@@ -1,10 +1,4 @@
 # webpack安装与打包资源
-
-> 分类: Web > webpack
-> 更新时间: 2026-01-10T23:34:07.025450+08:00
-
----
-
 + 参考文档：[https://webpack.docschina.org/concepts/](https://webpack.docschina.org/concepts/)
 
 # 一、安装webpack

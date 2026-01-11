@@ -1,10 +1,4 @@
 # MCP服务器
-
-> 分类: AIOPS > MCP
-> 更新时间: 2026-01-10T23:34:36.330057+08:00
-
----
-
 # MCP 服务器介绍
 ## <font style="color:rgba(0, 0, 0, 0.9);">MCP 服务端是什么</font>
 + <font style="color:rgba(0, 0, 0, 0.9);">角色定位：MCP Server 是跑在本地或远程的“轻量级能力插件”，向上为 LLM/Agent 暴露标准化的 资源（Resources）、工具（Tools）、提示（Prompts）三类能力，向下则安全地访问文件、数据库、API 等实际数据源</font><font style="color:rgba(0, 0, 0, 0.9);">。</font>

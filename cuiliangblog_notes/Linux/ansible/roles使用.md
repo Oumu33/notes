@@ -1,10 +1,4 @@
 # roles使用
-
-> 分类: Linux > ansible
-> 更新时间: 2026-01-10T23:35:02.774402+08:00
-
----
-
 # 一. roles作用
     1. 主要作用是复用playbook，例如我们无论安装什么软件都会安装时间同步服务，那么每个playbook都要编写ntp task。我们可以将ntp task写好，等到用的时候再调用就行了。ansible中将其组织成role，他有着固定的组织格式。以便playbook调用
 

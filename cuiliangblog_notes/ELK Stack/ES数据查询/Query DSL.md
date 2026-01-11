@@ -1,10 +1,4 @@
 # Query DSL
-
-> 分类: ELK Stack > ES数据查询
-> 更新时间: 2026-01-10T23:33:35.250766+08:00
-
----
-
 ## DSL介绍
 ### <font style="color:rgb(51, 51, 51);">查询DSL</font>
 <font style="color:rgb(51, 51, 51);">elasticsearch提供了基于JSON的完整查询DSL来定义查询，DSL拥有一套查询组件，这些组件可以以无限组合的方式进行搭配，构建各种复杂的查询     </font>

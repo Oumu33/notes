@@ -1,10 +1,4 @@
 # runner监控
-
-> 分类: CI/CD > Gitlab Runner
-> 更新时间: 2026-01-10T23:34:00.434153+08:00
-
----
-
 参考文档：[https://docs.gitlab.com/runner/monitoring/](https://docs.gitlab.com/runner/monitoring/)
 
 # Runner配置

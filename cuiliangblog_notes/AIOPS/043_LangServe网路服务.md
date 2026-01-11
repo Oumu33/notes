@@ -1,12 +1,4 @@
 # LangServe网路服务
-
-> 来源: AIOPS
-> 创建时间: 2025-09-13T21:24:08+08:00
-> 更新时间: 2026-01-11T09:45:25.179627+08:00
-> 阅读量: 662 | 点赞: 0
-
----
-
 # LangServe介绍
 **LangServe** 是 LangChain 官方提供的一个工具，用于 **把 LangChain 的 Chain/Agent 包装成 API 服务**，可以直接部署成 HTTP 接口。
 

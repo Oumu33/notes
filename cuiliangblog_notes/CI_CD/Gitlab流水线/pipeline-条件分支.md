@@ -1,10 +1,4 @@
 # pipeline-条件分支
-
-> 分类: CI/CD > Gitlab流水线
-> 更新时间: 2026-01-10T23:34:00.783385+08:00
-
----
-
 # rules
 rules允许按顺序评估单个规则对象的列表，直到一个匹配并为作业动态提供属性. 请注意， rules不能only/except与only/except组合使用。
 

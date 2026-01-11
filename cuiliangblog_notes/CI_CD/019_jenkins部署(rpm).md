@@ -1,12 +1,4 @@
 # jenkins部署(rpm)
-
-> 来源: CI/CD
-> 创建时间: 2020-10-29T09:56:13+08:00
-> 更新时间: 2026-01-11T08:51:23.325311+08:00
-> 阅读量: 3545 | 点赞: 0
-
----
-
 # 安装JDK
 每个版本的jenkins依赖的jdk版本不一致，可以参考页面[https://pkg.jenkins.io/redhat-stable/](https://pkg.jenkins.io/redhat-stable/)，根据要安装的jenkins版本，安装合适的jdk。例如本次安装的jenkins版本为2.361.1，依赖的jdk版本为java11或者java17
 

@@ -1,12 +1,4 @@
 # 部署Ingress-nginx代理
-
-> 来源: Kubernetes
-> 创建时间: 2020-10-29T23:16:25+08:00
-> 更新时间: 2026-01-11T09:04:15.919152+08:00
-> 阅读量: 2550 | 点赞: 0
-
----
-
 # 使用yaml配置文件部署
 ## 参考地址
 [https://github.com/kubernetes/ingress-nginx](https://github.com/kubernetes/ingress-nginx)

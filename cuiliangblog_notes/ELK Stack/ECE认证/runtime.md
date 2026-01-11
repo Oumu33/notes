@@ -1,10 +1,4 @@
 # runtime
-
-> 分类: ELK Stack > ECE认证
-> 更新时间: 2026-01-10T23:33:38.919237+08:00
-
----
-
 # 注意点
 + runtime直接计算值`emit(doc['b'].value-doc['c'].value)`
 + runtime根据范围设置值`if (doc['score'].value > 0 && doc['score'].value < 60) emit('0'); if (doc['score'].value >= 60 && doc['score'].value<=100) emit('1')`

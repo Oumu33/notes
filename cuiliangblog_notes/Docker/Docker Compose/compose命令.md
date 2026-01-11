@@ -1,10 +1,4 @@
 # compose命令
-
-> 分类: Docker > Docker Compose
-> 更新时间: 2026-01-10T23:35:11.295387+08:00
-
----
-
 1. 对于Compose来说，大部分命令的对象既可以是项目本身，也可以指定为项目中的服务或者容器。如果没有特别的说明，命令对象将是项目，这意味着项目中所有的服务都会受到命令影响。
 2. 执行docker-compose       [COMMAND] --help或者docker-compose help [COMMAND]可以查看具体某个命令的使用格式。
 3. Compose命令的基本的使用格式是：

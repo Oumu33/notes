@@ -1,10 +1,4 @@
 # 全文检索（Full test queries）
-
-> 分类: ELK Stack > ES数据查询
-> 更新时间: 2026-01-10T23:33:35.361608+08:00
-
----
-
 ## match查询（单个分词检索）
 ### 查询特点
 **<font style="color:rgb(0, 0, 0);">elasticsearch会先根据查询的关键词使用分词器进行分词，然后对每个词</font>****作全文检索****<font style="color:rgb(0, 0, 0);">，匹配结果只包含其中一部分关键词就行。</font>**

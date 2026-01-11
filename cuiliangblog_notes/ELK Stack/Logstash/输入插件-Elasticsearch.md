@@ -1,10 +1,4 @@
 # 输入插件-Elasticsearch
-
-> 分类: ELK Stack > Logstash
-> 更新时间: 2026-01-10T23:33:43.070264+08:00
-
----
-
 # logstash配置
 ```bash
 input{

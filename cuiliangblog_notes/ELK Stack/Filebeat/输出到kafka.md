@@ -1,10 +1,4 @@
 # 输出到kafka
-
-> 分类: ELK Stack > Filebeat
-> 更新时间: 2026-01-10T23:33:41.238495+08:00
-
----
-
 1. 新建一个filebeat的配置文件filebeat-kafka.yml
 
 ```yaml

@@ -1,10 +1,4 @@
 # runner部署与注册(helm)
-
-> 分类: CI/CD > Gitlab Runner
-> 更新时间: 2026-01-10T23:34:00.316468+08:00
-
----
-
 参考文档：[https://docs.gitlab.com/charts/charts/gitlab/gitlab-runner/](https://docs.gitlab.com/charts/charts/gitlab/gitlab-runner/)
 
 # 部署runner

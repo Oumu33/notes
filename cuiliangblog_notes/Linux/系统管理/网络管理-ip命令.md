@@ -1,10 +1,4 @@
 # 网络管理-ip命令
-
-> 分类: Linux > 系统管理
-> 更新时间: 2026-01-10T23:34:50.532408+08:00
-
----
-
 + 从 RHEL7/CentOS7 开始，net-tools 包从系统中移除，ifconfg/route/ifup/ifdown      等命令均消失，转而以 ip 命令代替上述命令。
 
 # 一、ip与ipconfig区别

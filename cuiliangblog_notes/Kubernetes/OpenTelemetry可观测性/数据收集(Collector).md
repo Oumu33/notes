@@ -1,10 +1,4 @@
 # 数据收集(Collector)
-
-> 分类: Kubernetes > OpenTelemetry可观测性
-> 更新时间: 2026-01-10T23:33:30.429289+08:00
-
----
-
  OpenTelemetry 的 Collector 组件是实现观测数据（Trace、Metrics、Logs）收集、处理和导出的一站式服务。它的配置主要分为以下 **四大核心模块**：  
 
 +  receivers（接收数据）  

@@ -1,10 +1,4 @@
 # SQL语言分类
-
-> 分类: Database > SQL基础
-> 更新时间: 2026-01-10T23:34:10.972794+08:00
-
----
-
 1. DDL (Data Definition Language)  
 数据定义语句  
 创建数据库、创建二维表、修改二维表等。例如：create, alter, drop, truncate, rename。一般要先用DDL（create）创建二维表的列，才能使用后续其它类别的语句

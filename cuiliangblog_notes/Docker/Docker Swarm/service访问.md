@@ -1,10 +1,4 @@
 # service访问
-
-> 分类: Docker > Docker Swarm
-> 更新时间: 2026-01-10T23:35:11.991514+08:00
-
----
-
 # 一、如何访问Service？
 为了便于分析，我们重新部署web_server。
 

@@ -1,12 +1,4 @@
 # 编译安装Python3.11
-
-> 来源: Python
-> 创建时间: 2021-02-19T15:19:25+08:00
-> 更新时间: 2026-01-11T09:25:11.223036+08:00
-> 阅读量: 907 | 点赞: 0
-
----
-
 # 准备工作
 > <font style="color:rgba(0, 0, 0, 0.8);">从这个版本之后，</font><font style="color:rgb(199, 37, 78);background-color:rgb(249, 242, 244);">Python</font><font style="color:rgba(0, 0, 0, 0.8);"> 采用了 </font><font style="color:rgb(199, 37, 78);background-color:rgb(249, 242, 244);">SSL</font><font style="color:rgba(0, 0, 0, 0.8);"> 的加密方式，需要依赖 </font><font style="color:rgb(199, 37, 78);background-color:rgb(249, 242, 244);">openssl-1.1.1</font><font style="color:rgba(0, 0, 0, 0.8);">。同时，如果我们开启了 </font><font style="color:rgb(199, 37, 78);background-color:rgb(249, 242, 244);">--enable-optimization</font><font style="color:rgba(0, 0, 0, 0.8);"> 优化选项，还需要依赖 </font><font style="color:rgb(199, 37, 78);background-color:rgb(249, 242, 244);">gcc9</font><font style="color:rgba(0, 0, 0, 0.8);"> 以上版本才能支持，否则会一直出现报错。</font>
 >

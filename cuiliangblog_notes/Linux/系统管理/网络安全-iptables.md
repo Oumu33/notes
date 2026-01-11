@@ -1,10 +1,4 @@
 # 网络安全-iptables
-
-> 分类: Linux > 系统管理
-> 更新时间: 2026-01-10T23:34:51.084773+08:00
-
----
-
 # 一、四表五链
 + 流入  PREROUTING---> INPUT
 + 流出  OUTPUT ---> POSTROUTING

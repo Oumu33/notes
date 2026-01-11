@@ -1,10 +1,4 @@
 # Ipmi export
-
-> 分类: Prometheus > Exporter
-> 更新时间: 2026-01-10T23:33:51.120795+08:00
-
----
-
 ## 安装ipmitool 并加载相应模块
 ```bash
 yum install ipmitool freeipmi  -y

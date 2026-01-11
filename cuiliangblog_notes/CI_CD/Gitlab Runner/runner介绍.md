@@ -1,10 +1,4 @@
 # runner介绍
-
-> 分类: CI/CD > Gitlab Runner
-> 更新时间: 2026-01-10T23:33:59.500752+08:00
-
----
-
 # runner简介
 + gitlab runner是一个开源项目，用于运行作业并将结果发送回gitlab，类似与Jenkins的agent，执行CI持续集成、构建的脚本任务。
 + 与gitlab ci结合使用，gitlab ci是gitlab随附的用于协调作业的开源持续集成服务

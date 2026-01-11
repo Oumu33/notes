@@ -1,10 +1,4 @@
 # 中间件(Middleware)
-
-> 分类: Kubernetes > Traefik
-> 更新时间: 2026-01-10T23:33:22.948496+08:00
-
----
-
 ## <font style="color:rgb(18, 18, 18);">简介</font>
 ![](../../images/img_2080.png)
 

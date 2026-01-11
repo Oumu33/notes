@@ -1,10 +1,4 @@
 # 配置发现(Consul)
-
-> 分类: Kubernetes > Traefik
-> 更新时间: 2026-01-10T23:33:23.400090+08:00
-
----
-
 # 配置发现简介
 traefik除了可以对接kubernetes ingressroute外，也支持其他常用的服务发现中间件，例如consul、etcd、zookeeper等。以consul为例，我们只需要向consul中注册服务，traefik监听到有新的服务注册时，会实时检测服务并自动更新路由规则。
 

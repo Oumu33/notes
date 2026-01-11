@@ -1,10 +1,4 @@
 # MDS多活配置
-
-> 分类: Ceph > Ceph文件系统
-> 更新时间: 2026-01-10T23:35:16.953203+08:00
-
----
-
 [https://docs.ceph.com/en/latest/cephfs/add-remove-mds/](https://docs.ceph.com/en/latest/cephfs/add-remove-mds/)
 
 ceph mds作为ceph的访问入口，需要实现高性能及数据备份，而MDS支持多MDS架构，甚至还能实现类似于redis cluster的多主从架构，以实现MDS服务的高性能和高可用，假设启动4个MDS进程，设置最大max_mds为2，这时候有2个MDS成为主节点，另外2个MDS作为备份节点。

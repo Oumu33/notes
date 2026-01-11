@@ -1,10 +1,4 @@
 # gitlab部署(docker)
-
-> 分类: CI/CD > Gitlab安装部署
-> 更新时间: 2026-01-10T23:33:58.731188+08:00
-
----
-
 ## 安装gitlab
 ```bash
 [root@tiaoban gitlab]# mkdir config logs data

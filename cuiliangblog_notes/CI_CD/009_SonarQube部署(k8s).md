@@ -1,12 +1,4 @@
 # SonarQube部署(k8s)
-
-> 来源: CI/CD
-> 创建时间: 2024-04-14T17:00:39+08:00
-> 更新时间: 2026-01-11T08:51:02.461712+08:00
-> 阅读量: 2375 | 点赞: 0
-
----
-
 参考文档：[https://docs.sonarsource.com/sonarqube/9.9/setup-and-upgrade/deploy-on-kubernetes/deploy-sonarqube-on-kubernetes/](https://docs.sonarsource.com/sonarqube/9.9/setup-and-upgrade/deploy-on-kubernetes/deploy-sonarqube-on-kubernetes/)
 
 # 安装SonarQube

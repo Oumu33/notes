@@ -1,10 +1,4 @@
 # Pushgateway
-
-> 分类: Prometheus > Exporter
-> 更新时间: 2026-01-10T23:33:51.226092+08:00
-
----
-
 # 一、Pushgateway 简介
 1. Pushgateway 是 Prometheus      生态中一个重要工具，使用它的原因主要是：
 + Prometheus 采用 pull      模式，可能由于不在一个子网或者防火墙原因，导致 Prometheus 无法直接拉取各个 target 数据。

@@ -1,10 +1,4 @@
 # 创建dashboard与Panel
-
-> 分类: Prometheus > grafana
-> 更新时间: 2026-01-10T23:33:51.452977+08:00
-
----
-
 # 一、dashboard
 1. 创建新的仪表盘
 

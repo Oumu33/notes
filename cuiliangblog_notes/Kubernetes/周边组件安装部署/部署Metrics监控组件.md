@@ -1,10 +1,4 @@
 # 部署Metrics监控组件
-
-> 分类: Kubernetes > 周边组件安装部署
-> 更新时间: 2026-01-10T23:33:17.556328+08:00
-
----
-
 # 一、<font style="color:rgb(79, 79, 79);">metrics-server(HPA使用)</font>
 ## 1. 版本说明
 [github地址](https://github.com/kubernetes-sigs/metrics-server)

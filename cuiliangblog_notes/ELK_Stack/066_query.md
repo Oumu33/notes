@@ -1,12 +1,4 @@
 # query
-
-> 来源: ELK Stack
-> 创建时间: 2023-07-13T10:57:20+08:00
-> 更新时间: 2026-01-11T09:26:41.707755+08:00
-> 阅读量: 573 | 点赞: 0
-
----
-
 # <font style="color:rgb(48, 49, 51);">注意点</font>
 **<font style="color:rgb(48, 49, 51);">提高评分</font>**<font style="color:rgb(48, 49, 51);">：主要考boost和function_score，如果题目明确说某个字段权重为X值时使用boost，如果题目说如果有，提分，没有不变的话，用function_score</font>
 

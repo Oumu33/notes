@@ -1,10 +1,4 @@
 # ES8.8集群与Kibana部署
-
-> 分类: ELK Stack > ELK8生产实践
-> 更新时间: 2026-01-10T23:33:45.184530+08:00
-
----
-
 > es可以使用二进制、docker、k8s、rpm方式部署，此处以rpm方式为例。相较于二进制部署，省去了繁琐的用户创建、证书生成、密码设置、启动脚本配置等操作，简化部署流程，可以将更多的精力用于es的使用而不是部署上面。如果资源有限，想体验elk相关功能，可参考文档：[https://www.cuiliangblog.cn/detail/section/117075458](https://www.cuiliangblog.cn/detail/section/117075458)，后续也会发布docker模式下elk自定义日志采集文章。
 >
 

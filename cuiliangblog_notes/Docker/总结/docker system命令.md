@@ -1,10 +1,4 @@
 # docker system命令
-
-> 分类: Docker > 总结
-> 更新时间: 2026-01-10T23:35:12.894415+08:00
-
----
-
 1. 查看docker 空间使用情况,<font style="color:#4D4D4D;">包括镜像、容器和（本地）volume。</font>
 
 ```yaml

@@ -1,10 +1,4 @@
 # CentOS7中systemctl的使用
-
-> 分类: Linux > 服务管理
-> 更新时间: 2026-01-10T23:34:53.819984+08:00
-
----
-
 # 一、文件配置文件夹
 1. systemd有系统和用户区分；系统（/user/lib/systemd/system/）、用户（/etc/lib/systemd/user/）
 2. 一般系统管理员手工创建的单元文件建议存放在/etc/systemd/system/目录下面。

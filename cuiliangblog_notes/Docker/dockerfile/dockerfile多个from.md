@@ -1,10 +1,4 @@
 # dockerfile多个from
-
-> 分类: Docker > dockerfile
-> 更新时间: 2026-01-10T23:35:06.800836+08:00
-
----
-
 > <font style="color:#333333;">Docker 17.05版本以后，新增了Dockerfile多阶段构建。所谓多阶段构建，实际上是允许一个Dockerfile 中出现多个 </font>`FROM`<font style="color:#333333;"> 指令。</font>
 >
 

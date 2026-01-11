@@ -1,10 +1,4 @@
 # 一级视图APIView
-
-> 分类: Python > DRF视图
-> 更新时间: 2026-01-10T23:34:30.764348+08:00
-
----
-
 ## 一、APIView
 1. `APIView`是REST framework提供的所有视图的基类，继承自Django的`View`父类。
 2. `APIView`与`View`的不同之处在于：

@@ -1,10 +1,4 @@
 # 部署Ingress-nginx代理
-
-> 分类: Kubernetes > 周边组件安装部署
-> 更新时间: 2026-01-10T23:33:16.553670+08:00
-
----
-
 # 使用yaml配置文件部署
 ## 参考地址
 [https://github.com/kubernetes/ingress-nginx](https://github.com/kubernetes/ingress-nginx)

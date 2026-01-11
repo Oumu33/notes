@@ -1,10 +1,4 @@
 # pod日志采集（Elastic Agent方案）
-
-> 分类: ELK Stack > ELK8生产实践
-> 更新时间: 2026-01-10T23:33:46.844979+08:00
-
----
-
 # pod日志采集方案
 ## 采集方案
 1. DaemonSet+Elastic Agent方案：使用DaemonSet控制器在每个kubernetes集群节点上运行elastic agent服务，业务容器日志目录统一挂载到节点指定目录下。在fleet中配置集成Custom Logs集成策略，指定日志采集目录和ingest pipeline，实现自定义路径下的日志收集和清理操作。

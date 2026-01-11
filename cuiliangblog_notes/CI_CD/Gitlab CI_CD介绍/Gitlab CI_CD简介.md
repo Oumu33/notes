@@ -1,10 +1,4 @@
 # Gitlab CI/CD简介
-
-> 分类: CI/CD > Gitlab CI/CD介绍
-> 更新时间: 2026-01-10T23:33:59.280654+08:00
-
----
-
 # Gitlab CI/CD优势
 + 开源： CI/CD是开源GitLab社区版和专有GitLab企业版的一部分。
 + 易于学习： 具有详细的入门文档。

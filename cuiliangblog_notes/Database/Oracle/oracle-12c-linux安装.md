@@ -1,10 +1,4 @@
 # oracle-12c-linux安装
-
-> 分类: Database > Oracle
-> 更新时间: 2026-01-10T23:34:26.642328+08:00
-
----
-
 ### 安装前准备阶段
 #### * 修改linux内核参数以适应oracle12c
 vi /etc/sysctl.conf

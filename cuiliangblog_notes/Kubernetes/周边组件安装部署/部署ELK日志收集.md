@@ -1,10 +1,4 @@
 # 部署ELK日志收集
-
-> 分类: Kubernetes > 周边组件安装部署
-> 更新时间: 2026-01-10T23:33:17.999406+08:00
-
----
-
 > 以3节点为例，存储使用local pv使用最大io性能，所有节点即是master节点也是data节点。完整内容可参考文档：[https://www.cuiliangblog.cn/detail/section/162609409](https://www.cuiliangblog.cn/detail/section/162609409)
 >
 

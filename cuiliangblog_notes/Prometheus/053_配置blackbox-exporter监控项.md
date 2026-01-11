@@ -1,12 +1,4 @@
 # 配置blackbox-exporter监控项
-
-> 来源: Prometheus
-> 创建时间: 2025-10-10T23:03:58+08:00
-> 更新时间: 2026-01-11T09:31:19.513984+08:00
-> 阅读量: 79 | 点赞: 0
-
----
-
 # 修改 blackbox 配置
 在前面部署<font style="color:rgb(28, 30, 33);">kube-prometheus 中已经安装过了blackbox-exporter 了，查看相关资源</font>
 

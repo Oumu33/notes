@@ -1,10 +1,4 @@
 # 加入vue-router
-
-> 分类: Web > vite
-> 更新时间: 2026-01-10T23:34:09.820950+08:00
-
----
-
 ## 安装
 `npm install vue-router@4 -S` 
 

@@ -1,12 +1,4 @@
 # vue3使用refs操作dom
-
-> 来源: Web
-> 创建时间: 2021-05-22T22:54:02+08:00
-> 更新时间: 2026-01-11T09:25:04.385349+08:00
-> 阅读量: 652 | 点赞: 0
-
----
-
 在使用组合式 API 时，[响应式引用](https://vue3js.cn/docs/zh/guide/reactivity-fundamentals.html#creating-standalone-reactive-values-as-refs)和[模板引用](https://vue3js.cn/docs/zh/guide/component-template-refs.html)的概念是统一的。为了获得对模板内元素或组件实例的引用，我们可以像往常一样声明 ref 并从 [setup()](https://vue3js.cn/docs/zh/guide/composition-api-setup.html) 返回：
 
 ```vue

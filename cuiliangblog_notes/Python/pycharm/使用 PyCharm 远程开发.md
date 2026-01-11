@@ -1,10 +1,4 @@
 # 使用 PyCharm 远程开发
-
-> 分类: Python > pycharm
-> 更新时间: 2026-01-10T23:34:28.701388+08:00
-
----
-
 > 在 linux 主机上使用 vim 开发 Ansible 模块或插件，对于新手来说不是很方便。大多数人的工作环境都是基于 Windows 环境的，但是 Ansible 不能运行在 Windows 环境下，这个时候我们想使用 Windows 环境下的 PyCharm 工具时，只能通过远程连接的方式进行开发 playbook 或模块插件。
 >
 

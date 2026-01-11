@@ -1,10 +1,4 @@
 # OpenStack环境搭建
-
-> 分类: Linux > OpenStack
-> 更新时间: 2026-01-10T23:35:00.775496+08:00
-
----
-
 + [官方文档中文版](https://docs.openstack.org/zh_CN/)
 + [OpenStack-ocata](https://docs.openstack.org/ocata/install-guide-rdo/common/conventions.html)
 

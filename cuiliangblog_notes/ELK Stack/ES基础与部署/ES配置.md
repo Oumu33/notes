@@ -1,10 +1,4 @@
 # ES配置
-
-> 分类: ELK Stack > ES基础与部署
-> 更新时间: 2026-01-10T23:33:32.494593+08:00
-
----
-
 ## 基础配置
 ```yaml
 cluster.name: logging-prod

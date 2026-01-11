@@ -1,10 +1,4 @@
 # RAG入门
-
-> 分类: AIOPS > RAG
-> 更新时间: 2026-01-10T23:34:37.007623+08:00
-
----
-
 # 什么是 RAG
 RAG，Retrieval-Augmented Generation，也被称作检索增强生成技术，最早在 Facebook AI（Meta AI）在 2020 年发表的论文《Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks》（ https://arxiv.org/abs/2005.11401 ）中正式提出，这种方法的核心思想是借助一些文本检索策略，让大模型每次问答前都带入相关文本，以此来改善大模型回答时的准确性。
 

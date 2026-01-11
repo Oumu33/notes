@@ -1,10 +1,4 @@
 # ILM+data stream
-
-> 分类: ELK Stack > ECE认证
-> 更新时间: 2026-01-10T23:33:38.581570+08:00
-
----
-
 以日志数据为例，0-7天数据存放hot节点，7-15天数据存放warm节点，15天-30天数据存放clod节点，30天以上数据删除
 
 需要注意min_age是index写入时间，但是如果hot阶段配置了rollover，那么rollover之后索引的age会清0，计算min_age时需要减去rollover的时间

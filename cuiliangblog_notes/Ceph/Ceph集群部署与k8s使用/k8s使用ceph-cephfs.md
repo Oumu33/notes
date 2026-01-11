@@ -1,10 +1,4 @@
 # k8s使用ceph-cephfs
-
-> 分类: Ceph > Ceph集群部署与k8s使用
-> 更新时间: 2026-01-10T23:35:14.567863+08:00
-
----
-
 # ceph创建资源
 查看admin用户keyring
 

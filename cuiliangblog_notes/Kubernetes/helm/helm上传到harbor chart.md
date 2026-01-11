@@ -1,10 +1,4 @@
 # helm上传到harbor chart
-
-> 分类: Kubernetes > helm
-> 更新时间: 2026-01-10T23:33:27.525002+08:00
-
----
-
 # harbor支持helm chart
 在 harbor v1.6 版本开始，通过**ChartMuseum** 子服务提供对 chart 的支持，从 **2.7 起**更换为原生 OCI Charts 实现内置支持 Helm Charts 的 OCI 上传。
 

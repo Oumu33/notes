@@ -1,10 +1,4 @@
 # jenkins部署(docker)
-
-> 分类: CI/CD > Jenkins安装部署
-> 更新时间: 2026-01-10T23:33:56.083162+08:00
-
----
-
 # 拉取Jenkins镜像
 ```bash
 docker pull jenkins/jenkins:2.401.2-lts

@@ -1,10 +1,4 @@
 # RGW对象存储服务
-
-> 分类: Ceph > Rook
-> 更新时间: 2026-01-10T23:35:19.479458+08:00
-
----
-
 > Ceph 对象存储可以简称为 RGW，Ceph RGW 是基于 librados，为应用提供 RESTful 类型的对象存储接口，其接口方式支持 S3（兼容 Amazon S3 RESTful API） 和 Swift（兼容 OpenStack Swift API） 两种类型。具体参考文档：[https://rook.github.io/docs/rook/latest-release/Storage-Configuration/Object-Storage-RGW/object-storage/](https://rook.github.io/docs/rook/latest-release/Storage-Configuration/Object-Storage-RGW/object-storage/)
 >
 

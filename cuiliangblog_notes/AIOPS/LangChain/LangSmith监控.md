@@ -1,10 +1,4 @@
 # LangSmith监控
-
-> 分类: AIOPS > LangChain
-> 更新时间: 2026-01-10T23:34:39.033915+08:00
-
----
-
 # LangSmith 介绍
 ## 什么是LangSmith 
 LangSmith 是由 LangChain 团队开发的一款 用于调试、测试、评估和监控 LLM 应用的开发者工具平台，适用于构建基于大型语言模型（LLMs）的复杂应用。它特别适合在使用 LangChain、OpenAI Function calling、Agent、RAG（检索增强生成）等场景中进行调试与监控。它是一个 SaaS 服务平台，由 LangChain 官方运营，服务托管在云端。使用 LangSmith 需要注册账号，并通过云端 API Key 接入。  

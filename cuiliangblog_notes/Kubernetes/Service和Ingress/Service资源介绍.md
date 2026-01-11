@@ -1,10 +1,4 @@
 # Service资源介绍
-
-> 分类: Kubernetes > Service和Ingress
-> 更新时间: 2026-01-10T23:33:21.381933+08:00
-
----
-
 ## service资源概述
 
 

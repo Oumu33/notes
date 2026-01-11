@@ -1,10 +1,4 @@
 # docker hub公共仓库
-
-> 分类: Docker > 仓库
-> 更新时间: 2026-01-10T23:35:05.671625+08:00
-
----
-
 ## 基本使用
 公共仓库地址：[https://hub.docker.com](https://hub.docker.com/?utm_source=docker4mac_3.0.3&utm_medium=account_create&utm_campaign=referral)，进入后点击sign up注册docker账号
 

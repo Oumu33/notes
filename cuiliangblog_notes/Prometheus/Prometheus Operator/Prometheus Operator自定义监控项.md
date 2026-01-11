@@ -1,10 +1,4 @@
 # Prometheus Operator自定义监控项
-
-> 分类: Prometheus > Prometheus Operator
-> 更新时间: 2026-01-10T23:33:53.193479+08:00
-
----
-
 Prometheus Operator默认的监控指标并不能完全满足实际的监控需求，这时候就需要我们自己根据业务添加自定义监控。添加一个自定义监控的步骤如下：  
 1. 创建一个ServiceMonitor对象，用于Prometheus添加监控项  
 2. 为ServiceMonitor对象关联metrics数据接口的Service对象  

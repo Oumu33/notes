@@ -1,10 +1,4 @@
 # LangGraph使用MCP
-
-> 分类: AIOPS > LangGraph
-> 更新时间: 2026-01-10T23:34:39.934604+08:00
-
----
-
 # LangGraph搭建MCP客户端
 作为大模型开发者，掌握MCP工具开发流程是基本功，这里我们先尝试自定义MCP工具，并将其接入LangGraph。
 

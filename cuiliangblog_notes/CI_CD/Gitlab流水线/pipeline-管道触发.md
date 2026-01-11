@@ -1,10 +1,4 @@
 # pipeline-管道触发
-
-> 分类: CI/CD > Gitlab流水线
-> 更新时间: 2026-01-10T23:34:01.344104+08:00
-
----
-
 # trigger 管道触发
 当GitLab从trigger定义创建的作业启动时，将创建一个下游管道。允许创建多项目管道和子管道。将trigger与when:manual一起使用会导致错误。
 

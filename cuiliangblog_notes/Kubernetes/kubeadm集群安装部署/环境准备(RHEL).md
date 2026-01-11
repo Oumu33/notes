@@ -1,10 +1,4 @@
 # 环境准备(RHEL)
-
-> 分类: Kubernetes > kubeadm集群安装部署
-> 更新时间: 2026-01-10T23:33:15.649022+08:00
-
----
-
 > 如果操作系统环境为CentOS、Red Hat、Rocky Linux、<font style="color:rgb(25, 27, 31);">Alma Linux、Fedora等RHEL系列操作系统，使用以下步骤操作。</font>
 >
 

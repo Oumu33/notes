@@ -1,10 +1,4 @@
 # axios封装
-
-> 分类: Web > webpack
-> 更新时间: 2026-01-10T23:34:07.974688+08:00
-
----
-
 ## 安装axios
 `npm install axios -S` 
 

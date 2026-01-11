@@ -1,12 +1,4 @@
 # SonarQube部署(rpm)
-
-> 来源: CI/CD
-> 创建时间: 2023-06-27T09:44:19+08:00
-> 更新时间: 2026-01-11T08:50:56.370269+08:00
-> 阅读量: 2275 | 点赞: 0
-
----
-
 # 准备工作
 ## 下载软件包
 下载地址：[https://www.sonarsource.com/products/sonarqube/downloads/](https://www.sonarsource.com/products/sonarqube/downloads/)

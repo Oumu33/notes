@@ -1,12 +1,4 @@
 # OpenStack环境搭建
-
-> 来源: Linux
-> 创建时间: 2021-02-16T16:44:28+08:00
-> 更新时间: 2026-01-11T09:42:03.454280+08:00
-> 阅读量: 909 | 点赞: 0
-
----
-
 + [官方文档中文版](https://docs.openstack.org/zh_CN/)
 + [OpenStack-ocata](https://docs.openstack.org/ocata/install-guide-rdo/common/conventions.html)
 

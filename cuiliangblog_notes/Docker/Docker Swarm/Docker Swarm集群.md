@@ -1,10 +1,4 @@
 # Docker Swarm集群
-
-> 分类: Docker > Docker Swarm
-> 更新时间: 2026-01-10T23:35:11.634785+08:00
-
----
-
 # 一、简介
 1. Docker Swarm提供Docker容器集群服务，是Docker官方对容器云生态进行支持的核心方案。使用它，用户可以将多个Docker主机抽象为大规模的虚拟Docker服务，快速打造一套容器云平台。
 2. 作为容器集群管理器，Swarm最大的优势之一就是原生支持Docker      API，给用户使用带来极大的便利。各种基于标准API的工具比如Compose、Docker      SDK、各种管理软件，甚至Docker本身等都可以很容易的与Swarm进行集成。这大大方便了用户将原先基于单节点的系统移植到Swarm上。同时Swarm内置了对Docker网络插件的支持，用户可以很容易地部署跨主机的容器集群服务。

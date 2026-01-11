@@ -1,10 +1,4 @@
 # 部署Traefik代理
-
-> 分类: Kubernetes > 周边组件安装部署
-> 更新时间: 2026-01-10T23:33:16.671233+08:00
-
----
-
 > ingress-NGINX和traefik二选一
 >
 

@@ -1,10 +1,4 @@
 # ETCD节点故障修复
-
-> 分类: Kubernetes > 日常维护
-> 更新时间: 2026-01-10T23:33:29.170357+08:00
-
----
-
 # 安装etcdctl命令
 ```bash
 yum install etcd-client

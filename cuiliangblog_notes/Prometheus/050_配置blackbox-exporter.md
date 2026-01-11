@@ -1,12 +1,4 @@
 # 配置blackbox-exporter
-
-> 来源: Prometheus
-> 创建时间: 2024-11-04T10:21:13+08:00
-> 更新时间: 2026-01-11T09:31:16.416026+08:00
-> 阅读量: 349 | 点赞: 0
-
----
-
 # 启用 icmp 模块
 > 安装kube-prometheus 后默认在monitoring namespace中有创建 blackbox-exporter deployment。但默认没有[icmp](https://so.csdn.net/so/search?q=icmp&spm=1001.2101.3001.7020)的module配置，无法执行ping探测。因此首先需要启用 icmp 模块。
 >

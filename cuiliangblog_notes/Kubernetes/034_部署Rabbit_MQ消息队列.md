@@ -1,12 +1,4 @@
 # 部署Rabbit MQ消息队列
-
-> 来源: Kubernetes
-> 创建时间: 2024-10-30T16:23:16+08:00
-> 更新时间: 2026-01-11T09:05:31.850771+08:00
-> 阅读量: 411 | 点赞: 0
-
----
-
 # 安装Kubernetes Operator
 官网的文档 [https://www.rabbitmq.com/kubernetes/operator/operator-overview.html](https://link.zhihu.com/?target=https%3A//www.rabbitmq.com/kubernetes/operator/operator-overview.html)
 

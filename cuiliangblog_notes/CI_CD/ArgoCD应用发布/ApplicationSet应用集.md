@@ -1,10 +1,4 @@
 # ApplicationSet应用集
-
-> 分类: CI/CD > ArgoCD应用发布
-> 更新时间: 2026-01-10T23:34:04.475135+08:00
-
----
-
 # 简介
 Argo CD ApplicationSet 是 Argo CD 的一个高级功能，用于大规模和动态地管理应用程序。它允许你使用一个模板和一些参数来创建和管理多个 Argo CD Application 对象。
 

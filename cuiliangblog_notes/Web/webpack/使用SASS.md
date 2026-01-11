@@ -1,10 +1,4 @@
 # 使用SASS
-
-> 分类: Web > webpack
-> 更新时间: 2026-01-10T23:34:07.874004+08:00
-
----
-
 ## 安装sass
 `npm install sass -D`
 

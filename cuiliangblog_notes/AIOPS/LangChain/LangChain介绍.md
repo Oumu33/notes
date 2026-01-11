@@ -1,10 +1,4 @@
 # LangChain介绍
-
-> 分类: AIOPS > LangChain
-> 更新时间: 2026-01-10T23:34:37.659523+08:00
-
----
-
 # LangChain介绍 
 ## 什么是 LangChain
 LangChain 是一个基于 python 语言的模块化、可组合、面向开发者的开源框架，旨在简化基于大型语言模型的应用程序开发。它由 Harrison Chase 于 2022 年 10 月发起，迅速成为 GitHub 上增长最快的开源项目之一。

@@ -1,10 +1,4 @@
 # Fleet部署与常见日志采集（ECK方式）
-
-> 分类: ELK Stack > ELK8生产实践
-> 更新时间: 2026-01-10T23:33:46.732157+08:00
-
----
-
 # Fleet简介
 ## Fleet概述
 为了更加方便的实现系统和应用程序日志接入ES，官方推出了Elastic Agent采集方案。相较于之前使用beats采集数据，Elastic Agent可以实现通过更少的配置和安装来简化数据采集配置，仅需一个Elastic Agent代理即可实现日志、指标、APM 跟踪信息的采集，通过Fleet可以轻松的管理整个Elastic Agent队列。Kibana为我们内置了大多数场景下日志的采集与可视化分析配置，我们仅需要在kibanaUI中点击操作便可完成复杂的日志采集。

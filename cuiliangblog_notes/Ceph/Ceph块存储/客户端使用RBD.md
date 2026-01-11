@@ -1,10 +1,4 @@
 # 客户端使用RBD
-
-> 分类: Ceph > Ceph块存储
-> 更新时间: 2026-01-10T23:35:16.039860+08:00
-
----
-
 > RBD（RADOS Block Devices）即块存储设备，RBD可以为KVM、VMware等虚拟化技术和云服务（OpenStack、kubernetes）提供高性能和无限可扩展的存储后端，客户端基于librbd库即可将RADOS存储集群用作块设备。
 >
 

@@ -1,10 +1,4 @@
 # Ingress资源
-
-> 分类: Kubernetes > Service和Ingress
-> 更新时间: 2026-01-10T23:33:22.270802+08:00
-
----
-
 # 一、Ingress和Ingress Controller
 
 

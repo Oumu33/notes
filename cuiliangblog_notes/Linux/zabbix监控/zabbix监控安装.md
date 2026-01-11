@@ -1,10 +1,4 @@
 # zabbix监控安装
-
-> 分类: Linux > zabbix监控
-> 更新时间: 2026-01-10T23:35:01.986276+08:00
-
----
-
 # 一、官方安装教程
     - [参考链接](https://www.zabbix.com/cn/download)
 

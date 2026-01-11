@@ -1,10 +1,4 @@
 # 系统备份-Linux系统制作成iso镜像文件
-
-> 分类: Linux > 系统管理
-> 更新时间: 2026-01-10T23:34:51.741998+08:00
-
----
-
     - 通过Mondo       Rescue开源工具来实现linux系统的打包备份，Mondo Rescue是开源的，官网地址[http://www.mondorescue.org/](http://www.mondorescue.org/)。
 
 # 一、下载安装包

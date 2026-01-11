@@ -1,10 +1,4 @@
 # Model大模型接口
-
-> 分类: AIOPS > LangChain
-> 更新时间: 2026-01-10T23:34:37.764106+08:00
-
----
-
 # Model介绍
 一个 AI 应用的核心就是它所依赖的大语言模型，LangChain作为一个“工具”，不提供任何 LLMs，而是依赖于第三方集成各种大模型。比如，将 OpenAI、Anthropic、Hugging Face 、LlaMA、阿里Qwen、ChatGLM等平台的模型无缝接入到你的应用。
 

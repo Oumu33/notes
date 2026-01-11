@@ -1,10 +1,4 @@
 # runner注册
-
-> 分类: CI/CD > Gitlab Runner
-> 更新时间: 2026-01-10T23:33:59.735909+08:00
-
----
-
 # gitlab runner类型
 + shared：运行整个平台项目的作业（gitlab）
 + group：运行特定group下的所有项目的作业（group）

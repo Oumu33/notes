@@ -1,10 +1,4 @@
 # gitlab部署(rpm)
-
-> 分类: CI/CD > Gitlab安装部署
-> 更新时间: 2026-01-10T23:33:58.622500+08:00
-
----
-
 # 参考文档
 安装文档：[https://docs.gitlab.com/omnibus/installation/](https://docs.gitlab.com/omnibus/installation/)
 

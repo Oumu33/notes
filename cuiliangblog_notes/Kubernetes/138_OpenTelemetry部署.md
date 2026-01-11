@@ -1,12 +1,4 @@
 # OpenTelemetry部署
-
-> 来源: Kubernetes
-> 创建时间: 2025-04-18T10:25:28+08:00
-> 更新时间: 2026-01-11T09:11:41.113821+08:00
-> 阅读量: 1201 | 点赞: 0
-
----
-
 # OpenTelemetry 部署模式
 OpenTelemetry Collector 按部署方式分为 Agent 和Gateway 模式。
 

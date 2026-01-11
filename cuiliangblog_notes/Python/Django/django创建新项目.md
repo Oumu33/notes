@@ -1,10 +1,4 @@
 # django创建新项目
-
-> 分类: Python > Django
-> 更新时间: 2026-01-10T23:34:29.458894+08:00
-
----
-
 ## settings.py文件配置
 ```python
 ALLOWED_HOSTS = []      #修改前

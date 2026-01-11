@@ -1,10 +1,4 @@
 # Kibana上传数据
-
-> 分类: ELK Stack > ES集群管理
-> 更新时间: 2026-01-10T23:33:36.784866+08:00
-
----
-
 ## Data Visualizer 定义
 Machine Learning -> Data Visulalizer -> Data Visualizer -> Import data / Select an index pattern
 

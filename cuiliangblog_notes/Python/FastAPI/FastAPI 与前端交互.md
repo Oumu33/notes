@@ -1,10 +1,4 @@
 # FastAPI 与前端交互
-
-> 分类: Python > FastAPI
-> 更新时间: 2026-01-10T23:34:34.134761+08:00
-
----
-
 # 前端如何调用 FastAPI 接口
 FastAPI 提供标准的 RESTful 接口，你可以通过前端的 `fetch`、`axios`、`XMLHttpRequest` 等方式调用。例如：
 

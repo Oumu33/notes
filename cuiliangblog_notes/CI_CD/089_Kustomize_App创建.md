@@ -1,12 +1,4 @@
 # Kustomize App创建
-
-> 来源: CI/CD
-> 创建时间: 2024-06-22T19:48:17+08:00
-> 更新时间: 2026-01-11T08:57:48.456774+08:00
-> 阅读量: 673 | 点赞: 1
-
----
-
 # 仓库资源配置
 ## 创建Kustomize应用
 Kustomize具体参考可参考文档：[https://www.cuiliangblog.cn/detail/section/119720072](https://www.cuiliangblog.cn/detail/section/119720072)

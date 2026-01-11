@@ -1,10 +1,4 @@
 # ansible命令
-
-> 分类: Linux > ansible
-> 更新时间: 2026-01-10T23:35:02.557737+08:00
-
----
-
 ## 一、ad-hoc命令部分
 ansible  <host-pattern> [-m module_name] [options]
 

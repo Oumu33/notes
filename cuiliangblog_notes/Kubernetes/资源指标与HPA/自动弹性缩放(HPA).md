@@ -1,10 +1,4 @@
 # 自动弹性缩放(HPA)
-
-> 分类: Kubernetes > 资源指标与HPA
-> 更新时间: 2026-01-10T23:33:26.515708+08:00
-
----
-
 # HPA 简介
 Horizontal Pod Autoscaler (HPA) 是 Kubernetes 中的一种自动扩展机制，它可以根据 Pod 的 CPU 或内存使用率等指标自动调整 Pods 的副本数。通过 HPA，用户无需手动监控和调整应用程序的负载，Kubernetes 会根据预定的指标和阈值自动进行扩容或缩容操作。
 

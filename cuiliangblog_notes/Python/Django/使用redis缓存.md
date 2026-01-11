@@ -1,10 +1,4 @@
 # 使用redis缓存
-
-> 分类: Python > Django
-> 更新时间: 2026-01-10T23:34:29.766941+08:00
-
----
-
 > django-redis是一个使 Django 支持 Redis cache/session 后端的全功能组件.
 >
 

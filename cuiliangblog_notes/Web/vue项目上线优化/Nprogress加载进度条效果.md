@@ -1,10 +1,4 @@
 # Nprogress加载进度条效果
-
-> 分类: Web > vue项目上线优化
-> 更新时间: 2026-01-10T23:34:08.082510+08:00
-
----
-
 ## 1. 简介
 + 功能：当页面切换时，可以添加顶部加载效果，提升用户体验
 + 仓库地址: [https://github.com/rstacruz/nprogress](https://github.com/rstacruz/nprogress)

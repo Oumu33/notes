@@ -1,10 +1,4 @@
 # vue cli安装
-
-> 分类: Web > webpack
-> 更新时间: 2026-01-10T23:34:07.347812+08:00
-
----
-
 ```plain
 npm install -g @vue/cli
 # OR

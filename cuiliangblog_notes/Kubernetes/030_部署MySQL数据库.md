@@ -1,12 +1,4 @@
 # 部署MySQL数据库
-
-> 来源: Kubernetes
-> 创建时间: 2024-10-14T10:07:47+08:00
-> 更新时间: 2026-01-11T09:05:04.831326+08:00
-> 阅读量: 833 | 点赞: 0
-
----
-
 # 部署方案
 ## Oracle MySQL Operator
 由Oracle官方发布，使用<font style="color:rgb(85, 85, 85);">MySQL InnoDB</font>架构，提供了较为完整的 MySQL 集群管理工具和功能，集成了 Oracle 生态中的一些特性（如 MySQL Shell、MySQL Router）， 管理维护较为复杂。 支持强一致性和自动故障转移，适合需要高可靠性和自动恢复的生产级场景。  

@@ -1,12 +1,4 @@
 # 日志清洗过滤（vector方案）
-
-> 来源: ELK Stack
-> 创建时间: 2024-03-20T23:03:13+08:00
-> 更新时间: 2026-01-11T09:29:08.376821+08:00
-> 阅读量: 791 | 点赞: 0
-
----
-
 # 前言
 ## 什么是vector
 以下描述摘自官方文档：[https://vector.dev/docs/about/what-is-vector/](https://vector.dev/docs/about/what-is-vector/)

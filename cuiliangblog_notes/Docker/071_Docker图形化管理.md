@@ -1,12 +1,4 @@
 # Docker图形化管理
-
-> 来源: Docker
-> 创建时间: 2021-01-08T12:26:54+08:00
-> 更新时间: 2026-01-11T09:30:03.346276+08:00
-> 阅读量: 1023 | 点赞: 0
-
----
-
 # 一、Portainer简介
 Portainer是一款轻量级的图形化管理工具，通过它我们可以轻松管理不同的docker环境。Portainer部署和使用都非常的简单，它由一个可以运行在任何docker引擎上的容器组成。Portainer提供管理docker的containers、  images、volumes、networks等等。它兼容独立的docker环境和swarm集群模式。基本满足中小型单位对docker容器的管理工作。
 

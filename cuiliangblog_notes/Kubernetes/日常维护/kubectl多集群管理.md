@@ -1,10 +1,4 @@
 # kubectl多集群管理
-
-> 分类: Kubernetes > 日常维护
-> 更新时间: 2026-01-10T23:33:29.724269+08:00
-
----
-
 > 通过 `kubectl` 连接k8s集群时，默认情况下，`kubectl` 会在 `$HOME/.kube` 目录下查找名为 `config` 的文件，如果root用户登录的、`config`配置文件路径为 `~/.kube/config`，文件内容如下：
 >
 

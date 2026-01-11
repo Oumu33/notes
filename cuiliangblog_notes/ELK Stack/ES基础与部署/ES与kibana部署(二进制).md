@@ -1,10 +1,4 @@
 # ES与kibana部署(二进制)
-
-> 分类: ELK Stack > ES基础与部署
-> 更新时间: 2026-01-10T23:33:32.926364+08:00
-
----
-
 # 环境准备
 环境准备工作参考文档：[https://www.cuiliangblog.cn/detail/section/68388031](https://www.cuiliangblog.cn/detail/section/68388031)
 

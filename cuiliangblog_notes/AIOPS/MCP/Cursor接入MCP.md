@@ -1,10 +1,4 @@
 # Cursor接入MCP
-
-> 分类: AIOPS > MCP
-> 更新时间: 2026-01-10T23:34:36.681569+08:00
-
----
-
 # Cursor 安装与使用
 具体可参考文档：[https://www.cuiliangblog.cn/detail/section/232745699](https://www.cuiliangblog.cn/detail/section/232745699)
 

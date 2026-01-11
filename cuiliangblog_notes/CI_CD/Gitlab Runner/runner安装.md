@@ -1,10 +1,4 @@
 # runner安装
-
-> 分类: CI/CD > Gitlab Runner
-> 更新时间: 2026-01-10T23:33:59.617541+08:00
-
----
-
 > 安装的gitlab runner版本与gitlab版本保持一致。
 >
 

@@ -1,10 +1,4 @@
 # 异常处理Exceptions
-
-> 分类: Python > DRF扩展
-> 更新时间: 2026-01-10T23:34:32.477093+08:00
-
----
-
 1. 定义自定义处理方法(booktest/my_exception.py)
 
 ```python

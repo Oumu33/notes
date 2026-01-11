@@ -1,12 +1,4 @@
 # CentOS7下部署Django项目
-
-> 来源: Python
-> 创建时间: 2021-02-19T15:25:03+08:00
-> 更新时间: 2026-01-11T09:25:32.051494+08:00
-> 阅读量: 790 | 点赞: 0
-
----
-
 ## 下载安装Pyhton3
 1. 下载到/usr/local 目录   
 cd /usr/localwget [https://www.python.org/ftp/python/3.6.6/Python-3.6.6.tgz](https://www.python.org/ftp/python/3.6.6/Python-3.6.6.tgz)

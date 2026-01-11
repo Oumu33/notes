@@ -1,10 +1,4 @@
 # Grafana全家桶方案
-
-> 分类: Kubernetes > OpenTelemetry可观测性
-> 更新时间: 2026-01-10T23:33:30.887019+08:00
-
----
-
 # 方案介绍
 OpenTelemetry +Prometheus+ Loki + Tempo + Grafana 是一套现代化、云原生的可观测性解决方案组合，涵盖 **Trace（链路追踪）**、**Log（日志）**、**Metrics（指标）** 三大核心维度，为微服务架构中的应用提供统一的可观测性平台。
 

@@ -1,10 +1,4 @@
 # 输出到Elasticsearch
-
-> 分类: ELK Stack > Filebeat
-> 更新时间: 2026-01-10T23:33:41.134493+08:00
-
----
-
 # 默认标准输出
 1. 配置读取文件项test.yml
 

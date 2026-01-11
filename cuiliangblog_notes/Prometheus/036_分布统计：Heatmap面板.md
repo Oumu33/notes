@@ -1,12 +1,4 @@
 # 分布统计：Heatmap面板
-
-> 来源: Prometheus
-> 创建时间: 2020-12-12T18:25:09+08:00
-> 更新时间: 2026-01-11T09:31:00.611494+08:00
-> 阅读量: 908 | 点赞: 0
-
----
-
 # 一、使用Heatmap可视化Histogram样本分布情况
 1. 当使用Heatmap可视化Histogram类型的监控指标时，需要设置Format      as选项为Heatmap。当使用Heatmap格式化数据后，Grafana会自动根据样本的中的le标签，计算各个Bucket桶内的分布，并且按照Bucket对数据进行重新排序。Legend      format模板则将会控制Y轴中的显示内容。如下所示：
 

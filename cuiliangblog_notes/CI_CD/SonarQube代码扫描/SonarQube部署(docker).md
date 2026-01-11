@@ -1,10 +1,4 @@
 # SonarQube部署(docker)
-
-> 分类: CI/CD > SonarQube代码扫描
-> 更新时间: 2026-01-10T23:33:54.769387+08:00
-
----
-
 # 简易安装
 ## 下载地址
 镜像下载地址：[https://hub.docker.com/_/sonarqube](https://hub.docker.com/_/sonarqube)

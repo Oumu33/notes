@@ -1,12 +1,4 @@
 # Headless Service
-
-> 来源: Kubernetes
-> 创建时间: 2020-10-31T23:49:44+08:00
-> 更新时间: 2026-01-11T09:07:19.764459+08:00
-> 阅读量: 1182 | 点赞: 0
-
----
-
 ## 概述
 Headless Services是一种特殊的service，其spec:clusterIP表示为None，这样在实际运行时就不会被分配ClusterIP。也被称为无头服务。
 

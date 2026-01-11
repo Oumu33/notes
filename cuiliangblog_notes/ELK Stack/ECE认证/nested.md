@@ -1,10 +1,4 @@
 # nested
-
-> 分类: ELK Stack > ECE认证
-> 更新时间: 2026-01-10T23:33:39.345268+08:00
-
----
-
 # mapping+query
 ## 题目
 ```json

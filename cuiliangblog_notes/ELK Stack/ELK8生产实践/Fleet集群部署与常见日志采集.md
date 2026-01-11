@@ -1,10 +1,4 @@
 # Fleet集群部署与常见日志采集
-
-> 分类: ELK Stack > ELK8生产实践
-> 更新时间: 2026-01-10T23:33:45.416427+08:00
-
----
-
 > 为了更加方便的实现系统和应用程序日志接入ES，官方推出了Elastic Agent应用，Elastic Agent可以实现通过更少的配置和安装来简化数据采集配置，通过Fleet可以轻松的管理整个Elastic Agent队列。Kibana为我们内置了大多数场景下日志的采集与可视化分析配置，我们仅需要在kibanaUI中点击操作便可完成复杂的日志采集。更多fleet相关内容，可参考文档：[https://www.cuiliangblog.cn/detail/section/133432981](https://www.cuiliangblog.cn/detail/section/133432981)
 >
 

@@ -1,10 +1,4 @@
 # 使用typescript
-
-> 分类: Web > vite
-> 更新时间: 2026-01-10T23:34:10.370697+08:00
-
----
-
 ## 安装typescript
 `npm install typescript`
 

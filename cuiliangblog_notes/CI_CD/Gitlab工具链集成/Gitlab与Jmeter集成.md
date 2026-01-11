@@ -1,10 +1,4 @@
 # Gitlab与Jmeter集成
-
-> 分类: CI/CD > Gitlab工具链集成
-> 更新时间: 2026-01-10T23:34:02.459318+08:00
-
----
-
 # 开启Gitlab pages
 修改Gitlab配置文件
 

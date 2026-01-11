@@ -1,10 +1,4 @@
 # 定制Rook集群
-
-> 分类: Ceph > Rook
-> 更新时间: 2026-01-10T23:35:19.035765+08:00
-
----
-
 # Operator 参数调整
 ## 调整osd发现参数  
 默认配置中使⽤了所有的节点和所有的设备作为 osd 使用，rook会⾃动去扫描所有节点的设备，⼀旦有节点或者磁盘 添加进来，会⾃动将其添加到Ceph集群中，operator是通过启动rook-discover⼀个容器定期去扫描， 参数为ROOK_DISCOVER_DEVICES_INTERVA ， 间隔默认是60m  

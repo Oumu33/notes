@@ -1,10 +1,4 @@
 # SSH公钥
-
-> 分类: CI/CD > Git版本控制
-> 更新时间: 2026-01-10T23:33:54.322684+08:00
-
----
-
 1. <font style="background-color:transparent;">生成 sshkey:</font>
 
 `ssh-keygen <font style="color:#000080;">-t</font> rsa <font style="color:#000080;">-C</font> <font style="color:#DD1144;">"xxxxx@xxxxx.com"</font>  `

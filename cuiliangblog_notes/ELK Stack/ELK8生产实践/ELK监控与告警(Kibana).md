@@ -1,10 +1,4 @@
 # ELK监控与告警(Kibana)
-
-> 分类: ELK Stack > ELK8生产实践
-> 更新时间: 2026-01-10T23:33:46.220189+08:00
-
----
-
 > ELK的监控主要分为两方面，一方面是Filebeat、Logstash、Elasticsearch、Kibana自身的服务性能指标的采用与监控，另一方面是采集业务日志存入ES后，进行日志分析与告警监控。
 >
 

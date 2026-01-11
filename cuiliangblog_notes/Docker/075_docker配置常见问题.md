@@ -1,12 +1,4 @@
 # docker配置常见问题
-
-> 来源: Docker
-> 创建时间: 2021-01-08T12:43:02+08:00
-> 更新时间: 2026-01-11T09:30:07.887023+08:00
-> 阅读量: 838 | 点赞: 0
-
----
-
 1. Docker的配置文件放在哪里，如何修改配置？
 + 使用upstart的系统（如Ubuntu       16.04）的配置文件在/etc/default/docker，使用systemd的系统（如Ubuntu       16.04、Centos等）的配置文件在/etc/systemd/system/docker. service.d/docker.conf。
 

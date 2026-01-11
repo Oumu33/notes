@@ -1,10 +1,4 @@
 # ArgoCD简介
-
-> 分类: CI/CD > ArgoCD与GitOps入门
-> 更新时间: 2026-01-10T23:34:02.803509+08:00
-
----
-
 # ArgoCD简介
 Argo CD 是一个为 Kubernetes 而生的，遵循声明式 GitOps 理念的持续部署工具。Argo CD 可在 Git 存储库更改时自动同步和部署应用程序。
 

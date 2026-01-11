@@ -1,10 +1,4 @@
 # playbook
-
-> 分类: Linux > ansible
-> 更新时间: 2026-01-10T23:35:02.669237+08:00
-
----
-
 # playbook简介
 Playbooks 与 adhoc 相比,是一种完全不同的运用 ansible 的方式,是非常强大的。
 

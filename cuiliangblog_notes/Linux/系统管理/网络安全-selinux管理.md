@@ -1,10 +1,4 @@
 # 网络安全-selinux管理
-
-> 分类: Linux > 系统管理
-> 更新时间: 2026-01-10T23:34:51.305690+08:00
-
----
-
 # 一、selinux的简介
 什么是selinux：selinux(security enhanced linux)安全增强型linux系统，它是一个linux内核模块，也是linux的一个安全子系统。
 

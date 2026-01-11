@@ -1,10 +1,4 @@
 # 部署NodeLocalDNS解析
-
-> 分类: Kubernetes > 周边组件安装部署
-> 更新时间: 2026-01-10T23:33:16.885944+08:00
-
----
-
 # <font style="color:rgb(0, 0, 0);">介绍</font>
 ## <font style="color:rgb(0, 0, 0);">什么是 NodeLocalDNS</font>
 `NodeLocal DNSCache` 是一套 DNS 本地缓存解决方案。NodeLocal DNSCache 通过在集群节点上运行一个 DaemonSet 来提高集群 DNS 性能和可靠性。

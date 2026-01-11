@@ -1,12 +1,4 @@
 # 服务(TraefikService)
-
-> 来源: Kubernetes
-> 创建时间: 2022-09-25T12:36:06+08:00
-> 更新时间: 2026-01-11T09:08:28.756697+08:00
-> 阅读量: 1311 | 点赞: 1
-
----
-
 # 简介
 ![](https://via.placeholder.com/800x600?text=Image+30e8fe8caa6764a3)
 

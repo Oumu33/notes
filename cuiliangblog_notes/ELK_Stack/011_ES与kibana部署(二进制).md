@@ -1,12 +1,4 @@
 # ES与kibana部署(二进制)
-
-> 来源: ELK Stack
-> 创建时间: 2023-12-10T19:17:06+08:00
-> 更新时间: 2026-01-11T09:26:04.521319+08:00
-> 阅读量: 1204 | 点赞: 0
-
----
-
 # 环境准备
 环境准备工作参考文档：[https://www.cuiliangblog.cn/detail/section/68388031](https://www.cuiliangblog.cn/detail/section/68388031)
 

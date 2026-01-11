@@ -1,12 +1,4 @@
 # Kibana上传数据
-
-> 来源: ELK Stack
-> 创建时间: 2022-07-23T10:41:38+08:00
-> 更新时间: 2026-01-11T09:26:23.109508+08:00
-> 阅读量: 1099 | 点赞: 0
-
----
-
 ## Data Visualizer 定义
 Machine Learning -> Data Visulalizer -> Data Visualizer -> Import data / Select an index pattern
 

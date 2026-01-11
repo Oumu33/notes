@@ -1,10 +1,4 @@
 # Gitlab与编译环境集成
-
-> 分类: CI/CD > Gitlab工具链集成
-> 更新时间: 2026-01-10T23:34:01.788806+08:00
-
----
-
 # gitlab与maven集成
 此处以rpm包部署maven为例，以下操作在gitlab-runner所在服务器执行。
 

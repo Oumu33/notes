@@ -1,10 +1,4 @@
 # TS 入门
-
-> 分类: Web > TS
-> 更新时间: 2026-01-10T23:34:08.843862+08:00
-
----
-
 ## TS安装
 ```bash
 $ npm install -g typescript

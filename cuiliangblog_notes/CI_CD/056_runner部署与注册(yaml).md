@@ -1,12 +1,4 @@
 # runner部署与注册(yaml)
-
-> 来源: CI/CD
-> 创建时间: 2024-06-04T09:12:49+08:00
-> 更新时间: 2026-01-11T08:55:55.280654+08:00
-> 阅读量: 1779 | 点赞: 2
-
----
-
 文件中的配置项及其功能可以查看官方文档： https://docs.gitlab.com/runner/executors/kubernetes.html#default-annotations-for-job-pods
 
 # 概述

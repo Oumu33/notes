@@ -1,10 +1,4 @@
 # MySQL事务控制语句 (TCL)
-
-> 分类: Database > MySQL事务处理
-> 更新时间: 2026-01-10T23:34:20.972609+08:00
-
----
-
 | **语句** | **说明** |
 | --- | --- |
 | START TRANSACTION（或BEGIN） | 显式开始一个新事务，直到通过COMMIT 或ROLLBACK 显式结束 |

@@ -1,10 +1,4 @@
 # 在HTTP API中使用PromQL
-
-> 分类: Prometheus > PromQL
-> 更新时间: 2026-01-10T23:33:49.052699+08:00
-
----
-
 ## <font style="color:rgb(48, 49, 51);">一、获取targets数据</font>
 ### <font style="color:rgb(48, 49, 51);">1. prometheus查看targets数据</font>
 ![](../../images/img_4000.jpeg)

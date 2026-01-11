@@ -1,10 +1,4 @@
 # MongoDB变更文档结构
-
-> 分类: Database > MongoDB
-> 更新时间: 2026-01-10T23:34:23.988698+08:00
-
----
-
     - 传统关系型数据库使用DDL语句变更表结构，MongoDB使用update(updateOne()或updateMany())方法变更文档结构
     1. 为“sue”添加gender(性别)       field，值为“female”
 + >  db.users.find();

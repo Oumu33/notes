@@ -1,10 +1,4 @@
 # 输入插件-Redis
-
-> 分类: ELK Stack > Logstash
-> 更新时间: 2026-01-10T23:33:42.857043+08:00
-
----
-
 # <font style="color:rgb(51, 51, 51);">配置示例</font>
 ```bash
 input {

@@ -1,10 +1,4 @@
 # 基于KEDA实现HPA
-
-> 分类: Kubernetes > 资源指标与HPA
-> 更新时间: 2026-01-10T23:33:26.850373+08:00
-
----
-
 # KEDA 简介
 ## <font style="color:rgb(28, 30, 33);">什么是 KEDA </font>
 KEDA (Kubernetes-based Event-Driven Autoscaler) 是在 Kubernetes 中事件驱动的弹性伸缩器，功能非常强大。不仅支持根据基础的 CPU 和内存指标进行伸缩，还支持根据各种消息队列中的长度、数据库中的数据统计、QPS、Cron 定时计划以及您可以想象的任何其他指标进行伸缩，甚至还可以将副本缩到 0。

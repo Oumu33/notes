@@ -1,10 +1,4 @@
 # jenkins与k8s连接
-
-> 分类: CI/CD > Jenkins工具链集成
-> 更新时间: 2026-01-10T23:33:57.822428+08:00
-
----
-
 # 安装kubernetes插件
 在Jenkins的插件管理中安装Kubernetes插件
 

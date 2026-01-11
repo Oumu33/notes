@@ -1,10 +1,4 @@
 # ELK简介
-
-> 分类: ELK Stack > ES基础与部署
-> 更新时间: 2026-01-10T23:33:31.836977+08:00
-
----
-
 # 一、ELK概述
 1. ELK是三款软件的简称，分别是Elasticsearch、Logstash、Kibana组成，在发展的过程中，又有新成员Beats的加入，所以就形成了Elastic Stack。所以说，ELK是旧的称呼，Elastic Stack是新的名字。
 

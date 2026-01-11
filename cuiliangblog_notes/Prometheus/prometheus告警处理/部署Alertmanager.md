@@ -1,10 +1,4 @@
 # 部署Alertmanager
-
-> 分类: Prometheus > prometheus告警处理
-> 更新时间: 2026-01-10T23:33:49.599233+08:00
-
----
-
 # 一、下载安装Alertmanager
 1. 获取并安装软件包AlertManager二进制包
 + 下载地址

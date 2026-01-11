@@ -1,10 +1,4 @@
 # 安装容器运行时(Containerd)
-
-> 分类: Kubernetes > kubeadm集群安装部署
-> 更新时间: 2026-01-10T23:33:15.970463+08:00
-
----
-
 > 从<font style="color:rgb(0, 0, 0);">Kubernetes 1.20版本开始官方不推荐使用Docker，1.24版本将完全弃用docker。如果安装1.22以上版本的k8s，官方推荐使用containerd，docker支持k8s版本最高为1.23.16。</font>
 >
 

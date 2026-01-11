@@ -1,10 +1,4 @@
 # 安装Docker Machine
-
-> 分类: Docker > Docker Machine
-> 更新时间: 2026-01-10T23:35:10.812882+08:00
-
----
-
 # 一、简介
 1. Docker      Machine是Docker官方三剑客项目之一，负责使用Docker容器的第一步：在多种平台上快速安装和维护Docker运行环境。它支持多种平台，让用户可以在很短时间内在本地或云环境中搭建一套Docker主机集群。
 2. 基本功能包括：

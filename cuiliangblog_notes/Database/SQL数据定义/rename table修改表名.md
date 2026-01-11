@@ -1,10 +1,4 @@
 # rename table修改表名
-
-> 分类: Database > SQL数据定义
-> 更新时间: 2026-01-10T23:34:14.829538+08:00
-
----
-
 不同语句修改表明参考以下相应命令：
 
 <font style="color:#333333;">1. </font>[MYSQL](https://www.baidu.com/s?wd=MYSQL&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao)

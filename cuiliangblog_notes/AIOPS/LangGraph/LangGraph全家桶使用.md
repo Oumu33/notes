@@ -1,10 +1,4 @@
 # LangGraph全家桶使用
-
-> 分类: AIOPS > LangGraph
-> 更新时间: 2026-01-10T23:34:39.483984+08:00
-
----
-
 # 全家桶组件介绍
 ## LangGraph
 基于有向图（State Graph）的 AI 应用框架，用来构建多步推理、Agent 协作和可控对话流程。相比直接写 Chain，更结构化、可观测。

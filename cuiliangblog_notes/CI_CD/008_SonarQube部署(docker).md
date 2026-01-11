@@ -1,12 +1,4 @@
 # SonarQube部署(docker)
-
-> 来源: CI/CD
-> 创建时间: 2023-06-28T13:54:25+08:00
-> 更新时间: 2026-01-11T08:50:56.827678+08:00
-> 阅读量: 1781 | 点赞: 0
-
----
-
 # 简易安装
 ## 下载地址
 镜像下载地址：[https://hub.docker.com/_/sonarqube](https://hub.docker.com/_/sonarqube)

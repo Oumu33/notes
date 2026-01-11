@@ -1,10 +1,4 @@
 # Gitlab与Artifactory集成
-
-> 分类: CI/CD > Gitlab工具链集成
-> 更新时间: 2026-01-10T23:34:02.018177+08:00
-
----
-
 # Artifactory配置
 ## 创建仓库
 ![](../../images/img_396.png)

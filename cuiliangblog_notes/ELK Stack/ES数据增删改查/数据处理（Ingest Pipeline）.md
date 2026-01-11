@@ -1,10 +1,4 @@
 # 数据处理（Ingest Pipeline）
-
-> 分类: ELK Stack > ES数据增删改查
-> 更新时间: 2026-01-10T23:33:34.812548+08:00
-
----
-
 ## Ingest Node（预处理角色的节点）
 ### 简介
 功能上类似 logstash 的 filter，提供 grok、add field、drop field 等 ETL 的能力

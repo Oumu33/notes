@@ -1,10 +1,4 @@
 # RBD块存储服务
-
-> 分类: Ceph > Rook
-> 更新时间: 2026-01-10T23:35:19.259112+08:00
-
----
-
 > 参考文档：[https://rook.github.io/docs/rook/latest-release/Storage-Configuration/Block-Storage-RBD/block-storage/#provision-storage](https://rook.github.io/docs/rook/latest-release/Storage-Configuration/Block-Storage-RBD/block-storage/#provision-storage)
 >
 

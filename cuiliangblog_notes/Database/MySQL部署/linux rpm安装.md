@@ -1,10 +1,4 @@
 # linux rpm安装
-
-> 分类: Database > MySQL部署
-> 更新时间: 2026-01-10T23:34:17.275474+08:00
-
----
-
 ## 下载rpm安装包
 + 访问MySQL官网[https://downloads.mysql.com/archives/community/](https://downloads.mysql.com/archives/community/)，因为我的操作系统是 rockylinux8.10。安装的版本如下：
 

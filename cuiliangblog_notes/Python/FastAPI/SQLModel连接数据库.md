@@ -1,10 +1,4 @@
 # SQLModel连接数据库
-
-> 分类: Python > FastAPI
-> 更新时间: 2026-01-10T23:34:34.019146+08:00
-
----
-
 # SQLModel 简介
 SQLModel 是一个基于 SQLAlchemy 和 Pydantic 构建的 ORM 库，具有以下特点：
 

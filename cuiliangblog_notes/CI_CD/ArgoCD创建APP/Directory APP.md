@@ -1,10 +1,4 @@
 # Directory APP
-
-> 分类: CI/CD > ArgoCD创建APP
-> 更新时间: 2026-01-10T23:34:03.598233+08:00
-
----
-
 # APP创建
 ## webUI创建
 ![](../../images/img_225.png)

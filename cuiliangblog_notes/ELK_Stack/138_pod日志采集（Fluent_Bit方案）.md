@@ -1,12 +1,4 @@
 # pod日志采集（Fluent Bit方案）
-
-> 来源: ELK Stack
-> 创建时间: 2024-03-20T23:04:00+08:00
-> 更新时间: 2026-01-11T09:28:48.939573+08:00
-> 阅读量: 1153 | 点赞: 0
-
----
-
 #  Record  Fluent Bit部署与配置
 ## 事件处理流程
 ![](https://via.placeholder.com/800x600?text=Image+fb6455aa488ae11b)

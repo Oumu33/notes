@@ -1,10 +1,4 @@
 # 配置PrometheusRule
-
-> 分类: Prometheus > Prometheus Operator
-> 更新时间: 2026-01-10T23:33:53.524467+08:00
-
----
-
 我们现在能收集到redis的监控指标了，但是现在并没有配置监控报警规则。需要我们自己根据实际关心的指标添加报警规则
 
 # 分析prometheus规则

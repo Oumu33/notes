@@ -1,10 +1,4 @@
 # Open-WebUI接入MCP
-
-> 分类: AIOPS > MCP
-> 更新时间: 2026-01-10T23:34:36.903365+08:00
-
----
-
 # Open-WebUI
 ## 介绍
 Open WebUI 是一款可扩展、功能丰富且用户友好的自托管 AI 平台，旨在完全离线运行。它支持多种大型语言模型（LLM）运行环境，包括 Ollama 和兼容 OpenAI 的 API。

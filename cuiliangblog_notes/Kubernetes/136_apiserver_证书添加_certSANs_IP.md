@@ -1,12 +1,4 @@
 # apiserver 证书添加 certSANs IP
-
-> 来源: Kubernetes
-> 创建时间: 2025-08-27T17:26:48+08:00
-> 更新时间: 2026-01-11T09:11:33.619751+08:00
-> 阅读量: 86 | 点赞: 0
-
----
-
 ### 1. 查看当前证书里有哪些 IP
 ```bash
 openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text | grep -A1 "Subject Alternative Name"

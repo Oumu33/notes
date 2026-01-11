@@ -1,10 +1,4 @@
 # 远程登录-vnc桌面
-
-> 分类: Linux > 系统管理
-> 更新时间: 2026-01-10T23:34:50.313893+08:00
-
----
-
     1. 检出是否安装VNC
 + rpm  -q tigervnc tigervnc-server
     1. 安装安装X-Window

@@ -1,10 +1,4 @@
 # 自定义Prometheus告警规则
-
-> 分类: Prometheus > prometheus告警处理
-> 更新时间: 2026-01-10T23:33:49.375386+08:00
-
----
-
 # 一、修改配置文件
 1. 修改Prometheus配置文件prometheus.yml,指定告警规则文件路径：
 

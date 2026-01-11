@@ -1,10 +1,4 @@
 # 嵌套类型（Nested）
-
-> 分类: ELK Stack > ES数据建模
-> 更新时间: 2026-01-10T23:33:33.471307+08:00
-
----
-
 <font style="color:rgb(33, 37, 41);">Elasticsearch没有内部对象的概念。因此，它将对象层次结构平展为字段名称和值的简单列表。</font>
 
 ## <font style="color:rgb(33, 37, 41);">嵌套字段动态映射</font>

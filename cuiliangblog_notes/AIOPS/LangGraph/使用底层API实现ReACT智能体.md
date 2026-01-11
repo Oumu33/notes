@@ -1,10 +1,4 @@
 # 使用底层API实现ReACT智能体
-
-> 分类: AIOPS > LangGraph
-> 更新时间: 2026-01-10T23:34:39.701956+08:00
-
----
-
 # Human In Loop <font style="color:rgb(34, 34, 38);">人在环中</font>
 ## 概念介绍
 在LangGraph 是个“有状态图（state graph）”的工作流框架，每个节点可以是：

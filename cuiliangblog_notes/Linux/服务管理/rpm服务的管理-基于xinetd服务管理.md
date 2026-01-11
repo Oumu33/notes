@@ -1,10 +1,4 @@
 # rpm服务的管理-基于xinetd服务管理
-
-> 分类: Linux > 服务管理
-> 更新时间: 2026-01-10T23:34:53.505347+08:00
-
----
-
 # 一、安装xinetd与telnet
 [root@localhost ~]# yum -y install xinetd
 

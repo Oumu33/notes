@@ -1,10 +1,4 @@
 # HTML常用标签或属性全称
-
-> 分类: Web > HTML
-> 更新时间: 2026-01-10T23:34:05.219313+08:00
-
----
-
 | <font style="color:white;">HTML</font><font style="color:white;">标签或属性</font> | <font style="color:white;">英文全称</font> | <font style="color:white;">中文释义</font> |
 | :---: | :---: | :---: |
 | <font style="color:black;">a</font> | <font style="color:black;">Anchor</font> | <font style="color:black;">锚</font> |

@@ -1,10 +1,4 @@
 # 部署Rabbit MQ消息队列
-
-> 分类: Kubernetes > 周边组件安装部署
-> 更新时间: 2026-01-10T23:33:18.644062+08:00
-
----
-
 # 安装Kubernetes Operator
 官网的文档 [https://www.rabbitmq.com/kubernetes/operator/operator-overview.html](https://link.zhihu.com/?target=https%3A//www.rabbitmq.com/kubernetes/operator/operator-overview.html)
 

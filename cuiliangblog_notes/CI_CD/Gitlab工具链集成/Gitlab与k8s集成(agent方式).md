@@ -1,10 +1,4 @@
 # Gitlab与k8s集成(agent方式)
-
-> 分类: CI/CD > Gitlab工具链集成
-> 更新时间: 2026-01-10T23:34:02.355236+08:00
-
----
-
 # agent方案介绍
 ## 为什么不推荐证书方式连接
 1. 依赖于对 Kubernetes API 的直接访问。容易因暴露kubernetes api而导致高风险，尤其是saas而不是自建的用户。

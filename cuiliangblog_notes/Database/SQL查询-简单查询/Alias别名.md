@@ -1,10 +1,4 @@
 # Alias别名
-
-> 分类: Database > SQL查询-简单查询
-> 更新时间: 2026-01-10T23:34:11.647851+08:00
-
----
-
 1. **SQL Alias**
 + **表的 SQL Alias 语法**
 + SELECT column_name(s)  

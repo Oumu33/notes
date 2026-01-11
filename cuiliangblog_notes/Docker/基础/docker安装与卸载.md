@@ -1,10 +1,4 @@
 # docker安装与卸载
-
-> 分类: Docker > 基础
-> 更新时间: 2026-01-10T23:35:04.140118+08:00
-
----
-
 # 一、docker安装
 + [官方文档链接](https://docs.docker.com/get-started/#test-docker-installation)
 1. 安装前源准备

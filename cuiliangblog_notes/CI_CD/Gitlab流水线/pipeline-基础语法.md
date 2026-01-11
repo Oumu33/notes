@@ -1,10 +1,4 @@
 # pipeline-基础语法
-
-> 分类: CI/CD > Gitlab流水线
-> 更新时间: 2026-01-10T23:34:00.667702+08:00
-
----
-
 # 关键字
 ## <font style="color:rgb(79, 79, 79);">default全局配置</font>
 在GitLab CI/CD的流水线中存在几个全局关键词，设置后，这些配置对于整条流水线生效，如stages，include，workflow，default，variables。本篇文章就来详细讲解一下default的用法，了解之后会让你编写.gitlab-ci.yml更加优雅，美观，复用性更强。

@@ -1,10 +1,4 @@
 # 排序OrderingFilter
-
-> 分类: Python > DRF扩展
-> 更新时间: 2026-01-10T23:34:32.265197+08:00
-
----
-
 > 对于列表数据，REST framework提供了**OrderingFilter**过滤器来帮助我们快速指明数据按照指定字段进行排序。
 >
 

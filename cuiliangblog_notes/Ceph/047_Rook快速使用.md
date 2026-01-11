@@ -1,12 +1,4 @@
 # Rook快速使用
-
-> 来源: Ceph
-> 创建时间: 2020-12-03T09:03:55+08:00
-> 更新时间: 2026-01-11T09:43:48.858072+08:00
-> 阅读量: 317 | 点赞: 0
-
----
-
 > 官方文档链接： [https://rook.github.io/docs/rook/latest-release/Getting-Started/quickstart/](https://rook.github.io/docs/rook/latest-release/Getting-Started/quickstart/)，本篇主要是带领大家快速体验使用 rook，默认情况下会扫描所有 k8s 节点，只有存在未被格式化的磁盘均会加入 ceph 集群 osd 资源，如果需要自定义角色，可参考下一篇定制 rook 集群。
 >
 

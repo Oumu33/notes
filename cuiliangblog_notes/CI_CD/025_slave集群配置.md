@@ -1,12 +1,4 @@
 # slave集群配置
-
-> 来源: CI/CD
-> 创建时间: 2024-04-19T11:08:14+08:00
-> 更新时间: 2026-01-11T08:51:52.904820+08:00
-> 阅读量: 1636 | 点赞: 2
-
----
-
 # <font style="color:rgba(51, 51, 51, 1);">Jenkins的Master/Slave机制</font>
 Jenkins采用Master/Slave架构。Master/Slave相当于Server和agent的概念，Master提供web接口让用户来管理Job和Slave，Job可以运行在Master本机或者被分配到Slave上运行。一个Master可以关联多个Slave用来为不同的Job或相同的Job的不同配置来服务。
 

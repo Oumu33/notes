@@ -1,10 +1,4 @@
 # 输出插件-Elasticsearch
-
-> 分类: ELK Stack > Logstash
-> 更新时间: 2026-01-10T23:33:44.076268+08:00
-
----
-
 # 配置filebeat.yml
 ```yaml
 filebeat.inputs:

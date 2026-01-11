@@ -1,10 +1,4 @@
 # yuml文件
-
-> 分类: Kubernetes > 资源对象
-> 更新时间: 2026-01-10T23:33:19.617764+08:00
-
----
-
 # 一、yuml语法格式
 [https://k8syaml.com/](https://k8syaml.com/)
 

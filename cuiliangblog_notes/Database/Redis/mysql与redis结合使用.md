@@ -1,10 +1,4 @@
 # mysql与redis结合使用
-
-> 分类: Database > Redis
-> 更新时间: 2026-01-10T23:34:26.199910+08:00
-
----
-
 # 一、将mysql表装载到redis
 例如：将mysql的demo库中的stu表装载到redis中
 

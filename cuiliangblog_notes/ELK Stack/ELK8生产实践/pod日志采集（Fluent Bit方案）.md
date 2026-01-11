@@ -1,10 +1,4 @@
 # pod日志采集（Fluent Bit方案）
-
-> 分类: ELK Stack > ELK8生产实践
-> 更新时间: 2026-01-10T23:33:47.066132+08:00
-
----
-
 #  Record  Fluent Bit部署与配置
 ## 事件处理流程
 ![](../../images/img_1635.png)

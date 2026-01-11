@@ -1,12 +1,4 @@
 # 安装postgres(docker)
-
-> 来源: Database
-> 创建时间: 2025-11-17T11:05:22+08:00
-> 更新时间: 2026-01-11T09:20:07.417141+08:00
-> 阅读量: 49 | 点赞: 0
-
----
-
 # 安装
 镜像仓库地址：[https://hub.docker.com/_/postgres](https://hub.docker.com/_/postgres)
 

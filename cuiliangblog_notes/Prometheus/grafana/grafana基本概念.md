@@ -1,10 +1,4 @@
 # grafana基本概念
-
-> 分类: Prometheus > grafana
-> 更新时间: 2026-01-10T23:33:51.336618+08:00
-
----
-
 # 一、数据源（Data Source）
 1. 对于Grafana而言，Prometheus这类为其提供数据的对象均称为数据源（Data      Source）。
 2. 对于Grafana管理员而言，只需要将这些对象以数据源的形式添加到Grafana中，Grafana便可以轻松的实现对这些数据的可视化工作。

@@ -1,12 +1,4 @@
 # Pushgateway
-
-> 来源: Prometheus
-> 创建时间: 2020-12-12T18:20:00+08:00
-> 更新时间: 2026-01-11T09:30:43.954300+08:00
-> 阅读量: 925 | 点赞: 0
-
----
-
 # 一、Pushgateway 简介
 1. Pushgateway 是 Prometheus      生态中一个重要工具，使用它的原因主要是：
 + Prometheus 采用 pull      模式，可能由于不在一个子网或者防火墙原因，导致 Prometheus 无法直接拉取各个 target 数据。

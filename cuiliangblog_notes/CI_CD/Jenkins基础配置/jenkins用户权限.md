@@ -1,10 +1,4 @@
 # jenkins用户权限
-
-> 分类: CI/CD > Jenkins基础配置
-> 更新时间: 2026-01-10T23:33:56.403095+08:00
-
----
-
 # 安装启用
 ## 安装插件
 我们可以利用Role-based Authorization Strategy插件来管理Jenkins用户权限

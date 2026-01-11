@@ -1,12 +1,4 @@
 # Gitlab与k8s集成(runner方式)
-
-> 来源: CI/CD
-> 创建时间: 2024-05-31T11:22:58+08:00
-> 更新时间: 2026-01-11T08:56:56.883497+08:00
-> 阅读量: 894 | 点赞: 0
-
----
-
 # 准备工作
 ## 部署Kubernetes类型的runner
 具体内容参考文档：[https://www.cuiliangblog.cn/detail/section/172302364](https://www.cuiliangblog.cn/detail/section/172302364)

@@ -1,12 +1,4 @@
 # Gitlab与Artifactory集成
-
-> 来源: CI/CD
-> 创建时间: 2024-05-31T11:21:40+08:00
-> 更新时间: 2026-01-11T08:56:41.346663+08:00
-> 阅读量: 393 | 点赞: 0
-
----
-
 # Artifactory配置
 ## 创建仓库
 ![](https://via.placeholder.com/800x600?text=Image+13d6456988eb2f37)

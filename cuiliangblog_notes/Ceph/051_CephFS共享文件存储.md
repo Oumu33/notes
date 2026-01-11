@@ -1,12 +1,4 @@
 # CephFS共享文件存储
-
-> 来源: Ceph
-> 创建时间: 2020-12-03T09:21:32+08:00
-> 更新时间: 2026-01-11T09:43:50.023977+08:00
-> 阅读量: 131 | 点赞: 0
-
----
-
 > 参考文档：[https://rook.github.io/docs/rook/latest-release/Storage-Configuration/Shared-Filesystem-CephFS/filesystem-storage/](https://rook.github.io/docs/rook/latest-release/Storage-Configuration/Shared-Filesystem-CephFS/filesystem-storage/)
 >
 

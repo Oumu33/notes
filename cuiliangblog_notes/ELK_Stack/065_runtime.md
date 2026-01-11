@@ -1,12 +1,4 @@
 # runtime
-
-> 来源: ELK Stack
-> 创建时间: 2023-07-13T10:57:22+08:00
-> 更新时间: 2026-01-11T09:26:41.599191+08:00
-> 阅读量: 579 | 点赞: 0
-
----
-
 # 注意点
 + runtime直接计算值`emit(doc['b'].value-doc['c'].value)`
 + runtime根据范围设置值`if (doc['score'].value > 0 && doc['score'].value < 60) emit('0'); if (doc['score'].value >= 60 && doc['score'].value<=100) emit('1')`

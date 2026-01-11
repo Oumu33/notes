@@ -1,10 +1,4 @@
 # Metricbeat 仪表盘
-
-> 分类: ELK Stack > Metricbeat
-> 更新时间: 2026-01-10T23:33:41.775763+08:00
-
----
-
 1. 修改metricbeat配置
 
 ```yaml

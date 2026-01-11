@@ -1,10 +1,4 @@
 # ns处于Terminating状态删除
-
-> 分类: Kubernetes > 日常维护
-> 更新时间: 2026-01-10T23:33:29.389525+08:00
-
----
-
 # 问题表现
 ```bash
 [root@tiaoban argocd]# kubectl delete ns argocd 

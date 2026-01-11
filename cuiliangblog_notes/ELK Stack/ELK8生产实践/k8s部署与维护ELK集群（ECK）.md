@@ -1,10 +1,4 @@
 # k8s部署与维护ELK集群（ECK）
-
-> 分类: ELK Stack > ELK8生产实践
-> 更新时间: 2026-01-10T23:33:46.570088+08:00
-
----
-
 # ECK简介
 ## ECK是什么
 要理解ECK，首先需要了解CRD、Controller、Operator这三个基础概念。

@@ -1,10 +1,4 @@
 # Agent智能体
-
-> 分类: AIOPS > LangChain
-> 更新时间: 2026-01-10T23:34:38.455188+08:00
-
----
-
 # Agent 介绍
 Langchain 中的 Tool 和 Agent 是两个不同层次的概念，各自承担不同的职责
 

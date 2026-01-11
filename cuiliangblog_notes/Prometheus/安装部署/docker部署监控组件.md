@@ -1,10 +1,4 @@
 # docker部署监控组件
-
-> 分类: Prometheus > 安装部署
-> 更新时间: 2026-01-10T23:33:48.514090+08:00
-
----
-
 ## node-export部署
 ```bash
 docker run -d --name node-exporter --restart always \

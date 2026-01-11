@@ -1,12 +1,4 @@
 # Mysql Exporter
-
-> 来源: Prometheus
-> 创建时间: 2020-12-12T14:30:23+08:00
-> 更新时间: 2026-01-11T09:30:40.271725+08:00
-> 阅读量: 1012 | 点赞: 0
-
----
-
 # 一、部署MySQLD Exporter
 [下载地址](https://github.com/prometheus/mysqld_exporter/releases)
 

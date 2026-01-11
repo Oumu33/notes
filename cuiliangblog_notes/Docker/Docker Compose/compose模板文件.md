@@ -1,10 +1,4 @@
 # compose模板文件
-
-> 分类: Docker > Docker Compose
-> 更新时间: 2026-01-10T23:35:11.175180+08:00
-
----
-
 # 一、概述
 Docker Compose 的模板文件主要分为3 个区域
 

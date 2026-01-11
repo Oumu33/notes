@@ -1,12 +1,4 @@
 # LNMP服务部署(compose)
-
-> 来源: Docker
-> 创建时间: 2022-11-23T15:50:58+08:00
-> 更新时间: 2026-01-11T09:30:21.049438+08:00
-> 阅读量: 720 | 点赞: 0
-
----
-
 > 以wordpress为例。官网：[https://cn.wordpress.org/download/](https://cn.wordpress.org/download/)
 >
 

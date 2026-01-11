@@ -1,10 +1,4 @@
 # 新一代包管理工具UV
-
-> 分类: Python > Python基本使用
-> 更新时间: 2026-01-10T23:34:28.375438+08:00
-
----
-
 `Python` 包管理生态中存在多种工具，如 `pip`、`pip-tools`、`poetry`、`conda` 等，各自具备一定功能。
 
 而今天介绍的`uv` 是 `Astral` 公司推出的一款基于 `Rust` 编写的 `Python` 包管理工具，旨在成为 “Python 的 Cargo”。

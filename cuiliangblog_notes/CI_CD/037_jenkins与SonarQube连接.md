@@ -1,12 +1,4 @@
 # jenkins与SonarQube连接
-
-> 来源: CI/CD
-> 创建时间: 2024-04-14T14:54:10+08:00
-> 更新时间: 2026-01-11T08:54:09.184524+08:00
-> 阅读量: 1497 | 点赞: 0
-
----
-
 # <font style="color:rgb(77, 77, 77);">jenkins安装插件</font>
 ## **<font style="color:rgb(77, 77, 77);">下载SonarQube插件</font>**
 <font style="color:rgb(77, 77, 77);">进入Jenkins的系统管理->插件管理->可选插件，搜索框输入sonarqube，安装重启。</font>

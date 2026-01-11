@@ -1,12 +1,4 @@
 # Artifactory部署(rpm)
-
-> 来源: CI/CD
-> 创建时间: 2024-06-01T22:29:36+08:00
-> 更新时间: 2026-01-11T08:51:11.451569+08:00
-> 阅读量: 958 | 点赞: 0
-
----
-
 # <font style="color:rgba(0, 0, 0, 0.8);">PostgreSQL15安装部署</font>
 ## 下载软件包
 软件包下载地址：[https://www.postgresql.org/download/](https://www.postgresql.org/download/)，根据系统环境选择合适的版本生成安装命令。

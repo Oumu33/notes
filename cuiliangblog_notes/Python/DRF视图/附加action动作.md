@@ -1,10 +1,4 @@
 # 附加action动作
-
-> 分类: Python > DRF视图
-> 更新时间: 2026-01-10T23:34:31.513833+08:00
-
----
-
 ## 一、action
 1. 添加自定义动作需要使用`rest_framework.decorators.action`装饰器。
 2. 以action装饰器装饰的方法名会作为action动作名，与list、retrieve等同。

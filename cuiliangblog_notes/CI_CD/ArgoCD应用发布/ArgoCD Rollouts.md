@@ -1,10 +1,4 @@
 # ArgoCD Rollouts
-
-> 分类: CI/CD > ArgoCD应用发布
-> 更新时间: 2026-01-10T23:34:03.925079+08:00
-
----
-
 # Argo Rollouts简介
 Argo Rollouts 是一个用于 Kubernetes 的渐进式交付控制器，支持蓝绿部署、金丝雀发布、A/B 测试等高级部署策略。它是 Argo 项目的一部分，旨在帮助团队更安全和更可控地发布应用程序新版本。
 

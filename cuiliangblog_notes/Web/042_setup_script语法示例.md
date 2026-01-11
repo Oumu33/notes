@@ -1,12 +1,4 @@
 # setup script语法示例
-
-> 来源: Web
-> 创建时间: 2021-07-21T09:18:06+08:00
-> 更新时间: 2026-01-11T09:25:02.576487+08:00
-> 阅读量: 586 | 点赞: 0
-
----
-
 > 分别创建src/components/HelloWorld.vue（父组件）和src/components/Test.vue（子组件）。演示setup script的基本用法
 >
 

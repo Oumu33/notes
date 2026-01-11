@@ -1,10 +1,4 @@
 # label标签调度
-
-> 分类: Kubernetes > pod调度
-> 更新时间: 2026-01-10T23:33:25.631735+08:00
-
----
-
 # 前言
 默认情况下，scheduler 会将 pod 调度到所有可用的 Node，不过有些情况我们希望将 Pod 部署到指定的 Node，比如将有大量磁盘 I/O 的 Pod 部署到配置了 SSD 的 Node；或者 Pod 需要 GPU，需要运行在配置了 GPU 的节点上。
 

@@ -1,10 +1,4 @@
 # 缓存drf-extensions
-
-> 分类: Python > DRF扩展
-> 更新时间: 2026-01-10T23:34:32.368886+08:00
-
----
-
 # 安装
 `pip install drf-extensions`
 

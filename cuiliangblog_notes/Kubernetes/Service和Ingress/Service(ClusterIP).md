@@ -1,10 +1,4 @@
 # Service(ClusterIP)
-
-> 分类: Kubernetes > Service和Ingress
-> 更新时间: 2026-01-10T23:33:21.601672+08:00
-
----
-
 ## 简介
 1. 通过集群内部IP地址暴露服务，此地址仅在集群内部可达，而无法被集群外部的客户端访问
 2. clusterIP 主要在每个 node 节点使用 iptables，将发向 clusterIP对应端口的数据，转发到 kube-proxy 中。然后 kube-proxy自己内部实现有负载均衡的方法，并可以查询到这个 service 下对应 pod的地址和端口，进而把数据转发给对应的 pod 的地址和端口

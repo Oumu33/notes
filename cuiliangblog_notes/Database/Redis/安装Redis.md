@@ -1,10 +1,4 @@
 # 安装Redis
-
-> 分类: Database > Redis
-> 更新时间: 2026-01-10T23:34:24.666805+08:00
-
----
-
 # 一、centos rpm安装redis
 1. 关闭selinux关闭防火墙
 2. 安装Redis rpm软件包

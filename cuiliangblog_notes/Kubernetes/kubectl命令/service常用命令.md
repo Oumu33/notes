@@ -1,10 +1,4 @@
 # service常用命令
-
-> 分类: Kubernetes > kubectl命令
-> 更新时间: 2026-01-10T23:33:19.171871+08:00
-
----
-
 # 一、service
 1. 查看svc信息  
 `$ kubectl get svc` 

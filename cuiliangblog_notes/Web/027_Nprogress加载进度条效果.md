@@ -1,12 +1,4 @@
 # Nprogress加载进度条效果
-
-> 来源: Web
-> 创建时间: 2021-02-08T22:08:15+08:00
-> 更新时间: 2026-01-11T09:24:57.790052+08:00
-> 阅读量: 690 | 点赞: 0
-
----
-
 ## 1. 简介
 + 功能：当页面切换时，可以添加顶部加载效果，提升用户体验
 + 仓库地址: [https://github.com/rstacruz/nprogress](https://github.com/rstacruz/nprogress)

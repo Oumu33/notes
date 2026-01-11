@@ -1,10 +1,4 @@
 # grafana报警
-
-> 分类: Prometheus > grafana
-> 更新时间: 2026-01-10T23:33:52.085480+08:00
-
----
-
 # 一、简介
 1. 所有的graph图形都可以设置连接上多个报警平台并设置阈值并报警
 2. prometheus_server(alertmanager插件)-Pagerduty仅仅作为数据源即可（没有必要再使⽤prometheus做报警设置了）

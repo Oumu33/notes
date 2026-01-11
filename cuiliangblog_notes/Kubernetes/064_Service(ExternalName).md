@@ -1,12 +1,4 @@
 # Service(ExternalName)
-
-> 来源: Kubernetes
-> 创建时间: 2022-09-22T21:21:35+08:00
-> 更新时间: 2026-01-11T09:07:19.193671+08:00
-> 阅读量: 1097 | 点赞: 1
-
----
-
 ## 简介
 1. <font style="color:rgb(18, 18, 18);">externalName Service是k8s中一个特殊的service类型，它不需要指定selector去选择哪些pods实例提供服务，而是使用DNS CNAME机制把自己CNAME到你指定的另外一个域名上，你可以提供集群内的名字，比如mysql.db.svc这样的建立在db命名空间内的mysql服务，也可以指定http://mysql.example.com这样的外部真实域名。</font>
 2. 此种类型并非定义由Kubernetes集群提供的服务，而是把集群外部的某服务以DNS CNAME记录的方式映射到集群内，从而让集群内的Pod资源能够访问外部的Service的一种实现方式。

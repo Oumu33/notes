@@ -1,12 +1,4 @@
 # mon low disk space(SSTS file占空间)
-
-> 来源: Ceph
-> 创建时间: 2024-12-18T17:58:42+08:00
-> 更新时间: 2026-01-11T09:43:47.288936+08:00
-> 阅读量: 90 | 点赞: 0
-
----
-
 # 问题现象
 Ceph集群状态变为HEALTH_WARN， `ceph health detail` 输出 `mon low disk space; store is getting too big`
 

@@ -1,10 +1,4 @@
 # MongoDB简介
-
-> 分类: Database > MongoDB
-> 更新时间: 2026-01-10T23:34:22.993755+08:00
-
----
-
 # 一、MongoDB简介
 1. MongoDB是由10gen公司（现已改名为MongoDB      Inc.）用C++语言研发的一款数据库，于2009年开源
 2. MongoDB按照类似于JSON的格式存储数据，称作BSON      (binary json)，由成对的field和value构成，value除了数值和字符之外也可以包括数组([ ])，其他文档等

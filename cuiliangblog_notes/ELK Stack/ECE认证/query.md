@@ -1,10 +1,4 @@
 # query
-
-> 分类: ELK Stack > ECE认证
-> 更新时间: 2026-01-10T23:33:39.022612+08:00
-
----
-
 # <font style="color:rgb(48, 49, 51);">注意点</font>
 **<font style="color:rgb(48, 49, 51);">提高评分</font>**<font style="color:rgb(48, 49, 51);">：主要考boost和function_score，如果题目明确说某个字段权重为X值时使用boost，如果题目说如果有，提分，没有不变的话，用function_score</font>
 

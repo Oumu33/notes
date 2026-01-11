@@ -1,12 +1,4 @@
 # RadosGW介绍
-
-> 来源: Ceph
-> 创建时间: 2024-12-04T16:08:42+08:00
-> 更新时间: 2026-01-11T09:43:42.698915+08:00
-> 阅读量: 134 | 点赞: 0
-
----
-
 参考文档：[https://docs.ceph.com/en/latest/radosgw/](https://docs.ceph.com/en/latest/radosgw/)
 
 # RadosGW简介

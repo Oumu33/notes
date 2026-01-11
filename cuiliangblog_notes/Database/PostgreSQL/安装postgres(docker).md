@@ -1,10 +1,4 @@
 # 安装postgres(docker)
-
-> 分类: Database > PostgreSQL
-> 更新时间: 2026-01-10T23:34:26.750787+08:00
-
----
-
 # 安装
 镜像仓库地址：[https://hub.docker.com/_/postgres](https://hub.docker.com/_/postgres)
 

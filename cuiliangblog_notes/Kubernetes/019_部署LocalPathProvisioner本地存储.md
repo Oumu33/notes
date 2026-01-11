@@ -1,12 +1,4 @@
 # 部署LocalPathProvisioner本地存储
-
-> 来源: Kubernetes
-> 创建时间: 2025-08-09T14:26:59+08:00
-> 更新时间: 2026-01-11T09:04:21.084782+08:00
-> 阅读量: 443 | 点赞: 0
-
----
-
 # 介绍
 ## 什么是 Local Path Provisioner
 Local Path Provisioner 是由 Rancher 开源的 Kubernetes 动态存储卷供应器，专门为 Kubernetes 用户提供本地存储解决方案。

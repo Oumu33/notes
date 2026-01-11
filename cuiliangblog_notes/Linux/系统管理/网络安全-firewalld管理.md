@@ -1,10 +1,4 @@
 # 网络安全-firewalld管理
-
-> 分类: Linux > 系统管理
-> 更新时间: 2026-01-10T23:34:51.195719+08:00
-
----
-
 # 一、firewalld简介
     1. 在CentOS       7里有几种防火墙共存：firewalld、iptables、ebtables。
     - 默认是使用firewalld来管理netfilter子系统，不过底层调用的命令仍然是iptables等。

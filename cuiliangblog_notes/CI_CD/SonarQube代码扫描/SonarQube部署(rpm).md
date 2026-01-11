@@ -1,10 +1,4 @@
 # SonarQube部署(rpm)
-
-> 分类: CI/CD > SonarQube代码扫描
-> 更新时间: 2026-01-10T23:33:54.663184+08:00
-
----
-
 # 准备工作
 ## 下载软件包
 下载地址：[https://www.sonarsource.com/products/sonarqube/downloads/](https://www.sonarsource.com/products/sonarqube/downloads/)

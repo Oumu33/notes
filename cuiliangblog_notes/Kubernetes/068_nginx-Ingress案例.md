@@ -1,12 +1,4 @@
 # nginx-Ingress案例
-
-> 来源: Kubernetes
-> 创建时间: 2020-11-01T00:15:30+08:00
-> 更新时间: 2026-01-11T09:07:20.677002+08:00
-> 阅读量: 1457 | 点赞: 0
-
----
-
 > 注意要点：
 >
 > + ingress中的serviceName要与service中的metadata-name保持一致

@@ -1,10 +1,4 @@
 # 输出到Redis
-
-> 分类: ELK Stack > Filebeat
-> 更新时间: 2026-01-10T23:33:41.352405+08:00
-
----
-
 新建Filebeat配置文件
 
 ```yaml

@@ -1,10 +1,4 @@
 # MySQL AUTOCOMMIT模式
-
-> 分类: Database > MySQL事务处理
-> 更新时间: 2026-01-10T23:34:21.086671+08:00
-
----
-
     1. 默认情况下，MySQL AUTOCOMMIT 模式处于启用状态
     - 意味着每一条DML语句都会产生一个事务
     - 每一条DML语句执行完了都会自动提交commit；因此无法通过commit       或rollback 作为一个单元提交或回滚多个DML语句

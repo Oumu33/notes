@@ -1,10 +1,4 @@
 # mysql-galera-cluster
-
-> 分类: Database > MySQL高级操作
-> 更新时间: 2026-01-10T23:34:22.768081+08:00
-
----
-
 ## MySQL Galera Cluster介绍
 Galera Cluster不同于常规的MySQL Server软件，安装了额外的插件，也需要额外的配置
 

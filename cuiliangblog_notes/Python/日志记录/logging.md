@@ -1,10 +1,4 @@
 # logging
-
-> 分类: Python > 日志记录
-> 更新时间: 2026-01-10T23:34:27.496893+08:00
-
----
-
 ## python程序使用logging
 ### 创建一个logSetting.py文件，存放日志配置
 ```python

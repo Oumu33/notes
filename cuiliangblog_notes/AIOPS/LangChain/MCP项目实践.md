@@ -1,10 +1,4 @@
 # MCP项目实践
-
-> 分类: AIOPS > LangChain
-> 更新时间: 2026-01-10T23:34:38.563630+08:00
-
----
-
 `LangChain`调用`MCP`是可以将`MCP`的工具直接转换为`LangChain`的工具，然后通过预定义的`MCP_Client`实现与外部`MCP`的读写操作，换而言之就是我们需要改写原先的client，将原先的Function calling调用逻辑修改为LangChain调用逻辑
 
 # 创建 mcp server

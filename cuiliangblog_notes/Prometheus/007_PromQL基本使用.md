@@ -1,12 +1,4 @@
 # PromQL基本使用
-
-> 来源: Prometheus
-> 创建时间: 2020-12-10T20:46:40+08:00
-> 更新时间: 2026-01-11T09:30:26.794104+08:00
-> 阅读量: 1536 | 点赞: 1
-
----
-
 # <font style="color:rgb(51, 51, 51);">简介</font>
 PromQL (Prometheus Query Language) 是 Prometheus 自己开发的数据查询 DSL 语言，语言表现力非常丰富，内置函数很多，在日常数据可视化以及rule 告警中都会使用到它。
 

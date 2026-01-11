@@ -1,10 +1,4 @@
 # Node Exporter
-
-> 分类: Prometheus > Exporter
-> 更新时间: 2026-01-10T23:33:50.469924+08:00
-
----
-
 # Node Exporter 自定义指标采集
 
 

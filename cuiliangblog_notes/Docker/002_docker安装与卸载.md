@@ -1,12 +1,4 @@
 # docker安装与卸载
-
-> 来源: Docker
-> 创建时间: 2020-12-25T16:47:01+08:00
-> 更新时间: 2026-01-11T09:29:21.290658+08:00
-> 阅读量: 1795 | 点赞: 0
-
----
-
 # 一、docker安装
 + [官方文档链接](https://docs.docker.com/get-started/#test-docker-installation)
 1. 安装前源准备

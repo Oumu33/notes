@@ -1,10 +1,4 @@
 # 启动logstash
-
-> 分类: ELK Stack > Logstash
-> 更新时间: 2026-01-10T23:33:42.317396+08:00
-
----
-
 # 传参启动
 ```python
 # logstash  -e 'input { stdin { } } output { stdout {} }'

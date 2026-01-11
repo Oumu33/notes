@@ -1,12 +1,4 @@
 # linux rpm安装
-
-> 来源: Database
-> 创建时间: 2021-02-12T22:33:57+08:00
-> 更新时间: 2026-01-11T09:14:01.599276+08:00
-> 阅读量: 1090 | 点赞: 0
-
----
-
 ## 下载rpm安装包
 + 访问MySQL官网[https://downloads.mysql.com/archives/community/](https://downloads.mysql.com/archives/community/)，因为我的操作系统是 rockylinux8.10。安装的版本如下：
 

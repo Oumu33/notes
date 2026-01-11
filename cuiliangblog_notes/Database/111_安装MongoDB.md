@@ -1,12 +1,4 @@
 # 安装MongoDB
-
-> 来源: Database
-> 创建时间: 2021-02-13T13:53:53+08:00
-> 更新时间: 2026-01-11T09:17:16.290521+08:00
-> 阅读量: 727 | 点赞: 1
-
----
-
 # 一、Linux系统安装
 ## 下载地址
 [https://repo.mongodb.org/yum/redhat/](https://repo.mongodb.org/yum/redhat/)

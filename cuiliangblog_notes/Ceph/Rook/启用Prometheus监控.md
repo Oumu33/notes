@@ -1,10 +1,4 @@
 # 启用Prometheus监控
-
-> 分类: Ceph > Rook
-> 更新时间: 2026-01-10T23:35:19.150992+08:00
-
----
-
 > 参考文档：[https://rook.io/docs/rook/latest-release/Storage-Configuration/Monitoring/ceph-monitoring/](https://rook.io/docs/rook/latest-release/Storage-Configuration/Monitoring/ceph-monitoring/)
 >
 

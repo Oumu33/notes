@@ -1,10 +1,4 @@
 # swarm高可用
-
-> 分类: Docker > Docker Swarm
-> 更新时间: 2026-01-10T23:35:11.875950+08:00
-
----
-
 # 一、实现 Service伸缩
 swarm 要实现<font style="color:#383A42;">运行多个实例。这样可以负载均衡，同时也能提供高可用</font>，增加 service 的副本数就可以了。在swarm-manager 上执行如下命令：
 

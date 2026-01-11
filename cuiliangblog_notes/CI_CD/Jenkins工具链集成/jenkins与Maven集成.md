@@ -1,10 +1,4 @@
 # jenkins与Maven集成
-
-> 分类: CI/CD > Jenkins工具链集成
-> 更新时间: 2026-01-10T23:33:57.706102+08:00
-
----
-
 # 安装配置Maven
 此处以rpm包部署jenkins为例，以下操作在jenkins所在服务器执行。
 

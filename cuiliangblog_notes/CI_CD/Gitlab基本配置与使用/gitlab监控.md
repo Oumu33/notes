@@ -1,10 +1,4 @@
 # gitlab监控
-
-> 分类: CI/CD > Gitlab基本配置与使用
-> 更新时间: 2026-01-10T23:33:59.170598+08:00
-
----
-
 参考文档：[https://docs.gitlab.com/ee/administration/monitoring/prometheus/gitlab_metrics.html](https://docs.gitlab.com/ee/administration/monitoring/prometheus/gitlab_metrics.html)
 
 # gitlab配置

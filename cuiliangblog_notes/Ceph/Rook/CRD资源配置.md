@@ -1,10 +1,4 @@
 # CRD资源配置
-
-> 分类: Ceph > Rook
-> 更新时间: 2026-01-10T23:35:20.054520+08:00
-
----
-
 # 块存储
 ## 资源池pool
 参考文档：[https://rook.io/docs/rook/latest-release/CRDs/Block-Storage/ceph-block-pool-crd/?h=cephblockpool](https://rook.io/docs/rook/latest-release/CRDs/Block-Storage/ceph-block-pool-crd/?h=cephblockpool)

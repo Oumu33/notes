@@ -1,10 +1,4 @@
 # python版本与虚拟环境管理
-
-> 分类: Python > Python基本使用
-> 更新时间: 2026-01-10T23:34:28.258400+08:00
-
----
-
 # 多版本管理
 由于各个 pip 包对 python 版本支持不同，在实际开发过程中，经常需要在不同 python 版本直接切换。此时就需要 python 版本管理工具，<font style="color:rgb(25, 27, 31);">这就是</font>`<font style="color:rgb(25, 27, 31);background-color:rgb(248, 248, 250);">pyenv</font>`<font style="color:rgb(25, 27, 31);">，一个简单的</font>`<font style="color:rgb(25, 27, 31);background-color:rgb(248, 248, 250);">Python</font>`<font style="color:rgb(25, 27, 31);">版本管理器，可以轻松地在各个</font>`<font style="color:rgb(25, 27, 31);background-color:rgb(248, 248, 250);">Python</font>`<font style="color:rgb(25, 27, 31);">版本之间进行切换。</font>
 

@@ -1,12 +1,4 @@
 # mysql-galera-cluster
-
-> 来源: Database
-> 创建时间: 2021-02-13T14:29:22+08:00
-> 更新时间: 2026-01-11T09:17:07.680505+08:00
-> 阅读量: 779 | 点赞: 0
-
----
-
 ## MySQL Galera Cluster介绍
 Galera Cluster不同于常规的MySQL Server软件，安装了额外的插件，也需要额外的配置
 

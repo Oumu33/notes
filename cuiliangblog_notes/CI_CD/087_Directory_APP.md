@@ -1,12 +1,4 @@
 # Directory APP
-
-> 来源: CI/CD
-> 创建时间: 2024-06-22T18:00:30+08:00
-> 更新时间: 2026-01-11T08:57:35.072445+08:00
-> 阅读量: 861 | 点赞: 0
-
----
-
 # APP创建
 ## webUI创建
 ![](https://via.placeholder.com/800x600?text=Image+1d7e5bcd076d84e3)

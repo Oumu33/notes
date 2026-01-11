@@ -1,10 +1,4 @@
 # Redis
-
-> 分类: Docker > 常见服务部署
-> 更新时间: 2026-01-10T23:35:13.007606+08:00
-
----
-
 # 拉取镜像
 ```dockerfile
 [root@aliyun docker]# docker pull redis

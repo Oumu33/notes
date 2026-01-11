@@ -1,10 +1,4 @@
 # Kustomize App创建
-
-> 分类: CI/CD > ArgoCD创建APP
-> 更新时间: 2026-01-10T23:34:03.822618+08:00
-
----
-
 # 仓库资源配置
 ## 创建Kustomize应用
 Kustomize具体参考可参考文档：[https://www.cuiliangblog.cn/detail/section/119720072](https://www.cuiliangblog.cn/detail/section/119720072)

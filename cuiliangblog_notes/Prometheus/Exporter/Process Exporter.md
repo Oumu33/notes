@@ -1,10 +1,4 @@
 # Process Exporter
-
-> 分类: Prometheus > Exporter
-> 更新时间: 2026-01-10T23:33:51.004459+08:00
-
----
-
 ## Process Exporter简介
 ### process exporter功能
 如果想要对主机的进程进行监控，例如chronyd，sshd等服务进程以及自定义脚本程序运行状态监控。我们使用node exporter就不能实现需求了，此时就需要使用process exporter来做<font style="color:rgb(64, 64, 64);">进程状态的监控。</font>

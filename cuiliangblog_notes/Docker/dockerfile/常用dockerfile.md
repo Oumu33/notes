@@ -1,10 +1,4 @@
 # 常用dockerfile
-
-> 分类: Docker > dockerfile
-> 更新时间: 2026-01-10T23:35:06.688510+08:00
-
----
-
 # 一、测试使用dockerfile
 ## 1. centos系统初始化
 ```dockerfile

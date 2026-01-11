@@ -1,10 +1,4 @@
 # 还原mysqldump备份
-
-> 分类: Database > MySQL备份与恢复
-> 更新时间: 2026-01-10T23:34:22.185882+08:00
-
----
-
     1. 使用 mysql 命令重新装入       mysqldump 备份
     - db_test.sql       是包括了test数据库的备份，其中表t备份时包括了1,2,3三条记录
     - mysql>use test;

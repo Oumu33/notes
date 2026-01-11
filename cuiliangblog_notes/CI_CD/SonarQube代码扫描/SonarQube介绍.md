@@ -1,10 +1,4 @@
 # SonarQube介绍
-
-> 分类: CI/CD > SonarQube代码扫描
-> 更新时间: 2026-01-10T23:33:54.547887+08:00
-
----
-
 # <font style="color:rgb(38, 38, 38);"></font><font style="color:rgb(79, 79, 79);">简介</font>
 SonarQube 是一个用于代码质量管理的开源平台，用于管理源代码的质量。同时 SonarQube 还对大量的持续集成工具提供了接口支持，可以很方便地在持续集成中使用 SonarQube。此外， SonarQube 的插件还可以对 Java 以外的其他编程语言提供支持，对国际化以及报告文档化也有良好的支持。
 

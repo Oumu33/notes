@@ -1,10 +1,4 @@
 # OpenStack组件原理
-
-> 分类: Linux > OpenStack
-> 更新时间: 2026-01-10T23:35:00.547705+08:00
-
----
-
 # 一、身份服务：Keystone
     1.  为 OpenStack 其他服务提供身份验证、服务规则和服务令牌的功能。管理Domains       、Projects 、Users 、 Groups 、 Roles。
     2. 组件

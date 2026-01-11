@@ -1,10 +1,4 @@
 # 部署Ceph分布式存储
-
-> 分类: Kubernetes > 周边组件安装部署
-> 更新时间: 2026-01-10T23:33:17.332182+08:00
-
----
-
 # 部署 Rook
 具体可参考文档：[https://www.cuiliangblog.cn/detail/section/16860037](https://www.cuiliangblog.cn/detail/section/16860037)
 

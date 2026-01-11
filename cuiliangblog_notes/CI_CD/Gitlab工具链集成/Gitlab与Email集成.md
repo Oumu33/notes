@@ -1,10 +1,4 @@
 # Gitlab与Email集成
-
-> 分类: CI/CD > Gitlab工具链集成
-> 更新时间: 2026-01-10T23:34:02.574038+08:00
-
----
-
 # 配置邮件通知
 ## 修改Gitlab配置
 编辑/etc/gitlab/gitlab.rb文件开启gitlab email。这里以QQ邮箱为例，参考文档：[https://docs.gitlab.com/omnibus/settings/smtp.html](https://docs.gitlab.com/omnibus/settings/smtp.html)

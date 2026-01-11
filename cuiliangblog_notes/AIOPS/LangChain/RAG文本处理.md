@@ -1,10 +1,4 @@
 # RAG文本处理
-
-> 分类: AIOPS > LangChain
-> 更新时间: 2026-01-10T23:34:38.680862+08:00
-
----
-
 # LangChain 实现 RAG
 ## LangChain组件
 LangChain 框架提供了丰富的组件帮助我们搭建 RAG 应用，下面是关于这些核心组件的介绍：

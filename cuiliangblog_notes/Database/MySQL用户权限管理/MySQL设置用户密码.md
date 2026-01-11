@@ -1,10 +1,4 @@
 # MySQL设置用户密码
-
-> 分类: Database > MySQL用户权限管理
-> 更新时间: 2026-01-10T23:34:19.654253+08:00
-
----
-
     1. 修改自己的密码
 + mysql>  set password=password('newpass');
 + password为口令函数，把口令加密存放在mysql数据库的user表的authentication_string列中

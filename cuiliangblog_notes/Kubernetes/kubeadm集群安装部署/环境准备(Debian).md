@@ -1,10 +1,4 @@
 # 环境准备(Debian)
-
-> 分类: Kubernetes > kubeadm集群安装部署
-> 更新时间: 2026-01-10T23:33:15.754265+08:00
-
----
-
 > 如果操作系统环境为Ubuntu、MX Linux、Deepin等De<font style="color:rgb(25, 27, 31);">bian系列操作系统，使用以下步骤操作。</font>
 >
 

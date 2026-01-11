@@ -1,10 +1,4 @@
 # create table创建表语句
-
-> 分类: Database > SQL数据定义
-> 更新时间: 2026-01-10T23:34:14.189136+08:00
-
----
-
     1. **CREATE TABLE 语句**
 + CREATE TABLE  语句用于创建数据库中的表。
 + **SQL CREATE TABLE 语法**

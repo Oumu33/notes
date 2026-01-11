@@ -1,10 +1,4 @@
 # docker其他问题
-
-> 分类: Docker > 总结
-> 更新时间: 2026-01-10T23:35:12.682106+08:00
-
----
-
 1. Docker能在非Linux平台（比如macOS或Windows）上运行么？
 
 可以。macOS目前需要使用docker for      mac等软件创建一个轻量级的Linux虚拟机层。由于成熟度不高，暂时不推荐在Windows环境中使用Docker。

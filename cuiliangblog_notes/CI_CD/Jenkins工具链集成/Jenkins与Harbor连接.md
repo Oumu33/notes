@@ -1,10 +1,4 @@
 # Jenkins与Harbor连接
-
-> 分类: CI/CD > Jenkins工具链集成
-> 更新时间: 2026-01-10T23:33:58.172509+08:00
-
----
-
 # Jenkins服务器安装docker
 具体安装步骤参考文档：[https://www.cuiliangblog.cn/detail/section/26447182](https://www.cuiliangblog.cn/detail/section/26447182)
 

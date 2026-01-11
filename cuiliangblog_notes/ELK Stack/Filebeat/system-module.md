@@ -1,10 +1,4 @@
 # system-module
-
-> 分类: ELK Stack > Filebeat
-> 更新时间: 2026-01-10T23:33:41.462111+08:00
-
----
-
 # 一、查看内置module
 在Filebeat中，有大量的Module，可以简化我们的配置，直接就可以使用，如下：
 

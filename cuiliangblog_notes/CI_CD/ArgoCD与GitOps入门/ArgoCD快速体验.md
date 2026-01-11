@@ -1,10 +1,4 @@
 # ArgoCD快速体验
-
-> 分类: CI/CD > ArgoCD与GitOps入门
-> 更新时间: 2026-01-10T23:34:03.030503+08:00
-
----
-
 # gitlab仓库配置
 创建一个名为Argo Demo的仓库，在manifests目录下仅包含应用的yaml文件，文件内容如下
 

@@ -1,12 +1,4 @@
 # runner监控
-
-> 来源: CI/CD
-> 创建时间: 2024-07-18T22:12:48+08:00
-> 更新时间: 2026-01-11T08:55:59.242135+08:00
-> 阅读量: 519 | 点赞: 0
-
----
-
 参考文档：[https://docs.gitlab.com/runner/monitoring/](https://docs.gitlab.com/runner/monitoring/)
 
 # Runner配置

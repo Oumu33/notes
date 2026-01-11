@@ -1,10 +1,4 @@
 # 过滤插件-date时间处理
-
-> 分类: ELK Stack > Logstash
-> 更新时间: 2026-01-10T23:33:43.287906+08:00
-
----
-
 ## @timestamp字段处理
 > 在ELK的日志处理系统中，@timestamp字段会被elasticsearch用到，用来标注日志的生产时间，如此一来，日志生成时间就会发生混乱，要解决这个问题，需要用到另一个插件，即date插件，这个时间插件用来转换日志记录中的时间字符串，变成Logstash::Timestamp对象，然后转存到@timestamp字段里面
 >

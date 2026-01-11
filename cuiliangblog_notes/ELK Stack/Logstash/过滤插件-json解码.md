@@ -1,10 +1,4 @@
 # 过滤插件-json解码
-
-> 分类: ELK Stack > Logstash
-> 更新时间: 2026-01-10T23:33:43.397328+08:00
-
----
-
 <font style="color:rgb(51, 51, 51);">有些日志可能是一种复合的数据结构，其中只是一部分记录是 JSON 格式的。这时候，我们依然需要在 filter 阶段，单独启用 JSON 解码插件。</font>
 
 ## <font style="color:rgb(51, 51, 51);">配置示例</font>

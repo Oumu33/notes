@@ -1,10 +1,4 @@
 # 安装MongoDB
-
-> 分类: Database > MongoDB
-> 更新时间: 2026-01-10T23:34:23.107915+08:00
-
----
-
 # 一、Linux系统安装
 ## 下载地址
 [https://repo.mongodb.org/yum/redhat/](https://repo.mongodb.org/yum/redhat/)

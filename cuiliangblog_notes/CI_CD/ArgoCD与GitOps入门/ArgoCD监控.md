@@ -1,10 +1,4 @@
 # ArgoCD监控
-
-> 分类: CI/CD > ArgoCD与GitOps入门
-> 更新时间: 2026-01-10T23:34:03.486737+08:00
-
----
-
 参考文档：[https://argo-cd.readthedocs.io/en/stable/operator-manual/metrics/](https://argo-cd.readthedocs.io/en/stable/operator-manual/metrics/)
 
 # 配置targets

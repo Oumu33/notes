@@ -1,12 +1,4 @@
 # less全局变量
-
-> 来源: Web
-> 创建时间: 2021-02-21T09:58:38+08:00
-> 更新时间: 2026-01-11T09:24:56.848418+08:00
-> 阅读量: 591 | 点赞: 0
-
----
-
 1. 安装依赖
 
 `vue add style-resources-loader vue-cli-plugin-style-resources-loader -D` 

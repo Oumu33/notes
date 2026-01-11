@@ -1,12 +1,4 @@
 # 环境准备(RHEL)
-
-> 来源: Kubernetes
-> 创建时间: 2020-10-29T22:10:39+08:00
-> 更新时间: 2026-01-11T09:04:12.753005+08:00
-> 阅读量: 4295 | 点赞: 3
-
----
-
 > 如果操作系统环境为CentOS、Red Hat、Rocky Linux、<font style="color:rgb(25, 27, 31);">Alma Linux、Fedora等RHEL系列操作系统，使用以下步骤操作。</font>
 >
 

@@ -1,10 +1,4 @@
 # prometheus高可用
-
-> 分类: Prometheus > 集群与高可用
-> 更新时间: 2026-01-10T23:33:52.530484+08:00
-
----
-
 # 一、基本HA：服务可用性
 1. 由于Promthues的Pull机制的设计，为了确保Promthues服务的可用性，用户只需要部署多套Prometheus      Server实例，并且采集相同的Exporter目标即可。
 

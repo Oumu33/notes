@@ -1,12 +1,4 @@
 # create database创建数据库语句
-
-> 来源: Database
-> 创建时间: 2021-02-12T00:32:15+08:00
-> 更新时间: 2026-01-11T09:13:25.027557+08:00
-> 阅读量: 645 | 点赞: 0
-
----
-
     1. **CREATE DATABASE 语句**
 + CREATE  DATABASE 用于创建数据库。
 + **SQL CREATE DATABASE 语法**

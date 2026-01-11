@@ -1,10 +1,4 @@
 # MySQL常用DDL命令
-
-> 分类: Database > MySQL基本使用
-> 更新时间: 2026-01-10T23:34:18.583114+08:00
-
----
-
 建表T 
 
 create database if not exists xyz;

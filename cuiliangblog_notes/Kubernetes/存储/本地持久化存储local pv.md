@@ -1,10 +1,4 @@
 # 本地持久化存储local pv
-
-> 分类: Kubernetes > 存储
-> 更新时间: 2026-01-10T23:33:24.183635+08:00
-
----
-
 # local PV简介
 ## hostPath存在的问题
 过去我们经常会通过hostPath volume让Pod能够使用本地存储，将Node文件系统中的文件或者目录挂载到容器内，但是hostPath volume的使用是很难受的，并不适合在生产环境中使用。

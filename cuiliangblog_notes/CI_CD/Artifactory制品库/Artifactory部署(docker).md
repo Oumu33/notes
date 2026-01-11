@@ -1,10 +1,4 @@
 # Artifactory部署(docker)
-
-> 分类: CI/CD > Artifactory制品库
-> 更新时间: 2026-01-10T23:33:55.316435+08:00
-
----
-
 # 拉取镜像
 ```bash
 [root@artifactory ~]# docker pull releases-docker.jfrog.io/jfrog/artifactory-oss:latest

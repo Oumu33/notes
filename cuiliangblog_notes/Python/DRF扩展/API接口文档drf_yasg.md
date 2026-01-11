@@ -1,10 +1,4 @@
 # API接口文档drf_yasg
-
-> 分类: Python > DRF扩展
-> 更新时间: 2026-01-10T23:34:32.591913+08:00
-
----
-
 ## 安装drf_yasg
 `pip install drf_yasg` 
 

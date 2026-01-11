@@ -1,10 +1,4 @@
 # OpenStack简易安装
-
-> 分类: Linux > OpenStack
-> 更新时间: 2026-01-10T23:35:00.659882+08:00
-
----
-
 # 一、ROO安装
 [参考链接](https://www.rdoproject.org/install/packstack/)
 

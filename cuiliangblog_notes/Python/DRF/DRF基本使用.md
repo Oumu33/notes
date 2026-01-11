@@ -1,10 +1,4 @@
 # DRF基本使用
-
-> 分类: Python > DRF
-> 更新时间: 2026-01-10T23:34:30.096881+08:00
-
----
-
 # 安装DRF
 `pip install djangorestframework `
 

@@ -1,10 +1,4 @@
 # pipeline+reindex
-
-> 分类: ELK Stack > ECE认证
-> 更新时间: 2026-01-10T23:33:38.809994+08:00
-
----
-
 # 注意点
 常见pipeline处理器：
 

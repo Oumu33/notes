@@ -1,12 +1,4 @@
 # 部署PostgreSQL数据库
-
-> 来源: Kubernetes
-> 创建时间: 2025-09-09T20:56:28+08:00
-> 更新时间: 2026-01-11T09:05:19.571736+08:00
-> 阅读量: 129 | 点赞: 0
-
----
-
 # 部署方案介绍
 Bitnami 提供的 postgresql-ha 解决方案是一个预配置的、高可用的 PostgreSQL 集群配置，通常部署在 Kubernetes 环境中。它使用了一些关键技术和组件来实现数据库的高可用性。具体定制参数可参考文档：[https://artifacthub.io/packages/helm/bitnami/postgresql-ha](https://artifacthub.io/packages/helm/bitnami/postgresql-ha)
 

@@ -1,10 +1,4 @@
 # 使用element-plus
-
-> 分类: Web > vite
-> 更新时间: 2026-01-10T23:34:10.259190+08:00
-
----
-
 ## 安装element-plus
 `npm install element-plus --save` 
 

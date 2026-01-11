@@ -1,10 +1,4 @@
 # Elastic EDOT全家桶方案
-
-> 分类: Kubernetes > OpenTelemetry可观测性
-> 更新时间: 2026-01-10T23:33:31.000418+08:00
-
----
-
 # EDOT 介绍
 ## 什么是 EDOT
 <font style="color:rgb(52, 55, 65);">Elastic Distributions of OpenTelemetry （EDOT） 是一个专为 Elastic 量身定制的 </font>[<font style="color:rgb(11, 100, 221);">OpenTelemetry 发行版</font>](https://opentelemetry.io/docs/concepts/distributions/)<font style="color:rgb(52, 55, 65);">开源生态系统。它们包括一个自定义的 OpenTelemetry Collector 和多个 OpenTelemetry 语言 SDK</font>。具体可参考文档：[https://www.elastic.co/docs/reference/opentelemetry](https://www.elastic.co/docs/reference/opentelemetry)

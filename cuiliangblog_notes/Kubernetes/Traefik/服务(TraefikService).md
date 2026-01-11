@@ -1,10 +1,4 @@
 # 服务(TraefikService)
-
-> 分类: Kubernetes > Traefik
-> 更新时间: 2026-01-10T23:33:23.068002+08:00
-
----
-
 # 简介
 ![](../../images/img_2104.png)
 

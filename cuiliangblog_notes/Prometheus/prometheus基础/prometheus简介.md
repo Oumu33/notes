@@ -1,10 +1,4 @@
 # prometheus简介
-
-> 分类: Prometheus > prometheus基础
-> 更新时间: 2026-01-10T23:33:47.957473+08:00
-
----
-
 # 一、prometheus优势
 1. 易于管理
 2. 监控服务的内部运行状态

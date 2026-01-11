@@ -1,10 +1,4 @@
 # 输出到Logstash
-
-> 分类: ELK Stack > Filebeat
-> 更新时间: 2026-01-10T23:33:41.024109+08:00
-
----
-
 # 配置文件
 配置filebeat-to-logstash.yml
 

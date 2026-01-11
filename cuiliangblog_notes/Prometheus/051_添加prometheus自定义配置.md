@@ -1,12 +1,4 @@
 # 添加prometheus自定义配置
-
-> 来源: Prometheus
-> 创建时间: 2024-11-04T12:43:37+08:00
-> 更新时间: 2026-01-11T09:31:17.768613+08:00
-> 阅读量: 385 | 点赞: 0
-
----
-
 > <font style="color:rgb(77, 77, 77);">prometheus的配置默认是不能修改的，目前可以通过新增prometheus-additional.yaml来添加新增配置。</font>
 >
 

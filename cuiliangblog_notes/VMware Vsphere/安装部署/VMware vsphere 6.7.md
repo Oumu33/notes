@@ -1,10 +1,4 @@
 # VMware vsphere 6.7
-
-> 分类: VMware Vsphere > 安装部署
-> 更新时间: 2026-01-10T23:34:40.427261+08:00
-
----
-
 VMware vsphere 6.7 虚拟化平台搭建及配置
 
 <font style="color:#000000;"></font>

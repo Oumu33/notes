@@ -1,10 +1,4 @@
 # vcenter备份与还原
-
-> 分类: VMware Vsphere > 备份与还原
-> 更新时间: 2026-01-10T23:34:41.314812+08:00
-
----
-
 # 一、vcenter备份
 1. 进入vcenter配置模式（vcenter管理ip:5480）
 

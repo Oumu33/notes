@@ -1,12 +1,4 @@
 # Service(NodePort)
-
-> 来源: Kubernetes
-> 创建时间: 2022-09-22T21:19:15+08:00
-> 更新时间: 2026-01-11T09:07:15.905789+08:00
-> 阅读量: 1170 | 点赞: 0
-
----
-
 ## 简介
 1. 这种类型建立在ClusterIP类型之上，其在每个node节点的IP地址的某静态端口（NodePort）暴露服务，因此，它依然会为Service分配集群IP地址，并将此作为NodePort的路由目标。
 2. NodePort类型就是在工作节点的IP地址上选择一个端口用于将集群外部的用户请求转发至目标Service的ClusterIP和Port，因此，这种类型的Service既可如ClusterIP一样受到集群内部客户端Pod的访问，也会受到集群外部客户端通过套接字<NodeIP>:<NodePort>进行的请求。

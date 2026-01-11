@@ -1,10 +1,4 @@
 # less全局变量
-
-> 分类: Web > webpack
-> 更新时间: 2026-01-10T23:34:07.770682+08:00
-
----
-
 1. 安装依赖
 
 `vue add style-resources-loader vue-cli-plugin-style-resources-loader -D` 

@@ -1,10 +1,4 @@
 # 文件系统常用命令-支持NTFS文件系统
-
-> 分类: Linux > 磁盘文件管理
-> 更新时间: 2026-01-10T23:34:48.459121+08:00
-
----
-
 # 一、下载NTFS-3G插件
 [http://www.tuxera.com/community/ntfs-3g-download/](http://www.tuxera.com/community/ntfs-3g-download/)
 

@@ -1,10 +1,4 @@
 # K8S中的资源对象
-
-> 分类: Kubernetes > 资源对象
-> 更新时间: 2026-01-10T23:33:19.512490+08:00
-
----
-
 > Kubernetes的API对象大体可分为工作负载（Workload）、发现和负载均衡（Discovery<font style="background-color:transparent;">& LB）、配置和存储（Config &Storage）、集群（Cluster）以及元数据（Metadata）五个类别。</font>
 >
 

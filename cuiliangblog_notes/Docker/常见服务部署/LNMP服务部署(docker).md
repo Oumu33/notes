@@ -1,10 +1,4 @@
 # LNMP服务部署(docker)
-
-> 分类: Docker > 常见服务部署
-> 更新时间: 2026-01-10T23:35:13.345068+08:00
-
----
-
 > 以wordpress为例。官网：[https://cn.wordpress.org/download/](https://cn.wordpress.org/download/)
 >
 

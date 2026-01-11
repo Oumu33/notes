@@ -1,10 +1,4 @@
 # ArgoCD仓库管理
-
-> 分类: CI/CD > ArgoCD与GitOps入门
-> 更新时间: 2026-01-10T23:34:03.141720+08:00
-
----
-
 # 仓库管理介绍
 Argo CD 的 “Repo 仓库管理（Repository Management）” 是 GitOps 工作流的核心之一 —— 它决定了 Argo CD 从哪里拉取应用配置（YAML/Helm/Kustomize 等），以及如何认证访问这些仓库。  
 

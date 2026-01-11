@@ -1,10 +1,4 @@
 # 加入SASS
-
-> 分类: Web > vite
-> 更新时间: 2026-01-10T23:34:10.033512+08:00
-
----
-
 ## 安装sass
 ```javascript
 npm install sass -D

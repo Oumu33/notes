@@ -1,10 +1,4 @@
 # redis字符串（Strings）
-
-> 分类: Database > Redis
-> 更新时间: 2026-01-10T23:34:25.105558+08:00
-
----
-
 # 一、简介
     1. string 是 redis       最基本的类型，你可以理解成与 Memcached 一模一样的类型，一个 key 对应一个 value。
     2. string 类型是二进制安全的。意思是       redis 的 string 可以包含任何数据。比如jpg图片或者序列化的对象。

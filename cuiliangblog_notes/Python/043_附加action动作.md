@@ -1,12 +1,4 @@
 # 附加action动作
-
-> 来源: Python
-> 创建时间: 2021-03-19T23:04:28+08:00
-> 更新时间: 2026-01-11T09:25:40.416408+08:00
-> 阅读量: 608 | 点赞: 0
-
----
-
 ## 一、action
 1. 添加自定义动作需要使用`rest_framework.decorators.action`装饰器。
 2. 以action装饰器装饰的方法名会作为action动作名，与list、retrieve等同。

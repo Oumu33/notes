@@ -1,12 +1,4 @@
 # Ceph高级配置
-
-> 来源: Ceph
-> 创建时间: 2025-01-02T23:19:08+08:00
-> 更新时间: 2026-01-11T09:43:52.248100+08:00
-> 阅读量: 101 | 点赞: 0
-
----
-
 [https://rook.io/docs/rook/latest-release/Storage-Configuration/Advanced/ceph-configuration/#deploying-a-second-cluster](https://rook.io/docs/rook/latest-release/Storage-Configuration/Advanced/ceph-configuration/#deploying-a-second-cluster)
 
 # OSD 信息获取

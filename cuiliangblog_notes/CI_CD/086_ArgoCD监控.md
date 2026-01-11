@@ -1,12 +1,4 @@
 # ArgoCD监控
-
-> 来源: CI/CD
-> 创建时间: 2024-07-18T09:16:21+08:00
-> 更新时间: 2026-01-11T08:57:34.240819+08:00
-> 阅读量: 643 | 点赞: 0
-
----
-
 参考文档：[https://argo-cd.readthedocs.io/en/stable/operator-manual/metrics/](https://argo-cd.readthedocs.io/en/stable/operator-manual/metrics/)
 
 # 配置targets

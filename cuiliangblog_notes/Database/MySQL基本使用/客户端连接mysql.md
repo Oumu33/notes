@@ -1,10 +1,4 @@
 # 客户端连接mysql
-
-> 分类: Database > MySQL基本使用
-> 更新时间: 2026-01-10T23:34:17.732954+08:00
-
----
-
     1. mysql程序在哪里
 + root>which  mysql
     1. MySQL服务程序在哪里

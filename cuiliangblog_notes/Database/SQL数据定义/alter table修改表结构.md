@@ -1,10 +1,4 @@
 # alter table修改表结构
-
-> 分类: Database > SQL数据定义
-> 更新时间: 2026-01-10T23:34:14.292379+08:00
-
----
-
     1. **ALTER TABLE 语句**
 + ALTER TABLE  语句用于在已有的表中添加、修改或删除列。
 + **SQL ALTER TABLE 语法**

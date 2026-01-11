@@ -1,10 +1,4 @@
 # exporter
-
-> 分类: Prometheus > Exporter
-> 更新时间: 2026-01-10T23:33:50.354652+08:00
-
----
-
 # 一、Exporter简介
 所有可以向Prometheus提供监控样本数据的程序都可以被称为一个Exporter。而Exporter的一个实例称为target，如下所示，Prometheus通过轮询的方式定期从这些target中获取样本数据:
 

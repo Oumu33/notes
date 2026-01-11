@@ -1,10 +1,4 @@
 # MySQL 查看进程状态
-
-> 分类: Database > MySQL用户权限管理
-> 更新时间: 2026-01-10T23:34:20.647838+08:00
-
----
-
 MySQL数据库用show processlist查看服务器进程个用户连接线程的状态
 
 1. SHOW PROCESSLIST 将生成以下列：

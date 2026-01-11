@@ -1,10 +1,4 @@
 # MongoDB 备份(mongodump)与恢复(mongorestore)
-
-> 分类: Database > MongoDB
-> 更新时间: 2026-01-10T23:34:24.324443+08:00
-
----
-
 # 一、MongoDB数据备份
 在Mongodb中我们使用mongodump命令来备份MongoDB数据。该命令可以导出所有数据到指定目录中。
 

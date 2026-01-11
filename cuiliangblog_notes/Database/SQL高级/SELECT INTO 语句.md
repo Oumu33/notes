@@ -1,10 +1,4 @@
 # SELECT INTO 语句
-
-> 分类: Database > SQL高级
-> 更新时间: 2026-01-10T23:34:16.264531+08:00
-
----
-
 + **SQL SELECT INTO  语句可用于创建表的备份复件。**
     1. **SELECT INTO 语句**
 + SELECT INTO  语句从一个表中选取数据，然后把数据插入另一个表中。

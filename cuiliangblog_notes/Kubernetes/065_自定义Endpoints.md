@@ -1,12 +1,4 @@
 # 自定义Endpoints
-
-> 来源: Kubernetes
-> 创建时间: 2022-09-22T21:22:30+08:00
-> 更新时间: 2026-01-11T09:07:19.648224+08:00
-> 阅读量: 1222 | 点赞: 0
-
----
-
 ## 简介
 endpoint 是k8s集群中一个资源对象，存储在etcd里面，用来记录一个service对应的所有pod的访问地址。service配置selector endpoint controller 才会自动创建对应的endpoint 对象，否则是不会生产endpoint 对象
 

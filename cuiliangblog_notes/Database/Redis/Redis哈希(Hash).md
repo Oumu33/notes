@@ -1,10 +1,4 @@
 # Redis哈希(Hash)
-
-> 分类: Database > Redis
-> 更新时间: 2026-01-10T23:34:25.214930+08:00
-
----
-
 # 一、简介
 1. Redis hash 是一个键值(key=>value)对集合。
 2. Redis      hash 是一个 string 类型的 field 和 value 的映射表，hash 特别适合用于存储对象。
