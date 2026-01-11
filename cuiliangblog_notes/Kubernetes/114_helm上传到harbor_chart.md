@@ -1,0 +1,69 @@
+# helm上传到harbor chart
+
+> 来源: Kubernetes
+> 创建时间: 2025-10-22T22:01:49+08:00
+> 更新时间: 2026-01-11T09:10:58.237728+08:00
+> 阅读量: 114 | 点赞: 0
+
+---
+
+# harbor支持helm chart
+在 harbor v1.6 版本开始，通过**ChartMuseum** 子服务提供对 chart 的支持，从 **2.7 起**更换为原生 OCI Charts 实现内置支持 Helm Charts 的 OCI 上传。
+
+# harbor chart 上传
+## 创建项目
+创建一个名为helm-charts 的项目仓库。
+
+![](https://via.placeholder.com/800x600?text=Image+e6040f878f1d4104)
+
+## helm 登录 harbor
+--insecure 为跳过自签证书选项
+
+```bash
+# helm registry login -u admin harbor.cuiliangblog.cn --insecure                
+Password: 
+Login Succeeded
+```
+
+## 打包自定义charts
+具体可参考文档：[https://www.cuiliangblog.cn/detail/section/15287438](https://www.cuiliangblog.cn/detail/section/15287438)
+
+```bash
+# helm package myapp                                            
+Successfully packaged chart and saved it to: /opt/myapp-0.1.0.tgz
+```
+
+## 推送 charts 包
+```bash
+# helm push myapp-0.1.0.tgz oci://harbor.cuiliangblog.cn/helm-charts --insecure-skip-tls-verify
+Pushed: harbor.cuiliangblog.cn/helm-charts/myapp:0.1.0
+Digest: sha256:3e22ac7d2735959b6c368a8d578664e4cd96febcf26fda5b64e1a53217b40bf7
+```
+
+## 查看 harbor 仓库验证
+![](https://via.placeholder.com/800x600?text=Image+d8269354ba34777f)
+
+# Harbor chart 下载
+## 查看可用的 Chart  
+```bash
+curl -k -u admin:Harbor12345 https://harbor.cuiliangblog.cn/api/v2.0/projects/helm-charts/repositories
+[{"artifact_count":1,"creation_time":"2025-10-22T14:35:32.350Z","id":4,"name":"helm-charts/myapp","project_id":2,"pull_count":0,"update_time":"2025-10-22T14:35:32.350Z"}]
+```
+
+## 拉取 Chart 到本地
+```bash
+# helm pull oci://harbor.cuiliangblog.cn/helm-charts/myapp --version 0.1.0 --insecure-skip-tls-verify
+Pulled: harbor.cuiliangblog.cn/helm-charts/myapp:0.1.0
+Digest: sha256:3e22ac7d2735959b6c368a8d578664e4cd96febcf26fda5b64e1a53217b40bf7
+# ls
+myapp-0.1.0.tgz 
+```
+
+## 直接从 Harbor 安装
+```bash
+# helm install myapp oci://harbor.cuiliangblog.cn/helm-charts/myapp \
+  --version 0.1.0 \
+  --insecure-skip-tls-verify
+```
+
+

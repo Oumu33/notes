@@ -1,0 +1,77 @@
+# 输入插件-标准输入(Stdin)
+
+> 来源: ELK Stack
+> 创建时间: 2021-02-03T21:22:13+08:00
+> 更新时间: 2026-01-11T09:26:57.510070+08:00
+> 阅读量: 940 | 点赞: 0
+
+---
+
+# 配置示例
+```bash
+input {
+    stdin {
+        add_field => {"key" => "value"}
+        codec => "plain"
+        tags => ["add"]
+        type => "std"
+    }
+}
+output {
+    stdout {
+        codec => rubydebug { } 
+    }   
+}
+```
+
+# 运行结果
+logstash启动后，控制台输入hello world，输出如下内容：
+
+```bash
+hello world
+{
+       "message" => "hello world",
+          "type" => "std",
+          "tags" => [
+        [0] "add"
+    ],
+          "host" => "tiaoban",
+    "@timestamp" => 2022-09-27T09:15:28.696Z,
+      "@version" => "1",
+           "key" => "value"
+}
+```
+
+# 分析
+type 和 tags 是 logstash 事件中两个特殊的字段。通常来说我们会在输入区段中通过 type 来标记事件类型，而 tags 则是在数据处理过程中，由具体的插件来添加或者删除的。
+
+使用举例
+
+```bash
+input {
+    stdin {
+        type => "web"
+    }
+}
+filter {
+    if [type] == "web" {
+        grok {
+            match => ["message", %{COMBINEDAPACHELOG}]
+        }
+    }
+}
+output {
+    if "_grokparsefailure" in [tags] {
+        nagios_nsca {
+            nagios_status => "1"
+        }
+    } else {
+        elasticsearch {
+        }
+    }
+}
+```
+
+
+
+

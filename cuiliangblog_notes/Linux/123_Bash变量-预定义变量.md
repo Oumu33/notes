@@ -1,0 +1,42 @@
+# Bash变量-预定义变量
+
+> 来源: Linux
+> 创建时间: 2021-02-16T10:00:16+08:00
+> 更新时间: 2026-01-11T09:35:28.865065+08:00
+> 阅读量: 679 | 点赞: 0
+
+---
+
+# 一、预定义变量
+| 预定义变量  | 作 用 |
+| --- | --- |
+| $？ | 最后一次执行的命令的返回状态。如果这个变量的值为<font style="color:red;">0</font>，证明上一个命令<font style="color:red;">正确执行</font>；如果这个变量的值为<font style="color:red;">非</font><font style="color:red;">0</font>（具体是哪个数，由命令自己来决定），则证明上一个命令执行<font style="color:red;">不正确</font>了。 |
+| $$ | 当前进程的进程号（PID） |
+| $! | 后台运行的最后一个进程的进程号（PID） |
+
+
+1. 输出当前进程与后台进程。
+
+![](https://via.placeholder.com/800x600?text=Image+c7e50186f9300843)
+
+![](https://via.placeholder.com/800x600?text=Image+46272ead31235111)
+
++ 符号&的意思是把命令放入后台执行
+
+# 二、接收键盘输入
+[root@localhost ~]# read [选项] [变量名]
+
+选项：
+
+| -p “提示信息”： | 在等待read输入时，输出<font style="color:red;">提示信息</font> |
+| --- | --- |
+| -t 秒数：  | read命令会一直等待用户输入，使用此选项可以指定<font style="color:red;">等待时间</font> |
+| -n 字符数：  | read命令只接受指定的<font style="color:red;">字符数</font>，就会执行 |
+| -s：  | <font style="color:red;">隐藏输入的数据</font>，适用于机密信息的输入 |
+
+
+![](https://via.placeholder.com/800x600?text=Image+b39e9094946f5e9d)
+
+ 
+
+

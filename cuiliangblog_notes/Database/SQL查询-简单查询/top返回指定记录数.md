@@ -1,0 +1,57 @@
+# top返回指定记录数
+
+> 分类: Database > SQL查询-简单查询
+> 更新时间: 2026-01-10T23:34:11.537097+08:00
+
+---
+
+# 一、简介
+1. **TOP 子句**
+
+TOP  子句用于规定要返回的记录的数目。
+
+对于拥有数千条记录的大型表来说，TOP  子句是非常有用的。
+
+2. 用法
+
+```sql
+SELECT column_name(s)
+  FROM table_name
+  LIMIT number
+```
+
+# 二、示例
++ **原始的**Persons 表:
+
+| Id | LastName | FirstName | Address | City |
+| --- | --- | --- | --- | --- |
+| 1 | Adams | John | Oxford Street | London |
+| 2 | Bush | George | Fifth Avenue | New York |
+| 3 | Carter | Thomas | Changan Street | Beijing |
+| 4 | Obama | Barack | Pennsylvania Avenue | Washington |
+
+
+1. **SQL TOP 实例**
++ 现在，我们希望从上面的  "Persons" 表中选取头两条记录。
++ 我们可以使用下面的  SELECT 语句：
++ <font style="color:black;">SELECT </font><font style="color:#0000DD;">TOP 2</font><font style="color:black;"> * FROM Persons</font>
++ **结果：**
+
+| **Id** | **LastName** | **FirstName** | **Address** | **City** |
+| --- | --- | --- | --- | --- |
+| 1 | Adams | John | Oxford Street | London |
+| 2 | Bush | George | Fifth Avenue | New York |
+
+
+1. **SQL TOP PERCENT 实例**
++ 现在，我们希望从上面的  "Persons" 表中选取 50% 的记录。
++ 我们可以使用下面的  SELECT 语句：
++ <font style="color:black;">SELECT </font><font style="color:#0000DD;">TOP 50 PERCENT</font><font style="color:black;"> * FROM Persons</font>
++ 结果：
+
+| **Id** | **LastName** | **FirstName** | **Address** | **City** |
+| --- | --- | --- | --- | --- |
+| 1 | Adams | John | Oxford Street | London |
+| 2 | Bush | George | Fifth Avenue | New York |
+
+

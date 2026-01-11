@@ -1,0 +1,49 @@
+# in操作符
+
+> 分类: Database > SQL查询-简单查询
+> 更新时间: 2026-01-10T23:34:12.196073+08:00
+
+---
+
+# 一、简介
+1. **IN 操作符**
+
+IN 操作符允许我们在  WHERE 子句中规定多个值。
+
+2. **SQL IN 语法**
+
+```sql
+SELECT column_name(s)
+  FROM table_name
+  WHERE column_name IN (value1,value2,...)
+```
+
+# 二、示例
++ Persons 表:
+
+| Id | LastName | FirstName | Address | City |
+| --- | --- | --- | --- | --- |
+| 1 | Adams | John | Oxford Street | London |
+| 2 | Bush | George | Fifth Avenue | New York |
+| 3 | Carter | Thomas | Changan Street | Beijing |
+
+
+1. 从上表中选取姓氏为  Adams 和 Carter 的人：
+
+我们可以使用下面的  SELECT 语句：
+
+```sql
+SELECT * FROM Persons
+  WHERE LastName IN ('Adams','Carter')
+```
+
++ **结果集：**
+
+| Id | LastName | FirstName | Address | City |
+| --- | --- | --- | --- | --- |
+| 1 | Adams | John | Oxford Street | London |
+| 3 | Carter | Thomas | Changan Street | Beijing |
+
+
+ 
+

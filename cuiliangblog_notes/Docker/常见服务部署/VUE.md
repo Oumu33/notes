@@ -1,0 +1,41 @@
+# VUE
+
+> 分类: Docker > 常见服务部署
+> 更新时间: 2026-01-10T23:35:13.231024+08:00
+
+---
+
+## 一、相关文件
+### 1. dockerfile
+```dockerfile
+FROM node:20.11.0 AS build
+COPY . /opt/vue
+WORKDIR /opt/vue
+RUN npm install --registry https://registry.npm.taobao.org && npm run build
+
+FROM nginx:1.25
+COPY --from=build /opt/vue/dist /opt/vue/dist
+COPY nginx.conf /etc/nginx/conf.d/nginx.conf
+CMD ["nginx", "-g","daemon off;"]
+```
+
+### 2. nginx配置文件
+```plain
+server {
+    listen       80;
+    server_name  ~^.*$;
+    location / {
+        root  /opt/vue/dist;
+        index  index.html index.htm;
+        try_files $uri $uri/ /index.html;
+        add_header Access-Control-Allow-Origin *;
+    }
+}
+```
+
+## 二、构建与运行
+```bash
+docker build -t vue:v1 .
+docker run -p 80:80 --name vue -d vue:v1
+```
+

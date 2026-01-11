@@ -1,0 +1,36 @@
+# 文件系统常用命令-支持NTFS文件系统
+
+> 分类: Linux > 磁盘文件管理
+> 更新时间: 2026-01-10T23:34:48.459121+08:00
+
+---
+
+# 一、下载NTFS-3G插件
+[http://www.tuxera.com/community/ntfs-3g-download/](http://www.tuxera.com/community/ntfs-3g-download/)
+
+# 2、安装NTFS-3G
+[root@localhost ~]# tar -zxvf ntfs-3g_ntfsprogs-2013.1.13.tgz
+
+1. 解压
+
+[root@localhost ~]# cd ntfs-3g_ntfsprogs-2013.1.13
+
+1. 进入解压目录
+
+[root@localhost ntfs-3g_ntfsprogs-2013.1.13]# ./configure
+
+1. 编译器准备。没有指定安装目录，安装到默认位置中
+
+[root@localhost ntfs-3g_ntfsprogs-2013.1.13]# make
+
+1. 编译
+
+[root@localhost ntfs-3g_ntfsprogs-2013.1.13]# make install
+
+1. 编译安装
+
+# 三、使用
+[root@localhost ~]# mount -t ntfs-3g 分区设备文件名 挂载点
+
+ 
+

@@ -1,0 +1,51 @@
+# vite创建项目
+
+> 来源: Web
+> 创建时间: 2021-02-25T16:14:08+08:00
+> 更新时间: 2026-01-11T09:25:01.964457+08:00
+> 阅读量: 625 | 点赞: 0
+
+---
+
+1. 创建项目
+
+npm init vite@latest 
+
+2. 安装依赖并运行项目
+
+```bash
+cd projectName
+npm install 
+npm run dev
+```
+
++ 如果遇到如下报错
+
+```bash
+/Users/cuiliang/coding/myblog_pc/node_modules/esbuild/bin/esbuild:2
+throw new Error(`esbuild: Failed to install correctly
+^
+
+Error: esbuild: Failed to install correctly
+
+Make sure you don't have "ignore-scripts" set to true. You can check this with
+"npm config get ignore-scripts". If that returns true you can reset it back to
+false using "npm config set ignore-scripts false" and then reinstall esbuild.
+
+If you're using npm v7, make sure your package-lock.json file contains either
+"lockfileVersion": 1 or the code "hasInstallScript": true. If it doesn't have
+either of those, then it is likely the case that a known bug in npm v7 has
+corrupted your package-lock.json file. Regenerating your package-lock.json file
+should fix this issue.
+```
+
++ <font style="color:#4D4D4D;">手动运行 </font>`node node_modules/esbuild/install.js`<font style="color:#4D4D4D;"> 来解决</font>`esbuild`<font style="color:#4D4D4D;">安装问题。</font>
+3. 更新vue版本
+
+```bash
+npm install vue@next
+```
+
+
+
+

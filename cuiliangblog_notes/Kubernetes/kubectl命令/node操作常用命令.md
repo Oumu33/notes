@@ -1,0 +1,57 @@
+# node操作常用命令
+
+> 分类: Kubernetes > kubectl命令
+> 更新时间: 2026-01-10T23:33:18.850851+08:00
+
+---
+
+# 节点管理
+1. 显示Node的详细信息
+
+```bash
+kubectl describe nodes <node-name>
+```
+
+2. 节点标记不可调度
+
+```bash
+kubectl cordon <node-name>
+```
+
+3. 驱逐node节点的pod
+
+```bash
+kubectl drain node2 --delete-local-data
+```
+
+3. 删除node节点
+
+```bash
+kubectl delete nodes nodename
+```
+
+# 节点标签管理
+1. 查看节点标签
+
+```bash
+kubectl get nodes --show-labels
+```
+
+2. 为node节点设置“disktype=ssd”标签以标识其拥有SSD设备：
+
+```bash
+kubectl label nodes node2 disktype=ssd
+```
+
+3. 取消节点标签
+
+```bash
+kubectl label nodes node2 disktype-
+```
+
+4. 查看具有键名SSD的标签的Node资源：
+
+```bash
+kubectl get nodes -l 'disktype' -L disktype
+```
+

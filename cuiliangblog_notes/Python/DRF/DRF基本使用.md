@@ -1,0 +1,78 @@
+# DRF基本使用
+
+> 分类: Python > DRF
+> 更新时间: 2026-01-10T23:34:30.096881+08:00
+
+---
+
+# 安装DRF
+`pip install djangorestframework `
+
+## 修改setting配置
+```python
+INSTALLED_APPS = [
+    ………
+    'rest_framework',
+]
+```
+
+# 项目使用DRF
+## 创建应用
+`python manage.py startapp quickstart` 
+
+## 创建数据库表结构
+`python manage.py migrate` 
+
+## <font style="color:#333333;">定义序列化程序(</font>quickstart/serializers.py<font style="color:#333333;">)</font>
+```python
+from django.contrib.auth.models import User
+from rest_framework import serializers
+
+
+class UserSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = User
+        fields = ('url', 'username', 'email', 'groups')
+```
+
+## 编写视图（quickstart/views.py）
+```python
+from django.contrib.auth.models import User
+from rest_framework import viewsets
+from .serializers import UserSerializer
+
+
+class UserViewSet(viewsets.ModelViewSet):
+    """
+    允许用户查看或编辑的API路径。
+    """
+    queryset = User.objects.all().order_by('-date_joined')
+    serializer_class = UserSerializer
+```
+
+## 创建路由文件（quickstart/urls.py）
+```python
+from rest_framework import routers
+from . import views
+
+urlpatterns = []
+router = routers.DefaultRouter()
+router.register(r'users', views.UserViewSet)
+urlpatterns += router.urls
+```
+
+## 修改根路由文件（tutorial/urls.py）
+```python
+from django.urls import path, include
+from django.contrib import admin
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('quickstart.urls')),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+]
+```
+
+## 访问测试
+![](../../images/img_4142.png)
+

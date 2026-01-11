@@ -1,0 +1,173 @@
+# LVS集群服务配置
+
+> 分类: Linux > 服务部署
+> 更新时间: 2026-01-10T23:34:59.496939+08:00
+
+---
+
+
+
+<font style="color:#000000;"></font>
+
+# 一、实验准备
+1.   设置两个不同网段，关闭防火墙，设置路由
+
+2.   调度器开启中继模式
+
+![](../../images/img_3231.png)
+
+3.   Web服务器安装httpd，并编写测试页
+
+![](../../images/img_3232.png)
+
+![](../../images/img_3233.png)
+
+4.   外网客户机访问测试页
+
+![](../../images/img_3234.png)
+
+5.   安装ipvsadm软件包
+
+![](../../images/img_3235.png)
+
+6.   装载LVS模块
+
+![](../../images/img_3236.png)
+
+# 二、LVS-NAT配置
+![](../../images/img_3237.jpeg)
+
+l  ipvsadm 命令
+
+| 新增和修改集群 | ipvsadm -A|E -t|u|f service-address [-s scheduler] | | | | |
+| --- | --- | --- | --- | --- | --- |
+| | -A：添加 | | -E：修改 |
+| | -D：删除 | | -C：清空 |
+| | -t：指定tcp | | -u：指定udp |
+| | -s：指定调度算法<br/>（**默认是****wlc**） | RR（轮询）  <br/>WRR（加权轮询）  <br/>SH（源地址hash，实现session保持）   <br/>DH（目的地址hash） | | | LC（最小连接数）  <br/>WLC（加权最小连接）    SED（最短期望延迟）    NQ（永不排队） |
+| 管理服务器池中的RS | ipvsadm -a|e -t|u|f service-address -r server-address [-g|i|m] [-w weight] [-x upper] [-y lower] | | | | |
+| | -a：添加可调度的服务器节点 | | -e：修改添加的服务器节点 |
+| | -d：删除服务器节点 | | -r：指定节点服务器IP地址（RIP） |
+| | -g：使用DR模型 | -i：TUN模型 | | -m：NAT模型  （默认是DR模型） |
+| | -w：权重 | | | | |
+| | | | | | |
+
+
+1.   添加集群
+
+![](../../images/img_3238.png)
+
+2.  添加服务器中的RS
+
+![](../../images/img_3239.png)
+
+3.   访问验证结果
+
+![](../../images/img_3240.png)
+
+# 三、LVS-DR配置
+![](../../images/img_3241.png)
+
+![](../../images/img_3242.png)
+
+1.   在调度器上配置客户端能访问的VIP
+
+![](../../images/img_3243.png)
+
+2.   配置VIP到调度器的路由
+
+![](../../images/img_3244.png)
+
+3.   调整web服务器内核参数，抑制ARP响应
+
+![](../../images/img_3245.png)
+
+![](../../images/img_3246.png)
+
+4.  在web服务器自身网卡的回环地址子接口上配置VIP
+
+![](../../images/img_3247.png)
+
+![](../../images/img_3248.png)
+
+5.   Web服务器上配置VIP的路由
+
+![](../../images/img_3249.png)
+
+![](../../images/img_3250.png)
+
+6.   用客户机ping  VIP，检查连通性
+
+![](../../images/img_3251.png)
+
+![](../../images/img_3252.png)
+
+7.   配置调度器的调度规则
+
+![](../../images/img_3253.png)
+
+8.   浏览器验证LVS-DR集群结果
+
+![](../../images/img_3254.png)
+
+9.   arp_ignore和arp_announce参数示例
+
+![](../../images/img_3255.png)
+
+<font style="color:#4B4B4B;"> </font>
+
+<font style="color:#4B4B4B;">（</font><font style="color:#4B4B4B;">1</font><font style="color:#4B4B4B;">）当</font><font style="color:#4B4B4B;">arp_ignore</font><font style="color:#4B4B4B;">参数配置为</font><font style="color:#4B4B4B;">0</font><font style="color:#4B4B4B;">时，</font><font style="color:#4B4B4B;">eth1</font><font style="color:#4B4B4B;">网卡上收到目的</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">为环回网卡</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">的</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">请求，但是</font><font style="color:#4B4B4B;">eth1</font><font style="color:#4B4B4B;">也会返回</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">响应，把自己的</font><font style="color:#4B4B4B;">mac</font><font style="color:#4B4B4B;">地址告诉对端。</font>
+
+![](../../images/img_3256.png)
+
+<font style="color:#4B4B4B;">（</font><font style="color:#4B4B4B;">2</font><font style="color:#4B4B4B;">）当</font><font style="color:#4B4B4B;">arp_ignore</font><font style="color:#4B4B4B;">参数配置为</font><font style="color:#4B4B4B;">1</font><font style="color:#4B4B4B;">时，</font><font style="color:#4B4B4B;">eth1</font><font style="color:#4B4B4B;">网卡上收到目的</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">为环回网卡</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">的</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">请求，发现请求的</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">不是自己网卡上的</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">，不会回</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">响应。</font>
+
+![](../../images/img_3257.png)
+
+<font style="color:#4B4B4B;">（</font><font style="color:#4B4B4B;">3</font><font style="color:#4B4B4B;">）当</font><font style="color:#4B4B4B;">arp_announce</font><font style="color:#4B4B4B;">参数配置为</font><font style="color:#4B4B4B;">0</font><font style="color:#4B4B4B;">时，系统要发送的</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">包源地址为</font><font style="color:#4B4B4B;">eth1</font><font style="color:#4B4B4B;">的地址，</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">包目的地址根据路由表查询判断需要从</font><font style="color:#4B4B4B;">eth2</font><font style="color:#4B4B4B;">网卡发出，这时会先从</font><font style="color:#4B4B4B;">eth2</font><font style="color:#4B4B4B;">网卡发起一个</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">请求，用于获取目的</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">地址的</font><font style="color:#4B4B4B;">MAC</font><font style="color:#4B4B4B;">地址。该</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">请求的源</font><font style="color:#4B4B4B;">MAC</font><font style="color:#4B4B4B;">自然是</font><font style="color:#4B4B4B;">eth2</font><font style="color:#4B4B4B;">网卡的</font><font style="color:#4B4B4B;">MAC</font><font style="color:#4B4B4B;">地址，但是源</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">地址会选择</font><font style="color:#4B4B4B;">eth1</font><font style="color:#4B4B4B;">网卡的地址。</font>
+
+<font style="color:#4B4B4B;"> </font>![](../../images/img_3258.png)
+
+<font style="color:#4B4B4B;">（</font><font style="color:#4B4B4B;">4</font><font style="color:#4B4B4B;">）当</font><font style="color:#4B4B4B;">arp_announce</font><font style="color:#4B4B4B;">参数配置为</font><font style="color:#4B4B4B;">2</font><font style="color:#4B4B4B;">时，</font><font style="color:#4B4B4B;">eth2</font><font style="color:#4B4B4B;">网卡发起</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">请求时，源</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">地址会选择</font><font style="color:#4B4B4B;">eth2</font><font style="color:#4B4B4B;">网卡自身的</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">地址。</font>
+
+10. arp_ignore和arp_announce参数在DR模式下的作用
+
+<font style="color:#4B4B4B;">（</font><font style="color:#4B4B4B;">1</font><font style="color:#4B4B4B;">）</font><font style="color:#4B4B4B;">arp_ignore</font>
+
+<font style="color:#4B4B4B;">　　因为</font><font style="color:#4B4B4B;">DR</font><font style="color:#4B4B4B;">模式下，每个真实服务器节点都要在环回网卡上绑定虚拟服务</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">。这时候，如果客户端对于虚拟服务</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">的</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">请求广播到了各个真实服务器节点，如果</font><font style="color:#4B4B4B;">arp_ignore</font><font style="color:#4B4B4B;">参数配置为</font><font style="color:#4B4B4B;">0</font><font style="color:#4B4B4B;">，则各个真实服务器节点都会响应该</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">请求，此时客户端就无法正确获取</font><font style="color:#4B4B4B;">LVS</font><font style="color:#4B4B4B;">节点上正确的虚拟服务</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">所在网卡的</font><font style="color:#4B4B4B;">MAC</font><font style="color:#4B4B4B;">地址。假如某个真实服务器节点</font><font style="color:#4B4B4B;">A</font><font style="color:#4B4B4B;">的网卡</font><font style="color:#4B4B4B;">eth1</font><font style="color:#4B4B4B;">响应了该</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">请求，客户端把</font><font style="color:#4B4B4B;">A</font><font style="color:#4B4B4B;">节点的</font><font style="color:#4B4B4B;">eth1</font><font style="color:#4B4B4B;">网卡的</font><font style="color:#4B4B4B;">MAC</font><font style="color:#4B4B4B;">地址误认为是</font><font style="color:#4B4B4B;">LVS</font><font style="color:#4B4B4B;">节点的虚拟服务</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">所在网卡的</font><font style="color:#4B4B4B;">MAC</font><font style="color:#4B4B4B;">，从而将业务请求消息直接发到了</font><font style="color:#4B4B4B;">A</font><font style="color:#4B4B4B;">节点的</font><font style="color:#4B4B4B;">eth1</font><font style="color:#4B4B4B;">网卡。这时候虽然因为</font><font style="color:#4B4B4B;">A</font><font style="color:#4B4B4B;">节点在环回网卡上也绑定了虚拟服务</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">，所以</font><font style="color:#4B4B4B;">A</font><font style="color:#4B4B4B;">节点也能正常处理请求，业务暂时不会受到影响。但时此时由于客户端请求没有发到</font><font style="color:#4B4B4B;">LVS</font><font style="color:#4B4B4B;">的虚拟服务</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">上，所以</font><font style="color:#4B4B4B;">LVS</font><font style="color:#4B4B4B;">的负载均衡能力没有生效。造成的后果就是，</font><font style="color:#4B4B4B;">A</font><font style="color:#4B4B4B;">节点一直在单节点运行，业务量过大时可能会出现性能瓶颈。</font>
+
+<font style="color:#4B4B4B;">　　</font>**<font style="color:red;">所以</font>****<font style="color:red;">DR</font>****<font style="color:red;">模式下要求</font>****<font style="color:red;">arp_ignore</font>****<font style="color:red;">参数要求配置为</font>****<font style="color:red;">1</font>****<font style="color:red;">。</font>**
+
+<font style="color:#4B4B4B;">　（</font><font style="color:#4B4B4B;">2</font><font style="color:#4B4B4B;">）</font><font style="color:#4B4B4B;">arp_announce</font>
+
+<font style="color:#4B4B4B;"> </font><font style="color:#4B4B4B;">　　</font><font style="color:#4B4B4B;">每个机器或者交换机中都有一张</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">表，该表用于存储对端通信节点</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">地址和</font><font style="color:#4B4B4B;">MAC</font><font style="color:#4B4B4B;">地址的对应关系。当收到一个未知</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">地址的</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">请求，就会再本机的</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">表中新增对端的</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">和</font><font style="color:#4B4B4B;">MAC</font><font style="color:#4B4B4B;">记录；当收到一个已知</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">地址（</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">表中已有记录的地址）的</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">请求，则会根据</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">请求中的源</font><font style="color:#4B4B4B;">MAC</font><font style="color:#4B4B4B;">刷新自己的</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">表。</font>
+
+<font style="color:#4B4B4B;">　　如果</font><font style="color:#4B4B4B;">arp_announce</font><font style="color:#4B4B4B;">参数配置为</font><font style="color:#4B4B4B;">0</font><font style="color:#4B4B4B;">，则网卡在发送</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">请求时，可能选择的源</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">地址并不是该网卡自身的</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">地址，这时候收到该</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">请求的其他节点或者交换机上的</font><font style="color:#4B4B4B;">arp</font><font style="color:#4B4B4B;">表中记录的该网卡</font><font style="color:#4B4B4B;">IP</font><font style="color:#4B4B4B;">和</font><font style="color:#4B4B4B;">MAC</font><font style="color:#4B4B4B;">的对应关系就不正确，可能会引发一些未知的网络问题，存在安全隐患。</font>
+
+**<font style="color:red;">所以</font>****<font style="color:red;">DR</font>****<font style="color:red;">模式下要求</font>****<font style="color:red;">arp_announce</font>****<font style="color:red;">参数要求配置为</font>****<font style="color:red;">2</font>****<font style="color:red;">。</font>**
+
+# 四、LVS持久连接
+![](../../images/img_3242.png)
+
+1.   PPC：Persitens Port connection
+
+同一客户端IP同一端口始终在一定时间内调度到同一RS上
+
+![](../../images/img_3259.png)
+
+2.   PCC：Persitens Client connection
+
+同一客户端IP始终在一定时间内调度到同一RS上（不管请求什么端口服务）
+
+![](../../images/img_3260.png)
+
+3.   PNMPP：防火墙规则标记
+
+把多个目标端口标记为同一个标记mark(1~99)
+
+先对某一特定类型的数据包打上标记，然后再将基于某一类标记的服务送到后台的Real Server上去，后台的Real Server 并不识别这些标记。将持久和防火墙标记结合起来就能够实现端口姻亲功能，只要是来自某一客户端的对某一特定服务（需要不同的端口）的访问都定义到同一台Real Server上去。
+
+案例：一个用户在访问购物网站时同时使用HTTP（80）和HTTPS（443）两种协议，我们需要将其定义到同一台Real Server上，而其他的服务不受限制。
+
+![](../../images/img_3261.png)
+
