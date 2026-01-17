@@ -85,7 +85,7 @@ postgres-operator-ui   ClusterIP   10.104.122.31   <none>        80/TCP     23s
 
 访问验证
 
-![](https://via.placeholder.com/800x600?text=Image+753a3f69910319e4)
+![img_1600.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1600.png)
 
 ## 创建 Postgres 集群
 参考manifests/minimal-postgres-manifest.yaml文件配置，创建集群。完整配置项可参考文档：[https://github.com/zalando/postgres-operator/blob/master/manifests/complete-postgres-manifest.yaml](https://github.com/zalando/postgres-operator/blob/master/manifests/complete-postgres-manifest.yaml)
@@ -261,7 +261,7 @@ postgres=# \l
 
 外部工具连接测试
 
-![](https://via.placeholder.com/800x600?text=Image+286d51f5ebbbca4f)
+
 
 ## 创建数据库用户
 ```bash

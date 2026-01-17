@@ -4,10 +4,10 @@
     3. MySQL的用户以行的形式存放在mysql数据库的user表中
     4. 查看MySQL用户
 + mysql>  select user,host,authentication_string from mysql.user; 
-+ ![](https://via.placeholder.com/800x600?text=Image+5b092fa85ad97861)
++ ![img_752.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_752.png)
     - mysql> select * from       mysql.user\G
 + *_priv  字段中的值 Y 表示已具有相应权限。root 帐户具有完全访问权限，该帐户的所有权限列的值均为 Y ,新建的普通用户liu均为N
-+ ![](https://via.placeholder.com/800x600?text=Image+64c428091e9e66bd)
++ 
     1. 客户端主机（host）的含义
 + MySQL早期应用于超市，每个pos机具有不同的IP，客户希望能够区分来自于不同pos机的刷卡记录，不希望收银员在超市以外的地方访问MySQL数据库，因此MySQL使用host列来限制客户机连接数据库以提高安全性，只有host列中指定的IP或主机名才能使用用户名和密码连接数据库。例如：用户知道root@localhost的密码，但是用户想从远程主机（IP:192.168.2.1）来连接数据库是不会成功的。
     1. 允许的客户端主机名（host）格式示例：

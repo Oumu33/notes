@@ -11,7 +11,7 @@
 9. 开放性
 
 # 二、prometheus组件
-![](https://via.placeholder.com/800x600?text=Image+419be2d5cd54f1e8)
+![img_4688.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4688.jpeg)
 
 1. Prometheus Server
 + Prometheus Server是Prometheus组件中的核心部分，负责实现对监控数据的获取，存储以及查询。

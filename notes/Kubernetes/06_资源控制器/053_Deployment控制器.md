@@ -4,7 +4,7 @@
 
 1. Deployment 的控制器，实际上控制的是 ReplicaSet 的数目，以及每个 ReplicaSet的属性。而一个应用的版本，对应的正是一个 ReplicaSet；这个版本应用的 Pod数量，则由 ReplicaSet 通过它自己的控制器（ReplicaSet Controller）来保证。
 
-![](https://via.placeholder.com/800x600?text=Image+47c48d2406847c5a)
+
 
 2. Deployment具备ReplicaSet的全部功能，同时还增添了部分特性。
 + 事件和状态查看：必要时可以查看Deployment对象升级的详细进度和状态。
@@ -48,15 +48,15 @@ spec:
 `kubectl apply -f Deployment.yaml` 
 3. 查看Deployment资源
 
-![](https://via.placeholder.com/800x600?text=Image+93442c96b4c06f35)
+
 
 4. 查看ReplicaSets资源
 
-![](https://via.placeholder.com/800x600?text=Image+9fcb246416a9bda2)
+
 
 5. 查看Pod资源
 
-![](https://via.placeholder.com/800x600?text=Image+5396441a684c19c9)
+![img_2896.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2896.png)
 
 6. 由此印证了Deployment借助于ReplicaSet管理Pod资源的机制，于是可以得知，其大部分管理操作与ReplicaSet相同
 
@@ -75,14 +75,14 @@ spec:
 + maxUnavailable：升级期间正常可用的Pod副本数（包括新旧版本）最多不能低于期望数值的个数，其值可以是0或正整数，也可以是一个期望值的百分比；默认值为1，该值意味着如果期望值是3，则升级期间至少要有两个Pod对象处于正常提供服务的状态
 3. 为了保存版本升级的历史，需要在创建Deployment对象时于命令中使用“--record”选项。
 
-![](https://via.placeholder.com/800x600?text=Image+2a07be932236bae9)
+
 
 4. 使用命令临时更新镜像
 + 使用192.168.10.110/k8s/myapp:v2镜像文件修改Pod模板中的myapp容器，启动Deployment控制器的滚动更新  
 `$ kubectl set image deployments myapp-deploy myapp=192.168.10.110/k8s/myapp:v2` 
 + 访问验证
 
-![](https://via.placeholder.com/800x600?text=Image+33c4f2ec41a022e4)
+![img_464.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_464.png)
 
 5. 灰度发布（金色雀发布）
 + 待第一批新的Pod资源创建完成后立即暂停更新过程，此时，仅存在一小部分新版本的应用，主体部分还是旧的版本。然后，再根据用户特征精心筛选出小部分用户的请求路由至新版本的Pod应用，并持续观察其是否能稳定地按期望的方式运行。
@@ -107,12 +107,12 @@ kubectl rollout pause会用来停止触发下一次rollout，正在执行的滚�
 1. 将myapp-deploy回滚至此前的版本：  
 `$ kubectl rollout undo deployments myapp-deploy` 
 
-![](https://via.placeholder.com/800x600?text=Image+82e9f443df8a51f2)
+![img_4320.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4320.png)
 
 2. 若要回滚到号码为1的revision记录，则使用如下命令即可完成：  
 `$ kubectl rollout undo deployments myapp-deploy --to-revision=1` 
 
-![](https://via.placeholder.com/800x600?text=Image+b670c53b1a789e85)
+![img_3056.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3056.png)
 
 + 回滚操作中，其revision记录中的信息会发生变动，回滚操作会被当作一次滚动更新追加进历史记录中，而被回滚的条目则会被删除。
 + 如果此前的滚动更新过程处于“暂停”状态，那么回滚操作就需要先将Pod模板的版本改回到之前的版本，然后“继续”更新，否则，其将一直处于暂停状态而无法回滚。

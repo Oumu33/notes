@@ -2,7 +2,7 @@
 # 一、如何访问Service？
 为了便于分析，我们重新部署web_server。
 
-![](https://via.placeholder.com/800x600?text=Image+64e99d257dce6d63)
+
 
 ① docker service rm 删除 web_server，service 的所有副本（容器）都会被删除。
 
@@ -14,19 +14,19 @@
 
 要访问 http 服务，最起码网络得通，服务的 IP 我们得知道，但这些信息目前我们都不清楚。不过至少我们知道每个副本都是一个运行的容器，先看看容器的网络配置。
 
-![](https://via.placeholder.com/800x600?text=Image+bd82f5973c2c68e8)
+
 
 在 vm1 上运行了一个容器，是 web_server 的一个副本，容器监听了 80 端口，但并没有映射到 Docker Host，所以只能通过容器的 IP 访问。查看一下容器的 IP。
 
 [root@vm1 ~]# docker inspect web_server.1.n3tj9nfvyuatvylzom57qq9mc
 
-![](https://via.placeholder.com/800x600?text=Image+4a3d1f1150878cb2)
+![img_2848.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2848.png)
 
 容器 IP 为 172.17.0.2，实际上连接的是Docker 默认 bridge 网络。
 
 我们可以直接在 vm1 上访问容器的 http 服务。
 
-![](https://via.placeholder.com/800x600?text=Image+563fd23a0ecff684)
+![img_416.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_416.png)
 
 但这样的访问也仅仅是容器层面的访问，服务并没有暴露给外部网络，只能在 Docker 主机上访问。换句话说，当前配置下，我们无法访问 service web_server。
 
@@ -35,7 +35,7 @@
 
 docker service update --publish-add 8080:80 web_server
 
-![](https://via.placeholder.com/800x600?text=Image+a0adbac93fec82db)
+
 
 如果是新建 service，可以直接用使用 --publish 参数，比如：
 
@@ -45,7 +45,7 @@ docker service create --name web_server --publish 8080:80 --replicas=2 httpd
 
 容器在 80 端口上监听 http 请求，--publish-add 8080:80 将容器的 80 映射到主机的 8080 端口，这样外部网络就能访问到 service 了。
 
-![](https://via.placeholder.com/800x600?text=Image+9ee11387a7b7c88c)
+![img_3552.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3552.png)
 
 大家可能会奇怪，为什么 curl 集群中任何一个节点的 8080 端口，都能够访问到 web_server？
 
@@ -63,7 +63,7 @@ docker service create --name web_server --publish 8080:80 --replicas=2 httpd
 
 当我们应用 --publish-add 8080:80 时，swarm 会重新配置 service，我们看看容器都发生了哪些重要变化。
 
-![](https://via.placeholder.com/800x600?text=Image+6c19f72b78d0cfdb)
+
 
 我们会发现，之前的所有副本都被Shutdown，然后启动了新的副本。我们查看一下新副本的容器网络配置。
 
@@ -73,7 +73,7 @@ docker service create --name web_server --publish 8080:80 --replicas=2 httpd
 
 # apt-get install net-tools
 
-![](https://via.placeholder.com/800x600?text=Image+cd8d3f1040f61e07)
+
 
 容器的网络与 --publish-add 之前已经大不一样了，现在有两块网卡，每块网卡连接不同的 Docker 网络。
 
@@ -82,7 +82,7 @@ docker service create --name web_server --publish 8080:80 --replicas=2 httpd
     1. eth0 连接的是一个 overlay 类型的网络，名字为 ingress，其作用是让运行在不同主机上的容器可以相互通信。
     2. eth1 连接的是一个 bridge 类型的网络，名字为 docker_gwbridge，其作用是让容器能够访问到外网。
 
-![](https://via.placeholder.com/800x600?text=Image+ac41290fe1c87a6c)
+
 
 ingress 网络是 swarm 创建时 Docker 为自动我们创建的，swarm 中的每个 node 都能使用 ingress。
 
@@ -111,7 +111,7 @@ ingress 网络是 swarm 创建时 Docker 为自动我们创建的，swarm 中的
 
 [root@host2 ~]# docker network create --driver overlay myapp_net
 
-![](https://via.placeholder.com/800x600?text=Image+6938a0376a268908)
+
 
 <font style="color:#383A42;">直接使用</font><font style="color:#383A42;"> </font>ingress<font style="color:#383A42;"> </font><font style="color:#383A42;">不行，因为目前</font><font style="color:#383A42;"> </font><font style="color:#383A42;">ingress</font><font style="color:#383A42;"> </font><font style="color:#383A42;">没有提供服务发现，必须创建自己的</font><font style="color:#383A42;">overlay </font><font style="color:#383A42;">网络。</font>
 
@@ -121,13 +121,13 @@ ingress 网络是 swarm 创建时 Docker 为自动我们创建的，swarm 中的
 
 [root@host2 ~]# docker service create --name my_web --replicas=3 --network myapp_net httpd
 
-![](https://via.placeholder.com/800x600?text=Image+9580f076ede6edba)
+
 
 部署一个 util 服务用于测试，挂载到同一个 overlay 网络。
 
 [root@host2 ~]# docker service create --name util --network myapp_net busybox sleep 10000000
 
-![](https://via.placeholder.com/800x600?text=Image+6ccefdbf20017416)
+
 
 sleep 10000000 的作用是保持 busybox容器处于运行的状态，我们才能够进入到容器中访问service my_web。
 
@@ -135,11 +135,11 @@ sleep 10000000 的作用是保持 busybox容器处于运行的状态，我们才
 
 通过 docker service ps util 确认 util 所在的节点为 swarm-worker1。
 
-![](https://via.placeholder.com/800x600?text=Image+ccfbe71b07bfe5cc)
+![img_4128.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4128.png)
 
 登录到 vm2，在容器 util.1 中 ping 服务 my_web。
 
-![](https://via.placeholder.com/800x600?text=Image+11f392d6ed2c6e7e)
+![img_2896.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2896.png)
 
 可以看到 my_web 的 IP 为 10.0.1.2，这是哪个副本的 IP 呢？
 
@@ -149,7 +149,7 @@ sleep 10000000 的作用是保持 busybox容器处于运行的状态，我们才
 
 [root@vm2 ~]# docker network inspect myapp_net
 
-![](https://via.placeholder.com/800x600?text=Image+44c2ac6467f6048e)
+![img_112.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_112.png)
 
 10.0.1.5、10.0.1.4、10.0.1.9 才是各个副本自己的 IP。不过对于服务的使用者（这里是 util.1），根本不需要知道 my_web副本的 IP，也不需要知道 my_web 的 VIP，只需直接用 service 的名字 my_web 就能访问服务。
 

@@ -169,6 +169,6 @@ deploy: # 定义job
 
 执行结果
 
-![](https://via.placeholder.com/800x600?text=Image+e0e73f4004f012aa)
+
 
 

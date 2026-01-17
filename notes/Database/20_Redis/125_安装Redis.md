@@ -34,7 +34,7 @@ systemctl start redis
 
 vim /etc/redis.conf
 
-![](https://via.placeholder.com/800x600?text=Image+4a43991f582945d3)
+
 
 systemctl restart redis
 
@@ -71,7 +71,7 @@ $ make install
 
 + make时可能存在如下报错
 
-![](https://via.placeholder.com/800x600?text=Image+c98f0a42d69ea2f2)
+
 
 [https://sourceforge.net/projects/tcl/](https://sourceforge.net/projects/tcl/)之后，点击download直接下载源代码
 

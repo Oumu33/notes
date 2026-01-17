@@ -7,7 +7,7 @@
 
 以1.23.X为例，查看[https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.23.md](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.23.md)
 
-![](https://via.placeholder.com/800x600?text=Image+fd3a15fa628796fe)
+
 
 由更新日志可知，支持的docker版本为20.10.7以上，也不用安装最新版本的docker，以免出现docker版本与k8s版本不匹配的现象，此处就以安装20.10.7为例。
 

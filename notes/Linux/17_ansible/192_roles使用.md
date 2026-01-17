@@ -57,29 +57,29 @@
     1. 以远程安装httpd为例，使用role示例：
     - 目录结构：
 + [root@bogon  ~]# tree /etc/ansible/roles/
-+ ![](https://via.placeholder.com/800x600?text=Image+69e26a7f2fb5f8d6)
++ 
 + httpd是playbook调用时role的名称
 + http.conf.c6.j2是httpd配置文件
     -  变量
-+ ![](https://via.placeholder.com/800x600?text=Image+4f0c85e7d47f2a4e)
++ 
 +  
-+ ![](https://via.placeholder.com/800x600?text=Image+3311db9ab966e020)
++ 
     - tasks文件
-+ ![](https://via.placeholder.com/800x600?text=Image+84f0bc87b4422eb6)
++ 
 +  
-+ ![](https://via.placeholder.com/800x600?text=Image+59c171ebf704575d)
++ ![img_3184.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3184.png)
 + 此处不用写task，执行时是在tasks目录下role组件能够自动识别
     - handlers文件
-+ ![](https://via.placeholder.com/800x600?text=Image+27f133fd8b7842dd)
++ ![img_4304.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4304.png)
 +  
-+ ![](https://via.placeholder.com/800x600?text=Image+165d98afad6f5afc)
++ ![img_512.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_512.png)
     - 模板文件
-+ ![](https://via.placeholder.com/800x600?text=Image+f3dd1c8a0a5e9244)
++ 
 + 使用httpd_port变量设置httpd_port端口号，此变量来自vars目录下申明的变量
     - playbook文件
-+ ![](https://via.placeholder.com/800x600?text=Image+b76d07e6858a7617)
++ ![img_720.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_720.png)
 +  
-+ ![](https://via.placeholder.com/800x600?text=Image+742081105cc9d67b)
++ ![img_3312.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3312.png)
     - 测试playbook文件
 + [root@bogon  ~]# ansible-playbook --check httpd_role.yml   
 + [root@bogon  ~]# ansible-playbook httpd_role.yml  

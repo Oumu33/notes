@@ -20,6 +20,6 @@ docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000
 + 密码：admin
 
 登录成功后需要重置密码  
-![](https://via.placeholder.com/800x600?text=Image+3846a6f0d529265a)
+
 
 

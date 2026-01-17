@@ -140,7 +140,7 @@ spec:
 # 访问验证
 访问web管理页
 
-![](https://via.placeholder.com/800x600?text=Image+6ccf38e884584d59)
+![img_144.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_144.png)
 
 python测试脚本，发送消息
 
@@ -194,6 +194,6 @@ if __name__ == "__main__":
 
 查看web页面成功收到消息。
 
-![](https://via.placeholder.com/800x600?text=Image+f677261d7fb117f5)
+
 
 

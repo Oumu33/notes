@@ -228,7 +228,7 @@ two
 
 [root@localhost ~]# cat httpd01.yml 
 
-![](https://via.placeholder.com/800x600?text=Image+57761ad4b404729a)
+
 
 + 测试playbook
 
@@ -279,7 +279,7 @@ Listen {{ httpd_port }}
 
 [root@localhost ~]# cat httpd02.yml 
 
-![](https://via.placeholder.com/800x600?text=Image+cdfefb3c5cc8432b)
+![img_496.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_496.png)
 
 + 检查playbook
 
@@ -300,7 +300,7 @@ Listen {{ httpd_port }}
 
 [root@localhost ~]# cat httpd02.yml 
 
-![](https://via.placeholder.com/800x600?text=Image+d153407e28cbda3c)
+
 
 + 执行之前，需要把106主机上的Listen端口改为808
 
@@ -311,7 +311,7 @@ Listen {{ httpd_port }}
 + 我们修改配置文件并重启服务，这是一个非常常见的操作。
 1. 自定义变量，编写剧本
 
-![](https://via.placeholder.com/800x600?text=Image+e705a991764703de)
+![img_3104.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3104.png)
 
 [root@compute ~]# ansible all -m shell -a 'ss -tunl | grep 8888'
 

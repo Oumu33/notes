@@ -176,7 +176,7 @@ replicaset.apps/jenkins-59dfbb6854   1         1         1       87s
 ## 访问验证
 修改hosts记录，新增`192.168.10.10 jenkins.local.com`，访问即可。
 
-![](https://via.placeholder.com/800x600?text=Image+00c0d3a0f2a242a8)
+![img_4216.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4216.png)
 
 查看初始密码
 

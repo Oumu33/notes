@@ -2,7 +2,7 @@
 # 安装中文插件
 在插件管理中搜索并安装Chinese插件
 
-![](https://via.placeholder.com/800x600?text=Image+6845f8521e3a27f5)
+
 
 # <font style="color:rgb(77, 77, 77);">安装切换分支插件</font>
 <font style="color:rgb(77, 77, 77);">因社区版是免费开源的，所以不提供扫描项目切换分支的功能，但适合真正生产环境的项目会具有多个分支，只能扫描主分支的SonarQube社区版显然很不满足你的需求，插件市场提供了一款可以切换分支的插件。</font>
@@ -58,18 +58,18 @@ Started SonarQube.
 ## 创建项目
 单击创建新项目按钮。
 
-![](https://via.placeholder.com/800x600?text=Image+db9261cff86d931d)创建项目名称。
+创建项目名称。
 
-![](https://via.placeholder.com/800x600?text=Image+17052babad159f6d)
+![img_3120.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3120.png)
 
 ## 生成扫描命令
 创建令牌。
 
-![](https://via.placeholder.com/800x600?text=Image+2b8967fe0f47691c)
+![img_3664.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3664.png)
 
 生成扫描命令
 
-![](https://via.placeholder.com/800x600?text=Image+5c69049585c36b1b)
+![img_4096.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4096.png)
 
 ## 扫描java项目
 下载测试项目
@@ -93,6 +93,6 @@ email.html  Jenkinsfile  LICENSE  mvnw  mvnw.cmd  pom.xml  readme.md  src  test
 ## 查看扫描结果
 分析完成后，页面会自动刷新，将在SonarQube上看到第一个分析：
 
-![](https://via.placeholder.com/800x600?text=Image+a3b2ff18fd99930c)
+
 
 

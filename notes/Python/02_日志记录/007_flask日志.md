@@ -1,6 +1,6 @@
 # flask日志
 ## 项目结构
-![](https://via.placeholder.com/800x600?text=Image+a6d20cd4ad2770ea)
+
 
 ## logConfig.py
 ```python

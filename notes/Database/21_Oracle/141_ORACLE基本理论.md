@@ -6,9 +6,9 @@
 
 在今后的几十年中，关系模型的概念得到充分的发展，成为了数据库架构的主流模型。
 
-![](https://via.placeholder.com/800x600?text=Image+8538fa0f6620426d)  ![](https://via.placeholder.com/800x600?text=Image+d5be585eeeddeb6c) ![](https://via.placeholder.com/800x600?text=Image+09468e75099957ba) 
+    
 
-![](https://via.placeholder.com/800x600?text=Image+929225b0a307363d)Bruce Scott  ![](https://via.placeholder.com/800x600?text=Image+ac0a7cd3bb934965)
+Bruce Scott  
 
 1977年6月，Larry Ellison与Bob Miner和Ed Oates在硅谷共同创办了一家名为软件开发实验室（Software Development Laboratories，SDL）的计算机公司
 
@@ -17,7 +17,7 @@ Ellison和Miner预见到数据库软件的巨大潜力（跟着IBM走，没错�
 1989年进入中国市场，并翻译成”甲骨文”
 
 ## 1：体系结构
-![](https://via.placeholder.com/800x600?text=Image+23c8697dbc9356db)
+
 
 ** **
 
@@ -50,7 +50,7 @@ hr,          只能完全控制属于自己的表，除非别的用户
 
 ** **
 
-![](https://via.placeholder.com/800x600?text=Image+5280a702a5bb4165)
+![img_160.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_160.png)
 
 角色起到简化权限管理的作用，MySQL从8.0开始支持角色
 
@@ -64,7 +64,7 @@ hr,          只能完全控制属于自己的表，除非别的用户
 
 ** **
 
-![](https://via.placeholder.com/800x600?text=Image+5ac78dbd7e0af8a8)
+
 
  
 
@@ -99,7 +99,7 @@ select * from dba_users;
  
 
 ## 3：存储架构
-![](https://via.placeholder.com/800x600?text=Image+44e9f64845276527)
+![img_112.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_112.png)
 
 默认6大表空间  
 

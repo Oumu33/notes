@@ -31,7 +31,7 @@ Gitlab用户在组里面有5种不同权限：
 + Owner：可以设置项目访问权限 - Visibility Level、删除项目、迁移项目、管理组成员，赋予管理人员这个权限
 
 # 操作实践
-![](https://via.placeholder.com/800x600?text=Image+3cb1d08b8ee6f95a)
+
 
 ## 开发组1与项目1创建
 > 创建开发组1，组权限为私有。并创建项目1，项目权限为私有。然后创建普通用户张三并赋予Developer权限
@@ -39,19 +39,19 @@ Gitlab用户在组里面有5种不同权限：
 
 管理员用户登录，创建开发组1，组名称为development_team1，组权限为私有
 
-![](https://via.placeholder.com/800x600?text=Image+e96419ad232451c5)
+![img_3632.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3632.png)
 
 创建一个项目，并指定开发组1，项目类型为私有
 
-![](https://via.placeholder.com/800x600?text=Image+ce6d69aebf0e024d)
+
 
 创建一个普通用户张三
 
-![](https://via.placeholder.com/800x600?text=Image+a666f7baa4d8419a)
+
 
 将张三添加到群组development_team1中，张三角色为Developer
 
-![](https://via.placeholder.com/800x600?text=Image+cddedd39ad97c4f0)
+![img_2384.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2384.png)
 
 ## 开发组2与项目2创建
 > 创建开发组2，组权限为内部。并创建项目2，项目权限为内部。然后创建普通用户李四并赋予owner权限
@@ -59,19 +59,19 @@ Gitlab用户在组里面有5种不同权限：
 
 管理员用户登录，创建开发组2，组名称为development_team2，组权限为内部
 
-![](https://via.placeholder.com/800x600?text=Image+e24fbd87a5c1cd5b)
+![img_2320.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2320.png)
 
 创建项目project2，项目类型为内部，所属于开发组2。
 
-![](https://via.placeholder.com/800x600?text=Image+27bab584c541d72a)
+
 
 创建用户李四，角色为普通用户
 
-![](https://via.placeholder.com/800x600?text=Image+f415f3ca5ad96202)
+
 
 将李四添加到组中，角色为owner。
 
-![](https://via.placeholder.com/800x600?text=Image+779e955567cdac06)
+
 
 ## 开发组3与项目3创建
 > 创建开发组3，组权限为公开。并创建项目3，项目权限为公开。然后创建管理员用户王五并赋予reporter权限
@@ -79,39 +79,39 @@ Gitlab用户在组里面有5种不同权限：
 
 管理员用户登录，创建开发组3，组名称为development_team3，组权限为公共
 
-![](https://via.placeholder.com/800x600?text=Image+2693ae7234059533)
+![img_4080.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4080.png)
 
 创建项目project3，项目权限为公共
 
-![](https://via.placeholder.com/800x600?text=Image+91c7b4131b9bbd6c)
+![img_1632.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1632.png)
 
 创建管理员用户王五
 
-![](https://via.placeholder.com/800x600?text=Image+ff68af7336872617)
+
 
 将王五添加到组中，角色为reporter
 
-![](https://via.placeholder.com/800x600?text=Image+8ef2f6b9f48e4aa3)
+![img_3568.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3568.png)
 
 # 权限验证
 ## 张三登录验证
 浏览项目权限发现， 可以查看所属项目、公开项目、内部项目
 
-![](https://via.placeholder.com/800x600?text=Image+3bf118b61b5359f0)
+
 
 ## 李四登录验证
 浏览项目权限发现， 可以查看所属项目、公开项目
 
-![](https://via.placeholder.com/800x600?text=Image+03d6c3b49cc3e2da)
+
 
 ## 王五登录验证
 浏览项目权限发现， 可以查看全部项目
 
-![](https://via.placeholder.com/800x600?text=Image+fbf5f8ce21f08db6)
+
 
 ## 未登录用户
 浏览项目权限发现， 可以查看公开项目
 
-![](https://via.placeholder.com/800x600?text=Image+c726a0189076e6a6)
+
 
 

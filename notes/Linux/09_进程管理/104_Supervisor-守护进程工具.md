@@ -102,7 +102,7 @@ systemctl start supervisord
 
 浏览器访问查看
 
-![](https://via.placeholder.com/800x600?text=Image+837a8b6ec7d82ec4)
+
 
 # 为程序创建守护进程
 为你的程序创建一个.conf文件，放在目录"/etc/supervisor/conf.d/"下。
@@ -128,13 +128,13 @@ stopsignal=INT
 
 查看后台进程状态
 
-![](https://via.placeholder.com/800x600?text=Image+a79e7db7f834dac8)
 
-![](https://via.placeholder.com/800x600?text=Image+1047ad4d51c02d07)
+
+
 
 查看输出日志
 
-![](https://via.placeholder.com/800x600?text=Image+e7cb48f38b1aa671)
+
 
 # 常用的相关管理命令
 supervisorctl restart <application name> ;重启指定应用

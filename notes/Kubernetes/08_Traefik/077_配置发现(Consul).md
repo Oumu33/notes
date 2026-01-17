@@ -4,7 +4,7 @@ traefik除了可以对接kubernetes ingressroute外，也支持其他常用的�
 
 参考文档：[https://doc.traefik.io/traefik/providers/overview/](https://doc.traefik.io/traefik/providers/overview/)
 
-![](https://via.placeholder.com/800x600?text=Image+ea1bd965143c1ea8)
+![img_3696.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3696.png)
 
 # k8s部署consul
 ## helm安装consul
@@ -203,7 +203,7 @@ consul-ui       NodePort    10.99.86.8       <none>        80:32177/TCP         
 ## nodeport方式访问consul
 根据service信息可知，consul-ui服务的80端口映射在k8s节点的31277端口，直接访问k8s节点ip:31277即可
 
-![](https://via.placeholder.com/800x600?text=Image+40d503af17658e9b)
+
 
 ## ingress方式访问consul-ui
 创建ingressroute资源
@@ -231,7 +231,7 @@ ingressroute.traefik.containo.us/consul-ui created
 
 添加hosts解析记录`192.168.93.128 consul-ui.test.com`，然后访问consul-ui.test.com
 
-![](https://via.placeholder.com/800x600?text=Image+450d820c620c6d69)
+
 
 # traefik对接consul
 参考文档：[https://doc.traefik.io/traefik/providers/consul-catalog/](https://doc.traefik.io/traefik/providers/consul-catalog/)
@@ -315,7 +315,7 @@ configmap/traefik-config configured
 
 访问traefik dashboard，查看providers信息
 
-![](https://via.placeholder.com/800x600?text=Image+ab8680e8de37935c)
+
 
 ## 创建测试资源
 创建测试应用
@@ -400,19 +400,19 @@ traefik.http.routers.whoami.middlewares=default-basic-auth-middleware@kubernetes
 ## 访问验证
 查看consul-ui信息，服务已成功注册。
 
-![](https://via.placeholder.com/800x600?text=Image+3cb5bda17f3e80dc)
+![img_1648.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1648.png)
 
 查看traefik dashboard，已自动添加路由规则，并配置了base auth认证中间件。
 
-![](https://via.placeholder.com/800x600?text=Image+787709ab0941a1ca)
+![img_3728.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3728.png)
 
 访问验证，添加hosts记录，访问`whoami.test.com`
 
-![](https://via.placeholder.com/800x600?text=Image+9ad1e3b878504c2b)
+
 
 输入账号密码后成功访问whoami应用
 
-![](https://via.placeholder.com/800x600?text=Image+8c28038fa68d153b)
+
 
 [  
 ](https://nosaid.com/article/use-traefik#%E6%B5%81%E9%87%8F%E6%B5%81%E8%BD%AC)

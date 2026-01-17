@@ -19,13 +19,13 @@ State:   指示线程正在执行的内容的操作、事件或状态
 
 Info:    线程正在执行的语句；否则为 NULL
 
-![](https://via.placeholder.com/800x600?text=Image+5523368e5e667761)
+
 
 1. 查看当前用户连接标识符(id)
 
 mysql> select connection_id();
 
-![](https://via.placeholder.com/800x600?text=Image+23b3a16bae34ca07)
+![img_2960.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2960.jpeg)
 
 1. 可以用kill命令杀掉用户连接
 

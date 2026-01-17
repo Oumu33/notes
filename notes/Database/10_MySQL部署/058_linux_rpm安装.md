@@ -2,7 +2,7 @@
 ## 下载rpm安装包
 + 访问MySQL官网[https://downloads.mysql.com/archives/community/](https://downloads.mysql.com/archives/community/)，因为我的操作系统是 rockylinux8.10。安装的版本如下：
 
-![](https://via.placeholder.com/800x600?text=Image+72da9a001454746b)
+![img_4256.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4256.png)
 
 + 复制下载地址
 
@@ -201,42 +201,42 @@ mysql_native_password=ON
 
 1. 修改 /etc/my.cnf配置文件，启动时不验证密码
 
-![](https://via.placeholder.com/800x600?text=Image+e5d0c6729e8c918f)
+
 
 1. 重启服务，使用root登录
 
-![](https://via.placeholder.com/800x600?text=Image+ae83dab27fce5b84)
+![img_32.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_32.png)
 
 2. 重新修改密码
 
-![](https://via.placeholder.com/800x600?text=Image+1586d5020367c1e8)
+
 
 3. 开启登录验证，重启mysqld
 
-![](https://via.placeholder.com/800x600?text=Image+25a991b95d649e76)
 
-![](https://via.placeholder.com/800x600?text=Image+51563eedb03f43c6)
 
-![](https://via.placeholder.com/800x600?text=Image+e0b9c88bc04f80e2)
+
+
+![img_3952.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3952.png)
 
 1. 使用新密码登录
 
 ## 自定义提示符
 1. 编辑系统变量配置文件
 
-![](https://via.placeholder.com/800x600?text=Image+3e2a0abf5b821998)
+![img_3872.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3872.png)
 
 2. 添加配置
 
-![](https://via.placeholder.com/800x600?text=Image+d00a6d4471d8d4ab)
+
 
 3. 重载配置文件
 
-![](https://via.placeholder.com/800x600?text=Image+19102f47b2b3db1d)
+![img_3840.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3840.png)
 
 4. 登录验证
 
-![](https://via.placeholder.com/800x600?text=Image+744918dfa3f0c5a3)
+
 
  
 

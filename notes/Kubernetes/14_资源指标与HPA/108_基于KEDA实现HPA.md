@@ -11,7 +11,7 @@ KEDA 的出现主要是为了解决 HPA 无法基于灵活的事件源进行伸�
 ## <font style="color:rgb(28, 30, 33);">KEDA 的原理</font>
 KEDA 并不是要替代 HPA，而是作为 HPA 的补充或者增强，事实上很多时候 KEDA 是配合 HPA 一起工作的，这是 KEDA 官方的架构图：
 
-![](https://via.placeholder.com/800x600?text=Image+432c89129137707b)
+
 
 + 当要将工作负载的副本数缩到闲时副本数，或从闲时副本数扩容时，由 KEDA 通过修改工作负载的副本数实现（闲时副本数小于 `minReplicaCount`，包括 0，即可以缩到 0）。
 + 其它情况下的扩缩容由 HPA 实现，HPA 由 KEDA 自动管理，HPA 使用 External Metrics 作为数据源，而 External Metrics 后端的数据由 KEDA 提供。
@@ -19,13 +19,13 @@ KEDA 并不是要替代 HPA，而是作为 HPA 的补充或者增强，事实上
 
 除了工作负载的扩缩容，对于任务计算类场景，KEDA 还可以根据排队的任务数量自动创建 Job 来实现对任务的及时处理：
 
-![](https://via.placeholder.com/800x600?text=Image+34a7c57865a9254e)
+![img_3744.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3744.png)
 
 ## <font style="color:rgb(28, 30, 33);">哪些场景适合使用 KEDA </font>
 ### <font style="color:rgb(28, 30, 33);">微服务多级调用</font>
 <font style="color:rgb(28, 30, 33);">在微服务中，基本都存在多级调用的业务场景，压力是逐级传递的，下面展示了一个常见的情况：</font>
 
-![](https://via.placeholder.com/800x600?text=Image+e294010b84a2481c)
+
 
 如果使用传统的 HPA 根据负载扩缩容，用户流量进入集群后：
 
@@ -43,7 +43,7 @@ KEDA 并不是要替代 HPA，而是作为 HPA 的补充或者增强，事实上
 ### <font style="color:rgb(28, 30, 33);">任务执行（生产者与消费者）</font>
 如果有需要长时间执行的计算任务，如数据分析、ETL、机器学习等场景，从消息队列或数据库中取任务进行执行，需要根据任务数量来伸缩，使用 HPA 不太合适，用 KEDA 就非常方便，可以让 KEDA 根据排队中的任务数量对工作负载进行伸缩，也可以自动创建 Job 来消费任务。
 
-![](https://via.placeholder.com/800x600?text=Image+f53c2b2fdee88fc8)
+![img_4128.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4128.png)
 
 ### <font style="color:rgb(28, 30, 33);">周期性规律</font>
 <font style="color:rgb(28, 30, 33);">如</font>果业务有周期性的波峰波谷特征，可以使用 KEDA 配置定时伸缩，在波峰来临之前先提前扩容，结束之后再缓慢缩容。
@@ -141,7 +141,7 @@ sample-app   80/80   80           80          20m
 # 同步扩缩容(<font style="color:rgb(28, 30, 33);">Workload</font>)
 <font style="color:rgb(28, 30, 33);">比如下面这种多级微服务调用：</font>
 
-![](https://via.placeholder.com/800x600?text=Image+f35c9990fd115042)
+
 
 + A、B、C 这一组服务通常有比较固定的数量比例。
 + A 的压力突增，迫使扩容，B 和 C 也可以用 KEDA 的 Kubernetes Workload 触发器实现与 A 几乎同时扩容，而无需等待压力逐级传导才缓慢迫使扩容。
@@ -259,7 +259,7 @@ app-c   4/4     4            4           9m53s
 # Prometheus 指标扩缩容(prometheus)
 如数据分析、ETL、机器学习等场景，从消息队列或数据库中取任务进行执行，需要根据任务数量来伸缩，可以让 KEDA 根据排队中的任务数量对工作负载进行伸缩，也可以自动创建 Job 来消费任务。
 
-![](https://via.placeholder.com/800x600?text=Image+8b1a32d585d469e9)
+![img_2992.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2992.png)
 
 ## 配置采集指标
 ### 部署 rabbitmq
@@ -292,14 +292,14 @@ servicemonitor.monitoring.coreos.com/rabbitmq-exporter created
 
 查看 targets
 
-![](https://via.placeholder.com/800x600?text=Image+7730f223c688c781)
+
 
 ### 调试 promql
 接下来进入 rabbitmq 管理页面创建 exchanges 和 channels，并发送测试消息，具体操作可参考文档[https://m.cuiliangblog.cn/detail/section/89394395](https://m.cuiliangblog.cn/detail/section/89394395)
 
 此时通过 `quantile_over_time(0.95, sum(rabbitmq_queue_messages) [1m:])`指标查询最近 1 分钟消息队列数据总数95 值。
 
-![](https://via.placeholder.com/800x600?text=Image+f7dfc4f73e4fbf5a)
+
 
 ## 创建 ScaledObject
 ```yaml
@@ -339,7 +339,7 @@ app-a   1/1     1            1           110s
 
 向 rabbitmq 队列发送数据，当前队列消息共 202 条，每个副本处理 10 条，自动创建 21 个副本。
 
-![](https://via.placeholder.com/800x600?text=Image+a3a90cbc6cced79c)
+![img_4432.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4432.png)
 
 ```bash
 # kubectl get deployments.apps   

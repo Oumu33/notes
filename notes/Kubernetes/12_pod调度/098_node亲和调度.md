@@ -31,44 +31,44 @@
 
 1. 使用节点硬亲和规则定义，将当前Pod对象调度至拥有zone标签且其值为foo的节点之上。
 
-![](https://via.placeholder.com/800x600?text=Image+94c3fc07cd5acd7f)
+![img_3840.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3840.png)
 
 + 处于Pending阶段，这是由于强制型的节点亲和限制场景中不存在能够满足匹配条件的节点所致
 
-![](https://via.placeholder.com/800x600?text=Image+a98dfed8ab9a9dcf)
+![img_2160.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2160.png)
 
 + 为node2节点设置标签zone=foo，使其满足条件
 
-![](https://via.placeholder.com/800x600?text=Image+13fa391695be7522)
+
 
 + pod节点成功调度至node2
 
-![](https://via.placeholder.com/800x600?text=Image+c9cb035f5dadc21c)
+![img_2720.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2720.png)
 
 
 
 2. 定义了调度拥有两个标签选择器的节点挑选条目，zone=foo且设置ssd标签，两个标签选择器彼此之间为“逻辑与”的关系。
 
-![](https://via.placeholder.com/800x600?text=Image+b079792b3b833155)
+![img_3984.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3984.png)
 
 + 处于pending状态，由于当前node只有zone=foo标签，还未设置ssd标签
 
-![](https://via.placeholder.com/800x600?text=Image+612444b05e8ea363)
+![img_2672.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2672.png)
 
 + 给node2设置ssd标签后，成功调度至node2
 
-![](https://via.placeholder.com/800x600?text=Image+151f1fe21e2c4fad)
+
 
 
 
 3. 定义节点软亲和性以选择运行在拥有zone=foo和ssd标签（无论其值为何）的节点之上，其中zone=foo是更为重要的倾向性规则，它的权重为60，ssd标签就没有那么关键，它的权重为30。
 
-![](https://via.placeholder.com/800x600?text=Image+aa7c92bcd40cf227)
+
 
 + 将node2原来的zone=foo标签修改为aaa  
 `# kubectl label nodes node2 zone='aaa' --overwrite` 
 + apply配置清单后查看pod信息。即便没有zone=foo的node，依然能成功调度
 
-![](https://via.placeholder.com/800x600?text=Image+d4f3fd3d6f83b4d3)
+
 
 

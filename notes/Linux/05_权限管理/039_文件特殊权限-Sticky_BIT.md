@@ -8,19 +8,19 @@
 1. 设置粘着位
 + chmod 1755 目录名
 
-![](https://via.placeholder.com/800x600?text=Image+e306ea01a76950b7)
+
 
 + chmod o+t 目录名
 
-![](https://via.placeholder.com/800x600?text=Image+9a1c8da153a1bc71)
+![img_960.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_960.png)
 
 1. 取消粘着位
 + chmod 777 目录名
 
-![](https://via.placeholder.com/800x600?text=Image+21593dd1dbe70234)
+
 
 + chmod 0-t 目录名
 
-![](https://via.placeholder.com/800x600?text=Image+07f73fe657590c8a)
+
 
 

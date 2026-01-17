@@ -2,8 +2,8 @@
     1. 使用drop user语句可以删除用户
 + 示例删除用户tim@localhost
 + mysql> drop user tim@localhost;
-+ ![](https://via.placeholder.com/800x600?text=Image+bce415f9c5ae0f9f)
-+ ![](https://via.placeholder.com/800x600?text=Image+6f76453c6e475965)
++ ![img_448.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_448.png)
++ ![img_1952.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1952.png)
 +  
 +  
 

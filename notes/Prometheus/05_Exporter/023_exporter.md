@@ -2,7 +2,7 @@
 # 一、Exporter简介
 所有可以向Prometheus提供监控样本数据的程序都可以被称为一个Exporter。而Exporter的一个实例称为target，如下所示，Prometheus通过轮询的方式定期从这些target中获取样本数据:
 
-![](https://via.placeholder.com/800x600?text=Image+fe26bdc83e7d8ec4)
+
 
 # 二、Exporter的来源
 1. 社区提供的
@@ -36,7 +36,7 @@
 # 四、Exporter规范
 + Exporter返回的样本数据，主要由三个部分组成：样本的一般注释信息（HELP），样本的类型注释信息（TYPE）和样本。Prometheus会对Exporter响应的内容逐行解析：
 
-![](https://via.placeholder.com/800x600?text=Image+f28bfb7dd6efe08c)
+![img_144.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_144.png)
 
 1. 如果当前行以# HELP开始，Prometheus将会按照以下规则对内容进行解析，得到当前的指标名称以及相应的说明信息：
 2. 如果当前行以# TYPE开始，Prometheus会按照以下规则对内容进行解析，得到当前的指标名称以及指标类型:

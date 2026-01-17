@@ -31,29 +31,29 @@
 # 四、操作实例
 1. 覆盖方式标准输出重定向
 
-![](https://via.placeholder.com/800x600?text=Image+0d2a70334b7791b6)
+![img_960.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_960.png)
 
 1. 追加方式标准输出重定向
 
-![](https://via.placeholder.com/800x600?text=Image+f003f3890bb7db54)
+![img_3488.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3488.png)
 
 1. 覆盖方式标准错误输出重定向
 
-![](https://via.placeholder.com/800x600?text=Image+e0e7adedb8854941)
+
 
 1. 追加方式标准错误输出重定向
 
-![](https://via.placeholder.com/800x600?text=Image+93f0f792fa37e2d4)
+
 
 1. 追加的方式把正确输出和错误输出都保存到同一个文件当中。
 
-![](https://via.placeholder.com/800x600?text=Image+41b8f3efcf0a2318)
 
-![](https://via.placeholder.com/800x600?text=Image+816be96dc823e0bb)
+
+
 
 1. 正确的输出追加到文件1中，错误的输出追加到文件2中
 
-![](https://via.placeholder.com/800x600?text=Image+2a520f1514b88d96)
+
 
  
 

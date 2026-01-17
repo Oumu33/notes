@@ -48,7 +48,7 @@ npx -v
 uv -V
 ```
 
-![](https://via.placeholder.com/800x600?text=Image+a51e1af8eff13bd0)
+![img_3840.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3840.png)
 
 # 添加MCP 常用工具
 ## **Sequential Thinking**
@@ -56,23 +56,23 @@ Sequential Thinking 是一个基于 Model Context Protocol（MCP）的服务器�
 
 插件地址：[https://modelscope.cn/mcp/servers/@modelcontextprotocol/sequentialthinking](https://modelscope.cn/mcp/servers/@modelcontextprotocol/sequentialthinking)
 
-![](https://via.placeholder.com/800x600?text=Image+3b89e97a0512edc8)
+
 
 然后打开cursor，添加 MCP：
 
-![](https://via.placeholder.com/800x600?text=Image+d323240ddcfd5a58)
+![img_2896.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2896.png)
 
 按照提示将配置粘贴进文件
 
-![](https://via.placeholder.com/800x600?text=Image+e943257dd5ca38ba)
+![img_2368.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2368.png)
 
 安装完成后，等待验证：
 
-![](https://via.placeholder.com/800x600?text=Image+bb9272a5e81cd85e)
+![img_4528.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4528.png)
 
 然后进行简单问答测试，查看能否顺利调用工具：
 
-![](https://via.placeholder.com/800x600?text=Image+78ccdc9bc8b11b7a)
+
 
 ## Playwright
 Playwright Automation 是一个基于 Model Context Protocol（MCP）的服务器工具，利用 Microsoft 开发的开源浏览器自动化库 [Playwright](https://playwright.dev/)，为大型语言模型（LLMs）和 AI 助手提供与网页交互的能力。
@@ -86,17 +86,17 @@ Playwright Automation 是一个基于 Model Context Protocol（MCP）的服务�
 
 工具主页：[https://modelscope.cn/mcp/servers/@microsoft/playwright-mcp](https://modelscope.cn/mcp/servers/@microsoft/playwright-mcp)
 
-![](https://via.placeholder.com/800x600?text=Image+f2a0bab2614ec454)
+![img_3456.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3456.png)
 
-在 cursor 设置中，新增 MCP Server![](https://via.placeholder.com/800x600?text=Image+9fea48676ef9492d)
+在 cursor 设置中，新增 MCP Server
 
 将 json 内容粘贴至 mcp.json 文件中
 
-![](https://via.placeholder.com/800x600?text=Image+8670ae66c4309d8d)
+
 
 访问验证：
 
-![](https://via.placeholder.com/800x600?text=Image+bf8ab4e8b53c9b58)
+
 
 ## FileSystem
 Filesystem MCP 是一个基于 Model Context Protocol（MCP）的服务器工具，旨在为大型语言模型（LLMs）和 AI 助手提供对本地文件系统的安全、受控访问。
@@ -110,7 +110,7 @@ Filesystem MCP 是一个基于 Model Context Protocol（MCP）的服务器工具
 
 工具地址：[https://modelscope.cn/mcp/servers/@modelcontextprotocol/filesystem](https://modelscope.cn/mcp/servers/@modelcontextprotocol/filesystem)
 
-![](https://via.placeholder.com/800x600?text=Image+17e82e3cf3127fe3)
+
 
 调用过程如下，需要写入如下配置：
 
@@ -128,7 +128,7 @@ Filesystem MCP 是一个基于 Model Context Protocol（MCP）的服务器工具
 
 然后进行测试
 
-![](https://via.placeholder.com/800x600?text=Image+59ace231d39acbf2)
+![img_1360.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1360.png)
 
 ## <font style="color:rgb(31, 35, 40);">fetch</font>
 Fetch MCP Server是一种专门为语言模型设计的 **Model Context Protocol (MCP)** 服务器，用于抓取网页内容并将 HTML 转换成 AI 模型更易处理的 Markdown 格式。
@@ -137,7 +137,7 @@ Fetch MCP Server是一种专门为语言模型设计的 **Model Context Protocol
 
 获取安装命令
 
-![](https://via.placeholder.com/800x600?text=Image+1b679c4e9bf89e30)
+
 
 安装 fetch
 
@@ -150,6 +150,6 @@ Fetch MCP Server是一种专门为语言模型设计的 **Model Context Protocol
 
 测试验证
 
-![](https://via.placeholder.com/800x600?text=Image+e2968c52a5408001)
+
 
 

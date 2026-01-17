@@ -7,7 +7,7 @@
 
 队列指的是存储数据的介质，遵循先进先出的规则。
 
-![](https://via.placeholder.com/800x600?text=Image+ed9d4685fb2e52ff)
+![img_4864.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4864.png)
 
 ## 为什么使用消息队列
 ### 解耦
@@ -15,33 +15,33 @@
 
 + 传统模式
 
-![画板](https://via.placeholder.com/800x600?text=Image+24275ce1158f1095)
+
 
 + 消息队列模式
 
-![画板](https://via.placeholder.com/800x600?text=Image+b6a61de47d1d5f9c)
+
 
 ### 异步
 如图所示。进行用户注册时，会进行写入数据库、发送邮件、发送短信操作。同步请求的话，响应时间就是所有操作步骤时间的总和，也就是1s。如果使用MQ，用户模块发送数据到MQ，然后就可以返回响应给客户端，不需要再等待系统其他操作的响应，可以大大地提高性能。对于一些非必要的业务，比如发送短信，发送邮件等等，就可以采用MQ。
 
 + 传统模式
 
-![画板](https://via.placeholder.com/800x600?text=Image+7d61cd94ca9d04a8)
+
 
 + 消息队列模式
 
-![画板](https://via.placeholder.com/800x600?text=Image+111d5f9124cc2b2a)
+
 
 ### 削峰
 假设系统A在某一段时间请求数暴增，有5000个请求发送过来，系统A这时就会发送5000条SQL进入MySQL进行执行，MySQL对于如此庞大的请求当然处理不过来，MySQL就会崩溃，导致系统瘫痪。如果使用MQ，系统A不再是直接发送SQL到数据库，而是把数据发送到MQ，MQ短时间积压数据是可以接受的，然后由消费者每次拉取2000条进行处理，防止在请求峰值时期大量的请求直接发送到MySQL导致系统崩溃。
 
 + 传统模式
 
-![画板](https://via.placeholder.com/800x600?text=Image+a52417d756a571e0)
+
 
 + 消息队列模式
 
-![画板](https://via.placeholder.com/800x600?text=Image+4f0e62a17b4a600b)
+
 
 ## RabbitMQ的特点
 RabbitMQ是一款使用Erlang语言开发的，实现AMQP(高级消息队列协议)的开源消息中间件。
@@ -80,7 +80,7 @@ RabbitMQ是一款使用Erlang语言开发的，实现AMQP(高级消息队列协�
 ## 内部结构
 RabbitMQ 本质是 AMQP 协议的一个开源实现，在详细介绍 RabbitMQ 之前，我们先来看一下 AMQP 的内部结构图
 
-![](https://via.placeholder.com/800x600?text=Image+af7ab335140b25b1)
+![img_2880.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2880.png)
 
 + Publisher：消息的生产者，也是一个向交换器发布消息的客户端应用程序
 + Exchange：交换器，用来接收生产者发送的消息并将这些消息路由给服务器中的队列
@@ -97,13 +97,13 @@ RabbitMQ 本质是 AMQP 协议的一个开源实现，在详细介绍 RabbitMQ �
 
 在 AMQP 模型中，消息的生产者不是直接将消息发送到`Queue`队列，而是将消息发送到`Exchange`交换器，其中还新加了一个中间层`Binding`绑定，作用就是通过`路由键Key`将交换器和队列建立绑定关系。
 
-![](https://via.placeholder.com/800x600?text=Image+2b8d13fb9fee1625)
+![img_3328.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3328.png)
 
 就好比类似用户表和角色表，中间通过用户角色表来将用户和角色建立关系，从而实现关系绑定，在 RabbitMQ 中，消息生产者不直接跟队列建立关系，而是将消息发送到交换器之后，由交换器通过已经建立好的绑定关系，将消息发送到对应的队列！
 
 RabbitMQ 最终的架构模型，核心部分就变成如下图所示：
 
-![](https://via.placeholder.com/800x600?text=Image+c1b824f17f5df3d2)
+![img_3344.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3344.png)
 
 从图中很容易看出，与 JMS 模型最明显的差别就是消息的生产者不直接将消息发送给队列，而是由`Binding`绑定决定交换器的消息应该发送到哪个队列，进一步实现了在消息的推送方面，更加灵活！
 
@@ -120,7 +120,7 @@ Direct 是 RabbitMQ 默认的交换机模式，也是最简单的模式，消息
 
 如果传入的 routing key 为 `black`，不会转发到`black.green`。Direct 类型交换器是完全匹配、单播的模式。
 
-![](https://via.placeholder.com/800x600?text=Image+534f9f409a9818d9)
+![img_2720.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2720.png)
 
 ### Topic
 Topic 类型交换器转发消息和 Direct 一样，不同的是：它支持通配符转发，相比 Direct 类型更加灵活！
@@ -129,7 +129,7 @@ Topic 类型交换器转发消息和 Direct 一样，不同的是：它支持通
 
 如果传入的 routing key 为 `black#`，不仅会转发到`black`，也会转发到`black.green`。
 
-![](https://via.placeholder.com/800x600?text=Image+a6917b6b36efdc8e)
+
 
 ### Headers
 headers 也是根据规则匹配, 相比 direct 和 topic 固定地使用 routing_key , headers 则是通过一个自定义匹配规则的消息头部类进行匹配。
@@ -138,14 +138,14 @@ headers 也是根据规则匹配, 相比 direct 和 topic 固定地使用 routin
 
 此外 headers 交换器和 direct 交换器完全一致，但性能差很多，目前几乎用不到了。
 
-![](https://via.placeholder.com/800x600?text=Image+c7b3d483aba2ca21)
+![img_2944.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2944.png)
 
 ### Fanout
 Fanout  类型交换器与上面几个不同，不管路由键或者是路由模式，会把消息发给绑定给它的全部队列，如果配置了 routing_key 会被忽略，也被成为消息广播模式。很像子网广播，每台子网内的主机都获得了一份复制的消息
 
 fanout 类型转发消息在四种类型中是最快的。
 
-![](https://via.placeholder.com/800x600?text=Image+19cb92752a1a19bb)
+![img_4160.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4160.png)
 
 # 单节点部署
 ## docker部署
@@ -226,7 +226,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/rabbitmq-server.serv
 ```
 
 访问`服务器ip:15672`，就可以看到管理界面  
-![](https://via.placeholder.com/800x600?text=Image+b60bb3437065d892)
+
 
 # 高可用集群部署
 ## 高可用集群方案
@@ -238,7 +238,7 @@ RabbitMQ的集群主要有两种模式：普通集群模式和克隆队列模式
 
 程序通过访问 KeepAlived 提供的 VIP（虚拟 ip）指定到其中一个Haproxy，然后 Haproxy 将访问请求代理到其管理的多个 Rabbitmq Server 中的一个，从而实现了高可用、负载均衡的功能。
 
-![](https://via.placeholder.com/800x600?text=Image+3a17b77f3d1c6c47)
+
 
 ## 集群角色规划
 通过hk1和hk2两台服务，部署HA-proxy和KeepAlived实现高可用和负载均衡服务，通过VIP 192.168.10.90对外提供服务，所有请求反向代理至mq1、mq2、mq3组成的RabbitMQ集群。
@@ -355,7 +355,7 @@ Setting permissions for user "admin" in vhost "/" ...
 
 浏览器访问mq1:15672，查看UI信息
 
-![](https://via.placeholder.com/800x600?text=Image+b825ad5bbb75c755)
+![img_1984.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1984.png)
 
 此时，集群搭建完毕，但是默认采用的模式“普通模式”，只会相互同步元数据，消息数据不会被同步，如果某一个节点宕机，则会导致该节点上的消息数据不可用。
 
@@ -372,7 +372,7 @@ Setting permissions for user "admin" in vhost "/" ...
 + message-ttl：消息在队列中的生存时间，单位为毫秒。
 4. priority：可选参数，policy的优先级。
 
-![](https://via.placeholder.com/800x600?text=Image+26450a154f2b8f80)
+![img_2784.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2784.png)
 
 ## HaProxy部署
 > 以下操作在hk1和hk2机器执行
@@ -429,7 +429,7 @@ tcp   LISTEN 0      2048         0.0.0.0:8080       0.0.0.0:*    users:(("haprox
 
 访问haproxy管理员页面验证配置是否生效。
 
-![](https://via.placeholder.com/800x600?text=Image+0fd11db3eff35fd5)
+![img_2080.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2080.png)
 
 确认无误后hk2服务器同样的步骤配置。
 
@@ -572,45 +572,45 @@ vrrp_instance VI_1 {
 
 访问vip的8080端口，可正常提供服务
 
-![](https://via.placeholder.com/800x600?text=Image+a738c0316f8a4424)
+
 
 # web界面使用
 进入 web 管理界面之后，可以很清晰的看到分了 6 个菜单目录，分别是：Overview、Connections、Channels、Exchanges、Queues、Admin。
 
 + Overview：总览概述，主要介绍 rabbitmq 一些基础汇总等信息
 
-![](https://via.placeholder.com/800x600?text=Image+73691e7895ba64c8)
+![img_800.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_800.png)
 
 + Connections：连接池管理，主要介绍客户端连接等信息
 
-![](https://via.placeholder.com/800x600?text=Image+bdcd5de774d95eee)
+
 
 + Channels：信道管理，主要介绍信道连接等信息
 
-![](https://via.placeholder.com/800x600?text=Image+bb0c677cafb322d7)
+
 
 点击具体某个具体的信道，可以看到对应的消费队列等信息。
 
-![](https://via.placeholder.com/800x600?text=Image+c8915ceea667e656)
+![img_1616.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1616.png)
 
 + Exchanges：交换器管理，主要介绍交换器等信息
 
-![](https://via.placeholder.com/800x600?text=Image+2d7ae75bfa9ce51e)
+![img_3840.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3840.png)
 
 + Queues：队列管理，主要介绍队列等信息
 
-![](https://via.placeholder.com/800x600?text=Image+35684f1015912bd5)
+
 
 + Admin：系统管理，主要介绍用户、虚拟主机、权限等信息
 
-![](https://via.placeholder.com/800x600?text=Image+ee8168534429b6b5)
+![img_2432.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2432.png)
 
 下面，我们重点介绍一些如何通过 web 页面来操作 rabbitMQ！
 
 ## 交换器管理
 点击进入 Exchanges 菜单，最下面有一个`Add a new exchange`标签。点击`Add a new exchange`，会展示如下信息！
 
-![](https://via.placeholder.com/800x600?text=Image+2554dd27d2446c66)
+![img_1232.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1232.png)
 
 + Name：交换器名称
 + Type：交换器类型
@@ -621,7 +621,7 @@ vrrp_instance VI_1 {
 
 我们先新建一个名称为`test.exchange`，类型为`direct`的交换器，结果如下。
 
-![](https://via.placeholder.com/800x600?text=Image+b215e86610810b10)
+
 
 等会用于跟队列关联！
 
@@ -630,7 +630,7 @@ vrrp_instance VI_1 {
 
 点击标签，即可进入添加队列操作界面！
 
-![](https://via.placeholder.com/800x600?text=Image+27648736850ba7eb)
+![img_2480.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2480.png)
 
 + Name：队列名称
 + Durability：是否持久化，Durable：持久化，Transient：不持久化
@@ -639,7 +639,7 @@ vrrp_instance VI_1 {
 
 同样的，新建一个名称为`test_queue`的消息队列，结果如下。
 
-![](https://via.placeholder.com/800x600?text=Image+9e9db760b583f261)
+![img_3056.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3056.png)
 
 队列新建好了之后，继续来建立绑定关系！
 
@@ -648,29 +648,29 @@ vrrp_instance VI_1 {
 
 如果是从交换器进入，那么被关联的对象就是队列。
 
-![](https://via.placeholder.com/800x600?text=Image+b04a7eafb15342f2)
+
 
 如果是从队列进入，那么被关联的对象就是交换器。
 
-![](https://via.placeholder.com/800x600?text=Image+aa0570ed81eb4866)
+![img_2720.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2720.png)
 
 我们选择从队列入手，被绑定的交换器是`test.exchange`。建立完成之后，在交换器那边也可以看到对应的绑定关系。
 
-![](https://via.placeholder.com/800x600?text=Image+12bcf1fb1cd5b4af)
+
 
 ## 发送消息
 最后，我们从交换器入手，选择对应的交换器，点击`Publish message`标签，填写对应的路由键 key，发送一下数据，查看数据是否发送到对应的队列中。
 
-![](https://via.placeholder.com/800x600?text=Image+968bd08e4a1dfb4a)
+![img_3040.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3040.png)
 
 然后点击进入 Queues 菜单，查询消息队列基本情况。其中Ready表示待消费的消息数，total表示总消息数。
 
-![](https://via.placeholder.com/800x600?text=Image+c1bd5656015fdad6)
+![img_256.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_256.png)
 
 ## 接收消息
 然后选择`hello-mq`消息队列，点击`Get messages`标签，获取队列中的消息。结果如下，可以很清晰的看到，消息写入到队列！
 
-![](https://via.placeholder.com/800x600?text=Image+e4883347f0d5e26e)
+![img_1568.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1568.png)
 
 # rabbitmqctl命令
 ## 服务管理

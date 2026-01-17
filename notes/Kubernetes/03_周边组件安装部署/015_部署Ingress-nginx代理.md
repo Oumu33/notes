@@ -9,7 +9,7 @@
 > 注意ingress版本要与k8s版本匹配，可在github仓库中查看ingress与k8s对于的版本关系列表。
 >
 
-![](https://via.placeholder.com/800x600?text=Image+805de78f713ac058)
+![img_2048.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2048.png)
 
 本实验中k8s集群版本为1.30.13，因此部署1.13.1版本的ingress-nginx。
 
@@ -164,6 +164,6 @@ spec:
 `192.168.10.10 myapp.local.com`
 
 ## 访问测试
-![](https://via.placeholder.com/800x600?text=Image+a4aa35aebf672347)
+![img_1312.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1312.jpeg)
 
 

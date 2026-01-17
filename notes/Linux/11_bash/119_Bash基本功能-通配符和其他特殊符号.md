@@ -34,41 +34,41 @@
 1. 单引号与双引号区别
 + 单引号中特殊字符没有特殊含义，双引号中特殊字符有特殊含义
 
-![](https://via.placeholder.com/800x600?text=Image+e065d725e0df643e)
+![img_3248.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3248.png)
 
 1. 反引号与$()
 + 作用一样，推荐使用$()，不易看错
 
-![](https://via.placeholder.com/800x600?text=Image+e2b28335f35f5e30)
+
 
 # 三、操作实例
 1. 删除tmp下的所有文件
 
-![](https://via.placeholder.com/800x600?text=Image+5021b20fa51b43c4)
+
 
 1. 通配符操作
 
-![](https://via.placeholder.com/800x600?text=Image+0d96c96dac5e294f)
+![img_1968.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1968.png)
 
 + ？通配符（匹配一个任意字符）
 
-![](https://via.placeholder.com/800x600?text=Image+dbbbfbc74c940d0f)
+
 
 + *通配符（匹配0个或多个任意字符）
 
-![](https://via.placeholder.com/800x600?text=Image+ab93f0bcb9c85484)
+
 
 + []匹配括号中的任意一个
 
-![](https://via.placeholder.com/800x600?text=Image+e7a4fc8aeec8fd1b)
+
 
 + [-]匹配括号范围中的任意一个
 
-![](https://via.placeholder.com/800x600?text=Image+4f667485461e71f0)
+
 
 + [^]匹配不是括号中的任意一个
 
-![](https://via.placeholder.com/800x600?text=Image+d66df5f0cbf1f795)
+
 
  
 

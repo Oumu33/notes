@@ -10,7 +10,7 @@ swarm-manager 是 manager node，swarm-worker1 和 swarm-worker2 是 worker node
 
 `[root@host2 ~]# docker swarm init --advertise-addr 192.168.137.104` 
 
-![](https://via.placeholder.com/800x600?text=Image+225c6191c5520dfc)
+![img_1456.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1456.png)
 
 --advertise-addr<font style="color:#383A42;"> </font><font style="color:#383A42;">指定与其他</font><font style="color:#383A42;"> node </font><font style="color:#383A42;">通信的地址。</font>
 
@@ -27,19 +27,19 @@ docker swarm init 输出告诉我们：
 
 执行 docker node ls 查看当前 swarm 的 node，目前只有一个 manager。
 
-![](https://via.placeholder.com/800x600?text=Image+38710d6700542882)
+
 
 复制前面的 docker swarm join 命令，在 vm1 和 vm2 上执行，将它们添加到 swarm中。命令输出如下：
 
-![](https://via.placeholder.com/800x600?text=Image+4a838ef1dc466dd1)
+
 
 docker node ls 可以看到两个 worker node 已经添加进来了。
 
-![](https://via.placeholder.com/800x600?text=Image+03244ad28ba561c7)
+
 
 如果当时没有记录下 docker swarm init 提示的添加 worker 的完整命令，可以通过 docker swarm join-token worker 查看。
 
-![](https://via.placeholder.com/800x600?text=Image+a072382b32bd7277)
+
 
 注意：此命令只能在 manager node 上执行。
 
@@ -52,15 +52,15 @@ docker service create --name web_server httpd
 
 部署 service 的命令形式与运行容器的 docker run 很相似，--name 为 service 命名，httpd 为镜像的名字。
 
-![](https://via.placeholder.com/800x600?text=Image+52005ff3946de443)
+![img_2160.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2160.png)
 
 <font style="color:#383A42;">通过</font><font style="color:#383A42;"> </font>docker service ls<font style="color:#383A42;"> </font><font style="color:#383A42;">可以查看当前</font><font style="color:#383A42;"> swarm </font><font style="color:#383A42;">中的</font><font style="color:#383A42;"> service</font><font style="color:#383A42;">。</font>
 
-![](https://via.placeholder.com/800x600?text=Image+0735d54f7f21f044)
+![img_3616.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3616.png)
 
 REPLICAS 如果显示副本信息，0/1 的意思是 web_server 这个 service 期望的容器副本数量为1，目前已经启动的副本数量为 0。也就是当前 service 还没有部署完成。命令 docker service ps 可以查看 service 每个副本的状态。
 
-![](https://via.placeholder.com/800x600?text=Image+19d37ae2d4445f44)
+
 
 可以看到 service 唯一的副本被分派到 vm2，当前的状态是 Running，如果看到状态为Preparing，说明还没达到期望的状态 Running，这个副本在 Preparing 什么呢？
 
@@ -70,7 +70,7 @@ service 的运行副本数也正常了。
 
 如果觉得不放心，还可以到 vm2 去确认 httpd 容器已经运行。
 
-![](https://via.placeholder.com/800x600?text=Image+08c8cce137700aa6)
+![img_2192.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2192.png)
 
 当前 web_server 在 swarm 中的分布
 

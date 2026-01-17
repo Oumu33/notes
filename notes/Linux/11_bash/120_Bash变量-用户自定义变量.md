@@ -21,20 +21,20 @@
 # 五、本地变量（用户自定义变量）
 1. 变量定义 
 
-![](https://via.placeholder.com/800x600?text=Image+a16d0b1c22cf4f11)
+![img_800.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_800.png)
 
 1. 变量叠加
 
-![](https://via.placeholder.com/800x600?text=Image+8cbe1d672006590b)
+
 
 1. 变量调用
 
-![](https://via.placeholder.com/800x600?text=Image+cf17e834b4ea107e)
+
 
 1. 变量查看 [root@localhost ~]# set
 2. 变量删除
 
-![](https://via.placeholder.com/800x600?text=Image+fbf7891fdad36467)
+![img_3264.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3264.png)
 
  
 

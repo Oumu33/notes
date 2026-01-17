@@ -13,14 +13,14 @@
 
 1. 下面的资源清单，定义一个DaemonSet资源：
 
-![](https://via.placeholder.com/800x600?text=Image+21c4f85f6aa3f8e5)
+![img_2784.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2784.png)
 
 + DaemonSet必须使用selector来匹配Pod模板中指定的标签，而且它也支持matchLabels和matchExpressions两种标签选择器。
 1. 创建资源对象  
 `$ kubectl apply -f filebeat-ds.yaml` 
 2. 查看资源信息
 
-![](https://via.placeholder.com/800x600?text=Image+5c290c0d29649dd9)
+![img_4560.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4560.png)
 
 
 
@@ -37,6 +37,6 @@
 2. 查看镜像信息  
 `$ kubectl get pod -o custom-columns=pod_name:metadata.name,pod_image:spec.containers[0].image` 
 
-![](https://via.placeholder.com/800x600?text=Image+12b406af02df5e1a)
+
 
 

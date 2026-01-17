@@ -107,7 +107,7 @@ minio-service   NodePort   10.102.223.132   <none>        9090:30300/TCP,9000:30
 
 访问k8s节点ip:30300，默认用户名密码都是**<font style="color:rgb(0, 0, 0);background-color:rgb(232, 234, 236);">admin</font>**
 
-![](https://via.placeholder.com/800x600?text=Image+eae3a480083a61aa)
+
 
 使用ingress方式访问
 
@@ -581,7 +581,7 @@ HWLLGMhgkp
 ```
 
 ## 访问web管理页
-![](https://via.placeholder.com/800x600?text=Image+2a2936810b76e8e0)
+![img_3312.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3312.png)
 
 # operator部署minIO
 参考文档：[https://min.io/docs/minio/kubernetes/upstream/operations/installation.html](https://min.io/docs/minio/kubernetes/upstream/operations/installation.html)
@@ -671,7 +671,7 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IkJqajJ5XzA1LTdjWmhWWTJhUWdtNW5pMHJsejI4Z0d5MjlsWHg1
 
 浏览器访问minio
 
-![](https://via.placeholder.com/800x600?text=Image+075215ae7ea2f4ff)
+![img_912.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_912.png)
 
 ## helm创建租户
 拉取helm包
@@ -719,7 +719,7 @@ To connect to the k8s-minio tenant if it doesn't have a service exposed, you can
 ```
 
 ## web页面创建租户
-![](https://via.placeholder.com/800x600?text=Image+c304624df0a09094)
+
 
 # Prometheus Operator添加监控
 ## 访问metrics接口验证
@@ -782,7 +782,7 @@ spec:
 ```
 
 ## Prometheus targets验证
-![](https://via.placeholder.com/800x600?text=Image+876de806286d80e3)
+
 
 ## 添加 dashboard
 minio 官方提供了三个 dashboard：
@@ -795,21 +795,21 @@ minio 官方提供了三个 dashboard：
 
 # minIO使用
 ## 创建bucket
-![](https://via.placeholder.com/800x600?text=Image+d7d6b8e5a9846796)
 
-![](https://via.placeholder.com/800x600?text=Image+c508dd6aaa262b37)
 
-![](https://via.placeholder.com/800x600?text=Image+dcb194e78234cff7)
+
+
+
 
 ## 创建Access Keys
-![](https://via.placeholder.com/800x600?text=Image+b16487517c4baba5)
+![img_4000.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4000.jpeg)
 
 ## 创建访问控制权限
 <font style="color:rgb(38, 38, 38);">Minio 的存储桶默认是不跟任何 Acess Key 关联的，不过由于 Minio 支持标准的 S3 协议，我们可以给 Access Key 授予某个 Bucket 存储桶的访问权限，实现 Key 和 Bucket 的绑定。</font>
 
 <font style="color:rgb(38, 38, 38);">创建policy</font>
 
-![](https://via.placeholder.com/800x600?text=Image+b2065addfcb2a4f3)
+
 
 ```yaml
 {
@@ -837,7 +837,7 @@ minio 官方提供了三个 dashboard：
 
 <font style="color:rgb(38, 38, 38);">这里 Access Key 是用户名，Access Secret 是对应的口令。设置时关联上刚才创建的 Policy 即可。</font>
 
-![](https://via.placeholder.com/800x600?text=Image+bc3116ecc3c81857)
+
 
 <font style="color:rgb(38, 38, 38);">我们就创建了一个新的存储桶，并且给这个存储桶设置了一个用户，同时授权了用户对存储桶的访问，包括列表、上传、下载这几个基本权限。</font>
 
@@ -1060,7 +1060,7 @@ anaconda-ks.cfg  cfssl  defaults.ini  es  go  push.sh
 
 查看bucket文件
 
-![](https://via.placeholder.com/800x600?text=Image+df4703a842e35ae5)
+![img_816.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_816.jpeg)
 
 ## 下载文件
 下载文件脚本

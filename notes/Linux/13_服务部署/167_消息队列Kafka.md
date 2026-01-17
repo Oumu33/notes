@@ -9,13 +9,13 @@ Kafka 是由 `Linkedin` 公司开发的，它是一个分布式的，支持多�
 +  主题 (Topic)  ：消息的种类称为 `主题`（Topic）,可以说一个主题代表了一类消息。相当于是对消息进行分类。主题就像是数据库中的表。
 +  分区 (Partition)  ：主题可以被分为若干个分区（partition），同一个主题中的分区可以不在一个机器上，有可能会部署在多个机器上，由此来实现 kafka 的`伸缩性`，单一主题中的分区有序，但是无法保证主题中所有的分区有序
 
-![](https://via.placeholder.com/800x600?text=Image+5a0e11adf56685b5)
+![img_4208.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4208.png)
 
 +  生产者 (Producer)  ：向主题发布消息的客户端应用程序称为`生产者`（Producer），生产者用于持续不断的向某个主题发送消息。
 +  消费者 (Consumer)  ：订阅主题消息的客户端程序称为`消费者`（Consumer），消费者用于处理生产者产生的消息。
 +  消费者组 (Consumer Group)  ：生产者与消费者的关系就如同餐厅中的厨师和顾客之间的关系一样，一个厨师对应多个顾客，也就是一个生产者对应多个消费者，`消费者群组`（Consumer Group）指的就是由一个或多个消费者组成的群体。
 
-![](https://via.placeholder.com/800x600?text=Image+5c648a6377f41c1c)
+
 
 + 偏移量 (Offset) ：是一种元数据，它是一个不断递增的整数值，用来记录消费者发生重平衡时的位置，以便用来恢复数据。
 + 节点（ broker）: 一个独立的 Kafka 服务器就被称为 `broker`，broker 接收来自生产者的消息，为消息设置偏移量，并提交消息到磁盘保存。broker 集群：broker 是`集群` 的组成部分，broker 集群由一个或多个 broker 组成，每个集群都有一个 broker 同时充当了`集群控制器`的角色（自动从集群的活跃成员中选举出来）。
@@ -47,7 +47,7 @@ Kafka 是由 `Linkedin` 公司开发的，它是一个分布式的，支持多�
 限流削峰：Kafka 多用于互联网领域某一时刻请求特别多的情况下，可以把请求写入Kafka 中，避免直接请求后端程序导致服务崩溃。
 
 ## Kafka 系统架构
-![](https://via.placeholder.com/800x600?text=Image+8f37f69bccf369f1)
+
 
 如上图所示，一个典型的 Kafka 集群中包含若干Producer（可以是web前端产生的Page View，或者是服务器日志，系统CPU、Memory等），若干broker（Kafka支持水平扩展，一般broker数量越多，集群吞吐率越高），若干Consumer Group，以及一个Zookeeper集群。Kafka通过Zookeeper管理集群配置，选举leader，以及在Consumer Group发生变化时进行rebalance。Producer使用push模式将消息发布到broker，Consumer使用pull模式从broker订阅并消费消息。
 
@@ -59,7 +59,7 @@ Kafka 有四个核心API，它们分别是
 + Streams API，它允许应用程序作为流处理器，从一个或多个主题中消费输入流并为其生成输出流，有效的将输入流转换为输出流。
 + Connector API，它允许构建和运行将 Kafka 主题连接到现有应用程序或数据系统的可用生产者和消费者。例如，关系数据库的连接器可能会捕获对表的所有更改
 
-![](https://via.placeholder.com/800x600?text=Image+3697430bc30bfadf)
+![img_864.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_864.png)
 
 ## Kafka 为何快
 Kafka 实现了`零拷贝`原理来快速移动数据，避免了内核之间的切换。Kafka 可以将数据记录分批发送，从生产者到文件系统（Kafka 主题日志）到消费者，可以端到端的查看这些批次的数据。
@@ -77,7 +77,7 @@ Kafka 实现了`零拷贝`原理来快速移动数据，避免了内核之间的
 ## 架构介绍
 Kafka的KRaft模式是一种新的元数据管理方式，旨在去除对ZooKeeper的依赖，使Kafka成为一个完全自包含的系统。在Kafka的传统模式下，元数据管理依赖于ZooKeeper，这增加了部署和运维的复杂性。为了解决这个问题，Kafka社区引入了KRaft模式。在KRaft模式下，所有的元数据，包括主题、分区信息、副本位置等，都被存储在Kafka集群内部的特殊日志中。这个日志使用Raft协议来保证一致性。
 
-![](https://via.placeholder.com/800x600?text=Image+36db0cbd142ffe51)
+![img_4000.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4000.jpeg)
 
 在传统架构中，Kafka集群包含多个 Broker 节点和一个ZooKeeper 集群。Kafka 集群的 Controller 在被选中后，会从 ZooKeeper 中加载它的状态。并且通知其他Broker发生变更，如 Leaderanddis r和 Updatemetdata 请求。
 
@@ -313,7 +313,7 @@ root@kafka-1:/opt/kafka-ui# nohup java -Dspring.config.additional-location=/opt/
 ```
 
 ## 访问验证
-![](https://via.placeholder.com/800x600?text=Image+c50ca04e69fbeddd)
+![img_3168.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3168.png)
 
 ## 使用 systemd 管理服务
 ```bash
@@ -849,7 +849,7 @@ Adding ACLs for resource `ResourcePattern(resourceType=TOPIC, name=test, pattern
 
 通过 kafka-ui 查看验证
 
-![](https://via.placeholder.com/800x600?text=Image+bc126ea7f86cc999)
+
 
 ## 删除ACL
 删除`User:test`对`test`主题的读取权限：

@@ -10,7 +10,7 @@ Loki架构十分简单，由以下三个部分组成：
 只要在应用程序服务器上安装promtail来收集日志然后发送给Loki存储，就可以在Grafana UI界面通过添加Loki为数据源进行日志查询
 
 ## 系统架构
-![](https://via.placeholder.com/800x600?text=Image+4314118432962ed9)
+![img_3584.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3584.png)
 
 Distributor（接收日志入口）：负责接收客户端发送的日志，进行标签解析、预处理、分片计算，转发给 Ingester。
 
@@ -185,6 +185,6 @@ loki-results-cache   ClusterIP   None             <none>        11211/TCP,9150/T
 ```
 
 # grafana 添加 loki 数据源
-![](https://via.placeholder.com/800x600?text=Image+d851b928f7c81674)
+![img_3408.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3408.png)
 
 

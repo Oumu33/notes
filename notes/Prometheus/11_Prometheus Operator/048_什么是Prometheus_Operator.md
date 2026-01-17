@@ -12,7 +12,7 @@
 
 如下所示，是Prometheus Operator的架构示意图：
 
-![](https://via.placeholder.com/800x600?text=Image+712fb4fe3544e8f5)
+
 
 Prometheus Operator架构
 

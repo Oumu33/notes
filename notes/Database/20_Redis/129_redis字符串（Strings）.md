@@ -44,25 +44,25 @@
 
 # 三、常用操作举例
     1. set语句设置key对应的value值
-+ ![](https://via.placeholder.com/800x600?text=Image+dc75f64373fa6aeb)
++ ![img_4864.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4864.png)
     1. mset语句获取key对应的value值
-+ ![](https://via.placeholder.com/800x600?text=Image+8de28f13baa6c51d)
++ ![img_176.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_176.png)
     1. get语句获取key对应value值
-+ ![](https://via.placeholder.com/800x600?text=Image+261a137ac636658a)
++ ![img_304.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_304.png)
     1. mget语句获取多个key对应value值
-+ ![](https://via.placeholder.com/800x600?text=Image+6806970dd489519c)
++ 
     1. incr递增步长
-+ ![](https://via.placeholder.com/800x600?text=Image+d838ef4c8e219045)
++ 
     1.  incrby指定步长
-+ ![](https://via.placeholder.com/800x600?text=Image+54e850b6e7ecadf2)
++ 
     1. decr递减步长
-+ ![](https://via.placeholder.com/800x600?text=Image+0d2d1fa193ff1793)
++ 
     1. decrby指定步长
-+ ![](https://via.placeholder.com/800x600?text=Image+b7583cccb77cf611)
++ 
     1. append追加字符串
-+ ![](https://via.placeholder.com/800x600?text=Image+f096f5173d6a42d2)
++ 
     1. substr截取字符串
-+ ![](https://via.placeholder.com/800x600?text=Image+8415460ca0cee906)
++ 
 +  
 
 

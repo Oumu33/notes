@@ -196,9 +196,9 @@ mvn clean package -DskipTests -Dmaven.repo.local=/home/gitlab-runner/cache/maven
 ## repo目录持久化
 分析job阶段创建的pod我们可知，kubernetes执行器创建的构建pod会默认挂载一个名为repo的空目录。此目录用于存储每次下载的代码，因为是空目录的原因导致后续测试pod无法获取需要重新下载代码。
 
-![](https://via.placeholder.com/800x600?text=Image+64cf1889bbd0f7e8)
 
-![](https://via.placeholder.com/800x600?text=Image+c182b9c35435c31b)
+
+
 
 为了解决这个问题，我们可以直接将持久化的pvc挂载到空目录中的某个目录中。并配置runner自定义构建目录。
 
@@ -407,7 +407,7 @@ gitlab-runner-dir             Bound    pvc-3b40eda5-c1da-462e-895a-b01bc3fa2fe1 
 
 查看job日志
 
-![](https://via.placeholder.com/800x600?text=Image+8f354e5a1a4da7c2)
+
 
 ## 配置每次job不拉取代码
 默认每次每个job运行的时候都会获取远程最新的代码，会把构建目录删除掉，此时就需要配置git checkout策略。通常情况下不需要每个作业都下载代码。只要第一个作业下载好最新的代码，然后运行流水线即可。

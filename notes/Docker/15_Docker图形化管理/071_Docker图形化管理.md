@@ -13,7 +13,7 @@ Portainer是一款轻量级的图形化管理工具，通过它我们可以轻�
 
 3. 查看本地主机上的镜像：
 
-![](https://via.placeholder.com/800x600?text=Image+d587788c9777cbc7)
+![img_3088.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3088.png)
 
 4. 单机安装
 
@@ -38,40 +38,40 @@ Portainer是一款轻量级的图形化管理工具，通过它我们可以轻�
 
 1. 首次登陆需要注册用户：
 
-![](https://via.placeholder.com/800x600?text=Image+785d272eed9c17e7)
+![img_2160.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2160.png)
 
 2. 由于是单机环境下安装，选择local模式即可：
 
-![](https://via.placeholder.com/800x600?text=Image+33def57594b60ff4)
+
 
 + 注意：该页面上有提示需要挂载本地 /var/run/docker.socker与容器内的/var/run/docker.socker连接。因此，在启动时必须指定该挂载文件。
 3. 进入首页可以查看到本地环境下docker相关的信息如容器，镜像等等。
 
-![](https://via.placeholder.com/800x600?text=Image+9024d39705100369)
+![img_3488.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3488.png)
 
 4. 点击“local“，查看本地docker相关信息：
 
-![](https://via.placeholder.com/800x600?text=Image+fc1c2183545a9d91)
+
 
 5. 点击“Containers”查看容器相关信息：
 
 可以进行创建容器、启动、停止、删除等等操作非常的方便。
 
-![](https://via.placeholder.com/800x600?text=Image+5f7a8bcaa4177cd1)
+![img_1104.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1104.png)
 
 6. 点击“Name”，可以查看相关容器详细信息：
 
-![](https://via.placeholder.com/800x600?text=Image+3f03df6aa02bfe5f)
+
 
 7. 在容器列表页面下，点击“Add      Containers”可以进行容器的创建：
 
 输入相关信息点击“deploy the container”，可以根据已有的镜像快速创建容器：
 
-![](https://via.placeholder.com/800x600?text=Image+4924cdd3d3384c78)
+
 
 8. 浏览器打开刚才创建的nginx容器：
 
-![](https://via.placeholder.com/800x600?text=Image+85a23f1ee899beb7)
+![img_800.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_800.png)
 
 + Portainer中还有很多对容器有意思的操作管理，诸如提供容器状态监控视图、容器状态日志、通过console登陆容器等等。
 + Portainer中还有一些很多其他的操作，比如stacks管理、镜像管理、卷管理、权限管理、网络管理等等，可以安装上进行了解学习。
@@ -104,26 +104,26 @@ Warning: docker.service changed on disk. Run 'systemctl daemon-reload' to reload
 
 可以查看到端口已经开放：
 
-![](https://via.placeholder.com/800x600?text=Image+9f473e6198758337)
+
 
 + 在docker其他节点可以通过docker -H      192.168.39.100:2375 info命令查看到该节点docker相关信息。
 + 点击Home页面下“add      endportainer”添加该节点docker信息：
 
-![](https://via.placeholder.com/800x600?text=Image+0bfe1695ac8fa626)
+
 
 
 
 + 输入以下相关信息，点击“add      endpoartainer”添加信息即可：
 
-![](https://via.placeholder.com/800x600?text=Image+0000e1a9b7ff70cb)
+![img_3707.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3707.png)
 
 
 
 + 可以看到添加docker-node1节点成功：
 
-![](https://via.placeholder.com/800x600?text=Image+fe8f847ea1b7e7e2)
 
-![](https://via.placeholder.com/800x600?text=Image+7e1fcb8ad19dbc8f)
+
+![img_1072.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1072.png)
 
 + 添加各个docker节点完成，这样可以通过portainer对每个节点下的docker环境进行相关的管理操作。
 2. Portanier管理Swarm集群
@@ -153,30 +153,30 @@ j6mzodyhsilp        portainer           replicated          1/1                p
 + 安装完成之后，打开浏览器输入http://{ip}:9000同样会出现登陆密码的设置界：
 + 设置完帐号和密码，登陆主界面，可以查看到swarm集群信息：
 
-![](https://via.placeholder.com/800x600?text=Image+e0d764ed5de99e7c)
+
 
 + 点击“Swarm”，可以查看到个集群节点信息：
 
-![](https://via.placeholder.com/800x600?text=Image+ff91a868c7ca3cd8)
+![img_4592.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4592.png)
 
 + 点击“Image”,拉取一个nginx镜像：
 
-![](https://via.placeholder.com/800x600?text=Image+96b1892228d842c7)
+![img_688.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_688.png)
 
 + 在Services下创建nginx服务，这里创建4个副本，并将80端口映射出去，最后点击“Create      Service”创建服务:
 
-![](https://via.placeholder.com/800x600?text=Image+2c0c9f5de91cd67a)
+![img_3088.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3088.png)
 
 + 查看service list      列表会发现，nginx服务已经创建成功：
 
-![](https://via.placeholder.com/800x600?text=Image+f4ed4a7dd8f8c591)
+![img_2064.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2064.png)
 
 + 浏览器中输入个节点ip地址，都可以看到nginx页面如下：
 
-![](https://via.placeholder.com/800x600?text=Image+e15a640231683009)
+
 
 + 通过命令可以查看到nginx服务运行状态：
 
-![](https://via.placeholder.com/800x600?text=Image+3ffd00c649510999) 
+ 
 
 

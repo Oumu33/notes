@@ -11,7 +11,7 @@
 2. 节点连接。redis-cluster是一种服务端分片技术。
 3. redis-cluster架构图
 
-![](https://via.placeholder.com/800x600?text=Image+2df31eeba283f56d)
+![img_1552.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1552.png)
 
 1. redis-cluster特点：
 + 每个节点都和n-1个节点通信，这被称为集群总线（cluster      bus）。它们使用特殊的端口号，即对外服务端口号加10000。所以要维护好这个集群的每个节点信息，不然会导致整个集群不可用，其内部采用特殊的二进制协议优化传输速度和带宽。
@@ -26,7 +26,7 @@
 # 三、twemproxy代理方案
 1. twemproxy代理架构图：
 
-![](https://via.placeholder.com/800x600?text=Image+d46332eca27f6ebb)
+
 
  
 
@@ -37,15 +37,15 @@
 1. Sentinel（哨兵）是Redis的高可用性解决方案：由一个或多个Sentinel实例组成的Sentinel系统可以监视任意多个主服务器以及这些主服务器下的所有从服务器，并在被监视的主服务器进入下线状态时，自动将下线主服务器属下的某个从服务器升级为新的主服务器。
 + 架构图
 
-![](https://via.placeholder.com/800x600?text=Image+b53336d059b0b069)
+
 
 + 在Server1掉线后：
 
-![](https://via.placeholder.com/800x600?text=Image+396ff552d71aedb2)
+![img_4864.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4864.png)
 
 + 升级Server2为新的主服务器：
 
-![](https://via.placeholder.com/800x600?text=Image+18a49afc5d9e187c)
+
 
 1. Sentinel的工作方式
 + 每个Sentinel以每秒钟一次的频率向它所知的Master、Slave以及其他Sentinel实例发送一个PING命令。
@@ -59,7 +59,7 @@
 # 五、codis
 codis是一个分布式的Redis解决方案，由豌豆荚开源，对于上层的应用来说，连接codis proxy和连接原生的redis server没什么明显的区别，上层应用可以像使用单机的redis一样使用，codis底层会处理请求的转发，不停机的数据迁移等工作，所有后边的事情，对于前面的客户端来说是透明的，可以简单的认为后边连接的是一个内存无限大的redis服务。
 
-![](https://via.placeholder.com/800x600?text=Image+9db932e4b245e40f)
+
 
  
 
@@ -67,7 +67,7 @@ codis是一个分布式的Redis解决方案，由豌豆荚开源，对于上层�
 1. 客户端就已经决定数据会被 存储 到哪个 redis 节点或者从哪个 redis 节点 读取数据。其主要思想是采用 哈希算法 将 Redis 数据的 key 进行散列，通过 hash 函数，特定的 key会 映射 到特定的 Redis 节点上。这种方案通常适用于用户对客户端的行为有完全控制能力的场景。
 2. 架构图
 
-![](https://via.placeholder.com/800x600?text=Image+89007cccdb6ac36d)
+
 
 1. 优点
 

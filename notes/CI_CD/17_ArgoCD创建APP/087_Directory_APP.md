@@ -1,9 +1,9 @@
 # Directory APP
 # APP创建
 ## webUI创建
-![](https://via.placeholder.com/800x600?text=Image+1d7e5bcd076d84e3)
+![img_4080.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4080.png)
 
-![](https://via.placeholder.com/800x600?text=Image+4dba2cc7f78c36c3)
+
 
 ## CLI创建
 除了使用webUI创建应用外，也可以使用Argo CLI命令行工具创建
@@ -38,7 +38,7 @@ demo   Synced        Healthy
 ```
 
 ## yaml文件创建
-![](https://via.placeholder.com/800x600?text=Image+50cd5c29e5e30942)
+
 
 ```yaml
 [root@tiaoban ~]# cat demo.yaml 
@@ -77,17 +77,17 @@ SYNC POLICY：同步策略
 
 Argo CD能够在检测到 Git 中所需的清单与集群中的实时状态之间存在差异时自动同步应用程序。自动同步是GitOps Pull模式的核心，好处是 CI/CD Pipeline 不再需要直接访问Argo CD API服务器来执行部署，可以通过在WEB UI的Application-SYNC POLICY中启用AUTOMATED或CLIargocd app set <APPNAME> --sync-policy automated 进行配置。
 
-![](https://via.placeholder.com/800x600?text=Image+481538456f51d98d)
+
 
 PRUNE RESOURCES ：自动删除资源，开启选项后Git Repo中删除资源会自动在环境中删除对应的资源。
 
 
 
-![](https://via.placeholder.com/800x600?text=Image+257507c91a8b6588)
+![img_4544.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4544.png)
 
 SELF HEAL：自动痊愈，强制以GitRepo状态为准，手动在环境修改不会生效。
 
-![](https://via.placeholder.com/800x600?text=Image+2458cddfc0247f5d)
+![img_2048.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2048.png)
 
 ## AutoSync自动同步
 默认同步周期是180s, 可以修改argocd-cm配置文件，添加`timeout.reconciliation`参数。
@@ -110,7 +110,7 @@ SELF HEAL：自动痊愈，强制以GitRepo状态为准，手动在环境修改�
 + ServerSideApply=true：部署操作在服务端运行(避免文件过大)
 
 # 应用状态
-![](https://via.placeholder.com/800x600?text=Image+306aa3f1bd222b48)
+
 
 sync status
 

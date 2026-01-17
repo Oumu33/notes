@@ -140,13 +140,13 @@ c383165c6963   mysql                   "docker-entrypoint.s…"   7 minutes ago 
 
 # 验证
 ## 访问phpmyadmin
-![](https://via.placeholder.com/800x600?text=Image+e185716b95cd7308)
+![img_944.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_944.png)
 
 用户名为root，密码为123.com
 
-![](https://via.placeholder.com/800x600?text=Image+75b6cf13fa05dffb)
+
 
 ## 访问WordPress
-![](https://via.placeholder.com/800x600?text=Image+1eca300026095832)
+![img_400.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_400.png)
 
 

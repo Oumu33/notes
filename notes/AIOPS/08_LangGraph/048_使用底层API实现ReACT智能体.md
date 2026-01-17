@@ -114,7 +114,7 @@ print(final_result["messages"][-1].content)
 
 整体流程如下：
 
-![](https://via.placeholder.com/800x600?text=Image+18886e2fcb40372a)
+![img_1184.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1184.png)
 
 ## 最简单的聊天机器人
 我们先定义一个基于本地大语言模型的聊天机器人。chatbot 函数接收当前对话状态，调用 llm.invoke() 生成回复，并返回新消息。整体通过 StateGraph 构建工作流，实现从开始到结束的自动对话处理。
@@ -170,7 +170,7 @@ print(response1["messages"][-1].content)
 
 整体流程如下
 
-![](https://via.placeholder.com/800x600?text=Image+8669ef68bf676883)
+![img_4640.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4640.png)
 
 ## 添加提示词与工具
 定义工具函数
@@ -342,7 +342,7 @@ print(response1["messages"][-1].content)
 
 此时项目图结构为
 
-![](https://via.placeholder.com/800x600?text=Image+bcb4ca09a9e8c065)
+
 
 ## 添加 HITL 环节
 代码如下

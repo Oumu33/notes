@@ -20,18 +20,18 @@ kubectl label node k8s-node1 disktype=ssd
 kubectl get node --show-labels
 ```
 
-![](https://via.placeholder.com/800x600?text=Image+91982f577538829f)
+
 
 `disktype=ssd` 已经成功添加到 k8s-node1，除了 `disktype`，Node 还有几个 Kubernetes 自己维护的 label。
 
 ## 资源清单指定标签
 有了自定义的 disktype=ssd 这个标签，只需要在配置文件中定义 nodeselector 为这个自定义标签，就可以指定 pod 在 k8s-node1 中运行
 
-![](https://via.placeholder.com/800x600?text=Image+e9e8960f71190242)
+![img_928.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_928.png)
 
 部署 deployment 验证
 
-![](https://via.placeholder.com/800x600?text=Image+2f98bd92adb476ca)
+![img_2640.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2640.png)
 
 全部 6 个副本都运行在 k8s-node1 上，符合我们的预期。
 
@@ -43,13 +43,13 @@ node/k8s-node1 labeled
 
 不过删除标签 并不会重新部署，所以 pod 依旧是在 k8s-node1 上。
 
-![](https://via.placeholder.com/800x600?text=Image+0200914fe48c6c54)
+
 
 要想让 k8s-node2 也参与到工作负载，则必须删掉当前的 deployment，并删除或注释掉配置文件中的 nodeSelector 配置。
 
-![](https://via.placeholder.com/800x600?text=Image+b6b8fecb2a1cb83a)
 
-![](https://via.placeholder.com/800x600?text=Image+4dbeba022a68f27d)
+
+
 
 我们看到之前的 pod 会被全部删除掉，并重新调度到不同的 k8s 节点上。
 

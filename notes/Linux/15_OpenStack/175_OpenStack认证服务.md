@@ -65,7 +65,7 @@ controller~# systemctl start httpd.service
 
 + 在启动时遇到错误
 
-![](https://via.placeholder.com/800x600?text=Image+10122db98d518fef)
+![img_1200.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1200.png)
 
 检查mod_wsgi是否成功安装
 
@@ -116,7 +116,7 @@ controller ~# vim /etc/keystone/keystone-paste.ini
 
 从[pipeline:public_api], [pipeline:admin_api], 和[pipeline:api_v3]选项中删除admin_token_auth
 
-![](https://via.placeholder.com/800x600?text=Image+3c1646a6e16f11e5)
+
 
 1. 取消设置临时的OS_AUTH_URL和OS_PASSWORD环境变量：
 
@@ -128,7 +128,7 @@ controller ~# openstack --os-auth-url [http://controller:35357/v3](http://contro
 
 + 这里遇到错误
 
-![](https://via.placeholder.com/800x600?text=Image+a0aff934a5074c67)
+![img_48.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_48.png)
 
 由于是Http错误，所以返回Apache HTTP 服务配置的地方，重启Apache 服务，并重新设置管理账户：
 

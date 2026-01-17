@@ -9,18 +9,18 @@
 # 二、参数说明：
 + **format-string:** 为格式控制字符串
 + **arguments:** 为参数列表。
-+ ![](https://via.placeholder.com/800x600?text=Image+e1735ae4f1701c88)
++ ![img_1648.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1648.png)
 + %s %c %d      %f都是格式替代符
 
 %-10s 指一个宽度为10个字符（-表示左对齐，没有则表示右对齐），任何字符都会被显示在10个字符宽的字符内，如果不足则自动以空格填充，超过也会将内容全部显示出来。
 
 %-4.2f 指格式化为小数，其中.2指保留2位小数。
 
-![](https://via.placeholder.com/800x600?text=Image+f8f5bf5a84b04b1d)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+f2f9f4c21ac15abf)
+
 
 # 三、printf的转义序列
 | **序列** | **说明** |
@@ -40,9 +40,9 @@
 
 **实例**
 
-![](https://via.placeholder.com/800x600?text=Image+1b94c916032b6542)
+![img_400.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_400.png)
 
-![](https://via.placeholder.com/800x600?text=Image+e83db3ef971b7c54)
+
 
 来自 <[http://www.runoob.com/linux/linux-shell-printf.html](http://www.runoob.com/linux/linux-shell-printf.html)> 
 

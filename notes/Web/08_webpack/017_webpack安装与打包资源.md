@@ -31,7 +31,7 @@ license:                        发行项目需要的证书（这里也就自己
 
 # 二、编写测试代码，打包资源
 ## 1. 目录结构
-![](https://via.placeholder.com/800x600?text=Image+edddd12cdb4b2380)
+
 
 ## 2. 编写测试内容
 ```html

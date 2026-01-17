@@ -1,20 +1,20 @@
 # Gitlab与Artifactory集成
 # Artifactory配置
 ## 创建仓库
-![](https://via.placeholder.com/800x600?text=Image+13d6456988eb2f37)
+
 
 ## 获取命令
 获取上传命令
 
-![](https://via.placeholder.com/800x600?text=Image+f73ff464858c11c4)
+
 
 获取下载命令
 
-![](https://via.placeholder.com/800x600?text=Image+efdbc1c853ef9dbd)
+![img_3328.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3328.png)
 
 # gitlab配置
 ## 创建Artifactory密钥变量
-![](https://via.placeholder.com/800x600?text=Image+e6e2d62b5d38be30)
+![img_1584.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1584.png)
 
 ## 编辑流水线
 ```yaml
@@ -59,9 +59,9 @@ deploy:
 ```
 
 ## 查看上传信息
-![](https://via.placeholder.com/800x600?text=Image+39213200e38e7e71)
+
 
 ## 查看下载信息
-![](https://via.placeholder.com/800x600?text=Image+e32d304537568136)
+![img_3408.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3408.png)
 
 

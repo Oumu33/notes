@@ -19,12 +19,12 @@
 
 或者在所有Kubernetes master节点上部署HAProxy + Keepalived服务，实现故障切换。
 
-![](https://via.placeholder.com/800x600?text=Image+549f2f3565a4d1bc)
+![img_3056.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3056.png)
 
 ## kube-vip方案
 除了使用传统方式外，我们也可以通过kube-vip实现高可用。kube-vip 可以通过静态 pod 运行在控制平面节点上，这些 pod 通过ARP 对话来识别每个节点上的其他主机，所以需要在 hosts 文件中设置每个节点的 IP 地址，我们可以选择 BGP 或 ARP 来设置负载平衡器，这与 Metal LB 比较类似。在 ARP 模式下，会选出一个领导者，这个节点将继承虚拟 IP 并成为集群内负载均衡的 Leader，而在 BGP 模式下，所有节点都会通知 VIP 地址。
 
-![](https://via.placeholder.com/800x600?text=Image+929260b9fd2b5040)
+![img_4864.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4864.png)
 
 # <font style="color:rgb(79, 79, 79);">kube-vip 架构</font>
 <font style="color:rgb(77, 77, 77);">kube-vip 有许多功能设计选择提供高可用性或网络功能，作为VIP/负载平衡解决方案的一部分。</font>

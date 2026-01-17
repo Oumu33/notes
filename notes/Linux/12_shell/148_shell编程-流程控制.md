@@ -41,11 +41,11 @@
 
 + 以下实例判断两个变量是否相等：
 
-![](https://via.placeholder.com/800x600?text=Image+4405c64df293b12d)
+
 
 if else语句经常与test命令结合使用，如下所示：
 
-![](https://via.placeholder.com/800x600?text=Image+bae738ed1c14f796)
+
 
 # 二、for 循环
 1. 用法1：

@@ -203,7 +203,7 @@ mysql -uroot -p
 
 show status like 'wsrep_cluster_size';
 
-![](https://via.placeholder.com/800x600?text=Image+d78707e42465edec)
+![img_3072.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3072.jpeg)
 
 select user,host,authentication_string from mysql.user;
 
@@ -266,7 +266,7 @@ mysql -uroot -p
 
 show status like 'wsrep_cluster_size';
 
-![](https://via.placeholder.com/800x600?text=Image+6b3217d91a46a139)
+![img_128.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_128.png)
 
 select user,host,authentication_string from mysql.user;
 

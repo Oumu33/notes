@@ -20,7 +20,7 @@ LangChain 提供了多种不同的提示词模板，下面介绍几种常用的�
 ## 提示词模板类继承关系
 分析LangChain源码可以可知，在 LangChain 的类结构中，顶层基类是 `BasePromptTemplate`，用于定义Prompt 模板系统必须实现的核心方法，而`StringPromptTemplate` 和 `BaseChatPromptTemplate`两个子类分别继承。
 
-![](https://via.placeholder.com/800x600?text=Image+35a00e2e7befc1c5)
+![img_384.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_384.png)
 
 接入聊天模型时需继承`BaseChatPromptTemplate`；而文本生成模型则继承`StringPromptTemplate` 。
 

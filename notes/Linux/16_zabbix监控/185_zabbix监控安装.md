@@ -76,37 +76,37 @@
 
 # 四、初始化zabbix  配置
     1. 完成上述安装步骤后，访问 Zabbix_Web_IP/zabbix ，可以看到如下图的zabbix安装页面，点击下一步按钮
-+ ![](https://via.placeholder.com/800x600?text=Image+475e75de822de912)
++ ![img_1216.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1216.png)
     1. 可以看到，zabbix自动检查了安装环境是否满足要求，如果出现不满足要求的情况，需要进一步处理，此处没有问题，点击下一步
-+ ![](https://via.placeholder.com/800x600?text=Image+888281990916507c)
++ ![img_1184.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1184.png)
     1. 此处zabbix需要配置数据库连接，此处配置数据库的类型，IP，端口，数据库名，用户密码等信息，端口填写0表示使用默认端口（3306端口）
-+ ![](https://via.placeholder.com/800x600?text=Image+7355d8c5fa2fa9f6)
++ ![img_2528.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2528.png)
     1. 此处填写zabbix server的详细信息，包括IP地址，端口号，以及server名称等，填写完成后点击下一步。
-+ ![](https://via.placeholder.com/800x600?text=Image+893da95d06781ba1)
++ ![img_3680.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3680.png)
     1. 在配置之前，请确定概要信息无误，点击下一步。
-+ ![](https://via.placeholder.com/800x600?text=Image+8720458e94215671)
++ 
     1. 从提示可以看出，初始化配置已经完成，而且zabbix提示我们，这些配置信息都被保存到了"/etc/zabbix/web/zabbix.conf.php" 配置文件中，如果想要更改刚才的一些配置，可以通过修改此文件完成，初始化已经完成，点击结束即可。
-+ ![](https://via.placeholder.com/800x600?text=Image+d60fcd6594b69015)
++ ![img_1504.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1504.png)
     1. 点击完成按钮后，可以看到zabbix的登录页面，默认的管理员用户为admin，密码为zabbix，输入用户名密码后登录。
-+ ![](https://via.placeholder.com/800x600?text=Image+06fdede466b872f3)
++ ![img_4080.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4080.png)
     1. 登录完成后，可以看到zabbix的仪表盘。
-+ ![](https://via.placeholder.com/800x600?text=Image+c8b648a63d5809b7)
++ 
     1. 默认是英文显示，需要可以调成中文，点击下图中红框标注的图标。
-+ ![](https://via.placeholder.com/800x600?text=Image+e5b4df817669eb1e)
++ 
     1. 语言选择中文，点击更新即可，上述操作完成后，zabbix控制台即显示为中文了。
 + 为了更加安全，我们不应该使用管理员的默认密码，所以，我们最好先修改管理员密码
-+ ![](https://via.placeholder.com/800x600?text=Image+329cb82d3c93137c)
++ ![img_112.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_112.png)
     1. 以后的监控工作就要围绕这个web界面展开了，为了以后更好的展开工作，先大概的了解一下zabbix的菜单。
 + 管理菜单中，一般用于管理zabbix自身及zabbix相关设置。
-+ ![](https://via.placeholder.com/800x600?text=Image+d2d6d80930de6b65)
++ ![img_4208.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4208.png)
 + 配置菜单中，一般用于配置监控相关设置
-+ ![](https://via.placeholder.com/800x600?text=Image+0f97e6ac23360ff2)
++ 
 + 监测中菜单，一般用于查看被监控的相关数据
-+ ![](https://via.placeholder.com/800x600?text=Image+57acb767500081a0)
++ 
 + 报表菜单中，可以为管理员生成一段时间内的监控统计信息。
-+ ![](https://via.placeholder.com/800x600?text=Image+c4a32fdc48d77e45)
++ 
 + 资产记录菜单中，管理员可以查看被管控的主机有哪些，以及相关的资产信息。
-+ ![](https://via.placeholder.com/800x600?text=Image+b5cda0a9770ca85b)
++ 
 + zabbix web的安装及简介暂时告一段落。
 
 # 五、安装zabbix  agent（YUM方式）
@@ -118,9 +118,9 @@
 + vim /etc/zabbix/zabbix_agentd.conf
 + 在刚开始介绍zabbix时，说过"主动模式"与"被动模式"，这两种模式的相关配置，都需要在zabbix_agentd.conf中定义，打开这个文件，我们来配置一下最常用的agent端配置。打开配置文件，首先看到的就是"通用参数配置段"，可以在此配置段配置zabbix_agent进程的进程编号文件路径，存储日志方式，日志文件位置，日志滚动阈值等常用设定，zabbix_agent配置文件的"通用配置段"中的参数大多数与zabbix_server配置文件中的常用参数意义相同，此处不再过多赘述，如果没有特殊需要，保持默认即可。
 + 此处先说下马上会用到的两个配置段，如下图红框中的注释所描述的，"被动模式配置段"与"主动模式配置段"
-+ ![](https://via.placeholder.com/800x600?text=Image+c72201f232bfd6f7)
++ 
 +  
-+ ![](https://via.placeholder.com/800x600?text=Image+f21634e4afa138e6)
++ ![img_1216.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1216.png)
 + 在最开始的概念介绍中，描述过，"主动模式"与"被动模式"都是对于agent端来说的，而且它们可以同时存在，并不冲突。
 + 先来看看"被动模式"的相关配置参数。
 + 被动模式相关参数如下：

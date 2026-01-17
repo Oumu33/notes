@@ -3,18 +3,18 @@
 ## 创建用户并登录
 注册一个普通用户cuiliang并登录
 
-![](https://via.placeholder.com/800x600?text=Image+eeb0111e12d705f7)
+
 
 ## 导入项目
 此处以Vue项目为例，项目地址：[https://gitee.com/cuiliang0302/vue3_vite_element-plus.git](https://gitee.com/cuiliang0302/vue3_vite_element-plus.git)
 
-![](https://via.placeholder.com/800x600?text=Image+3be28bea74bda779)
+![img_976.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_976.png)
 
 # jenkins配置
 ## 安装gitlab插件
 依次点击jenkins——>Manage Jenkins——>插件管理——>Plugins，在Jenkins的插件管理中安装GitLab插件
 
-![](https://via.placeholder.com/800x600?text=Image+a6068a3430afe641)
+
 
 # 连接配置
 ## 验证方式简介
@@ -94,7 +94,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC+SCLNn6RcOJs9anR2VB8xEOXbxW3HfqMfdWQc7m3L
 
 依次点击用户——>设置——>ssh密钥，填写密钥信息。
 
-![](https://via.placeholder.com/800x600?text=Image+e6f6dd44ac46b465)
+
 
 3. 获取jenkins容器用户名和私钥
 
@@ -144,15 +144,15 @@ mMouSqmKr15iybAAAAIGplbmtpbnNAamVua2lucy01NTU4YmNkNTlmLXM2YjJzAQI=
 
 4. jenkins创建密钥凭据，类型选择ssh username with private key
 
-![](https://via.placeholder.com/800x600?text=Image+b872990aaa1a6449)
+
 
 5. 获取仓库git连接地址
 
-![](https://via.placeholder.com/800x600?text=Image+6da9ec7c63bda6c6)
+
 
 6. 创建自由风格的软件项目
 
-![](https://via.placeholder.com/800x600?text=Image+fa99a4dce5d66f30)
+![img_592.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_592.png)
 
 7. 在源码管理中添加仓库地址，需要注意的是默认地址为git@gitlab-559d798d49-hpcjt:cuiliang/vue3_vite_element-plus.git，修改为git@gitlab-svc.cicd.svc:cuiliang/vue3_vite_element-plus.git，并在jenkins容器中执行命令，添加远程仓库地址。
 
@@ -164,11 +164,11 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added 'gitlab-svc.cicd.svc' (ECDSA) to the list of known hosts.
 ```
 
-![](https://via.placeholder.com/800x600?text=Image+0eeeeb566674ef2a)
+![img_1440.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1440.png)
 
 8. 点击立即构建，可以拉取代码并获取git commit信息。
 
-![](https://via.placeholder.com/800x600?text=Image+cf0c00287021e841)
+![img_2736.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2736.png)
 
 ## HTTP/HTTPS验证
 1. 添加jenkins凭据
@@ -177,36 +177,36 @@ Warning: Permanently added 'gitlab-svc.cicd.svc' (ECDSA) to the list of known ho
 
 jenkins——>系统管理——>Credentials——>添加类型为username with password的全局凭据
 
-![](https://via.placeholder.com/800x600?text=Image+532cb758273a2428)
+![img_4336.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4336.png)
 
 2. 获取项目克隆地址
 
 访问gitlab项目页，获取项目http克隆地址。[http://gitlab-559d798d49-hpcjt/cuiliang/vue3_vite_element-plus.git](http://gitlab-559d798d49-hpcjt/cuiliang/vue3_vite_element-plus.git)
 
-![](https://via.placeholder.com/800x600?text=Image+36d6ec851945c8f0)
+
 
 3. 创建自由风格任务测试
 
 新建一个自由风格软件项目测试
 
-![](https://via.placeholder.com/800x600?text=Image+fd5ddeaadc0051a0)
+![img_3408.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3408.png)
 
 在源码管理中填写http仓库地址，并选择账号密码凭据，需要注意的是仓库地址默认使用gitlab的pod名称，需要改为svc名称方式。即[http://gitlab-svc.cicd.svc/cuiliang/vue3_vite_element-plus.git](http://gitlab-svc.cicd.svc/cuiliang/vue3_vite_element-plus.git)
 
-![](https://via.placeholder.com/800x600?text=Image+f7aebf6d2a1f3144)
+![img_1792.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1792.png)
 
 点击立即构建，查看控制台日志，已经可以正常拉取项目代码，获取到git commit信息。
 
-![](https://via.placeholder.com/800x600?text=Image+2be9c3b6e979454f)
+
 
 ## Access Token验证
 1. 登录gitlab，依次点击项目——>设置——>访问令牌。角色设置为guest，授予api权限即可。
 
-![](https://via.placeholder.com/800x600?text=Image+83297ce8e542d98f)
+
 
 2. 创建凭据，依次点击jenkins——>系统管理——>Credentials——> Add Credentials，类型选择gitlab api token
 
-![](https://via.placeholder.com/800x600?text=Image+960b8e2f283a3dd2)
+![img_832.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_832.png)
 
 3. 配置gitlab信息
 
@@ -214,7 +214,7 @@ jenkins——>系统管理——>系统配置，找到gitlab配置区域，
 
 gitlab url填写http://gitlab-svc.cicd.svc，然后点击 Test Connection，显示 Success，表示成功。
 
-![](https://via.placeholder.com/800x600?text=Image+7677017a2e98e356)
+![img_4176.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4176.png)
 
 # webhook配置
 通常在企业实际开发过程中，当代码提交到master分支或者创建tag时，gitlab请求jenkins的webhook地址，完成持续构建和持续部署流程。
@@ -222,16 +222,16 @@ gitlab url填写http://gitlab-svc.cicd.svc，然后点击 Test Connection，显�
 ## 创建jenkins流水线项目
 新建一个类型为流水线的任务
 
-![](https://via.placeholder.com/800x600?text=Image+cfc6f15666a75d31)
+
 
 找到构建触发器选择，勾选Build when a change is pushed to GitLab. GitLab webhook URL: http://jenkins-svc.cicd.svc:8080/project/gitlab-webhook
 
-![](https://via.placeholder.com/800x600?text=Image+f748a4f92b1d42d7)
+
 
 ## 编辑pipeline并测试
 编写pipeline script，我们可以点击下方的流水线语法，生成checkout代码
 
-![](https://via.placeholder.com/800x600?text=Image+73d8260e7cdcff3b)
+![img_208.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_208.png)
 
 将生成的pipeline粘贴到流水线配置中
 
@@ -253,42 +253,42 @@ pipeline {
 }
 ```
 
-![](https://via.placeholder.com/800x600?text=Image+a982b40555d7c7eb)
+
 
 接下来点击立即构建，测试是否可以正常拉取代码
 
-![](https://via.placeholder.com/800x600?text=Image+d3b189a1d8408c3f)
+![img_400.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_400.png)
 
 ## 开启webhook配置
 配置gitlab策略，使用root用户登录——>管理员——>网络——>出站请求——>允许来自webhook和集成对本地网络的请求。
 
-![](https://via.placeholder.com/800x600?text=Image+36ed4d4e50988cc6)
+
 
 获取jenkins webhook令牌
 
 修改流水线任务，点击Build when a change is pushed to GitLab的高级选项，生成令牌。
 
-![](https://via.placeholder.com/800x600?text=Image+e2a4a20efabd6e67)
+![img_1952.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1952.png)
 
 切换回cuiliang用户——>vue项目——>设置——>webhooks——>填写jenkins生成的webhook地址和令牌。触发来源选择所有分支。
 
 [http://jenkins-svc.cicd.svc:8080/project/gitlab-webhook](http://jenkins-svc.cicd.svc:8080/project/gitlab-webhook)
 
-![](https://via.placeholder.com/800x600?text=Image+111b2738572a8b93)
+![img_608.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_608.png)
 
 推送测试事件
 
 依次点击测试，选择推送时间，gitlab页面提示200状态码。
 
-![](https://via.placeholder.com/800x600?text=Image+9b7f7870562180c2)
+
 
 如果状态码为403，检查jenkins系统配置，取消勾选Enable authentication for '/project' end-point
 
-![](https://via.placeholder.com/800x600?text=Image+1d0efa1e20dc5051)
+![img_1520.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1520.png)
 
 查看jenkins构建历史，发现触发了一次自动构建
 
-![](https://via.placeholder.com/800x600?text=Image+3af38f19d8ec679a)
+
 
 ## 项目添加Jenkinsfile
 > 通常在企业开发中，jenkinsfile文件存放在项目指定路径下，与仓库代码一同维护，根据环境灵活配置，而非jenkins中的固定配置。
@@ -296,7 +296,7 @@ pipeline {
 
 修改流水线配置，选择pipeline文件来自仓库
 
-![](https://via.placeholder.com/800x600?text=Image+d3d28dd4963a0a89)
+![img_960.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_960.png)
 
 编辑gitlab项目，添加Jenkinsfile文件，文件内容为
 
@@ -318,10 +318,10 @@ pipeline {
 }
 ```
 
-![](https://via.placeholder.com/800x600?text=Image+e7edb4efaf65074b)
+
 
 提交代码到仓库后，查看jenkins构建历史，发现已经自动触发了一次构建
 
-![](https://via.placeholder.com/800x600?text=Image+60b807be9d471d79)
+
 
 

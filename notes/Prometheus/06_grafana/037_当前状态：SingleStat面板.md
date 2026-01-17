@@ -5,11 +5,11 @@
 + 当前系统中某些事件发生的次数或者资源数量等。
 2. Query查询211.167.72.83主机系统启动时间
 
-![](https://via.placeholder.com/800x600?text=Image+4982aeececb92e70)
+
 
 + 通过Value配置项组可以控制当前面板中显示的值，以及字体大小等。对于主机负载而言，我们希望能够显示当前的最新值，因此修改Stat为Current即可。
 3. 如果希望面板能够根据不同的值显示不同的颜色的话，则可以定义Thresholds与Colors的映射关系，例如，定义Thresholds的分割区间值为“0,1”，则当Value的值落到不同的范围内时，将显示不同的颜色。
 
-![](https://via.placeholder.com/800x600?text=Image+0c407394b41a74e7)
+![img_4032.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4032.jpeg)
 
 

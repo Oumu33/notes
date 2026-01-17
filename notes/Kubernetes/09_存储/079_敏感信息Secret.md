@@ -20,7 +20,7 @@
 + 创建了一个名为mysql-auth的Secret对象，用户名为root，密码为123.com  
 `# kubectl create secret generic mysql-auth --from-literal=username=root --from-literal=password=123.com` 
 + 查看资源详细信息  
-![](https://via.placeholder.com/800x600?text=Image+8568fad0d8bc1ece)
+![img_2896.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2896.png)
 
 ### 通过文件创建资源
 > 使用“ `kubectl create secret generic <SECRET_NAME> --from-file[=KEY1]=/PATH/TO/FILE` ”命令加载认证文件内容并生成为Secret对象
@@ -47,11 +47,11 @@ ca.crt:  1895 bytes
 ### 使用Secret清单创建
 + Opaque 类型的数据是一个 map 类型，要求 value 是 base64 编码格式
 
-![](https://via.placeholder.com/800x600?text=Image+2b9fa6fb10333649)
+
 
 + 创建资源清单文件
 
-![](https://via.placeholder.com/800x600?text=Image+b857d031f8114bee)
+![img_4320.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4320.png)
 
 + 或者将用户名和密码保存至文件中
 
@@ -70,20 +70,20 @@ stringData:
 ### 将secret挂载到volume中
 + 创建pod资源清单
 
-![](https://via.placeholder.com/800x600?text=Image+bac090bbb1f27865)
+![img_3808.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3808.png)
 
 + 查看pod信息
 
-![](https://via.placeholder.com/800x600?text=Image+557e422728475233)
+
 
 ### 将secret导入到环境变量中
 + 创建pod资源清单
 
-![](https://via.placeholder.com/800x600?text=Image+976a7048d576355d)
+
 
 + 查看pod信息
 
-![](https://via.placeholder.com/800x600?text=Image+b824ce5e37ba68f0)
+![img_4720.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4720.jpeg)
 
 ## 三、Service Account
 
@@ -94,7 +94,7 @@ stringData:
 `# kubectl run nginx --image nginx` 
 + 查看资源信息
 
-![](https://via.placeholder.com/800x600?text=Image+87f16b5937567e30)
+
 
 
 
@@ -105,7 +105,7 @@ stringData:
 `kubectl create secret docker-registry myregistrykey --docker-server=DOCKER_REGISTRY_SERVER --docker-username=DOCKER_USER --docker-password=DOCKER_PASSWORD --docker-email=DOCKER_EMAIL` 
 2. 在创建 Pod 的时候，通过imagePullSecrets来引用刚创建的 `myregistrykey`
 
-![](https://via.placeholder.com/800x600?text=Image+a72d12ef823268d9)
+![img_48.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_48.png)
 
 
 

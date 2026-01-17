@@ -6,7 +6,7 @@
 
 1. 通过Docker的stats命令获取到当前主机上运行容器的统计信息，可以查看容器的CPU利用率、内存使用量、网络IO总量以及磁盘IO总量等信息。
 
-![](https://via.placeholder.com/800x600?text=Image+71665dd5e2b85c45)
+![img_3888.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3888.png)
 
 1. 除了使用命令以外，用户还可以通过Docker提供的HTTP      API查看容器详细的监控统计信息。
 
@@ -18,7 +18,7 @@ docker run --volume=/:/rootfs:ro --volume=/var/run:/var/run:rw --volume=/sys:/sy
 
 1. 通过访问http://localhost:8080可以查看，当前主机上容器的运行状态，如下所示：
 
-![](https://via.placeholder.com/800x600?text=Image+efd1d43e8d2ded7c)
+![img_2688.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2688.png)
 
 1. CAdvisor已经内置了对Prometheus的支持。访问http://localhost:8080/metrics即可获取到标准的Prometheus监控样本输出:
 2. CAdvisor中获取到的典型监控指标：
@@ -44,16 +44,16 @@ docker run --volume=/:/rootfs:ro --volume=/var/run:/var/run:rw --volume=/sys:/sy
 # 三、与Prometheus集成
 1. 修改/etc/prometheus/prometheus.yml，将cAdvisor添加监控数据采集任务目标当中：
 
-![](https://via.placeholder.com/800x600?text=Image+a099ade855049def)
+![img_4512.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4512.png)
 
 1. 重新启动Prometheus服务:
 2. 在Prometheus UI中查看到当前所有的Target状态：
 
-![](https://via.placeholder.com/800x600?text=Image+b5e1cf64ebae93e0)
+
 
 1. grfana导入仪表盘查看数据（id193）
 
-![](https://via.placeholder.com/800x600?text=Image+30acf038e1fcd5d0)
+![img_2032.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2032.png)
 
  
 

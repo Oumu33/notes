@@ -39,7 +39,7 @@ gr.Interface(
 
 效果如下：
 
-![](https://via.placeholder.com/800x600?text=Image+3630bc4bee401fe8)
+
 
 ##  图像类  
 | 组件 | 用途 |
@@ -63,7 +63,7 @@ gr.Interface(
 
 效果如下：
 
-![](https://via.placeholder.com/800x600?text=Image+fed6a24e4f5f2d0b)
+![img_3200.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3200.png)
 
 ##  音频/视频类  
 | 组件 | 用途 |
@@ -88,7 +88,7 @@ gr.Interface(
 
 执行效果：
 
-![](https://via.placeholder.com/800x600?text=Image+fcabb286aa699d9a)
+![img_2800.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2800.png)
 
 ##  表单/控件类  
 | 组件 | 用途 |
@@ -116,7 +116,7 @@ gr.Interface(
 
 效果如下：
 
-![](https://via.placeholder.com/800x600?text=Image+b446924af8fd03ef)
+
 
 ##  数据与可视化类  
 | 组件 | 用途 |
@@ -148,7 +148,7 @@ gr.Interface(
 
 效果如下：
 
-![](https://via.placeholder.com/800x600?text=Image+dd317c4a79badd32)
+![img_304.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_304.png)
 
 ## 高级组件
 | 组件 | 用途 |
@@ -176,7 +176,7 @@ gr.Interface(
 
 执行效果：
 
-![](https://via.placeholder.com/800x600?text=Image+5e32f8917c224bad)
+
 
 # 入门示例
 ## AI 代码聊天
@@ -214,6 +214,6 @@ gr.ChatInterface(
 
 执行效果如下：
 
-![](https://via.placeholder.com/800x600?text=Image+7e7770a01de83cf3)
+
 
 

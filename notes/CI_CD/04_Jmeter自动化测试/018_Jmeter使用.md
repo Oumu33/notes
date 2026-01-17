@@ -101,6 +101,6 @@ content  index.html  sbadmin2-1.0.7  statistics.json
 
 打开index.html文件，内容如下：
 
-![](https://via.placeholder.com/800x600?text=Image+8e9502f15bb94cfc)
+
 
 

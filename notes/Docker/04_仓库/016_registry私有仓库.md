@@ -18,22 +18,22 @@
 
 + 查看仓库运行情况
 
-![](https://via.placeholder.com/800x600?text=Image+87234c8b70fb9b31)
+
 
 + {"repositories":       []} 表示现在仓库中，没有镜像images
 
 ## 2. 使用register私有仓库
 + 查看客户端已有的images
 
-![](https://via.placeholder.com/800x600?text=Image+8abb4a031c0c9399)
+![img_496.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_496.png)
 
 + 将该镜像修改tag
 
-![](https://via.placeholder.com/800x600?text=Image+f10f32c55975a97d)
+![img_1472.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1472.png)
 
 + 上传标记镜像
 
-![](https://via.placeholder.com/800x600?text=Image+1fc8164c1c2d99ce)
+![img_3376.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3376.jpeg)
 
 + 成功会出现上述提示，表示本地的仓库默认使用的是https进行上传，那行是latest是重新上传出现的。
 + 如果你在push镜像的时候出现问题,可能是因为我们启动的registry服务不是安全可信赖的
@@ -45,13 +45,13 @@ vim /etc/docker/daemon.json,
 
 + 仓库端查看镜像
 
-![](https://via.placeholder.com/800x600?text=Image+ba88dcbf823ca63a)
 
-![](https://via.placeholder.com/800x600?text=Image+4293d7891e373a57)
+
+
 
 + 删除客户端镜像，从本地仓库下载镜像
 
-![](https://via.placeholder.com/800x600?text=Image+158d01194c64f85a)
+![img_4832.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4832.png)
 
 ## 3. 管理register私有仓库
 + 删除镜像仓库镜像

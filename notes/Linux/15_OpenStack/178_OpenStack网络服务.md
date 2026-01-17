@@ -487,9 +487,9 @@ compute ~# systemctl start neutron-linuxbridge-agent.service
 
 + 启动服务报错
 
-![](https://via.placeholder.com/800x600?text=Image+c0bdd69bd94d36aa)
 
-![](https://via.placeholder.com/800x600?text=Image+b6ebc7a949334b35)
+
+
 
 解决办法：
 

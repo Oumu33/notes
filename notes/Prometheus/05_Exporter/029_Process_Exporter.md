@@ -217,11 +217,11 @@ data:
 
 + prometheus targets验证
 
-![](https://via.placeholder.com/800x600?text=Image+f55a4080604e3140)
+![img_1744.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1744.png)
 
 + 输入指标名称验证
 
-![](https://via.placeholder.com/800x600?text=Image+3c43c0c3ae5cb8b7)
+
 
 > prometheus采集无误，接下来我们配置告警规则。由于namedprocess_namegroup_num_procs这个指标显示的是指定服务的进程数，我们可以设置条件，当这个指标值为0的时候触发告警。
 >
@@ -254,11 +254,11 @@ data:
 
 + 接下来。我们将node3的chronyd服务人为停止，模拟触发故障，查看alert信息
 
-![](https://via.placeholder.com/800x600?text=Image+aa6c099f3bd40770)
+![img_1440.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1440.png)
 
 ### grafana配置
 process exporter已经为我们准备好了现成的grafana dashboard模板，我们只需要直接导入即可，模板ID为249
 
-![](https://via.placeholder.com/800x600?text=Image+fe2b267f6ab7ea66)
+![img_3408.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3408.png)
 
 

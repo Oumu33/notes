@@ -60,7 +60,7 @@ Pod 之间的 IP 不会重叠，Calico 通过 BGP 或隧道让跨节点 Pod 能�
 
 我的 k8s 版本是 1.30，支持的 calico 版本是 3.29。
 
-![](https://via.placeholder.com/800x600?text=Image+ab9562ff50fa5fc8)
+![img_3184.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3184.png)
 
 安装部署参考文档：[https://docs.tigera.io/calico/3.29/getting-started/kubernetes/self-managed-onprem/onpremises#install-calico](https://docs.tigera.io/calico/3.29/getting-started/kubernetes/self-managed-onprem/onpremises#install-calico)
 

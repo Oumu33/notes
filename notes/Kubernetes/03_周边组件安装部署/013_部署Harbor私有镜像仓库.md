@@ -140,7 +140,7 @@ data_volume: /data/harbor
 ```
 
 ## 访问Harbor并登录
-![](https://via.placeholder.com/800x600?text=Image+d2eba888a1f95524)
+![img_2112.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2112.png)
 
 + 初始用户名admin
 + 初始密码Harbor12345

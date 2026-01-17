@@ -31,7 +31,7 @@ gitlab-ce-16.10.2-ce.0.el8.x86_64.rpm
 
 登录web页面
 
-![](https://via.placeholder.com/800x600?text=Image+e84effa13ac8ea07)
+
 
 获取默认密码
 

@@ -4,7 +4,7 @@
 
 1. Service资源基于标签选择器将一组Pod定义成一个逻辑组合，并通过自己的IP地址和端口调度代理请求至组内的Pod对象之上，它向客户端隐藏了真实的、处理用户请求的Pod资源，使得客户端的请求看上去就像是由Service直接处理并进行响应的一样。
 
-![](https://via.placeholder.com/800x600?text=Image+ea336a62c9f24533)
+
 
 2. Service对象的IP地址位于为Kubernetes集群配置指定专用IP地址的范围之内，而且是一种虚拟IP地址，它在Service对象创建后即保持不变，并且能够被同一集群中的Pod资源所访问。Service端口用于接收客户端请求并将其转发至其后端的Pod中应用的相应端口之上。
 3. 通过其标签选择器匹配到的后端Pod资源不止一个时，Service资源能够以负载均衡的方式进行流量调度，实现了请求流量的分发机制。Service与Pod对象之间的关联关系通过标签选择器以松耦合的方式建立，它可以先于Pod对象创建而不会发生错误。
@@ -13,7 +13,7 @@
 
 
 ## service实现原理
-![](https://via.placeholder.com/800x600?text=Image+b2e0baa30367675c)
+![img_3616.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3616.png)
 
 
 
@@ -28,14 +28,14 @@
 + kube-proxy负责跟踪API  
 Server上Service和Endpoints对象的变动，并据此调整Service资源的定义。对于每个Service对象，它会随机打开一个本地端口（运行于用户空间的kube-proxy进程负责监听），任何到达此代理端口的连接请求都将被代理至当前Service资源后端的各Pod对象上，至于会挑中哪个Pod对象则取决于当前Service资源的调度方式，默认的调度算法是轮询（round-robin）
 
-![](https://via.placeholder.com/800x600?text=Image+45436a62bb1ed627)
+![img_1568.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1568.png)
 
 + 这种代理模型中，请求流量到达内核空间后经由套接字送往用户空间的kube-proxy，而后再由它送回内核空间，并调度至后端Pod。
 
 ### iptables
 + kube-proxy负责跟踪API  
 Server上Service和Endpoints对象的变动（创建或移除），并据此做出Service资源定义的变动。同时，对于每个Service，它都会创建iptables规则直接捕获到达ClusterIP和Port的流量，并将其重定向至当前Service的后端。对于每个Endpoints对象，Service资源会为其创建iptables规则并关联至挑选的后端Pod资源，默认算法是随机调度  
-![](https://via.placeholder.com/800x600?text=Image+6657975efa9afb1f)
+
 + 在创建Service资源时，集群中每个节点上的kube-proxy都会收到通知并将其定义为当前节点上的iptables规则，用于转发工作接口接收到的与此Service资源的ClusterIP和端口的相关流量。客户端发来的请求被相关的iptables规则进行调度和目标地址转换（DNAT）后再转发至集群内的Pod对象之上。  
 相对于用户空间模型来说，iptables模型无须将流量在用户空间和内核空间来回切换，因而更加高效和可靠。不过，其缺点是iptables代理模型不会在被挑中的后端Pod资源无响应时自动进行重定向，而userspace模型则可以。
 
@@ -43,7 +43,7 @@ Server上Service和Endpoints对象的变动（创建或移除），并据此做�
 + kube-proxy跟踪API  
 Server上Service和Endpoints对象的变动，据此来调用netlink接口创建ipvs规则，并确保与API  
 Server中的变动保持同步。它与iptables规则的不同之处仅在于其请求流量的调度功能由ipvs实现，余下的其他功能仍由iptables完成。  
-![](https://via.placeholder.com/800x600?text=Image+57c014dcc38f58ce)
+
 + 类似于iptables模型，ipvs构建于netfilter的钩子函数之上，但它使用hash表作为底层数据结构并工作于内核空间，因此具有流量转发速度快、规则同步性能好的特性。
 + ipvs支持众多调度算法，有rr：轮询调度lc：最小连接数dh：目标哈希sh：源哈希sed：最短期望延迟nq：不排队调度
 

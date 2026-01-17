@@ -26,15 +26,15 @@
 
 1. 先定义了一个名为myapp-svc的Headless Service资源，用于为关联到的每个Pod资源创建DNS资源记录。
 
-![](https://via.placeholder.com/800x600?text=Image+694321cbd477bf10)
+![img_2656.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2656.png)
 
 2. 定义多个使用NFS存储后端的PV，空间大小为2GB，仅支持单路的读写操作。
 
-![](https://via.placeholder.com/800x600?text=Image+23ebd887d1b3a1e6)
+
 
 3. 定义了一个名为myapp的StatefulSet资源，它通过Pod模板创建了两个Pod资源副本，并基于volumeClaimTemplates（存储卷申请模板）向nfs存储类请求动态供给PV，从而为每个Pod资源提供大小为1GB的专用存储卷。
 
-![](https://via.placeholder.com/800x600?text=Image+d4177d6349bed28a)
+![img_3680.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3680.png)
 
 
 
@@ -44,7 +44,7 @@
 
 4. 查看资源信息
 
-![](https://via.placeholder.com/800x600?text=Image+c881de1e1071bc73)
+
 
 
 
@@ -58,7 +58,7 @@
 
 1. Pod资源的固定标识符
 
-![](https://via.placeholder.com/800x600?text=Image+327f450756c351fc)
+
 
 
 
@@ -67,22 +67,22 @@ Service资源创建为DNS资源记录。在Pod资源创建后，与其相关的D
 + 使用coredns解析测试  
 # dig -t A myapp-0.myapp-svc.default.svc.cluster.local@10.244.2.7
 
-![](https://via.placeholder.com/800x600?text=Image+8482b10e770e6e2a)
+
 
 + 终端中删除Pod资源myapp-1，删除完成后控制器将随之开始重建Pod资源，其名称标识符的确未发生改变：
 
-![](https://via.placeholder.com/800x600?text=Image+b983669c6d25950c)
+
 
 
 
 2. Pod资源的专有存储卷  
 控制器通过volumeClaimTemplates为每个Pod副本自动创建并关联一个PVC对象，它们分别绑定了一个动态供给的PV对象：
 
-![](https://via.placeholder.com/800x600?text=Image+2fa0c3e6d6117f73)
+![img_3456.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3456.png)
 
 + 重新调度或终止后重建，此前的存储卷及其数据不会丢失。
 
-![](https://via.placeholder.com/800x600?text=Image+01cbb30fe8446bd1)
+![img_608.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_608.png)
 
 
 
@@ -96,18 +96,18 @@ Service资源创建为DNS资源记录。在Pod资源创建后，与其相关的D
 
 1. 将myapp中的Pod副本数量扩展至5个：
 
-![](https://via.placeholder.com/800x600?text=Image+39f8106200935cc5)
+![img_1808.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1808.png)
 
 + StatefulSet资源的扩展过程与创建过程的Pod资源生成策略相同，默认为顺次进行，而且其名称中的序号也将以现有Pod资源的最后一个序号向后进行
 2. 执行缩容操作只需要将其副本数量调低即可，例如，这里可使用kubectl patch命令将StatefulSet资源myapp的副本数量修补为3个：
 
-![](https://via.placeholder.com/800x600?text=Image+c5a4afabb1cef5af)
+![img_528.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_528.png)
 
 
 
 + 终止Pod资源后，其存储卷并不会被删除，因此缩减规模后若再将其扩展回来，那么此前的数据依然可用，且Pod资源名称保持不变
 
-![](https://via.placeholder.com/800x600?text=Image+2a894e8e31dc6f47)
+
 
 
 
@@ -119,7 +119,7 @@ Service资源创建为DNS资源记录。在Pod资源创建后，与其相关的D
 + 更新Pod中的容器镜像可以使用“kubectl set image”命令进行，例如下面的命令可将myapp控制器下的Pod资源镜像版本升级为“myapp:v2”：  
 `# kubectl set image statefulset myapp nginx=192.168.10.110/k8s/myapp:v2` 
 
-![](https://via.placeholder.com/800x600?text=Image+5475ac632e346d78)
+![img_608.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_608.png)
 
 2. 暂存更新  
 当用户需要设定一个更新操作，但又不希望它立即执行时，可将更新操作予以“暂存”，待条件满足后再手动触发其执行更新。将．spec.update-Strategy.rollingUpdate.partition字段的值设置为Pod资源的副本数量，即比Pod资源的最大索引号大1，这就意味着，所有的Pod资源都不会处于可直接更新的分区之内，那么于其后设定的更新操作也就不会真正执行，直到用户降低分区编号至现有Pod资源索引号范围之内
@@ -129,11 +129,11 @@ Service资源创建为DNS资源记录。在Pod资源创建后，与其相关的D
 `# kubectl set image statefulset myapp nginx=192.168.10.110/k8s/myapp:v3` 
 + 接着检测各Pod资源的镜像文件版本信息，可以发现其版本并未发生改变：
 
-![](https://via.placeholder.com/800x600?text=Image+6a02d4b65818fa3d)
+![img_1296.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1296.png)
 
 + 即便删除某Pod资源，它依然会基于旧的版本镜像进行重建。
 
-![](https://via.placeholder.com/800x600?text=Image+4eb66e7f83e46db2)
+
 
 
 
@@ -142,10 +142,10 @@ Service资源创建为DNS资源记录。在Pod资源创建后，与其相关的D
 + 将暂停的更新StatefulSet控制器myapp资源的分区号设置为Pod资源的最大索引号2，将会触发myapp-2的更新操作：  
 `# kubectl patch statefulset myapp -p '{"spec":{"updateStrategy":{"rollingUpdate":{"partition":2}}}}'` 
 
-![](https://via.placeholder.com/800x600?text=Image+5d25f4bdb2db1898)
+![img_1584.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1584.png)
 
 + 将副本数目修改大于3后，也会触发更新操作
 
-![](https://via.placeholder.com/800x600?text=Image+59d7d2537875d9e2)
+![img_4800.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4800.jpeg)
 
 

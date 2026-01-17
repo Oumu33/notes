@@ -31,23 +31,23 @@
 
 1. 提前在每个节点创建/html目录，并生成index.html文件
 
-![](https://via.placeholder.com/800x600?text=Image+9074cc6cd3a79236)
+
 
 2. 创建pod资源清单
 
-![](https://via.placeholder.com/800x600?text=Image+20a09892c1848f09)
+
 
 3. 访问验证
 
-![](https://via.placeholder.com/800x600?text=Image+a75bdbbe334d231f)
+
 
 4. 进入容器修改index.html文件
 
-![](https://via.placeholder.com/800x600?text=Image+f1d457d2d4d7f324)
+![img_1792.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1792.png)
 
 5. 宿主机查看文件是否更改
 
-![](https://via.placeholder.com/800x600?text=Image+9207c9ab25e8692a)
+![img_1808.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1808.png)
 
 ## 创建空目录或文件并挂载
 ```yaml

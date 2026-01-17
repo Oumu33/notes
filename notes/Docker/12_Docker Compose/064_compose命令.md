@@ -24,7 +24,7 @@ docker-compose  [-f=<arg>...] [options] [COMMAND] [ARGS...]
 
 5. 命令列表
 
-![](https://via.placeholder.com/800x600?text=Image+8a33f2e8ba97d234)
+![img_4448.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4448.png)
 
 6. 使用说明
 + build

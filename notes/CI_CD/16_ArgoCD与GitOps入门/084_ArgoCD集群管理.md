@@ -35,7 +35,7 @@ Cluster 'https://192.168.10.15:6443' added
 ```
 
 ## 查看集群状态信息
-![](https://via.placeholder.com/800x600?text=Image+c04292b4fc267e0f)
+
 
 # CLI 管理集群
 ## 列出集群

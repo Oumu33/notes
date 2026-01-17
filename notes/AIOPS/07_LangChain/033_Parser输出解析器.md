@@ -38,7 +38,7 @@ format_instructions：它会返回一段清晰的格式说明字符串，告诉 
 ## 输出解析器类继承关系
 分析LangChain源码可知，在 LangChain 的类结构中，顶层基类是 `BaseLLMOutputParser`，用于定义所有 LLM 输出解析器的抽象父类。而`BaseTransformOutputParser`是一个泛型类，用于“对模型输出进行转换”，我们常用的 `StrOutputParser`、`ListOutputParser`等均继承自 `BaseTransformOutputParser`。
 
-![](https://via.placeholder.com/800x600?text=Image+1b72121400a1889a)
+![img_1312.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1312.jpeg)
 
 # 常用输出解析器用法
 ## 字符串解析器

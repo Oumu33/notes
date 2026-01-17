@@ -5,7 +5,7 @@
 + SQL 层：处理所连接的应用程序发送的 SQL 查询
 + 存储层：处理数据存储，MySQL数据可以按不同格式和结构存储在不同物理介质上，也称为存储引擎
 
-![](https://via.placeholder.com/800x600?text=Image+34c49c3b88927b1d)
+
 
 # 二、MySQLD 连接层
 1. 连接层可通过多种通信协议接受来自应用程序的连接：
@@ -16,7 +16,7 @@
 2. 每个客户端连接在服务器端启动一个线程来响应
 3. 通过验证用户名 + 口令 +      客户端主机名或IP来对该连接进行验证
 
-![](https://via.placeholder.com/800x600?text=Image+7109830eaa1ed3fa)
+![img_544.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_544.png)
 
 # 三、MySQLD SQL层
 1. 建立连接后，MySQL 服务器将处理以下进程：
@@ -26,9 +26,9 @@
 + 查询高速缓存：（可选配置）可配置的查询高速缓存，可用于存储（并立即返回）执行查询的结果集
 + 查询日志记录：可以启用以跟踪执行的查询
 
-![](https://via.placeholder.com/800x600?text=Image+af642d27451236bb)
+![img_752.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_752.png)
 
-![](https://via.placeholder.com/800x600?text=Image+9c017fcbc25874ce)
+
 
 # 三、MySQLD 存储层
 1. MySQLD可以支持不同类型的“存储引擎”来存储数据

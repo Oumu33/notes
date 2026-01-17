@@ -25,7 +25,7 @@ mongodump命令脚本语法如下：
 
 执行以上命令后，客户端会连接到ip为 127.0.0.1 端口号为 27017 的MongoDB服务上，并备份所有数据到 bin/dump/ 目录中。命令输出结果如下：
 
-![](https://via.placeholder.com/800x600?text=Image+17cb532a4c190c9b)
+
 
 mongodump 命令可选参数列表如下所示：
 
@@ -64,6 +64,6 @@ mongorestore命令脚本语法如下：
 
 执行以上命令输出结果如下：
 
-![](https://via.placeholder.com/800x600?text=Image+7534264f5e5f54b4)
+![img_224.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_224.png)
 
 

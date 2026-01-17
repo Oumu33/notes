@@ -44,7 +44,7 @@ OS name: "linux", version: "4.18.0-513.24.1.el8_9.x86_64", arch: "amd64", family
 ## 修改runner标签
 修改runner标签，新增java标签，用于构建时指定runner执行构建任务。
 
-![](https://via.placeholder.com/800x600?text=Image+fc91446707ebd5aa)
+![img_2016.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2016.png)
 
 ## 创建流水线作业
 在java项目根目录添加一个.gitlab-ci.yml文件，文件内容如下
@@ -76,15 +76,15 @@ test:
 
 查看build阶段日志，已成功完成mvn打包。
 
-![](https://via.placeholder.com/800x600?text=Image+ff4672a86431d2f6)
+
 
 查看test阶段日志，已成功完成单元测试。
 
-![](https://via.placeholder.com/800x600?text=Image+4117c41e7209d3ee)
+![img_624.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_624.png)
 
 查看测试结果
 
-![](https://via.placeholder.com/800x600?text=Image+b36c2553de7a638b)
+
 
 # gitlab与npm集成
 ## 安装nodejs

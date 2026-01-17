@@ -36,16 +36,16 @@ docker run -d   -p 9104:9104 --network my-mysql-network  -e DATA_SOURCE_NAME="us
 # 二、与Prometheus集成
 1. 修改/etc/prometheus/prometheus.yml，将mysqld_exporter添加监控数据采集任务目标当中：
 
-![](https://via.placeholder.com/800x600?text=Image+250c0f0299e13803)
+
 
 2. 重新启动Prometheus服务:
 3. 在Prometheus UI中查看到当前所有的Target状态：
 
-![](https://via.placeholder.com/800x600?text=Image+ff8a393f26ffdb9b)
+
 
 4. grfana导入仪表盘查看数据（id11323）
 
-![](https://via.placeholder.com/800x600?text=Image+7ddf653fe3bb0e25)
+![img_672.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_672.png)
 
  
 

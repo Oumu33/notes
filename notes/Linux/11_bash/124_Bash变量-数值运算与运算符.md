@@ -15,11 +15,11 @@
 # 二、数值运算
 1. 将变量声明为整数型
 
-![](https://via.placeholder.com/800x600?text=Image+2db0a7fde5572b73)
+![img_2416.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2416.png)
 
 1. expr或let数值运算工具
 
-![](https://via.placeholder.com/800x600?text=Image+d7382e2c5d317e05)
+
 
 + dd的值是aa和bb的和。注意“+”号左右两
 
@@ -27,9 +27,9 @@
 
 1. “$((运算式))”或“$[运算式]”
 
-![](https://via.placeholder.com/800x600?text=Image+ac57a0acaad098ac)
 
-![](https://via.placeholder.com/800x600?text=Image+b5f4d3a8998259b3)
+
+
 
 # 三、运算符
 | 优先级  | 运算符  | 说明 |
@@ -51,15 +51,15 @@
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+7793a2e9c95d26a7)
+
 
 + 虽然乘和除的优先级高于加，但是通过小括号可以调整运算优先级
 
-![](https://via.placeholder.com/800x600?text=Image+7ad4c42a7b58385a)
+
 
 + 14不能被3整除，余数是2
 
-![](https://via.placeholder.com/800x600?text=Image+71819f361abd3d1b)
+![img_1040.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1040.png)
 
 + 逻辑与运算只有想与的两边都是1，与的结果才是1，否则
 

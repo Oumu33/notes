@@ -19,6 +19,6 @@ GitLab Runner 支持的执行器有GitLab Runner的安装方式有关也和宿�
 # 执行器功能对比
 具体可参考文档：[https://docs.gitlab.com/runner/executors/#selecting-the-executor](https://docs.gitlab.com/runner/executors/#selecting-the-executor)
 
-![](https://via.placeholder.com/800x600?text=Image+45635aed5452086b)
+![img_3664.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3664.png)
 
 

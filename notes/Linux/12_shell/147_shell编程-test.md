@@ -15,11 +15,11 @@ Shell中的 test 命令用于检查某个条件是否成立，它可以进行数
 
 + 实例演示：
 
-![](https://via.placeholder.com/800x600?text=Image+3e4a89e05c591a97)
+![img_3424.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3424.png)
 
 + 代码中的 []      执行基本的算数运算，如：
 
-![](https://via.placeholder.com/800x600?text=Image+64116634a9c57aca)
+
 
 # 三、字符串测试
 | **参数** | **说明** |
@@ -32,7 +32,7 @@ Shell中的 test 命令用于检查某个条件是否成立，它可以进行数
 
 + 实例演示：
 
-![](https://via.placeholder.com/800x600?text=Image+b4c6cd2f356a2efd)
+
 
 # 四、文件测试
 | **参数** | **说明** |
@@ -50,11 +50,11 @@ Shell中的 test 命令用于检查某个条件是否成立，它可以进行数
 
 + 实例演示：
 
-![](https://via.placeholder.com/800x600?text=Image+ed8c57ef8d01ae71)
+![img_976.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_976.png)
 
 + 另外，Shell还提供了与(      -a )、或( -o )、非( !      )三个逻辑操作符用于将测试条件连接起来，其优先级为："!"最高，"-a"次之，"-o"最低。例如：
 
-![](https://via.placeholder.com/800x600?text=Image+a0c47423bb663c2f)
+
 
 来自 <[http://www.runoob.com/linux/linux-shell-test.html](http://www.runoob.com/linux/linux-shell-test.html)> 
 

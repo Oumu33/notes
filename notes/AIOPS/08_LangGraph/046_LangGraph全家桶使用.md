@@ -186,27 +186,27 @@ For production use, please use LangGraph Platform.
 ## 查看接口文档
 访问[http://127.0.0.1:2024/docs](http://127.0.0.1:2024/docs)即可查看接口文档。
 
-![](https://via.placeholder.com/800x600?text=Image+2da85b43e91461fe)
+![img_912.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_912.png)
 
 ## LangGraph Studio 可视化调试
 访问[https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:2024](https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:2024)既可在 web 页面调试。
 
-![](https://via.placeholder.com/800x600?text=Image+c7da59bbc4c2b764)
+![img_4112.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4112.png)
 
 ## LangSmith 追踪
 点击`LangGraph Studio`侧边栏的`Tracing Projects`按钮，然后点击我们的项目`langgraph_studio_chatbot`，可以看到LangSmith的调试记录:
 
-![](https://via.placeholder.com/800x600?text=Image+1a29357a93f76c62)
+![img_1264.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1264.png)
 
 ## Agent Chat UI 前端交互
 除了使用LangGraph Studio 调试交互外，我们也可以使用Agent Chat UI 进行交互，项目主页：[https://github.com/langchain-ai/agent-chat-ui](https://github.com/langchain-ai/agent-chat-ui)。项目提供本地部署和在线使用两种方式，为方便调试，此处以在线使用为例演示。
 
 访问[https://agentchat.vercel.app/](https://agentchat.vercel.app/)，填写相关信息。
 
-![](https://via.placeholder.com/800x600?text=Image+bd466355cf88159c)
+
 
 聊天测试进行功能验证
 
-![](https://via.placeholder.com/800x600?text=Image+53a5dc2dab3abae7)
+
 
 

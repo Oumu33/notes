@@ -716,7 +716,7 @@ buildctl（客户端），负责解析Dockerfile文件、并向服务端buildkit
 
 构建镜像并推送至Harbor为例，整个服务调用过程如下：
 
-![](https://via.placeholder.com/800x600?text=Image+b79ab2c682e78c5c)
+
 
 ## 安装buildkit
 软件包下载地址：[https://github.com/moby/buildkit/releases](https://github.com/moby/buildkit/releases)
@@ -797,6 +797,6 @@ hello container
 
 此时查看Harbor仓库发现��经推送成功
 
-![](https://via.placeholder.com/800x600?text=Image+68a930b214e8732b)
+
 
 

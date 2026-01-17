@@ -92,7 +92,7 @@ spec:
 ```
 
 ## 验证targets
-![](https://via.placeholder.com/800x600?text=Image+ff6bcb9abfd5784d)
+![img_4128.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4128.png)
 
 
 

@@ -64,7 +64,7 @@ TIME_ZONE = "TIME_ZONE"
 
 + httpd服务无法启动
 
-![](https://via.placeholder.com/800x600?text=Image+12acb6bcfa43efcc)
+
 
 改为UTC，启动服务
 

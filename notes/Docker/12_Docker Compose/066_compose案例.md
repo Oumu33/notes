@@ -51,7 +51,7 @@ services:
 # 二、web负载均衡
 1. 目录结构
 
-![](https://via.placeholder.com/800x600?text=Image+172cdba67fcfa440)
+
 
 2. 各个文件内容
 + docker-compose.yml
@@ -137,13 +137,13 @@ test
 
 4. 查看docker进程信息
 
-![](https://via.placeholder.com/800x600?text=Image+abe216890247cc76)
+
 
 5. 浏览器访问测试
 
-![](https://via.placeholder.com/800x600?text=Image+e7b4ecd29fa7bb01)
 
-![](https://via.placeholder.com/800x600?text=Image+fa165f3d25e846bf)
+
+![img_1984.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1984.png)
 
 
 

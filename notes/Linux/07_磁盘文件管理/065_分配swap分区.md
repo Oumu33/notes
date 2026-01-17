@@ -26,7 +26,7 @@
 
 [root@localhost ~]# free
 
-![](https://via.placeholder.com/800x600?text=Image+5c984ffdfb26f217)
+![img_4064.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4064.png)
 
 + cached（缓存）：是指把读取出来的数据保存在内存当中，当再次读取时，不用读取硬盘而直接从内存当中读取，加速了数据的读取过程
 + buffer（缓冲）：是指在写入数据时，先把分散的写入操作保存到内存当中，当达到一定程度再集中写入硬盘，减少了磁盘碎片和硬盘的反复寻道，加速了数据的写入过程

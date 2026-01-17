@@ -9,9 +9,9 @@
 
 + root# mysqld --verbose --help
 
-![](https://via.placeholder.com/800x600?text=Image+2e9ea3cbc7e0a879)
 
-![](https://via.placeholder.com/800x600?text=Image+417f93c0c6d4aca5)
+
+
 
 # 二、改变选项值的方式
 1. 命令行选项
@@ -26,7 +26,7 @@
 + global对所有新连接会话生效，session对当前会话生效
 + 有些选项不能直接改值，需要把选项和值放到选项文件中，重启MySQLD才能生效
 
-![](https://via.placeholder.com/800x600?text=Image+071e075fb49df036)
+![img_2320.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2320.png)
 
 1. 选项文件 /etc/my.cnf
 + 通过set [global | session]      var_name=var_value      修改的选项，在重启mysqld后，还原回原来的默认值，这样不方便；一个一个修改选项值容易出错也不方便，因此mysql提供选项文件/etc/my.cnf，方便批量修改选项文件
@@ -42,7 +42,7 @@ mysqld重启时先看有没有命令行选项，如果有优先使用
 
 root# my_print_defaults mysqld
 
-![](https://via.placeholder.com/800x600?text=Image+21f6bb4d853f1df9)
+
 
  
 

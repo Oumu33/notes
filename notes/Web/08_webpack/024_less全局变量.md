@@ -24,7 +24,7 @@ module.exports = {
 
 3. 创建全局变量文件
 
-![](https://via.placeholder.com/800x600?text=Image+f1aec02b9669079e)
+
 
 4. less文件定义变量
 

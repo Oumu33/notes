@@ -134,7 +134,7 @@ rpm安装
 # 访问验证
 浏览器访问8020端口，默认用户名admin，默认密码password
 
-![](https://via.placeholder.com/800x600?text=Image+57d8401c24c853c8)
+![img_2560.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2560.png)
 
 
 

@@ -5,13 +5,13 @@
 
 # 项目创建测试分支并推送至仓库
 ## main生产分支内容
-## ![](https://via.placeholder.com/800x600?text=Image+e57c07ab9dd0ab0e)
+## 
 ## test测试分支内容
-![](https://via.placeholder.com/800x600?text=Image+bef6ddb90f475ded)
+![img_3344.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3344.png)
 
 # 修改jenkins配置
 ## 添加字符串类型参数
-![](https://via.placeholder.com/800x600?text=Image+f40fb9b26a8e2da3)
+
 
 ## 修改pipeline
 在拉取代码环节，使用${branch}引用变量
@@ -45,11 +45,11 @@ pipeline {
 ## 设定参数
 点击立即构建，输入变量参数test。
 
-![](https://via.placeholder.com/800x600?text=Image+e1ccb8f36e4131b6)
+
 
 ## 结果验证
 访问springboot页面如下所示
 
-![](https://via.placeholder.com/800x600?text=Image+6cb485c99e62af91)
+![img_3584.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3584.png)
 
 

@@ -23,7 +23,7 @@
 ## 创建agent配置文件
 在GitLab 仓库中，创建一个名为 .gitlab/agents/devops/config.yaml 的文件，文件内容如下：
 
-![](https://via.placeholder.com/800x600?text=Image+26f5c53fd996b023)
+
 
 ```yaml
 gitops:
@@ -34,7 +34,7 @@ gitops:
 ```
 
 ## 创建资源清单
-![](https://via.placeholder.com/800x600?text=Image+093419085c8599eb)
+
 
 ```yaml
 apiVersion: apps/v1
@@ -78,7 +78,7 @@ spec:
 ## 生成agent token
 在项目——>运维——>Kubernetes集群，注册agent，生成token。
 
-![](https://via.placeholder.com/800x600?text=Image+b7c3ed7ef8f6f1ce)
+
 
 ## 安装agent
 ```bash
@@ -122,7 +122,7 @@ devops-gitlab-agent-v2-84d4648d8-9wcfl   1/1     Running   0          49s
 
 查看集群连接状态
 
-![](https://via.placeholder.com/800x600?text=Image+a6a235a26d8c64e7)
+
 
 ## 查看自动部署的资源信息
 ```yaml

@@ -34,7 +34,7 @@ locked：锁定状态，无法运行项目作业。
 paused：暂停状态，暂时不会接受新的作业。
 
 # 工作流程
-![](https://via.placeholder.com/800x600?text=Image+c0975c22b8395f10)
+![img_4096.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4096.png)
 
 
 

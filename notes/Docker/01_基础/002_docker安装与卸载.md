@@ -40,14 +40,14 @@ source /usr/share/bash-completion/completions/docker
 # 二、常见异常处理
 1. Cenntos8安装过程报错
 
-![](https://via.placeholder.com/800x600?text=Image+910151e3011f9067)
+![img_3120.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3120.png)
 
 
 
 + 安装最新版containerd.io-1.2.6-3.3.el7.x86_64.rpm
 + 参考链接：[https://mirrors.aliyun.com/docker-ce/linux/centos/7/x86_64/edge/Packages/](https://mirrors.aliyun.com/docker-ce/linux/centos/7/x86_64/edge/Packages/)
 
-![](https://via.placeholder.com/800x600?text=Image+4914b3ced3598e45)
+
 
 `dnf install -y  https://mirrors.aliyun.com/docker-ce/linux/centos/7/x86_64/edge/Packages/containerd.io-1.3.7-3.1.el7.x86_64.rpm`
 

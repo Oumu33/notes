@@ -20,15 +20,15 @@
 | \v:  | 垂直输出退格键，也就是Tab键 |
 
 
-![](https://via.placeholder.com/800x600?text=Image+950ac5eb33743076)
+
 
 1. 不调整输出格式其他命令内容
 
-![](https://via.placeholder.com/800x600?text=Image+dbea6e9cc0614272)
+![img_3872.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3872.png)
 
 1. 调整格式输出
 
-![](https://via.placeholder.com/800x600?text=Image+c2cfa88e88288189)
+![img_3360.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3360.png)
 
 1. 在awk命令的输出中支持print和printf命令
 

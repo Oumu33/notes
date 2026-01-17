@@ -200,18 +200,18 @@ spec:
 ```
 
 ## 查看验证
-![](https://via.placeholder.com/800x600?text=Image+2472d4d3e2fc4eda)
+![img_4304.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4304.png)
 
 # Argo CD配置
 ## 创建Kustomize类型的app
 通过Argo UI创建app，填写如下信息：
 
-![](https://via.placeholder.com/800x600?text=Image+61fd4d0c977d319b)
+
 
 ## 查看验证
 查看argo cd应用信息，已完成部署。
 
-![](https://via.placeholder.com/800x600?text=Image+37789021212487ef)
+
 
 登录k8s查看资源
 
@@ -262,7 +262,7 @@ namespace: dev
 
 查看argo cd更新记录
 
-![](https://via.placeholder.com/800x600?text=Image+e9d4bf89d36fb6ca)
+
 
 访问验证
 

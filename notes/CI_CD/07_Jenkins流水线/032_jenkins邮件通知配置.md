@@ -3,35 +3,35 @@
 ## 安装插件
 在jenkins的插件管理中安装Email Extension插件
 
-![](https://via.placeholder.com/800x600?text=Image+d3d73b6b1f68337a)
+
 
 ## 配置邮件相关参数
 依次点击manage jenkins——>system，找到jenkins Location项，填写系统管理员邮件地址。
 
-![](https://via.placeholder.com/800x600?text=Image+5278919287f9ed74)
+
 
 配置邮件服务器相关参数，然后点击通过发送测试邮件测试配置，填写收件人邮箱号。
 
-![](https://via.placeholder.com/800x600?text=Image+0b53909633bf5c97)
+
 
 配置Extended E-mail Notification配置，内容如下
 
-![](https://via.placeholder.com/800x600?text=Image+d5cf2f5a44e64fe9)
+![img_2720.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2720.png)
 
 登录收件人邮件，看到有测试邮件。
 
-![](https://via.placeholder.com/800x600?text=Image+b44fde0dc526f80d)
+
 
 # 自由风格任务配置
 ## 修改任务配置构建后操作内容
-![](https://via.placeholder.com/800x600?text=Image+6f027ccfdfe7d693)
 
-![](https://via.placeholder.com/800x600?text=Image+3d8379f2d68917ad)
+
+
 
 ## 构建测试
 点击立即构建，查看收件人邮箱
 
-![](https://via.placeholder.com/800x600?text=Image+6fb1ec0d42afd3a3)
+
 
 # 流水线任务配置
 ## 配置邮件内容
@@ -95,7 +95,7 @@ ${CHANGES_SINCE_LAST_SUCCESS, reverse=true, format="%c", changesFormat="<li>%d [
 ## 修改pipeline添加邮件发送
 修改流水线内容，新增邮件发送
 
-![](https://via.placeholder.com/800x600?text=Image+a8982bb6f7da3ae1)
+
 
 ```html
 pipeline {
@@ -134,6 +134,6 @@ pipeline {
 ## 构建测试
 点击立即构建，查看收件人邮箱
 
-![](https://via.placeholder.com/800x600?text=Image+1eac8c2892bcb4c5)
+![img_2032.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2032.png)
 
 

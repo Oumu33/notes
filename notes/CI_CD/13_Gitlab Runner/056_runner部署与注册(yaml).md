@@ -12,7 +12,7 @@ runner 的 k8s 执行器是这样执行 pipline 的：
 + 随后，runner 会调用 k8s API，创建一个用于执行该 job 的 pod。通常来说，runner 创建的所有 pod 有一个通用模板，我们需要在 runner 的 `config.toml` 配置文件中配置这个模板。但 pod 中具体使用什么镜像、在 pod 中执行什么命令，这些都是在后续的 `.gitlab-ci.yml` 文件中配置，并且随着 job 的不同而不同。
 + 在完成了 job 内的工作后，runner 会将这个临时 pod 删除。
 
-![](https://via.placeholder.com/800x600?text=Image+42e451b7bc11d80b)
+![img_4384.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4384.png)
 
 ## 注意事项
 每个 stage 都会选择一个 runner 来执行，这意味着可以根据 stage 的不同，选择具有特定功能的 runner
@@ -36,14 +36,14 @@ runner配置信息可以通过参数指定，也可以以环境变量方式设�
 ## <font style="color:rgb(48, 49, 51);">创建bucket</font>
 <font style="color:rgb(48, 49, 51);">创建一个名为gitlab-runner-cache的bucket，并设置容量上限为1TB</font>
 
-![](https://via.placeholder.com/800x600?text=Image+d7c189c825adad66)
+
 
 ## <font style="color:rgb(48, 49, 51);">创建Access Key并配置权限</font>
 <font style="color:rgb(48, 49, 51);">创建access key并牢记，后续使用。</font>
 
 <font style="color:rgb(48, 49, 51);">并配置权限，使该key仅允许操作gitlab-runner-cache这个bucket</font>
 
-![](https://via.placeholder.com/800x600?text=Image+e54b62cc22df67e3)
+![img_3472.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3472.png)
 
 HroS2nV03s82oIpvPTfr
 
@@ -51,7 +51,7 @@ Q7FGVQp9D4ZrnU0cLD9QJkK1u7S19xRhylmUidHW
 
 # 部署gitlab runner
 ## 获取注册runner命令
-![](https://via.placeholder.com/800x600?text=Image+30cdb53589e39fa1)
+
 
 ## 创建secrete
 将主节点 kubeconfig 内容添加到 secret 中。这个文件的内容是 kubectl 工具访问 k8s 集群的准入 Token，只有在指定了该 Token 后，才能使用 kubectl 指令来对集群内的各种资源进行增删改查。如果在CICD过程需要使用kubectl工具对 k8s 集群进行操作，就需要在每一个runner中挂载Token以供 gitrunner的k8s执行器使用。
@@ -265,7 +265,7 @@ spec:
 ## 查看runner状态
 查看runner状态，已经成功注册并运行中。
 
-![](https://via.placeholder.com/800x600?text=Image+50c22e3282ba793f)
+![img_3136.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3136.png)
 
 ## 创建测试流水线
 ```yaml
@@ -296,10 +296,10 @@ deploy:
 ```
 
 ## 查看流水线缓存日志
-![](https://via.placeholder.com/800x600?text=Image+c59bd46910074203)
+![img_256.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_256.png)
 
 ## 查看bucket信息
-![](https://via.placeholder.com/800x600?text=Image+7c203f550c5177ba)
+![img_832.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_832.png)
 
 # 常见问题
 [https://segmentfault.com/a/1190000044686362](https://segmentfault.com/a/1190000044686362)

@@ -164,7 +164,7 @@ spec:
 
 部署完成后通过域名访问验证。
 
-![](https://via.placeholder.com/800x600?text=Image+8e0069a4fb27bec4)
+
 
 ## 部署 python 应用
 这里我们将使用一个名为 [python-demoapp](https://github.com/benc-uk/python-demoapp) 的 python 应用程序，这是一个使用 flask 构建的 web 应用程序。该应用程序将使用 OpenTelemetry 生成数据。
@@ -224,7 +224,7 @@ spec:
 
 接下来通过域名访问应用
 
-![](https://via.placeholder.com/800x600?text=Image+b290267075a145d1)
+![img_3712.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3712.png)
 
 # 应用埋点
 ## java 应用自动埋点

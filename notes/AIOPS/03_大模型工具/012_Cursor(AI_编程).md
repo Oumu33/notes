@@ -8,12 +8,12 @@ Cursor 提供两周免费试用，之后可订阅专业版（每月 20 美元）
 # 下载
  链接： [Cursor - The AI Code Editor](https://www.cursor.com/cn)
 
-![](https://via.placeholder.com/800x600?text=Image+4b81b011621b2d63)
+![img_336.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_336.png)
 
 # 安装
  双击安装包，无脑下一步既可。
 
-![](https://via.placeholder.com/800x600?text=Image+152d6472800138d7)
+
 
 # 配置
 ## 初始化配置
@@ -21,18 +21,18 @@ Cursor 提供两周免费试用，之后可订阅专业版（每月 20 美元）
 
 ，最后进入cursor。
 
-![](https://via.placeholder.com/800x600?text=Image+e0910d442e91aab6)
+
 
 ## 设置中文
  选择file—>preferences—>Extension——>输入chinese，找到中文简体插件，使用install——>重启 cursor
 
-![](https://via.placeholder.com/800x600?text=Image+2e1b838b6f4b0704)
+![img_3792.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3792.png)
 
 # 使用
 ## AI 对话
  我们打开一个项目，右侧我们可以直接进行询问
 
-![](https://via.placeholder.com/800x600?text=Image+b3a2712c2814c67e)
+
 
 ##  cursor常用的快捷键
 | 快捷键 | 功能 |
@@ -48,17 +48,17 @@ Cursor 提供两周免费试用，之后可订阅专业版（每月 20 美元）
 
  我们按下Tab键、即可一键补齐。 
 
-![](https://via.placeholder.com/800x600?text=Image+c5b46f89bf317500)
+![img_4400.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4400.png)
 
 ## 关于代码片段
 我们选中一段代码，按下Ctrl+K，即可弹出对话框，我们可以在这段对话框中对这部分代码输入命令或者提问 
 
-![](https://via.placeholder.com/800x600?text=Image+90ecbf5e44cfb351)
+![img_336.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_336.png)
 
 ## 对整个项目或者文件进行操作
  我们按下Ctrl + L，可以看到左侧出现对话框，在这里我们可以选择对整个文件进行操作还是对项目进行操作。
 
-![](https://via.placeholder.com/800x600?text=Image+83dfd210bf2a5470)
+
 
 # Agent调用模式
 Cursor的Agent功能是其编辑器中的一项核心特性，旨在通过深度集成人工智能技术，主动与开发者的代码库交互，提供上下文相关的建议、代码生成和操作支持。Agent模式的设计目标是成为开发者的“智能编程伙伴”，帮助完成复杂任务并提升开发效率。

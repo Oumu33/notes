@@ -20,7 +20,7 @@
     - glance-api:       用于客户端及其他服务与 glance 的通信接口。对外提供 REST API，响应 image 查询、获取和存储的调用
     - glance-registry:       用于链接后端数据库(mariadb), 以便于对数据库进行操负责处理和存取 image 的metadata，例如 image 的大小和类型
     3. 原理
-+ ![](https://via.placeholder.com/800x600?text=Image+c335a8bd3c834177)
++ ![img_2160.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2160.png)
     - 当glance-api 获取到响应       image 查询、获取和存储的调用请求后，不会真正处理请求。如果操作是与 image metadata（元数据）相关，glance-api       会把请求转发给glance-registry；如果操作是与 image 自身存取相关，glance-api 会把请求转发给该 image的       store backend。
 
 # 三、计算服务：Nova
@@ -30,7 +30,7 @@
     - compute 管理虚机的核心服务，通过调用       Hypervisor API 实现虚机生命周期管理。
     - conductor nova-compute       经常需要更新数据库，比如更新虚机的状态。出于安全性和伸缩性的考虑，nova-compute 并不会直接访问数据库，而是将这个任务委托给       nova-conductor。
     4. 原理
-+ ![](https://via.placeholder.com/800x600?text=Image+b9e9166e8f8961b7)
++ 
     - 客户（可以是 OpenStack       最终用户，也可以是其他程序）向 API（nova-api）发送请求：“帮我创建一个虚机”
     - API 对请求做一些必要处理后，向       Messaging（RabbitMQ）发送了一条消息：“让 Scheduler 创建一个虚机”
     - Scheduler（nova-scheduler）从       Messaging 获取到 API 发给它的消息，然后执行调度算法，从若干计算节点中选出节点 A
@@ -41,7 +41,7 @@
 # 四、网络服务：Neutron    
     1. 提供云计算的网络虚拟化技术，为       OpenStack其他服务提供网络连接服务。为用户提供接口，可以定义 Network 、 Subnet 、 Router ，配置DHCP 、       DNS 、负载均衡、 L3 服务，网络支持GRE 、 VLAN 。插件架构支持许多主流的网络厂家和技术，如 OpenvSwitch 。
     2. 组件
-+ ![](https://via.placeholder.com/800x600?text=Image+38b5d499e733b70f)
++ ![img_4288.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4288.png)
     - Neutron-server       可以理解为一个专门用来接收 Neutron REST API 调用的服务器，然后负责将不同的 rest api 分发到不同的       neutron-plugin 上。
     - Neutron-plugin       可以理解为不同网络功能实现的入口，各个厂商可以开发自己的 plugin。Neutron-plugin 接收 neutron-server       分发过来的 REST API，向 neutrondatabase 完成一些信息的注册，然后将具体要执行的业务操作和参数通知给自身对应的       neutron agent。
     - Neutron-agent 可以直观地理解为       neutron-plugin 在设备上的代理，接收相应的 neutron-plugin       通知的业务操作和参数，并转换为具体的设备级操作，以指导设备的动作。当设备本地发生问题时，neutron-agent 会将情况通知给       neutron-plugin。

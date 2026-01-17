@@ -73,7 +73,7 @@ PS1='[\u@\h \W$(__docker_machine_ps1)]\$'
 + 其他系统安装参考[https://docs.docker.com/machine/drivers/](https://docs.docker.com/machine/drivers/)
 + --generic-ip-address 指定目标系统的 IP，并命名为 host1
 
-![](https://via.placeholder.com/800x600?text=Image+cb6e69a3a3c3673c)
+![img_1248.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1248.png)
 
 ① 通过 ssh 登录到远程主机。
 
@@ -91,11 +91,11 @@ PS1='[\u@\h \W$(__docker_machine_ps1)]\$'
 
 3. 执行 docker-machine ls查看管理主机列表
 
-![](https://via.placeholder.com/800x600?text=Image+7c7d1133ea9de64e)
+
 
 + 登录到 host1 查看 docker daemon 的具体配置。
 
-![](https://via.placeholder.com/800x600?text=Image+b6b958d5d5a4d3e8)
+![img_2208.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2208.png)
 
 -H tcp://0.0.0.0:2376 使 docker daemon 接受远程连接。
 
@@ -103,6 +103,6 @@ PS1='[\u@\h \W$(__docker_machine_ps1)]\$'
 
 + 主机名自动修改为host1
 
-![](https://via.placeholder.com/800x600?text=Image+5486243f15f5e7c2)
+![img_1360.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1360.png)
 
 

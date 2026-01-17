@@ -82,6 +82,6 @@ const toFather = () => {
 
 3. 效果演示
 
-![](https://via.placeholder.com/800x600?text=Image+7ac972f9f685f1b2)
+
 
 

@@ -18,7 +18,7 @@ gitlab_pages['insecure_ciphers'] = true
 
 菜单出现pages页面则说明成功开启。
 
-![](https://via.placeholder.com/800x600?text=Image+0806103916798c08)
+![img_2160.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2160.png)
 
 # 配置流水线
 ```bash
@@ -39,10 +39,10 @@ pages: # job 的名称必须要是 pages
 ```
 
 # 查看验证
-![](https://via.placeholder.com/800x600?text=Image+af3091d8f7f532d5)
+![img_4704.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4704.jpeg)
 
 添加hosts文件后访问测试
 
-![](https://via.placeholder.com/800x600?text=Image+480a9a14f59805a3)
+![img_1792.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1792.png)
 
 

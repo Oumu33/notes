@@ -33,10 +33,10 @@ ceph 使用bucket作为存储桶(存储空间)，实现对象数据的存储和�
 5. Bucket名称必须全局唯一
 
 # radosgw架构图
-![](https://via.placeholder.com/800x600?text=Image+7904721f4d559baa)
+![img_1648.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1648.png)
 
 # radosgw逻辑图
-![](https://via.placeholder.com/800x600?text=Image+d563875c9c94930f)
+
 
 # 重要概念
 区域（zone）: 一个ceph集群可以包含多个区域，一个区域只属于一个集群，一个区域可以有多个RGW

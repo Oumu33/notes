@@ -16,7 +16,7 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
 
 1. 使用虚拟机运行多个相互隔离的应用时，如下图：
 
-![](https://via.placeholder.com/800x600?text=Image+82df647016374454)
+![img_4384.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4384.png)
 
 + 基础设施（Infrastructure）。它可以是你的个人电脑，数据中心的服务器，或者是云主机。
 + 主操作系统（Host Operating System）。你的个人电脑之上，运行的可能是MacOS，Windows或者某个Linux发行版。
@@ -26,7 +26,7 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
 + 应用。安装依赖之后，就可以在各个从操作系统分别运行应用了，这样各个应用就是相互隔离的。
 2. 使用Docker容器运行多个相互隔离的应用时，如下图：
 
-![](https://via.placeholder.com/800x600?text=Image+1e823d5f5bfa0f92)
+
 
 + 主操作系统（Host Operating System）。所有主流的Linux发行版都可以运行Docker。对于MacOS和Windows，也有一些办法"运行"Docker。
 + Docker守护进程（Docker Daemon）。Docker守护进程取代了Hypervisor，它是运行在操作系统之上的后台进程，负责管理Docker容器。
@@ -36,7 +36,7 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
 
 Docker守护进程可以直接与主操作系统进行通信，为各个Docker容器分配资源；它还可以将容器与主操作系统隔离，并将各个容器互相隔离。虚拟机启动需要数分钟，而Docker容器可以在数毫秒内启动。由于没有臃肿的从操作系统，Docker可以节省大量的磁盘空间以及其他系统资源。
 
-![](https://via.placeholder.com/800x600?text=Image+d75c87856332657f)
+![img_4528.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4528.png)
 
 4. 使用场景。
 

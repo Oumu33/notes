@@ -61,7 +61,7 @@ Build Info: {
 
 vim /etc/mongod.conf
 
-![](https://via.placeholder.com/800x600?text=Image+6dba7f4697b24f6a)
+![img_816.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_816.jpeg)
 
 2. 重启服务
 

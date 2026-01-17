@@ -11,7 +11,7 @@
 
 mysql> select concat('hmset stu:',sno,' sno ',sno,' sname ',sname,' sex ',sex,' birth ',birth,' height ',height,' weight ',weight,' score ',score,' cno ',ifnull(cno,'null')) from stu;
 
-![](https://via.placeholder.com/800x600?text=Image+b9ee062b3a49779b)
+
 
 + 生成SQL语句脚本mysql2redis.sql
 
@@ -41,16 +41,16 @@ select concat('hmset bmi:',id,' id ',id,' bname ',bname,' lval ',lval,' hval ',h
 
 mysql -uroot -p demo --skip-column-names --raw < mysql2redis.sql | redis-cli --pipe
 
-![](https://via.placeholder.com/800x600?text=Image+849409ddae911b4a)
+![img_1488.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1488.png)
 
 # 二、Redis缓存MySQL的常用方案
 写入数据时，分别写到redis和mysql中
 
-![](https://via.placeholder.com/800x600?text=Image+549ad6f8a4ee162f)
+
 
 读取数据时，先查看redis中是否已缓存，如果有之间从redis中读取，因为其高性能；如果没有应用程序从mysql中读取，返回给用户的同时把该数据缓存一份到redis中以备后用
 
-![](https://via.placeholder.com/800x600?text=Image+b4f9f720b68a3673)
+
 
  
 

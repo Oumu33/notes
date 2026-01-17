@@ -12,7 +12,7 @@
 
 root# mysqldump -uroot -p --master-data=2 test > db_test1.sql
 
-![](https://via.placeholder.com/800x600?text=Image+6bea0ec7ccf23246)
+
 
 + --master-data=2 和      --single-transaction 一起用 (备份事务引擎库)
 

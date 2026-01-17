@@ -185,7 +185,7 @@ spec:
 
 这些环境变量可以在该群组下的所有项目的 `.gitlab-ci.yml` 文件中使用。
 
-![](https://via.placeholder.com/800x600?text=Image+0e930236bdeb84c4)
+
 
 ## 配置Pipeline 文件
 下例为springboot项目部署的 .gitlab-ci.yml 演示，对该文件有以下几点需要说明：
@@ -239,10 +239,10 @@ deploy:
 ## 验证
 查看流水线状态
 
-![](https://via.placeholder.com/800x600?text=Image+635a730ec024c488)
+
 
 查看deploy日志
 
-![](https://via.placeholder.com/800x600?text=Image+c3a2ea983c2934f2)
+
 
 

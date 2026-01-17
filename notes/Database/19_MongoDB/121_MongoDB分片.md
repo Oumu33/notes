@@ -10,7 +10,7 @@
 + 垂直扩展价格昂贵
 3. MongoDB分片架构
 
-![](https://via.placeholder.com/800x600?text=Image+06b0e884b5d70639)
+
 
 + Shard:
 

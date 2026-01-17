@@ -232,7 +232,7 @@ kubectl apply -f prometheus-clusterRole.yaml
 
 查看targets
 
-![](https://via.placeholder.com/800x600?text=Image+1596f3878dd88158)
+
 
 # 外部资源监控
 将外部资源引入k8s中创建svc资源，然后通过 ServiceMonitor 方式监控。
@@ -297,6 +297,6 @@ spec:
 
 查看验证
 
-![](https://via.placeholder.com/800x600?text=Image+dcf86891eb59d971)
+
 
 

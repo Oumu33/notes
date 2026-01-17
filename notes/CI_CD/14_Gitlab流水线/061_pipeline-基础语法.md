@@ -126,12 +126,12 @@ stages:
   - deploy
 ```
 
-![](https://via.placeholder.com/800x600?text=Image+faf747c0775bf9fc)
+
 
 ### .pre & .post
 .pre始终是整个管道的第一个运行阶段，.post始终是整个管道的最后一个运行阶段。 用户定义的阶段都在两者之间运行。.pre和.post的顺序无法更改。如果管道仅包含.pre或.post阶段的作业，则不会创建管道。
 
-![](https://via.placeholder.com/800x600?text=Image+f27cbddcc9773bd6)
+![img_176.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_176.png)
 
 ## stage步骤
 是按JOB定义的，并且依赖于全局定义的[stages](http://s0docs0gitlab0com.icopy.site/12.9/ee/ci/yaml/README.html#stages) 。 它允许将作业分为不同的阶段，并且同一stage作业可以并行执行。
@@ -148,13 +148,13 @@ interfacetest:
     - echo "run test"
 ```
 
-![](https://via.placeholder.com/800x600?text=Image+43758ac8a84f53c4)
+![img_1888.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1888.png)
 
 可能遇到的问题： 阶段并没有并行运行。
 
 在这里我把这两个阶段在同一个runner运行了，所以需要修改runner每次运行的作业数量。默认是1，改为10.
 
-![](https://via.placeholder.com/800x600?text=Image+19979332afb8e1ce)
+![img_4608.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4608.png)
 
 vim /etc/gitlab-runner/config.toml 更改后自动加载无需重启。
 
@@ -228,7 +228,7 @@ docker job:
     - echo "Hello, $USER!"
 ```
 
-![](https://via.placeholder.com/800x600?text=Image+b56cb862ff7b2281)
+![img_2256.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2256.png)
 
 ## allow_failure允许失败
 allow_failure允许作业失败，默认值为false 。启用后，如果作业失败，该作业将在用户界面中显示橙色警告. 但是，管道的逻辑流程将认为作业成功/通过，并且不会被阻塞。 假设所有其他作业均成功，则该作业的阶段及其管道将显示相同的橙色警告。但是，关联的提交将被标记为"通过”，而不会发出警告。
@@ -241,7 +241,7 @@ job1:
   allow_failure: true
 ```
 
-![](https://via.placeholder.com/800x600?text=Image+ffa32cada28e83c0)
+
 
 ## when条件
 on_success前面阶段中的所有作业都成功（或由于标记为allow_failure而被视为成功）时才执行作业。 这是默认值。
@@ -255,14 +255,14 @@ manual -手动执行作业,不会自动执行，需要由用户显式启动. 手
 
 此时在deploy阶段添加manual，则流水线运行到deploy阶段为锁定状态，需要手动点击按钮才能运行deploy阶段。
 
-![](https://via.placeholder.com/800x600?text=Image+e0d9aa1b494b69af)
+
 
 ### delayed 延迟
 delayed 延迟一定时间后执行作业（在GitLab 11.14中已添加）。
 
 有效值'5',10 seconds,30 minutes, 1 day, 1 week 。
 
-![](https://via.placeholder.com/800x600?text=Image+fb23034eff11a41e)
+![img_4512.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4512.png)
 
 ## retry重试
 配置在失败的情况下重试作业的次数。
@@ -277,7 +277,7 @@ unittest:
     - ech "run test"
 ```
 
-![](https://via.placeholder.com/800x600?text=Image+eb9b9aee0c2cbc5b)
+
 
 默认情况下，将在所有失败情况下重试作业。为了更好地控制retry哪些失败，可以是具有以下键的哈希值：
 
@@ -323,7 +323,7 @@ unittest:
 
 <font style="color:rgb(99, 99, 99);">效果</font>
 
-![](https://via.placeholder.com/800x600?text=Image+5ede4ffc2f16b169)
+![img_512.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_512.png)
 
 ## timeout超时
 特定作业配置超时，作业级别的超时可以超过[项目级别的超时，](http://s0docs0gitlab0com.icopy.site/12.9/ee/ci/pipelines/settings.html#timeout)但不能超过Runner特定的超时。
@@ -341,12 +341,12 @@ test:
 ### 项目设置流水线超时时间
 超时定义了作业可以运行的最长时间（以分钟为单位）。 这可以在项目的**“设置">” CI / CD">"常规管道"设置下进行配置** 。 默认值为60分钟。
 
-![](https://via.placeholder.com/800x600?text=Image+1916e99d64636f70)
+
 
 ### runner超时时间
 此类超时（如果小于[项目定义的超时](http://s0docs0gitlab0com.icopy.site/12.9/ee/ci/pipelines/settings.html#timeout) ）将具有优先权。此功能可用于通过设置大超时（例如一个星期）来防止Shared Runner被项目占用。未配置时，Runner将不会覆盖项目超时。
 
-![](https://via.placeholder.com/800x600?text=Image+6bfa7fd457b8b735)
+![img_976.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_976.png)
 
 ### 此功能如何工作
 示例1-运行程序超时大于项目超时
@@ -379,7 +379,7 @@ codescan:
   parallel: 5
 ```
 
-![](https://via.placeholder.com/800x600?text=Image+2592bc067c1e5403)
+
 
 ## interruptible 允许中断
 用于标记某个 job 是否可以被中断的关键字。这个功能特别有用，当你希望在推送新的代码时，中断当前正在运行的旧的 pipeline，从而避免浪费资源。设置 interruptible: true 允许 GitLab 在新 pipeline 触发时中断旧的 pipeline 中正在运行的 job。
@@ -452,11 +452,11 @@ after_script: # 每个job执行完成后执行全局定义的after_script，作�
 
 实验效果
 
-![](https://via.placeholder.com/800x600?text=Image+747850a676c54cd2)
+![img_4048.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4048.jpeg)
 
 可能遇到的问题： pipeline卡主,为降低复杂性目前没有学习tags，所以流水线是在共享的runner中运行的。���要设置共享的runner运行没有tag的作业。
 
-![](https://via.placeholder.com/800x600?text=Image+e9cc04fb19150f9c)
+
 
 ## 案例2
 tags+allow_failure+when
@@ -507,7 +507,7 @@ codescan: # 定义job
 
 执行结果
 
-![](https://via.placeholder.com/800x600?text=Image+7b0344f79bff0fab)
+![img_3232.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3232.png)
 
 ## 案例3
 retry+timeout+parallel
@@ -544,11 +544,11 @@ codescan: # 定义job
 
 执行结果
 
-![](https://via.placeholder.com/800x600?text=Image+96ee5e0caaaa72ea)
+![img_1536.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1536.png)
 
 deploy阶段失败1次，重试2次，共3次记录。
 
-![](https://via.placeholder.com/800x600?text=Image+cba6b2b07ee2235b)
+
 
 ## 案例4
 default+variables+inherit
@@ -591,10 +591,10 @@ test:
 
 build阶段日志如下，观察可知使用了default参数：
 
-![](https://via.placeholder.com/800x600?text=Image+8645d470f5e2ebef)
+![img_2800.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2800.png)
 
 test阶段日志如下，观察可知未使用default参数，HOST变量也未生效：
 
-![](https://via.placeholder.com/800x600?text=Image+2d4825d90d51f5f8)
+![img_496.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_496.png)
 
 

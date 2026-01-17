@@ -22,7 +22,7 @@ select 15切换到第16个数据库
 
 select 1 切换到第1个数据库
 
-![](https://via.placeholder.com/800x600?text=Image+4279caea3e7d012d)
+![img_560.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_560.png)
 
 1. scan查看当前数据库的所有key
 
@@ -30,8 +30,8 @@ select 1 切换到第1个数据库
 
 其中0为产生一个新的游标，match后为匹配模式 *为所有，count 为显示数量
 
-![](https://via.placeholder.com/800x600?text=Image+4b1a7432a4b898ed)
+![img_32.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_32.png)
 
-![](https://via.placeholder.com/800x600?text=Image+7f50c0e9edca4fb5)
+![img_2256.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2256.png)
 
 

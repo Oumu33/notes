@@ -27,27 +27,27 @@
 # 三、操作实例
 1. ；多命令执行
 
-![](https://via.placeholder.com/800x600?text=Image+22a096302f48f4e5)
+![img_1600.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1600.png)
 
 1. &&多命令执行
 
-![](https://via.placeholder.com/800x600?text=Image+1e0789fdc005ae11)
+![img_1568.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1568.png)
 
 1. ||多命令执行
 
-![](https://via.placeholder.com/800x600?text=Image+cf9e20dcfe9dd455)
+
 
 1. 判断命令是否正确执行
 
-![](https://via.placeholder.com/800x600?text=Image+8e0db733e5a195e6)
+![img_3216.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3216.png)
 
 1. 创建100MB空文件
 
-![](https://via.placeholder.com/800x600?text=Image+ef7706c88553920c)
+
 
 1. 分屏显示命令输出结果
 
-![](https://via.placeholder.com/800x600?text=Image+975c5bd2112f9c04)
+![img_2288.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2288.png)
 
  
 

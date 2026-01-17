@@ -4,11 +4,11 @@ swarm 要实现<font style="color:#383A42;">运行多个实例。这样可以负
 
 docker service scale web_server=5
 
-![](https://via.placeholder.com/800x600?text=Image+9b7de42d6c2e4206)
+![img_3696.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3696.png)
 
 副本数增加到 5，通过 docker service ls 和 docker service ps 查看副本的详细信息。
 
-![](https://via.placeholder.com/800x600?text=Image+4df4f03a6785e771)
+
 
 5 个副本已经分布在 swarm 的所有三个节点上。
 
@@ -16,15 +16,15 @@ docker service scale web_server=5
 
 `docker node update --availability drain host2` 
 
-![](https://via.placeholder.com/800x600?text=Image+6145f3df234004de)
+
 
 通过 docker node ls 查看各节点现在的状态：
 
-![](https://via.placeholder.com/800x600?text=Image+a6055060371f0083)
+![img_1648.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1648.png)
 
 Drain 表示swarm-manager 已经不负责运行 service，之前 swarm-manager 运行的那个副本会如何处理呢？用 docker service ps 查看一下：
 
-![](https://via.placeholder.com/800x600?text=Image+beeae2026b294d4a)
+![img_2880.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2880.png)
 
 host2 上的副本 web_server.4 已经被 Shutdown 了，为了达到 5 个副本数的目标，在 vm1 上添加了副本 web_server.4。(web_server.5同理)
 
@@ -32,11 +32,11 @@ host2 上的副本 web_server.4 已经被 Shutdown 了，为了达到 5 个副�
 
 `docker service scale web_server=3` 
 
-![](https://via.placeholder.com/800x600?text=Image+580a111b9742c591)
+
 
 可以看到，web_server.4 和 web_server.5 这两个副本已经被删除了。
 
-![](https://via.placeholder.com/800x600?text=Image+6a12521e29f1dce9)
+
 
 Service 的伸缩就讨论到这里，下边学习故障切换 Failover。
 
@@ -49,15 +49,15 @@ Service 的伸缩就讨论到这里，下边学习故障切换 Failover。
 
 现在我们测试 swarm 的 failover 特性，关闭 vm1。
 
-![](https://via.placeholder.com/800x600?text=Image+e320faadca3818b2)
+![img_2464.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2464.png)
 
 Swarm 会检测到 vm1 的故障，并标记为 Down。
 
-![](https://via.placeholder.com/800x600?text=Image+e0278922ee03b59a)
+
 
 <font style="color:#383A42;">Swarm </font><font style="color:#383A42;">会将 </font><font style="color:#383A42;">vm1 </font><font style="color:#383A42;">上的副本调度到其他可用节点。我们可以通过</font><font style="color:#383A42;"> </font>docker service ps<font style="color:#383A42;"> </font><font style="color:#383A42;">观察这个</font><font style="color:#383A42;"> failover </font><font style="color:#383A42;">过程。</font>
 
-![](https://via.placeholder.com/800x600?text=Image+8aaa03660a3cdbd9)
+![img_3824.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3824.png)
 
 可以看到，web_server.1 和 web_server.2 已经从 vm1 迁移到了 vm2，之前运行在故障节点 vm1 上的副本状态被标记为 Shutdown。
 

@@ -4,7 +4,7 @@ Machine提供了一系列的子命令，每个命令都带有一系列参数，�
 
 [root@admin ~]#docker-machine  <COMMAND> -h
 
-![](https://via.placeholder.com/800x600?text=Image+d378890ed8c69727)
+![img_4368.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4368.png)
 
 # 二、常用命令
 1. 切换到被管理主机
@@ -27,11 +27,11 @@ Machine提供了一系列的子命令，每个命令都带有一系列参数，�
 ## 1. active——查看激活状态的主机
 + 默认为非激活状态
 
-![](https://via.placeholder.com/800x600?text=Image+e03e37d3bc7aaf68)
+![img_2528.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2528.png)
 
 + 查看主机信息
 
-![](https://via.placeholder.com/800x600?text=Image+5dd7616c7df38172)
+![img_1344.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1344.png)
 
 + 激活主机
 
@@ -39,7 +39,7 @@ Machine提供了一系列的子命令，每个命令都带有一系列参数，�
 
 + 查看激活状态的主机
 
-![](https://via.placeholder.com/800x600?text=Image+aff66b310cf2cfeb)
+
 
 ## 2. create
 格式为docker-machine  create [OPTIONS] [arg...]。创建一个Docker主机环境。支持的选项包括：
@@ -109,19 +109,19 @@ mydockermachine
 
 例如，显示连接到host1主机所需要的环境变量：
 
-![](https://via.placeholder.com/800x600?text=Image+936c2fdb17bfae6d)
+
 
 ## 4. inspect
 格式为docker-machine  inspect [OPTIONS] [arg...]。
 
 以json格式输出指定Docker主机的详细信息。支持-format,  -f选项使用指定的Go模板格式化输出。例如：
 
-![](https://via.placeholder.com/800x600?text=Image+455ba7dac31fc5b1)
+
 
 ## 5. ip
 获取指定Docker主机地址。例如，获取default主机的地址，可以用如下命令：
 
-![](https://via.placeholder.com/800x600?text=Image+e71e55c2883ab21f)
+
 
 ## 6. kill
 + 直接杀死指定的Docker主机，指定Docker主机会强行停止。

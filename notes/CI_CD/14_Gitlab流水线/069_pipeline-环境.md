@@ -10,7 +10,7 @@
 + **动态环境**：支持动态生成环境，例如为每个合并请求创建一个临时的预览环境。
 
 ## 查看环境信息
-![](https://via.placeholder.com/800x600?text=Image+298751247e2de937)
+![img_4688.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4688.jpeg)
 
 ## pipeline定义环境
 ```yaml
@@ -34,6 +34,6 @@ deploy to production:
 ```
 
 ## 访问验证
-![](https://via.placeholder.com/800x600?text=Image+fb5cbbdab280c179)
+
 
 

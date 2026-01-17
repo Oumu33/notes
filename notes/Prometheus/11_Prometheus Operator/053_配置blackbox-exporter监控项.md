@@ -148,11 +148,11 @@ spec:
 
 # 访问验证
 ## 查看 targets
-![](https://via.placeholder.com/800x600?text=Image+448304d1c2ae7361)
+![img_4416.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4416.png)
 
 ## grafana 查看
 grafana 导入 dashboard，id 为9965
 
-![](https://via.placeholder.com/800x600?text=Image+19eecd63d07efde6)
+![img_4400.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4400.png)
 
 

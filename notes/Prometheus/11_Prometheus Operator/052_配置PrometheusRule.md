@@ -5,11 +5,11 @@
 ## 查看prometheus web页面
 首先我们看下Prometheus默认的规则内容如下。
 
-![](https://via.placeholder.com/800x600?text=Image+8d7ab27194a3557f)
+![img_448.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_448.png)
 
 在 Prometheus的 Config 页面下面查看关于 AlertManager 的配置
 
-![](https://via.placeholder.com/800x600?text=Image+213471cc51ec4dca)
+![img_4032.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4032.jpeg)
 
 ## 分析alertmanager-main Service
 上面 alertmanagers 实例的配置我们可以看到是通过角色为 endpoints 的 kubernetes 的服务发现机制获取的，匹配的是服务名为 alertmanager-main，端口名未 web 的 Service 服务，我们查看下 alertmanager-main 这个 Service：
@@ -176,7 +176,7 @@ lrwxrwxrwx    1 root     2000            71 Nov  5 03:24 monitoring-redis-rules-
 
 现在看到我们创建的 rule 文件已经被注入到了对应的 rulefiles 文件夹下面了。然后再去 Prometheus的 Alert 页面下面就可以查看到上面我们新建的报警规则了：
 
-![](https://via.placeholder.com/800x600?text=Image+2763163d1b5e2adb)
+
 
 # 配置告警媒介
 > 接下来以alertmanager 推送告警到 prometheus-alert 为例
@@ -282,9 +282,9 @@ type: Opaque
 ```
 
 ## 查看 alertmanager 配置
-![](https://via.placeholder.com/800x600?text=Image+3d817e728e52aab8)
+![img_2384.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2384.png)
 
 ## 查看 alertmanager 推送记录
-![](https://via.placeholder.com/800x600?text=Image+0eea0c2c250eb737)
+![img_288.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_288.png)
 
 

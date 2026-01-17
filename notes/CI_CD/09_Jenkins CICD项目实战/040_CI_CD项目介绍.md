@@ -21,7 +21,7 @@ github：[https://github.com/cuiliang0302/spring-boot-demo](https://github.com/c
 ## 流程图
 
 
-![](https://via.placeholder.com/800x600?text=Image+b7e43531958aab1e)
+![img_3648.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3648.png)
 
 ## 流程说明
 1. 开发人员将代码提交到Gitlab代码仓库时，gitlab请求jenkins的webhook地址，触发持续构建和持续部署流程。
@@ -33,7 +33,7 @@ github：[https://github.com/cuiliang0302/spring-boot-demo](https://github.com/c
 
 # CICD流程(jenkins+k8s)
 ## 流程图
-![](https://via.placeholder.com/800x600?text=Image+2de79067aacf84c9)
+
 
 ## 流程说明
 开发测试阶段

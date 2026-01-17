@@ -44,20 +44,20 @@ Delivered mail 66666810ce6ca_169a2ee062342@gitlab-b5cb5f947-q8xkv.mail (1193.6ms
 => #<Mail::Message:1514680, Multipart: false, Headers: <Date: Mon, 10 Jun 2024 02:42:24 +0000>, <From: Gitlab <cuiliangblog@qq.com>>, <Reply-To: Gitlab <noreply@gitlab.local.com>>, <To: cuiliang0302@qq.com>, <Message-ID: <66666810ce6ca_169a2ee062342@gitlab-b5cb5f947-q8xkv.mail>>, <Subject: test email>, <Mime-Version: 1.0>, <Content-Type: text/html; charset=UTF-8>, <Content-Transfer-Encoding: 7bit>, <Auto-Submitted: auto-generated>, <X-Auto-Response-Suppress: All>>
 ```
 
-![](https://via.placeholder.com/800x600?text=Image+1dda7fef6e92da34)
+![img_2272.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2272.png)
 
 ## 流水线配置邮件通知
 进入项目——>配置——>集成——>流水线状态电子邮件
 
-![](https://via.placeholder.com/800x600?text=Image+cec14f2dc46e7ed8)
+![img_112.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_112.png)
 
 配置邮件通知人、通知条件
 
-![](https://via.placeholder.com/800x600?text=Image+7d83186d90b9be2d)
+![img_2240.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2240.png)
 
 运行流水线测试，查看邮件内容。
 
-![](https://via.placeholder.com/800x600?text=Image+b31842c73bdd8963)
+
 
 
 

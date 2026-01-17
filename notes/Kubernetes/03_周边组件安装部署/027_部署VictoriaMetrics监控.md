@@ -17,7 +17,7 @@ VictoriaMetrics 有 2 种发布形式：
 [集群版本](https://victoriametrics.com.cn/docs/ops/cluster/) - 一套组件，可用于构建水平可扩展的集群。
 
 ## 系统架构
-![](https://via.placeholder.com/800x600?text=Image+50447f8980af384b)
+![img_3376.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3376.jpeg)
 
 ## 组件介绍
 VictoriaMetrics 集群版本由以下几个服务组成：
@@ -43,7 +43,7 @@ VictoriaMetrics 集群版本由以下几个服务组成：
 + [VictoriaLogs](https://docs.victoriametrics.com/victorialogs/) - 用户友好、经济高效的日志数据库。
 
 ## 组件架构
-![](https://via.placeholder.com/800x600?text=Image+5a4b8746899424ca)
+![img_1056.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1056.png)
 
 # VictoriaMetrics 部署
 ## 安装operator
@@ -401,19 +401,19 @@ spec:
 
 访问vmselect，添加 hosts 解析后访问[https://vmselect.cuiliangblog.cn/select/0/vmui/](https://vmselect.cuiliangblog.cn/select/0/vmui/)
 
-![](https://via.placeholder.com/800x600?text=Image+8a2aed526a625b53)
+![img_3856.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3856.png)
 
 访问vmalert，添加 hosts 解析后访问[https://vmalert.cuiliangblog.cn/vmalert/groups](https://vmalert.cuiliangblog.cn/vmalert/groups)
 
-![](https://via.placeholder.com/800x600?text=Image+5f4ddcc62e88dd43)
+![img_912.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_912.png)
 
 访问vmalertmanager，添加 hosts 解析后访问[https://vmalertmanager.cuiliangblog.cn/](https://vmalertmanager.cuiliangblog.cn/)
 
-![](https://via.placeholder.com/800x600?text=Image+3ce744e586a51e3f)
+
 
 访问 vmagent，添加 hosts 解析后访问https://vmagent.cuiliangblog.cn/targets
 
-![](https://via.placeholder.com/800x600?text=Image+1b97a953ba39a855)
+![img_3776.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3776.png)
 
 # 配置 Grafana
 ## 添加数据源
@@ -423,7 +423,7 @@ VictoriaMetrics 兼容 Prometheus，在 Grafana 添加数据源时，使用 Prom
 http://vmselect-vmcluster.victoria.svc:8481/select/0/prometheus/
 ```
 
-![](https://via.placeholder.com/800x600?text=Image+206b669a49608da4)
+
 
 ## 添加 Dashboard
 VictoriaMetrics 官方提供了几个 Grafana Dashboard，id 分别是:
@@ -434,7 +434,7 @@ VictoriaMetrics 官方提供了几个 Grafana Dashboard，id 分别是:
 
 可以将其导入 Grafana:
 
-![](https://via.placeholder.com/800x600?text=Image+82f6ed219923ebdd)
+![img_3936.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3936.png)
 
 # 其他集群指标写入
 ## 配置思路
@@ -519,7 +519,7 @@ spec:
 ```
 
 ## 访问 vmselect 验证
-![](https://via.placeholder.com/800x600?text=Image+d77f761512f05733)
+![img_1392.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1392.png)
 
 # 创建探针监控项创建
 方案 1：创建VMProbe 资源，使用 vmagent 定期调用 blackbox-exporter，对指定目标（URL、端口、TCP 服务等）做探测 ，然后通过 vmagent 将数据写入 vm 集群。
@@ -577,7 +577,7 @@ spec:
 ```
 
 ## 查看数据
-![](https://via.placeholder.com/800x600?text=Image+81175e6ba053665a)
+![img_1120.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1120.png)
 
 # 创建服务监控项
 方案 1：创建VMServiceScrape 或 VMPodScrape 资源，使用 vmagent 对指定 metric 接口拉取数据 ，然后通过 vmagent 将数据写入 vm 集群。

@@ -150,7 +150,7 @@ atopsar [options] [interval] [count]
 
 # 指标解读
 ## 系统资源概览
-![](https://via.placeholder.com/800x600?text=Image+3dcd779091986008)
+
 
 | 指标类别 | 指标 | 详细说明 | 单位 |
 | --- | --- | --- | --- |
@@ -209,7 +209,7 @@ atopsar [options] [interval] [count]
 
 
 ## 进程级详情
-![](https://via.placeholder.com/800x600?text=Image+69bdaabe910fede3)
+
 
 | 视图 | 指标 | 详细说明 | 单位 |
 | --- | --- | --- | --- |

@@ -208,25 +208,25 @@ ingressroute.traefik.containo.us/prometheus created
 
 + 访问[http://alertmanager.local.com/](http://alertmanager.local.com/)，查看当前激活的告警
 
-![](https://via.placeholder.com/800x600?text=Image+4b17f550d5df8c4f)
+
 
 + 访问[http://prometheus.local.com/targets](http://prometheus.local.com/targets)，查看targets已全部up
 
-![](https://via.placeholder.com/800x600?text=Image+e7d0cba5dcefcf5a)
+
 
 + 访问[http://grafana.local.com/login](http://grafana.local.com/login)，默认用户名和密码是admin/admin
 
-![](https://via.placeholder.com/800x600?text=Image+348a53d540248f19)
+![img_640.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_640.png)
 
 + 查看数据源，以为我们自动配置Prometheus数据源
 
-![](https://via.placeholder.com/800x600?text=Image+bd552212cb7b2228)
+
 
 ## targets异常处理
 > 查看targets可发现有两个监控任务没有对应的instance，这和serviceMonitor资源对象有关
 >
 
-![](https://via.placeholder.com/800x600?text=Image+9b6fe17b1d915fe3)
+
 
 
 
@@ -276,7 +276,7 @@ spec:
 
 3. 再次查看targets信息
 
-![](https://via.placeholder.com/800x600?text=Image+21951729f6d9a81c)
+
 
 发现虽然加载了targets，但是无法访问该端口。
 
@@ -404,7 +404,7 @@ kubectl apply -f .
 ```
 
 ## 查看验证
-![](https://via.placeholder.com/800x600?text=Image+609bf79413e679ee)
+
 
 # 高级配置
 ## Grafana配置修改

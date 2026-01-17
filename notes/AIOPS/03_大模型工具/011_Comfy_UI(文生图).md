@@ -36,7 +36,7 @@ ComfyUI 桌面版（MacOs）硬件要求：
 ### 开始安装
 1. 双击下载到的安装包文件，首先将会执行一次自动安装，并在桌面生成一个ComfyUI 桌面版的快捷方式，并自动进入欢迎页面。
 
-![](https://via.placeholder.com/800x600?text=Image+3e50a9a5bc27a48d)
+
 
 ### 开始使用
 点击“开始使用”开始初始化步骤。直接点击“下一个”。
@@ -47,7 +47,7 @@ ComfyUI 桌面版（MacOs）硬件要求：
 + Manual Configuration : 手动配置。你需要手动安装和配置 python 运行环境，专业人士用的，普通用户不要选，除非你对环境配置比较熟悉。
 + 启用 CPU 模式: 仅适用于开发人员和特殊情况，除非你确定你需要使用这个模式，否则不要选择。
 
-![](https://via.placeholder.com/800x600?text=Image+b4e2601091a9235a)
+![img_64.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_64.png)
 
 ### 选择安装目录
 选择安装目录。选择完毕后点击“下一个”。
@@ -61,17 +61,17 @@ ComfyUI 桌面版（MacOs）硬件要求：
 + 选一个存储空间大的硬盘。最小15G剩余空间。这只是安装程序的空间。要想真正放开了用，最好硬盘剩余空间1T以上。后期的很多模型一个就几十G，如果硬盘空间小基本没办法安装几个模型。
 + 最好安装在固态硬盘上，固态硬盘传输速度快。模型很大如果传输速度慢，加载模型就会浪费很多时间。
 
-![](https://via.placeholder.com/800x600?text=Image+644d28c38ef1a57f)
+
 
 ### 进行文件迁移
 这一步主要针对之前已经安装过comfyUI整合包版本的使用者。如果你之前没有安装过comfyUI整合包版直接点击“下一个”
 
 如果之前安装过comfyUI整合包版本，选择安装目录。
 
-![](https://via.placeholder.com/800x600?text=Image+c77723caa56c4719)
+![img_240.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_240.png)
 
 ### 桌面版设置
-![](https://via.placeholder.com/800x600?text=Image+5f775277a88b34d8)
+![img_2944.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2944.png)
 
 这一步是偏好设置，设置完毕后点击“安装”
 
@@ -80,7 +80,7 @@ ComfyUI 桌面版（MacOs）硬件要求：
 + 镜像设置: 这里是重点，很多人卡在这里。建议打开梯子安装，如果没有梯子需要手动指定国内源地址
 + 如果是绿色的对钩，直接点击“安装”。如果是红色的X,点击右侧的+，进行手动设置。
 
-![](https://via.placeholder.com/800x600?text=Image+cc5d9962363bc4a3)
+![img_2176.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2176.png)
 
 Python 安装镜像，使用以下地址：
 
@@ -99,55 +99,55 @@ Torch 镜像使用以下地址
 
 设置完毕后点击“安装”程序会自动进行环境的部署，时间较长，耐心等待部署完毕。
 
-![](https://via.placeholder.com/800x600?text=Image+dad61ddb6535dac8)
+![img_1280.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1280.png)
 
 部署完毕后自动打开操作页面，安装成功。
 
-![](https://via.placeholder.com/800x600?text=Image+19599fcd8359fe6f)
+![img_1872.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1872.png)
 
 # Comfy UI 配置
 ## 下载模型
 点击工作流——>浏览模板——>Flux——>使用官方预设的第二个模板（Flux Kontext Dev）
 
-![](https://via.placeholder.com/800x600?text=Image+f811effbbba2f261)
+
 
 根据提示下载对应模型文件
 
-![](https://via.placeholder.com/800x600?text=Image+67ef99801f025a0f)
+
 
 ## 安装提示词插件
 好的提示词可以让我们生成更加符合我们要求的图片，我们可以使用 AI 模型帮助我们编写一段关于 Comfy UI 的英文提示词。
 
 点击节点管理
 
-![](https://via.placeholder.com/800x600?text=Image+3a01204d0d1c1a41)
+
 
 搜索提示词小助手
 
-![](https://via.placeholder.com/800x600?text=Image+f6ef90ac484cf800)
+
 
 配置提示词 api key
 
-![](https://via.placeholder.com/800x600?text=Image+37537c658dbb7f2d)
+
 
 ## 安装性能监控插件
 <font style="color:rgb(60, 60, 67);">使用插件管理器安装，安装完成之后，重启 ComfyUI。</font>
 
-![](https://via.placeholder.com/800x600?text=Image+f1c8a5e1d3795a73)
+![img_3376.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3376.jpeg)
 
 # Comfy UI 使用
 ## 模型下载
 打开第三方工作流，可能会提示模型权重加载失败，此时就要手动下载安装模型。
 
-![](https://via.placeholder.com/800x600?text=Image+aef394e0419f7b34)
+
 
 打开 model manager 搜索模型
 
-![](https://via.placeholder.com/800x600?text=Image+37fa0918dc4a2c7e)
+![img_4016.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4016.png)
 
 因为 你用的是 `CheckpointLoaderSimple` 节点，所以要下载`checkpoints` 类型的模型  
 
-![](https://via.placeholder.com/800x600?text=Image+118a9f9a0f81e6d6)
+
 
 # 工作流配置
 推荐使用 flux 进行文生图，具体可参考文档：[https://docs.comfy.org/zh-CN/tutorials/flux/flux-1-kontext-dev](https://docs.comfy.org/zh-CN/tutorials/flux/flux-1-kontext-dev)
@@ -155,7 +155,7 @@ Torch 镜像使用以下地址
 ## 新建工作流
 点击工作流——>浏览模板——>Flux——>使用官方预设的第二个模板（Flux Kontext Dev）
 
-![](https://via.placeholder.com/800x600?text=Image+95c0dbcdd83608f8)
+
 
 ## 人物修改
 需要注意的是提示词必须为英文，可以先编写中文提示词，然后使用插件翻译。
@@ -163,38 +163,38 @@ Torch 镜像使用以下地址
 ### 局部替换
 例如更换衣服颜色
 
-![](https://via.placeholder.com/800x600?text=Image+21ec8d48b72673a8)
+
 
 更换背景
 
-![](https://via.placeholder.com/800x600?text=Image+2f6d2a837c8e968e)
+
 
 ### 修改元素
 增加元素
 
-![](https://via.placeholder.com/800x600?text=Image+87dd5efbaeca4e0b)
+![img_2912.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2912.png)
 
 删除元素
 
-![](https://via.placeholder.com/800x600?text=Image+8b3d88bf45ffa05e)
+![img_4736.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4736.png)
 
 ### 人物保持
 让人物不变，改为在不同场景下做不同动作
 
-![](https://via.placeholder.com/800x600?text=Image+c3c8a4bd39b1db55)
+
 
 ## 物品修改
 提取物品信息
 
-![](https://via.placeholder.com/800x600?text=Image+d9369ce199ccb2b7)
+![img_640.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_640.png)
 
 人物与物品组合
 
-![](https://via.placeholder.com/800x600?text=Image+fa0846c6dd9d945f)
+![img_976.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_976.png)
 
 ## 风格修改
 修改人物为指定风格
 
-![](https://via.placeholder.com/800x600?text=Image+9044403df33903dc)
+
 
 

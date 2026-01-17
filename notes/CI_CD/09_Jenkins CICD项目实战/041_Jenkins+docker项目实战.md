@@ -36,15 +36,15 @@ SonarQube部署
 Harbor的项目分为公开和私有的:  
 公开项目:所有用户都可以访问，通常存放公共的镜像，默认有一个library公开项目。  
 私有项目:只有授权用户才可以访问，通常存放项目本身的镜像。 我们可以为微服务项目创建一个新的项目  
-![](https://via.placeholder.com/800x600?text=Image+00ba62ec7072ddb8)
+![img_1976.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1976.png)
 
 ## 创建用户
 创建一个普通用户cuiliang。  
-![](https://via.placeholder.com/800x600?text=Image+fb12ba7889d7f644)
+
 
 ## 配置项目用户权限
 在spring_boot_demo项目中添加普通用户cuiliang，并设置角色为开发者。  
-![](https://via.placeholder.com/800x600?text=Image+15a44bb58837c800)  
+  
 权限说明
 
 | 角色 | 权限 |
@@ -65,30 +65,30 @@ Harbor的项目分为公开和私有的:
 ## 创建组
 管理员用户登录，创建群组，组名称为devops，组权限为私有
 
-![](https://via.placeholder.com/800x600?text=Image+29266e7cff38d76f)
+
 
 ## 创建项目
 导入外部项目，地址为[https://gitee.com/cuiliang0302/spring_boot_demo.git](https://gitee.com/cuiliang0302/spring_boot_demo.git)，并指定devops，项目类型为私有。
 
-![](https://via.placeholder.com/800x600?text=Image+5e0f80867b77aab3)
+
 
 ## 创建用户
 创建一个普通用户cuiliang  
-![](https://via.placeholder.com/800x600?text=Image+f1c5aaa81d9fb2c5)
+![img_4000.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4000.jpeg)
 
 ## 用户添加到组中
 将cuiliang添加到群组devops中，cuiliang角色为Developer
 
-![](https://via.placeholder.com/800x600?text=Image+9d0a42de9929a5fa)
+
 
 ## 开启分支推送权限
-![](https://via.placeholder.com/800x600?text=Image+a69d53d78287485b)
+
 
 # jenkins流水线配置
 ## 拉取gitlab仓库代码
 具体步骤可参考文档：[https://www.cuiliangblog.cn/detail/section/127410630](https://www.cuiliangblog.cn/detail/section/127410630)，此处以账号密码验证为例，并启用webhook配置。  
 jenkins流水线配置如下  
-![](https://via.placeholder.com/800x600?text=Image+6e340cd65b1e8774)  
+  
 拉取代码部分的jenkinsfile如下
 
 ```groovy
@@ -112,7 +112,7 @@ pipeline {
 ```
 
 当git仓库提交代码后，Gitlab会自动请求Jenkins的webhook地址，自动触发流水线，执行结果如下：  
-![](https://via.placeholder.com/800x600?text=Image+2a128d423563dd6d)
+![img_416.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_416.png)
 
 ## Maven打包编译
 具体步骤可参考文档：[https://www.cuiliangblog.cn/detail/section/131898197](https://www.cuiliangblog.cn/detail/section/131898197)  
@@ -138,7 +138,7 @@ pipeline {
 ```
 
 触发流水线结果如下  
-![](https://via.placeholder.com/800x600?text=Image+ad89e0a3eabdc3d9)
+
 
 ## SonarQube代码审查
 具体步骤可参考文档：[https://www.cuiliangblog.cn/detail/section/165534414](https://www.cuiliangblog.cn/detail/section/165534414)  
@@ -178,9 +178,9 @@ pipeline {
 ```
 
 触发流水线结果如下  
-![](https://via.placeholder.com/800x600?text=Image+a4b6f851e82ce225)  
+  
 代码审查结果如下  
-![](https://via.placeholder.com/800x600?text=Image+28c51b38ebf364a9)
+![img_1808.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1808.png)
 
 ## 构建并推送镜像至仓库
 具体步骤可参考文档：[https://www.cuiliangblog.cn/detail/section/166573065](https://www.cuiliangblog.cn/detail/section/166573065)  
@@ -236,9 +236,9 @@ pipeline {
 ```
 
 触发流水线结果如下  
-![](https://via.placeholder.com/800x600?text=Image+dca1277b27212452)  
+  
 查看harbor镜像仓库，已上传镜像  
-![](https://via.placeholder.com/800x600?text=Image+0aba20b143616d45)
+![img_96.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_96.png)
 
 ## docker运行服务
 远程执行命令具体内容可参考文档：[https://www.cuiliangblog.cn/detail/section/166296541](https://www.cuiliangblog.cn/detail/section/166296541)  
@@ -293,7 +293,7 @@ pipeline {
 ```
 
 触发流水线后运行结果如下  
-![](https://via.placeholder.com/800x600?text=Image+c59365ad55380f64)  
+![img_4880.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4880.png)  
 登录springboot服务器验证
 
 ```groovy
@@ -501,9 +501,9 @@ pipeline {
 ```
 
 触发流水线后运行结果如下  
-![](https://via.placeholder.com/800x600?text=Image+fb78a4afeb687f9b)  
+  
 邮件通知内容如下  
-![](https://via.placeholder.com/800x600?text=Image+87862e4cd7a6f03a)  
+![img_3312.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3312.png)  
 至此，整个CICD流程完成。
 
 

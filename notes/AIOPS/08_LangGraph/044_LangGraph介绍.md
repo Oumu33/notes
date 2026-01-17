@@ -9,7 +9,7 @@
 # <font style="color:rgba(0, 0, 0, 0.9);">LangGraph与LangChain对比</font>
  LangGraph和LangChain同宗同源，底层架构完全相同、接口完全相通。从开发者角度来说，LangGraph也是使用LangChain底层API来接入各类大模型、LangGraph也完全兼容LangChain内置的一系列工具。换而言之，LangGraph的核心功能都是依托LangChain来完成。但是和LangChain的链式工作流哲学完全不同的是，LangGraph的基础哲学是构建图结构的工作流，并引入“状态”这一核心概念来描绘任务执行情况，从而拓展了LangChain LCEL链式语法的功能灵活程度。
 
-![](https://via.placeholder.com/800x600?text=Image+d2861b392e7cc2e4)
+
 
 <font style="color:rgb(53, 53, 53);">不过要注意的是，LangGraph是基于LangChain构建的，无论图结构多复杂，单独每个任务执行链路仍然是线性的，其背后仍然是靠着LangChain的Chain来实现的。因此我们可以这么来描述LangChain和LangGraph之间的关系，LangGraph是LangChain工作流的高级编排工具，其中“高级”之处就是LangGraph能按照图结构来编排工作流。</font>
 
@@ -20,7 +20,7 @@ LangGraph的高层API主要分为两层，其一是Agent API，用于将大模�
 
 完整的LangGraph三层API架构图如下所示：
 
-![](https://via.placeholder.com/800x600?text=Image+3adf054a256d02a1)
+
 
 依托LangChain完善的生态、拥有丰富稳定的API架构、以及便捷上手等特性，使得LangGraph成为目前超越LangChain的新一代Agent开发框架。
 
@@ -32,7 +32,7 @@ LangSmith官网地址：https://docs.smith.langchain.com/
 
  LangSmith 是一款用于构建、调试、可视化和评估 LLM 工作流的全生命周期开发平台。它聚焦的不是模型训练，而是我们在构建 AI 应用（尤其是多工具 Agent、LangChain/Graph）时的「可视化调试」、「性能评估」与「运维监控」。
 
-![](https://via.placeholder.com/800x600?text=Image+f49f0fb238a203cc)
+
 
 | 功能类别 | 描述 | 场景 |
 | --- | --- | --- |
@@ -50,7 +50,7 @@ LangGraph Studio官网地址：https://www.langgraph.dev/studio
 
  LangGraph Studio 是一个用于可视化构建、测试、分享和部署智能体流程图的图形化 IDE + 运行平台。
 
-![](https://via.placeholder.com/800x600?text=Image+97dfd3f0b571bea9)
+
 
 | 功能模块 | 说明 | 应用场景 |
 | --- | --- | --- |
@@ -70,7 +70,7 @@ LangGraph Cli官网地址：https://www.langgraph.dev/ （需要代理环境）
 
  LangGraph CLI 是用于本地启动、调试、测试和托管 LangGraph 智能体图的开发者命令行工具。
 
-![](https://via.placeholder.com/800x600?text=Image+97b26d4200963f43)
+![img_1008.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1008.jpeg)
 
 | 功能类别 | 命令示例 | 说明 |
 | --- | --- | --- |
@@ -84,7 +84,7 @@ LangGraph Cli官网地址：https://www.langgraph.dev/ （需要代理环境）
 
 而一旦应用成功部署上线，LangGraph Cli还会非常贴心的提供后端接口说明文档：
 
-![](https://via.placeholder.com/800x600?text=Image+22413ca8026a6200)
+![img_1088.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1088.png)
 
 而对于LangGraph构建的智能体，除了能够本地部署外，官方也提供了云托管服务，借助LangGraph Platform，开发者可以将构建的智能体 Graph部署到云端，并允许公开访问，同时支持支持长时间运行、文件上传、外部 API 调用、Studio 集成等功能。
 
@@ -93,7 +93,7 @@ LangGraph Cli官网地址：https://www.langgraph.dev/ （需要代理环境）
 
 Agent Chat UI官网地址：https://langchain-ai.github.io/langgraph/agents/ui/
 
-![](https://via.placeholder.com/800x600?text=Image+9de140b62542a4b2)
+![img_4464.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4464.png)
 
 | 功能模块 | 描述 | 应用场景 |
 | --- | --- | --- |
@@ -113,11 +113,11 @@ Agent Chat UI官网地址：https://langchain-ai.github.io/langgraph/agents/ui/
 
 LangChain工具集：https://python.langchain.com/docs/integrations/tools/
 
-![](https://via.placeholder.com/800x600?text=Image+3da1814e425bba9e)
+
 
 此外，LangChain是最早支持MCP的开发框架之一，借助`langchain-mcp-adapters`，LangChain和LangGraph便可快速接入各类MCP工具。
 
-![](https://via.placeholder.com/800x600?text=Image+fcf303c274d6cd34)
+![img_3040.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3040.png)
 
 并且LangGraph也同样支持谷歌的A2A（跨Agents通信协议）。
 

@@ -29,14 +29,14 @@ Jmeter不仅可以作为性能测试工具，还可以作为接口测试工具�
 
 Jmeter通过线程组驱动多个线程的方式运行，来模拟真实用户对Web服务器的访问压力。实现过程如下图所示
 
-![](https://via.placeholder.com/800x600?text=Image+39add828c1b01d94)
+![img_2000.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2000.png)
 
 Jmeter作为Web服务器和浏览器之间的代理网关，能够录制浏览器的请求、响应Web服务器和生成测试脚本。在测试脚本的基础上，Jmeter通过线程组模拟真实用户的访问。
 
 ## 作为接口测试工
 Jmeter向服务器提交请求，从服务器取回请求返回的响应结果，实现过程如下图所示：
 
-![](https://via.placeholder.com/800x600?text=Image+c7d3a5248022bff7)
+![img_4400.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4400.png)
 
 作为发起请求的客户端，Jmeter是组装请求报文结构的容器，例如：请求行、请求头、请求数据等，并可将响应结果进行可视化展示。
 

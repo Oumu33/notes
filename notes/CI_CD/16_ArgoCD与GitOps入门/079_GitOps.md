@@ -118,7 +118,7 @@ DevOps（Development + Operations） 是一种理念、文化和一整套实践�
 
 核心目标：持续交付价值，让软件开发 → 部署 → 运维成为一个流畅的闭环。
 
-![](https://via.placeholder.com/800x600?text=Image+bb73bac93008802d)
+
 
 ## CI/CD 是工具与流程
 CI/CD（持续集成 / 持续交付 / 持续部署） 是 DevOps 理念的技术支撑与自动化实践。它可使得：
@@ -171,7 +171,7 @@ GitOps = IaC + Git + CI/CD，即基于 IaC 的版本化 CI/CD。它的核心是�
 
 这种方式使得每个人都可以专注于开发新的功能，而不用陷入繁琐的安装、变更、迁移等运维工作。同时，整个过程具有完整的操作记录和权限审批管理。
 
-![](https://via.placeholder.com/800x600?text=Image+3ff02af46554ca4b)
+
 
 ## GitOps对比DevOps
 | 对比项 | 传统 CI/CD | GitOps |

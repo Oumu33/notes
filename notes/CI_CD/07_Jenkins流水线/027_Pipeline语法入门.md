@@ -1,6 +1,6 @@
 # Pipeline语法入门
 # 创建流水线任务
-![](https://via.placeholder.com/800x600?text=Image+580a385260e5801e)
+![img_1904.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1904.png)
 
 # 配置声明式pipeline
 ## 使用hello world模板
@@ -57,7 +57,7 @@ pipeline {
 ## 运行任务测试
 点击立即构建，可以在状态菜单中看到每个阶段信息。
 
-![](https://via.placeholder.com/800x600?text=Image+858accb402708598)
+![img_4880.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4880.png)
 
 # 配置脚本式pipeline
 ## 自定义pipeline
@@ -84,6 +84,6 @@ Step：步骤，Step 是最基本的操作单元，可以是打印一句话，�
 ## 运行任务测试
 运行结果与声明式Pipeline完全一致。
 
-![](https://via.placeholder.com/800x600?text=Image+79cad55422a6e22f)
+![img_4608.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4608.png)
 
 

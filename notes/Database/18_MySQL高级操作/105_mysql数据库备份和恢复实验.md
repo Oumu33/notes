@@ -3,7 +3,7 @@
 #### 1. 业务场景描述
 管理员做了数据库的全备（冷备全备），启动数据库以后，用户继续使用数据库，正常的DDL、DML等操作。数据库突然不能正常使用了，硬盘损坏，导致数据文件全备丢失，值得庆幸的是数据库全备和二进制日志存放在其他硬盘对应的目录上，完好无损，现在需要管理员把数据从全备还原，然后恢复数据到损毁前的状态
 
-![](https://via.placeholder.com/800x600?text=Image+549577335f7759b0) 
+ 
 
 #### 2. 开启二进制日志BINLOG
 root# mkdir /binlogs
@@ -12,7 +12,7 @@ root# systemctl stop mysqld
 
 root# vim /etc/my.cnf
 
-![](https://via.placeholder.com/800x600?text=Image+5abf445e339b01d9)
+![img_224.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_224.png)
 
 <font style="color:red;">root# chown mysql:mysql /binlogs/</font>
 
@@ -26,7 +26,7 @@ root# mysql -u root -p
 
 mysql> show variables like '%log_bin%';
 
-![](https://via.placeholder.com/800x600?text=Image+962e2d451c5bdf4e)
+
 
 #### 3. 建立数据库备份（物理备份，冷备）
 root# mkdir /backup
@@ -39,11 +39,11 @@ root# cd /backup/mysql
 
 root# ls
 
-![](https://via.placeholder.com/800x600?text=Image+c3749b9a5d168ca9)
+![img_2224.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2224.png)
 
 root# ls /binlogs
 
-![](https://via.placeholder.com/800x600?text=Image+6d6fb92a217a2f9d)
+
 
 注：此时知道备份时日志走到了mysql-bin.000001
 
@@ -56,7 +56,7 @@ root# touch /backup/mysql/000001
 
 root# ls /backup/mysql
 
-![](https://via.placeholder.com/800x600?text=Image+eace5773481cbdc0)
+![img_1424.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1424.png)
 
 #### 5. 插入测试数据
 root# systemctl start mysqld
@@ -69,7 +69,7 @@ mysql> insert into t values(4),(5),(6);
 
 mysql> select * from t;
 
-![](https://via.placeholder.com/800x600?text=Image+26ccd3fe9a0e78c1) 
+ 
 
 #### 6. 切换日志模拟时间在往前走
 mysql> flush logs;
@@ -78,7 +78,7 @@ mysql> show binary logs; #启动数据库会切换1次日志
 
 mysql> show master status;
 
-![](https://via.placeholder.com/800x600?text=Image+c040f4713c2dc011) 
+ 
 
 注：当前日志走到了3号
 
@@ -89,7 +89,7 @@ mysql> use mysql;
 
 mysql> select user,host,authentication_string from user;
 
-![](https://via.placeholder.com/800x600?text=Image+d18ccd5cf2d02079)
+![img_1728.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1728.png)
 
 注：做备份的时候没有ujiuye这个用户，用户存放在mysql库的user表中
 
@@ -100,7 +100,7 @@ mysql> show binary logs;
 
 mysql> show master status;
 
-![](https://via.placeholder.com/800x600?text=Image+820352a848c3a387)  注：当前日志走到了4号
+  注：当前日志走到了4号
 
  
 
@@ -113,13 +113,13 @@ mysql> quit
 
 root# mysql -uroot -p  #重新连接失败
 
-![](https://via.placeholder.com/800x600?text=Image+40189c5450688431) 
+ 
 
 注：此时数据文件已损毁，但mysqld进程还存活，查看mysqld进程并杀掉
 
 ps -ef | grep -v grep | grep mysqld #查看mysqld进程
 
-![](https://via.placeholder.com/800x600?text=Image+58b1afe765cc3d48) 
+![img_4176.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4176.png) 
 
 root# yum install psmisc
 
@@ -137,20 +137,20 @@ root# cp -a /backup/mysql  /var/lib
 #### 11. 找出需要恢复的起止日志
 root# ls /var/lib/mysql  #备份时的日志是几号？
 
-![](https://via.placeholder.com/800x600?text=Image+9e090d98cc5ea8c5)
+
 
 注：此时备份已经还原，备份时日志是1号，应该从2号日志开始恢复
 
 root# ls /binlogs    #查看出故障时日志走到了几号？
 
-![](https://via.placeholder.com/800x600?text=Image+543deb6b094cb6a3)
+
 
 注：查看二进制日志存放目录，找编号最大的日志，即，出故障时日志走到了4号日志，得出需要恢复的日志是从2号到4号
 
 #### 12. 重启数据库（数据回到冷备时刻状态）
 root# ls /binlogs
 
-![](https://via.placeholder.com/800x600?text=Image+41a04a759938fd4c) 
+ 
 
 重启后会多出一个5号日志（mysqld重启会切换日志）
 
@@ -158,7 +158,7 @@ root# systemctl start mysqld
 
 root# ls /binlogs
 
-![](https://via.placeholder.com/800x600?text=Image+891d6eed94dc3db8) 
+![img_3040.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3040.png) 
 
 注：恢复时只恢复从2号到4号，这部分是需要重做的，如果到5号没有必要
 
@@ -171,7 +171,7 @@ mysql> select * from t;
 
 mysql> select user,host,authentication_string from mysql.user;
 
-![](https://via.placeholder.com/800x600?text=Image+89aaecaba3756f83) 
+![img_4096.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4096.png) 
 
 注：备份时test库t表有3条记录，mysql库user表中无ujiuye用户
 
@@ -208,7 +208,7 @@ root# mysqlbinlog mysql-bin.00000{2..4} | mysql -uroot –p
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+60993a4b00f0f94a) 
+![img_2560.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2560.png) 
 
 root# mysql –uroot –p 
 
@@ -221,14 +221,14 @@ mysql> select * from t;
 
 mysql> select user,host,authentication_string from mysql.user;
 
-![](https://via.placeholder.com/800x600?text=Image+5a54dece7b30336f) 
+ 
 
  
 
 #### 16. 实验总结
     以上实验的过程展示了数据库故障时利用物理备份进行数据恢复的过程，最重要是满足**<font style="color:red;">有备份且完整，二进制日志没有缺失</font>**这两个条件，就能把数据找回来。实验步骤是按照以下图示中描述的内容完成的。
 
-![](https://via.placeholder.com/800x600?text=Image+549577335f7759b0)** **
+** **
 
 数据恢复可总结为两点，首先判断都否恢复，然后再做具体恢复，相关要点如下所示：
 
@@ -273,7 +273,7 @@ mysql> show tables;
 
 mysql> select * from t;
 
-![](https://via.placeholder.com/800x600?text=Image+faa51c82bd06bd00)
+![img_4640.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4640.png)
 
 注：t表当前6条记录
 
@@ -283,7 +283,7 @@ root# mysqldump -uroot -p --all-databases --master-data=2 --single-transaction -
 #### 4. 查看备份时的日志位置
 root# more /root/all_db.sql
 
-![](https://via.placeholder.com/800x600?text=Image+b38c2f234b3e4f26)
+
 
 注：备份时使用了--master-data=2选项，记录了日志位置，即走到了6号日志，头标注位置154号时，做了备份
 
@@ -292,7 +292,7 @@ mysql> flush logs;
 
 mysql> show binary logs;
 
-![](https://via.placeholder.com/800x600?text=Image+428ebb2e557e4fc7)
+
 
 注：此时日志走到了7号154的位置
 
@@ -303,14 +303,14 @@ mysql> insert into t values(100),(200),(300);
 
 mysql> select * from test.t;
 
-![](https://via.placeholder.com/800x600?text=Image+d3dc9259ec990659) 
+ 
 
 #### 7. 切换日志模拟时间在往前走
 mysql> flush logs;
 
 mysql> show binary logs;
 
-![](https://via.placeholder.com/800x600?text=Image+df85a2ade0a8083b)
+
 
 注：此时日志走到了8号154的位置
 
@@ -321,7 +321,7 @@ mysql> insert into t values(1000);
 
 mysql> select * from t;
 
-![](https://via.placeholder.com/800x600?text=Image+61e158f11ebc091a) 
+ 
 
 注：还有业务用户在往t表录入数据
 
@@ -329,7 +329,7 @@ mysql> delete from t;
 
 mysql> drop table t;
 
-![](https://via.placeholder.com/800x600?text=Image+d703223160e91a98)
+
 
 注：程序员小李删错了位置，生产库t表没有了
 
@@ -338,7 +338,7 @@ mysql> flush logs;
 
 mysql> show binary logs;
 
-![](https://via.placeholder.com/800x600?text=Image+682ed4dff24288cd) 
+ 
 
 注：此时日志走到了8号154的位置
 
@@ -349,20 +349,20 @@ mysql> select database(); #当前在使用什么库
 
 mysql> show tables;
 
-![](https://via.placeholder.com/800x600?text=Image+c900f8c05d02229d)
+![img_4768.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4768.jpeg)
 
 注：t表不见了；但是当前还有用户在往t1、t2、t3表中录入数据；此时不能在生产库中做不完全恢复，即：让test库所有表的数据回到删t表之前的状态，这样会丢失t1、t2、t3表刚刚录入的数据，因此数据恢复需要管理员搭建一个和主库版本一样的测试库上来做。本实验数据恢复将使用windows系统上的数据库来完成。
 
 #### 11. 确定误删除操作的日志和位置
 mysql> show binary logs;
 
-![](https://via.placeholder.com/800x600?text=Image+7d4b693d8a05504f)
+
 
 注：当前数据库走到第9号日志
 
 mysql> show binlog events in 'mysql-bin.000009';
 
-![](https://via.placeholder.com/800x600?text=Image+7e6959f4b466218b)
+![img_2848.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2848.png)
 
 注：当前日志没有查到和t表相关的操作，然后按照日志序号倒着一个一个找。关键看误删除发现是否及时，如果几天前做的误删除，需要多查找一段日志。也可以使用：
 
@@ -374,7 +374,7 @@ mysqlbinlog log1 log2 … logN > file.sql的方式
 
 mysql> show binlog events in 'mysql-bin.000008';
 
-![](https://via.placeholder.com/800x600?text=Image+89119635e9a14e2b)
+![img_4576.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4576.png)
 
 注：在8号日志的位置587找到了delete语句删除的位置，删除过程产生事务，需要再往前找到事务开始时（有BEGIN标记）的坐标，即8号日志位置471。
 
@@ -384,14 +384,14 @@ root# cd /binlogs
 
 root# mysqlbinlog mysql-bin.000007 mysql-bin.000008 mysql-bin.000009 | grep -i "delete"
 
-![](https://via.placeholder.com/800x600?text=Image+0660d9d745c1d896)
+
 
 注：然后，去掉某个日志，缩小范围
 
 #### 12. 确定需要恢复的起止位置
 root# more /root/all_db.sql
 
-![](https://via.placeholder.com/800x600?text=Image+b38c2f234b3e4f26)
+
 
 注：恢复开始位置为上次逻辑全备的6号日志位置154
 
@@ -415,7 +415,7 @@ root# more /root/recover.sql
 
 root# sz /root/all_db.sql /root/recover.sql  #linux没有安装sz可以使用其他FTP等工具
 
-![](https://via.placeholder.com/800x600?text=Image+b5ecf52e6dfa75c6)
+![img_3232.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3232.png)
 
 注：复制all_db.sql和recover.sql到D盘，方便访问
 
@@ -423,7 +423,7 @@ root# sz /root/all_db.sql /root/recover.sql  #linux没有安装sz可以使用�
 
 mysql> source d:/all_db.sql
 
-![](https://via.placeholder.com/800x600?text=Image+46db7930a41c4bf5)
+
 
 注：windows库执行数据还原
 
@@ -433,7 +433,7 @@ mysql> show tables;
 
 mysql> select * from t;
 
-![](https://via.placeholder.com/800x600?text=Image+5ed5e9e995db56fb)
+
 
 注：查看还原后数据状态
 
@@ -443,7 +443,7 @@ mysql> select * from t;
 #### 16. 检查恢复后数据表状态
 mysql> select * from t;
 
-![](https://via.placeholder.com/800x600?text=Image+c1b4c58b722c7d3f)
+![img_4720.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4720.jpeg)
 
 注：windows的测试库仅临时用于数据恢复，不需要开启binlog；也可以使用其他linux系统的测试库做恢复；此时之前误删除的数据在测试机上已经暴露出来，需要将t���导出，然后再导入回生产库。
 
@@ -452,15 +452,15 @@ mysql> select * from t;
 #### 17. 误删数据导出测试库并导入生产库
 D:\mysqldump -uroot -p test t>t.sql
 
-![](https://via.placeholder.com/800x600?text=Image+f7161ff43340a7ad)
+![img_1232.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1232.png)
 
 #root cd /root
 
 #root rz   #上传t.sql到生产库/root，如linux没有安装rz使用ftp等工具
 
-![](https://via.placeholder.com/800x600?text=Image+eb9e12bb9a3f374b)
 
-![](https://via.placeholder.com/800x600?text=Image+d0f9b3c0923f3b8b)
+
+![img_3408.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3408.png)
 
 mysql> source /root/t.sql
 
@@ -468,7 +468,7 @@ mysql> show tables;
 
 mysql> select * from t;
 
-![](https://via.placeholder.com/800x600?text=Image+64aa43dfb514809c)
+![img_2704.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2704.png)
 
 注：至此t表已在生产库中恢复回来了
 
@@ -479,7 +479,7 @@ mysql> select * from t;
 
 至于为什么要在测试机上完成恢复，其原因之一是此时业务需要生产库不能停库，其二，如果生产机可以停库，其恢复过程十分繁琐，容易出错，稍有不慎会造成更大的损失。
 
-![](https://via.placeholder.com/800x600?text=Image+a0de63352f986e0a)
+![img_1200.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1200.png)
 
 如果在生产库上做恢复，其主要步骤如下：
 

@@ -22,7 +22,7 @@ master 中的控制环路监视新的 PVC，寻找匹配的PV（如果可能）�
 PVC 保护的目的是确保由 pod 正在使用的 PVC不会从系统中移除，因为如果被移除的话可能会导致数据丢失当启用PVC 保护 alpha功能时，如果用户删除了一个 pod 正在使用的 PVC，则该 PVC 不会被立即删除。PVC的删除将被推迟，直到 PVC 不再被任何 pod 使用
 
 ## PVC、PV、StorageClass关系
-![](https://via.placeholder.com/800x600?text=Image+48f28a758cdd6660)
+
 
 + PVC：Pod 想要使用的持久化存储的属性，比如存储的大小、读写权限等。
 + PV ：具体的 Volume 的属性，比如 Volume的类型、挂载目录、远程存储服务器地址等。
@@ -88,11 +88,11 @@ PersistentVolume可以以资源提供者支持的任何方式挂载到主机上�
 ## 示例
 + 定义了一个使用NFS存储后端的PV，空间大小为10GB，支持多路的读写操作。
 
-![](https://via.placeholder.com/800x600?text=Image+0270f5a22322e261)
+
 
 + 查看创建的pv信息
 
-![](https://via.placeholder.com/800x600?text=Image+959658f04cfd0182)
+
 
 # 创建pvc
 ## 简介
@@ -152,7 +152,7 @@ spec:
 
 + 查看pvc详细信息
 
-![](https://via.placeholder.com/800x600?text=Image+9f0a040db15231d7)
+
 
 # pod中使用pvc
 ## 创建说明

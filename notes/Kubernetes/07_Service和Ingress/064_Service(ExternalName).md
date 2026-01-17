@@ -4,7 +4,7 @@
 2. 此种类型并非定义由Kubernetes集群提供的服务，而是把集群外部的某服务以DNS CNAME记录的方式映射到集群内，从而让集群内的Pod资源能够访问外部的Service的一种实现方式。
 3. 这种类型的Service没有ClusterIP和NodePort，也没有标签选择器用于选择Pod资源，因此也不会有Endpoints存在。
 
-![](https://via.placeholder.com/800x600?text=Image+613bf347976e5216)
+
 
 ## 使用示例
 ### 访问跨名称空间的资源

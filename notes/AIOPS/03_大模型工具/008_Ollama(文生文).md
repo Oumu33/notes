@@ -37,7 +37,7 @@ ollama pull deepseek-r1:8b
 
 安装完成后访问<font style="color:rgb(2, 30, 170);">http://localhost:11434</font> 来验证
 
-![](https://via.placeholder.com/800x600?text=Image+834ab54bdbdf20d7)
+
 
 Ollama 安装完成后先不要着急下载模型，我们先来设置环境变量。
 
@@ -164,14 +164,14 @@ done
 ## web 端
 chrome插件Page Assist,专门负责浏览网页时同ollama进行交互，例如读取网页内容，针对网页进行提问等，而无需担心隐私泄露。
 
-![](https://via.placeholder.com/800x600?text=Image+11ef311d587e4e04)
+
 
 ## 桌面端
 个人推荐cherry studio，目前功能最丰富也是最完善的ai集成客户端。支持多ai平台、mcp、知识库等功能。
 
 下载地址：[https://www.cherry-ai.com/download](https://www.cherry-ai.com/download)
 
-![](https://via.placeholder.com/800x600?text=Image+23d193805691f8ce)
+
 
 ## 手机端
 苹果手机可以在`App Store`下载Enchanted LLM
@@ -189,7 +189,7 @@ docker run -d -p 8080:8080 --add-host=host.docker.internal:host-gateway -v open-
 
 3. 浏览器中输⼊<font style="color:rgb(2, 30, 170);"> http://localhost:8080</font> 显⽰如下页⾯，输⼊邮箱后登录即可和⼤模型对话，并且能够⾃动扫描我们已安装的模型.
 
-![](https://via.placeholder.com/800x600?text=Image+03a51039243fd508)
+
 
 ## API 调用
 参考文档：[https://ollama.readthedocs.io/api/](https://ollama.readthedocs.io/api/)
@@ -296,15 +296,15 @@ Thinking...
 
 HuggingFace 网址：[https://huggingface.co/models](https://huggingface.co/models)，我们只需在筛选条件添加 Ollama 然后查找模型
 
-![](https://via.placeholder.com/800x600?text=Image+a831524ce2598876)
+
 
 以百川模型为例，点击详情页既可生成下载命令
 
-![](https://via.placeholder.com/800x600?text=Image+12ed362bc3ec34e5)
+
 
 魔搭社区网址：[https://modelscope.cn/models](https://modelscope.cn/models)，我们只需要在筛选条件添加 gguf 既可。
 
-![](https://via.placeholder.com/800x600?text=Image+de51380a795df6ba)
+![img_4816.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4816.jpeg)
 
 模型下载命令为：
 

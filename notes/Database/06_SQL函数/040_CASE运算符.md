@@ -5,10 +5,10 @@
 
 mysql> select sname,score,(case when score>=700 then '优秀' when score>=600 then '良好' when score>=520 then '中等' else '较差' end) 等级 from stu;
 
-![](https://via.placeholder.com/800x600?text=Image+48dd5f4aae6cf6b8)
+![img_1952.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1952.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+6c04749f26bfd57f)
+
 
 

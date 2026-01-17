@@ -9,9 +9,9 @@
 
 1. 输出当前进程与后台进程。
 
-![](https://via.placeholder.com/800x600?text=Image+c7e50186f9300843)
 
-![](https://via.placeholder.com/800x600?text=Image+46272ead31235111)
+
+
 
 + 符号&的意思是把命令放入后台执行
 
@@ -27,7 +27,7 @@
 | -s：  | <font style="color:red;">隐藏输入的数据</font>，适用于机密信息的输入 |
 
 
-![](https://via.placeholder.com/800x600?text=Image+b39e9094946f5e9d)
+![img_784.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_784.png)
 
  
 

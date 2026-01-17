@@ -119,7 +119,7 @@ pip3 install -U huggingface_hub
 ## k8s<font style="color:rgb(41, 49, 61);">单机 TP 模式</font>部署
 登录huggingface[https://huggingface.co/deepseek-ai/DeepSeek-R1](https://huggingface.co/deepseek-ai/DeepSeek-R1) 获取启动命令
 
-![](https://via.placeholder.com/800x600?text=Image+91c1c46757acdc33)
+![img_240.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_240.png)
 
 按照提示参数，我们进行一些调整
 

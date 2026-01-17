@@ -20,11 +20,11 @@
 3. 示例  
 资源配置清单中定义的Pod对象通过环境变量向容器env-test-container中注入了Pod对象的名称、隶属的名称空间、标签app的值以及容器自身的CPU资源限额和内存资源请求等信息：
 
-![](https://via.placeholder.com/800x600?text=Image+37442428d66ed261)
+
 
 + 查看环境变量信息
 
-![](https://via.placeholder.com/800x600?text=Image+cc50eef091b3dffb)
+
 
 
 
@@ -37,7 +37,7 @@
 2. 示例  
 清单中定义的Pod对象通过downwardAPI存储卷向容器volume-test-container中注入了Pod对象隶属的名称空间、标签、注解以及容器自身的CPU资源限额和内存资源请求等信息。存储卷在容器中的挂载点为/etc/podinfo目录
 
-![](https://via.placeholder.com/800x600?text=Image+c67b18378a263230)
+
 
 
 

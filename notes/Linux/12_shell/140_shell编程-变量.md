@@ -45,7 +45,7 @@ var2
 + 如果不给skill变量加花括号，写成echo      "I am good at      $skillScript"，解释器就会把$skillScript当成一个变量（其值为空），代码执行结果就不是我们期望的样子了。
 1. 将一个已有变量的值，重新赋值时，任然使用原变量的值
 
-![](https://via.placeholder.com/800x600?text=Image+caef80fa34f3f78a)
+![img_3152.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3152.png)
 
 # 三、只读变量
 1. 使用 readonly      命令可以将变量定义为只读变量，只读变量的值不能被改变。

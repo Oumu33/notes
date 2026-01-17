@@ -38,8 +38,8 @@ urlpatterns = [
 ```
 
 ## 访问测试
-![](https://via.placeholder.com/800x600?text=Image+43896340a8bc9d5e)
+![img_1344.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1344.png)
 
-![](https://via.placeholder.com/800x600?text=Image+e8a7bf3a33190bed)
+
 
 

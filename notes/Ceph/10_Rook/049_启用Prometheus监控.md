@@ -15,7 +15,7 @@ kubectl create -f exporter-service-monitor.yaml
 ```
 
 ## 查看验证
-![](https://via.placeholder.com/800x600?text=Image+53ca449db2ecfc22)
+![img_896.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_896.jpeg)
 
 # 配置 grafana
 ## 导入 dashboard

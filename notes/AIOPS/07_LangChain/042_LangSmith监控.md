@@ -24,15 +24,15 @@ LangSmith 是由 LangChain 团队开发的一款 用于调试、测试、评估�
 ## 创建项目获取 API Key
 登录[https://smith.langchain.com/](https://smith.langchain.com/)，并创建账号。
 
-![](https://via.placeholder.com/800x600?text=Image+21260b966ceb4f5a)
+
 
 系统中默认存在一个项目，我们新建一个项目。
 
-![](https://via.placeholder.com/800x600?text=Image+c09ce98639f0b9b1)
+![img_2576.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2576.png)
 
 <font style="color:rgb(89, 89, 89);">LangSmith支持LangChain项目和非LangChain项目，并且分别提供了将LangSmith接入到应用的方法，点击Generate API Key，生成API Key。</font>
 
-![](https://via.placeholder.com/800x600?text=Image+d741da596149c5b1)
+
 
 ## 复制环境变量配置
 复制上方的配置，放到项目的.env 文件中
@@ -72,15 +72,15 @@ print(chain.invoke({"question": "什么是LangChain?"}))
 
 <font style="color:rgb(89, 89, 89);">执行完成之后，在Tracing Projects页面就可以看到</font>`<font style="color:rgb(30, 107, 184);">langchain-demo</font>`<font style="color:rgb(89, 89, 89);">项目被成功创建</font>
 
-![](https://via.placeholder.com/800x600?text=Image+60823d18e683cf80)
+![img_4720.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4720.jpeg)
 
 <font style="color:rgb(89, 89, 89);">点击进入项目，就可以看到刚刚那一次的调用过程，包括输入、输出、发起时间、总耗时等信息</font>
 
-![](https://via.placeholder.com/800x600?text=Image+fe9be73c75e9902e)
+![img_2464.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2464.png)
 
 <font style="color:rgb(89, 89, 89);">点击All Runs可以查看各个组件的执行过程，包括Prompt生成、LLM响应、输出解析器处理等各环节的详细执行信息</font>
 
-![](https://via.placeholder.com/800x600?text=Image+5c79dbd9d605b7ec)
+![img_4672.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4672.png)
 
 # Callback 使用
 ## 什么是Callback机制
@@ -116,7 +116,7 @@ print(chain.invoke({"question": "什么是LangChain?"}))
 
 `BaseCallbackHandler`类可以重写的钩子方法 如下：
 
-![](https://via.placeholder.com/800x600?text=Image+51b66c4e7cb4882c)
+
 
 那么，如何使自定义的`CallbackHandler`生效呢？可以在调用可执行组件的`invoke()`方法中，除了传递输入参数外，再传递`config`配置参数，`config`配置参数可以传递各种配置信息，其中，`callbacks`属性用来传递回调处理器，`callbacks`属性接收一个数组，数组里面包含自定义的`CallbackHandler`对象，代码示例如下：
 

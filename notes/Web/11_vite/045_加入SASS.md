@@ -10,7 +10,7 @@ npm install node-sass -D
 `npm install --save normalize.css` 
 
 ## 新建style目录保存各种样式
-![](https://via.placeholder.com/800x600?text=Image+3aec89827ed10fac)
+
 
 ## index.scss中组织这些样式，并编写全局样式
 ```less

@@ -2,7 +2,7 @@
 # 一、文件系统查看命令df
 1. [root@localhost~]#df [选项] [挂载点]
 
-![](https://via.placeholder.com/800x600?text=Image+0e32d137efca2498)
+![img_2608.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2608.png)
 
 1. 选项：
 
@@ -17,7 +17,7 @@
 # 二、统计目录或文件大小du
 1. [root@localhost ~]# du [选项] [目录或文件名]
 
-![](https://via.placeholder.com/800x600?text=Image+1fd5c5e5540dcb5e)
+
 
 1. 选项
 
@@ -43,10 +43,10 @@
 # 五、显示磁盘状态命令dumpe2fs
 1. [root@localhost ~]# dumpe2fs 分区设备文件名
 
-![](https://via.placeholder.com/800x600?text=Image+c708a364b753be6d)
+![img_768.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_768.png)
 
 # 六、列出所有可用块设备的信息
-![](https://via.placeholder.com/800x600?text=Image+456d9f5321ef7f5f)
+
 
  
 

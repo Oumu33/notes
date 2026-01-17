@@ -41,30 +41,30 @@
 
 # 三、操作实例
     1. lpush左侧添加元素到一个列表(头部添加)
-+ ![](https://via.placeholder.com/800x600?text=Image+290600f909e1ce24)
++ 
     1. lrange从左侧开始查看列表内容
-+ ![](https://via.placeholder.com/800x600?text=Image+64022bb5d7126cbc)
++ 
     1. llen获得列表元素的个数
-+ ![](https://via.placeholder.com/800x600?text=Image+e9df89fd8ece30e0)
++ ![img_3952.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3952.png)
     1. rpush右侧添加元素到一个列表(尾部添加)
-+ ![](https://via.placeholder.com/800x600?text=Image+8a3f9f9732bb598d)
++ ![img_3136.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3136.png)
     1. lpop左侧获取并删除一个元素(头部删除)
-+ ![](https://via.placeholder.com/800x600?text=Image+532ea01a6410ec79)
++ ![img_3312.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3312.png)
     1. rpop右侧获取并删除一个元素(尾部删除)
-+ ![](https://via.placeholder.com/800x600?text=Image+323bf8c6d7aedec7)
++ ![img_96.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_96.png)
     1. lindex获取指定位置列表的值
-+ ![](https://via.placeholder.com/800x600?text=Image+bf2edc46e41727b4)
++ ![img_208.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_208.png)
     1. linsert插入指定位置的新元素
-+ ![](https://via.placeholder.com/800x600?text=Image+206a47dc4571b028)
++ 
     1. lset修改指定位置元素的值
-+ ![](https://via.placeholder.com/800x600?text=Image+fbcf100bf048cf34)
++ 
     1. lrem删除指定value的元素
     - lrem key count value
     - 如果count=0，删除所有指定value值的元素
     - 如果count>0，从左删除count个value值的元素
     - 如果count<0，从右删除count个value值的元素
-+ ![](https://via.placeholder.com/800x600?text=Image+11d7af88f04f47d8)
++ 
     2. ltrim保留指定范围内的元素，其他的删除
-+ ![](https://via.placeholder.com/800x600?text=Image+914941af01d61917)
++ 
 
 

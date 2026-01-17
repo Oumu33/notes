@@ -8,10 +8,10 @@ SonarQube 是一个用于代码质量管理的开源平台，用于管理源代�
 <font style="color:rgb(18, 18, 18);">SonarQube 支持多种客户端集成方式，包括但不限于 Scanner 客户端、Ant、Gradle、Maven、Jenkins、IDEA 插件等。比较常用的为 Gradle 和 Maven。</font>
 
 # <font style="color:rgb(38, 38, 38);"></font><font style="color:rgb(79, 79, 79);">组成</font>
-![](https://via.placeholder.com/800x600?text=Image+c2a44412f07570a1)
+
 
 # <font style="color:rgb(38, 38, 38);">与CICD集成</font>
-![](https://via.placeholder.com/800x600?text=Image+f719fe3db334657c)
+![img_2912.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2912.png)
 
 开发人员在他们的ide中使用SonarLint运行分析本地代码。
 

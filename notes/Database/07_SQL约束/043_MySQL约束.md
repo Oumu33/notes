@@ -47,9 +47,9 @@ alter table t add primary key(id);
 3. show keys from      table_name; 看不了非空约束
 4. show index from      table_name;看不了非空约束
 
-![](https://via.placeholder.com/800x600?text=Image+83518980eae031cd)
+![img_2848.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2848.png)
 
-![](https://via.placeholder.com/800x600?text=Image+1073959391600bbf)
+![img_4400.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4400.png)
 
  
 

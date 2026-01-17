@@ -2,32 +2,32 @@
  
 
 # 认识网页                                                          
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
 
-![](https://via.placeholder.com/800x600?text=Image+4794a557bfd7ab46)网页主要由文字、图像和超链接等元素构成。当然，除了这些元素，网页中还可以包含音频、视频以及Flash等。
+
+![img_864.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_864.png)网页主要由文字、图像和超链接等元素构成。当然，除了这些元素，网页中还可以包含音频、视频以及Flash等。
 
 <img undefinedalt="">
 
 
 
-![](https://via.placeholder.com/800x600?text=Image+c13296c292296e30)
+
 
 # 常见浏览器介绍                                                
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
 
-![](https://via.placeholder.com/800x600?text=Image+2483ef31761dc8df)浏览器是网页运行的平台，常用的浏览器有IE、火狐（Firefox）、谷歌（Chrome）、Safari和Opera等。我们平时称为五大浏览器。
 
-![](https://via.placeholder.com/800x600?text=Image+ca41aa80ac3255c3)
+![img_832.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_832.png)浏览器是网页运行的平台，常用的浏览器有IE、火狐（Firefox）、谷歌（Chrome）、Safari和Opera等。我们平时称为五大浏览器。
+
+![img_2000.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2000.png)
 
 ## 查看浏览器占有的市场份额（知晓）                                            
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 查看网站： <u><font style="color:#4183C4;">http://ton</font></u><font style="color:#4183C4;">gj</font><u><font style="color:#4183C4;">i.baidu.com/data/browser</font></u>
 
-![](https://via.placeholder.com/800x600?text=Image+7d5be07f5698f29c)
+![img_4624.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4624.png)
 
 ## 浏览器内核（理解）                                                                    
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 浏览器内核又可以分成两部分：渲染引擎(layout engineer 或者 Rendering Engine)和 JS 引擎。
 
@@ -37,7 +37,7 @@ JS 引擎 则是解析 Javascript 语言，执行 javascript语言来实现
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+5c59ab11785c66bf)开始渲染引擎和 JS 引擎并没有区分的很明确，后来 JS 引擎越来越独立，内核就倾向于只指渲染引擎。有一个网页标准计划小组制作了一个 ACID 来测试引擎的兼容性和性能。内核的种类很多，如加上没什么人使用的非商业的免费内核，可能会有10多种，但是常见的浏览器内核可以分这四种：Trident、Gecko、Blink、Webkit。
+![img_4080.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4080.png)开始渲染引擎和 JS 引擎并没有区分的很明确，后来 JS 引擎越来越独立，内核就倾向于只指渲染引擎。有一个网页标准计划小组制作了一个 ACID 来测试引擎的兼容性和性能。内核的种类很多，如加上没什么人使用的非商业的免费内核，可能会有10多种，但是常见的浏览器内核可以分这四种：Trident、Gecko、Blink、Webkit。
 
 （1） Trident(IE内核)
 
@@ -78,21 +78,21 @@ Presto 是挪威产浏览器 opera 的 "前任" 内核，为何说是 "前
 Chromium，内核是 Webkit 的分支 Blink，Windows Phone 8 系统浏览器内核是 Trident。
 
 # Web标准（重点）                                            
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 通过以上浏览器的内核不同，我们知道他们工作原理、解析肯定不同，显示就会有差别。
 
 
 
-![](https://via.placeholder.com/800x600?text=Image+243324a9cf0c2c00)
+![img_3520.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3520.png)
 
 ## Web 标准的好处                                                                         
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 1、让Web的发展前景更广阔 2、内容能被更广泛的设备访问 3、更容易被搜寻引擎搜索 4、降低网站流量费用 5、使网站更易于维护 6、提高页面浏览速度
 
 ## Web 标准构成                                                                             
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 Web标准不是某一个标准，而是由W3C和其他标准化组织制定的一系列标准的集合。主要包括结构（Structure）、表现（Presentation）和行为（Behavior）三个方面。
 
@@ -100,19 +100,19 @@ Web标准不是某一个标准，而是由W3C和其他标准化组织制定的�
 
 样式标准：表现用于设置网页元素的版式、颜色、大小等外观样式，主要指的是CSS。
 
-![](https://via.placeholder.com/800x600?text=Image+0eb55795e3d73e15)行为标准：行为是指网页模型的定义及交互的编写，主要包括DOM和ECMAScript两个部分理想状态我们的源码： .HTML .css .js
+行为标准：行为是指网页模型的定义及交互的编写，主要包括DOM和ECMAScript两个部分理想状态我们的源码： .HTML .css .js
 
 
 
-![](https://via.placeholder.com/800x600?text=Image+869f8b2480a2429a)
+
 
 直观感受：
 
-![](https://via.placeholder.com/800x600?text=Image+ca9094f18559aaa0)
+![img_2160.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2160.png)
 
 总结WEB标准：结构标准：
 
-![](https://via.placeholder.com/800x600?text=Image+ce438304f32f3363)
+![img_2576.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2576.png)
 
 决定你是否有个好天然身体
 
@@ -120,7 +120,7 @@ Web标准不是某一个标准，而是由W3C和其他标准化组织制定的�
 
 样式标准：
 
-![](https://via.placeholder.com/800x600?text=Image+2b2db255e7fae506)
+![img_4832.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4832.png)
 
 决定你是否打扮的美丽外观
 
@@ -128,12 +128,12 @@ Web标准不是某一个标准，而是由W3C和其他标准化组织制定的�
 
 行为标准：
 
-![](https://via.placeholder.com/800x600?text=Image+43f0f3ffe16aa0bc)
+![img_576.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_576.png)
 
 决定你是否有吸引人的行为
 
 # HTML 初识                                                      
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 一般先学习HTML+CSS， 这里我们先定一个小目标，先学HTML,后学习CSS。
 
@@ -144,11 +144,11 @@ HTML（英文Hyper Text Markup Language的缩写）中文译为“超文本标�
 注意： 体会 文本 标签 语言 几个词语
 
 ## HTML骨架格式                                                                           
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 日常生活的书信，我们要遵循共同的约定。
 
-![](https://via.placeholder.com/800x600?text=Image+e983943a74c1d683)
+
 
 同理：HTML 有自己的语言语法骨架格式：
 
@@ -168,14 +168,14 @@ HTML（英文Hyper Text Markup Language的缩写）中文译为“超文本标�
 
 为了便于记忆，我们请出刚才要辞职回家养猪的二师兄来帮忙， 我称之为 猪八戒记忆法
 
-![](https://via.placeholder.com/800x600?text=Image+563efe6ec665b01e)
+![img_3792.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3792.png)
 
  
 
  
 
 ## HTML标签分类                                                                           
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 在HTML页面中，带有“< >”符号的元素被称为HTML标签，如上面提到的 <HTML>、<head>、<body>都是HTML标签。所谓标签就是放在“< >” 标签符中表示某个功能的编码命令，也称为HTML标签或 HTML元素
 
@@ -196,7 +196,7 @@ HTML（英文Hyper Text Markup Language的缩写）中文译为“超文本标�
 
 
 ## HTML标签关系                                                                           
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 标签的相互关系就分为两种：
 
@@ -208,7 +208,7 @@ HTML（英文Hyper Text Markup Language的缩写）中文译为“超文本标�
 
 
 
-![](https://via.placeholder.com/800x600?text=Image+aec3417f9737b6f8)
+![img_2016.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2016.png)
 
 测试题：
 
@@ -226,17 +226,17 @@ HTML（英文Hyper Text Markup Language的缩写）中文译为“超文本标�
 
 倡议： 如果两个标签之间的关系是嵌套关系，子元素 好缩进一个tab键的身位。如果是并列关系， 好上下对齐。开发工具
 
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 这些工具你认识几个？
 
-![](https://via.placeholder.com/800x600?text=Image+64e120e18caecbd6)
+
 
 普通青年 Dreamweaver
 
 文艺青年 sublime 高手和傻子 用记事本其实。。。。
 
-![](https://via.placeholder.com/800x600?text=Image+cacab9ca54cf602d)
+![img_4608.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4608.png)
 
 <u><font style="color:#4183C4;">sublime </font></u><u><font style="color:#4183C4;">一些常用快捷键</font></u><u><font style="color:#4183C4;"> </font></u><u><font style="color:#4183C4;">点我查看</font></u>
 
@@ -247,7 +247,7 @@ HTML（英文Hyper Text Markup Language的缩写）中文译为“超文本标�
  
 
 # 文档类型<!DOCTYPE>                                      
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 
 
@@ -258,7 +258,7 @@ HTML（英文Hyper Text Markup Language的缩写）中文译为“超文本标�
 注意： 一些老网站可能用的还是老版本的文档类型比如 XHTML之类的，但是我们学的是HTML5,而且HTML5的文档类型兼容很好(向下兼容的原则)，所以大家放心的使用HTML5的文档类型就好了。
 
 ## 字符集                                                             
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 utf-8是目前 常用的字符集编码方式，常用的字符集编码方式还有gbk和gb2312。
 
@@ -270,15 +270,15 @@ GBK包含全部中文字符 是GB2312的扩展，加入对繁体字的支持，
 
 UTF-8则包含全世界所有国家需要用到的字符
 
-![](https://via.placeholder.com/800x600?text=Image+c73cc181d0257bc6)记住一点，以后我们统统使用UTF-8 字符集, 这样就避免出现字符集不统一而引起乱码的情况了。
+记住一点，以后我们统统使用UTF-8 字符集, 这样就避免出现字符集不统一而引起乱码的情况了。
 
 ## HTML标签的语义化                                          
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 白话： 所谓标签语义化，就是指标签的含义。
 
 ### 为什么要有语义化标签                                                                 
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 1.  方便代码的阅读和维护
 
@@ -295,14 +295,14 @@ UTF-8则包含全世界所有国家需要用到的字符
 遵循的原则：先确定语义的HTML ，再选合适的CSS。
 
 # HTML标签                                                      
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 首先 HTML和CSS是两种完全不同的语言，我们学的是结构，就只写HTML标签，认识标签就可以了。 不会再给结构标签指定样式了。
 
 HTML标签有很多，这里我们学习 为常用的，后面有些较少用的，我们可以查下手册就可以了。
 
 ## 排版标签                                                                                     
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 排版标签主要和css搭配使用，显示网页结构的标签，是网页布局 常用的标签。
 
@@ -313,11 +313,11 @@ HTML标签有很多，这里我们学习 为常用的，后面有些较少用的
 
 、
 
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 、
 
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 、、和
 
@@ -329,9 +329,9 @@ HTML标签有很多，这里我们学习 为常用的，后面有些较少用的
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+2070cc2b16f703d0)<font style="color:#777777;"> </font><font style="color:#777777;">注意：</font><font style="color:#777777;"> h1 </font><font style="color:#777777;">标签因为重要，尽量少用，不要动不动就向你扔了一个</font><font style="color:#777777;">h1</font><font style="color:#777777;">。</font><font style="color:#777777;"> </font><font style="color:#777777;">一般</font><font style="color:#777777;">h1 </font><font style="color:#777777;">都是给</font><font style="color:#777777;">logo</font><font style="color:#777777;">使用。</font>
+![img_4624.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4624.png)<font style="color:#777777;"> </font><font style="color:#777777;">注意：</font><font style="color:#777777;"> h1 </font><font style="color:#777777;">标签因为重要，尽量少用，不要动不动就向你扔了一个</font><font style="color:#777777;">h1</font><font style="color:#777777;">。</font><font style="color:#777777;"> </font><font style="color:#777777;">一般</font><font style="color:#777777;">h1 </font><font style="color:#777777;">都是给</font><font style="color:#777777;">logo</font><font style="color:#777777;">使用。</font>
 
-![](https://via.placeholder.com/800x600?text=Image+76a770061765984f)
+![img_4704.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4704.jpeg)
 
 段落标签( 熟记) 单词缩写： paragraph 段落在网页中要把文字有条理地显示出来，离不开段落标签，就如同我们平常写文章一样，整个网页也可以分为若干个段落，而段落的标签就是
 
@@ -344,7 +344,7 @@ HTML标签有很多，这里我们学习 为常用的，后面有些较少用的
 
 在网页中常常看到一些水平线将段落与段落之间隔开，使得文档结构清晰，层次分明。这些水平线可以通过插入图片实现，也可以简单地通过标签来完成，
 
-![](https://via.placeholder.com/800x600?text=Image+ac89e7dcc91a1fc1)
+
 
 就是创建横跨网页水平线的标签。其基本语法格式如下：
 
@@ -354,7 +354,7 @@ HTML标签有很多，这里我们学习 为常用的，后面有些较少用的
 
 课堂练习2： 新闻页面
 
-![](https://via.placeholder.com/800x600?text=Image+339a5d244cce1704)
+
 
  
 
@@ -376,20 +376,20 @@ span, 跨度，跨距；范围语法格式：
  
 
 ## 文本格式化标签(熟记)                                                                  
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 在网页中，有时需要为文字设置粗体、斜体或下划线效果，这时就需要用到HTML中的文本格式化标签，使文字以特殊的方式显示。
 
-![](https://via.placeholder.com/800x600?text=Image+729688e382e37c54)
+![img_3328.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3328.png)
 
 b i s u 只有使用 没有 强调的意思 strong em del ins 语义更强烈
 
  
 
 ## 标签属性                                                                                     
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
 
-![](https://via.placeholder.com/800x600?text=Image+45e0bd5c47969769)
+
+
 
 属性就是特性 比如 手机的颜色 手机的尺寸 ，总结就是手机的。。
 
@@ -415,10 +415,10 @@ b i s u 只有使用 没有 强调的意思 strong em del ins 语义更强�
 
 提倡： 尽量不使用 样式属性。
 
-![](https://via.placeholder.com/800x600?text=Image+8778bc601dea3797)
+![img_1408.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1408.png)
 
 ## 图像标签img (重点)                                                                    
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 单词缩写： image 图像
 
@@ -428,10 +428,10 @@ HTML网页中任何元素的实现都要依靠HTML标签，要想在网页中显
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+529dd7187d3e214d)
+![img_4112.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4112.png)
 
 ## 链接标签(重点)                                                                            
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 单词缩写： anchor 的缩写 。基本解释 锚, 铁锚 的
 
@@ -460,17 +460,17 @@ target：用于指定链接页面的打开方式，其取值有self和blank两�
 ### base 标签                                                                                                           
 base 可以设置整体链接的打开状态 base 写到 之间
 
-![](https://via.placeholder.com/800x600?text=Image+342c8cee0ad3de28)
+![img_3712.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3712.png)
 
  
 
 ## 特殊字符标签 （理解）                                                                
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
 
-![](https://via.placeholder.com/800x600?text=Image+44ac24ae791193ae)
+
+
 
 ## 注释标签                                                                                     
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 在HTML中还有一种特殊的标签——注释标签。如果需要在HTML文档中添加一些便于阅读和理解但又不需要显示在页面中的注释文字，就需要使用注释标签。其基本语法格式如下： 
 
@@ -480,12 +480,12 @@ base 可以设置整体链接的打开状态 base 写到 之间
 
 注释重要性：
 
-![](https://via.placeholder.com/800x600?text=Image+990495cb71f98448)
+
 
 ## 路径(重点、难点)                                              
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
 
-![](https://via.placeholder.com/800x600?text=Image+079c854ffc9fb0ca)
+
+![img_2384.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2384.png)
 
 实际工作中，通常新建一个文件夹专门用于存放图像文件，这时再插入图像，就需要采用“路径”的方式来指定图像文件的位置。
 
@@ -494,7 +494,7 @@ base 可以设置整体链接的打开状态 base 写到 之间
  
 
 ### 相对路径                                                                                     
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 1.  图像文件和HTML文件位于同一文件夹：只需输入图像文件的名称即可，如<img undefined />。
 
@@ -503,7 +503,7 @@ base 可以设置整体链接的打开状态 base 写到 之间
 3.  图像文件位于HTML文件的上一级文件夹：在文件名之前加入“../” ，如果是上两级，则需要使用 “../ ../”，以此类推，如<img undefined />。
 
 ### 绝对路径                                                                                     
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 绝对路径
 
@@ -512,11 +512,11 @@ base 可以设置整体链接的打开状态 base 写到 之间
  
 
 ## 列表标签                                                          
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 什么是列表？
 
-![](https://via.placeholder.com/800x600?text=Image+e6a7a567e7626313)
+![img_3360.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3360.png)
 
 把…制成表,以表显示
 
@@ -525,7 +525,7 @@ base 可以设置整体链接的打开状态 base 写到 之间
 列表 大的特点就是 整齐 、整洁、 有序
 
 ### 无序列表 ul （重点）                                                                   
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 无序列表的各个列表项之间没有顺序级别之分，是并列的。其基本语法格式如下：
 
@@ -533,20 +533,20 @@ base 可以设置整体链接的打开状态 base 写到 之间
 
 比如下面这些，新闻是没有顺序的，不用排队，先到先得，后发布先显示。
 
-![](https://via.placeholder.com/800x600?text=Image+27b48dba40e5b435)
+
 
 脚下留心：
 
-1.  ![](https://via.placeholder.com/800x600?text=Image+a68b2934bdf49e95)<ul></ul>中只能嵌套<li></li>，直接在<ul></ul>标签中输入其他标签或者文字的做法是不被允许的。
+1.  ![img_2336.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2336.png)<ul></ul>中只能嵌套<li></li>，直接在<ul></ul>标签中输入其他标签或者文字的做法是不被允许的。
 
 2.  <li>与</li>之间相当于一个容器，可以容纳所有元素。
 
 3.  无序列表会带有自己样式属性，放下那个样式，一会让CSS来！
 
 ### 有序列表 ol （了解）                                                                  
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
 
-![](https://via.placeholder.com/800x600?text=Image+99caaa06b8234c28)
+
+![img_4400.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4400.png)
 
 有序列表即为有排列顺序的列表，其各个列表项按照一定的顺序排列定义，有序列表的基本语法格式如下：
 
@@ -556,57 +556,57 @@ base 可以设置整体链接的打开状态 base 写到 之间
 
 但是实际工作中， 较少用 ol ，因此我们用一句话来总结下 ol：
 
-![](https://via.placeholder.com/800x600?text=Image+b3121adea6e000c8)
+![img_2160.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2160.png)
 
  
 
 ### 自定义列表（理解）                                                                    
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 定义列表常用于对术语或名词进行解释和描述，定义列表的列表项前没有任何项目符号。其基本语法如下：
 
 
 
-![](https://via.placeholder.com/800x600?text=Image+7de847d8c213604f)
+![img_1888.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1888.png)
 
  
 
 用的还可以：
 
-![](https://via.placeholder.com/800x600?text=Image+499ecda060c8bd02)
+![img_2480.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2480.png)
 
 ## 总结                                                                
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 每一天都有一个主题 我们HTML第一天的主题就是 <认识标签> 学HTML 之前 觉得 很神秘
 
-![](https://via.placeholder.com/800x600?text=Image+e2a4b1dccca05943)
+![img_2944.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2944.png)
 
 等你学完之后忽然发现
 
-![](https://via.placeholder.com/800x600?text=Image+6d23c54c5a31c09d)
+![img_4208.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4208.png)
 
  
 
 总结今天的思路贯穿线：
 
-![](https://via.placeholder.com/800x600?text=Image+31907b7f86afff64)
+
 
 # 表格 table(会使用)                                            
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
  
 
 存在即是合理的。 表格的现在还是较为常用的一种标签，但不是用来布局，常见处理、显示表格式数据。
 
-![](https://via.placeholder.com/800x600?text=Image+776eccbd43e939d1)
+
 
 ps: 这些地方用表格，你会觉得生活还是那么美好。。。。忍不住想说 PPAP i hava a pen
 
  
 
 ## 创建表格                                                                                     
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 在HTML网页中，要想创建表格，就需要使用表格相关的标签。创建表格的基本语法格式如下：
 
@@ -628,25 +628,25 @@ ps: 这些地方用表格，你会觉得生活还是那么美好。。。。忍
 
 
 
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 表头一般位于表格的第一行或第一列，其文本��粗居中，如下图所示，即为设置了表头的表格。设置表头非常简单，只需用表头标签<th></th>替代相应的单元格标签<td></td>即可。
 
-![](https://via.placeholder.com/800x600?text=Image+c9ddb93e37d8f7ec)
+
 
 ## 表格结构（了解）                                                                        
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
 
 
 
- 
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+ff2b1f09e1aeb911)
+ 
+
+![img_2576.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2576.png)
 
 ## 表格标题                                                                                     
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 表格的标题： caption 定义和用法
 
@@ -657,7 +657,7 @@ caption 元素定义表格标题。
 caption 标签必须紧随 table 标签之后。您只能对每个表格定义一个标题。通常这个标题会被居中于表格之上。
 
 ## 合并单元格(难点)                                                                         
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 跨行合并：rowspan 跨列合并：colspan 合并单元格的思想：
 
@@ -666,7 +666,7 @@ caption 标签必须紧随 table 标签之后。您只能对每个表格定�
 公式： 删除的个数 = 合并的个数 - 1 合并的顺序 先上 先左
 
 ## 总结表格                                                                                     
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 1.  表格提供了HTML 中定义表格式数据的方法。
 
@@ -679,11 +679,11 @@ caption 标签必须紧随 table 标签之后。您只能对每个表格定�
 表格的学习要求： 能手写表格结构，并且能合并单元格。
 
 ## 表单标签(掌握)                                                 
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 现实中的表单，类似我们去银行办理信用卡填写的单子。 如下图
 
-![](https://via.placeholder.com/800x600?text=Image+bb577597fa265594)
+
 
 目的是为了收集用户信息。
 
@@ -691,7 +691,7 @@ caption 标签必须紧随 table 标签之后。您只能对每个表格定�
 
 在HTML中，一个完整的表单通常由表单控件（也称为表单元素）、提示信息和表单域3个部分构成。
 
-![](https://via.placeholder.com/800x600?text=Image+021bd6a61a15c015)
+![img_1840.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1840.png)
 
 表单控件：
 
@@ -706,14 +706,14 @@ caption 标签必须紧随 table 标签之后。您只能对每个表格定�
 他相当于一个容器，用来容纳所有的表单控件和提示信息，可以通过他定义处理表单数据所用程序的url地址，以及数据提交到服务器的方法。如果不定义表单域，表单中的数据就无法传送到后台服务器。
 
 ### input 控件(重点)                                                                         
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 在上面的语法中，<input />标签为单标签，type属性为其 基本的属性，其取值有多种，用于指定不同的控件类型。除了type属性之外，<input />标签还可以定义很多其他的属性，其常用属性如下表所示。
 
-![](https://via.placeholder.com/800x600?text=Image+7810acfef2759c49)
+
 
 ### label标签(理解)                                                                          
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 label 标签为 input 元素定义标注（标签）。
 
@@ -724,16 +724,16 @@ for 属性规定 label 与哪个表单元素绑定。
 
 
 ### textarea控件(文本域)                                                                  
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 如果需要输入大量的信息，就需要用到<textarea></textarea>标签。通过textarea控件可以轻松地创建多行文本输入框，其基本语法格式如下：
 
 
 
-![](https://via.placeholder.com/800x600?text=Image+89903991a8a26533)
+
 
 #### 下拉菜单                                                                                     
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 使用select控件定义下拉菜单的基本语法格式如下
 
@@ -746,7 +746,7 @@ for 属性规定 label 与哪个表单元素绑定。
 2.  在option 中定义selected =" selected "时，当前项即为默认选中项。
 
 #### 表单域                                                                                         
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 在HTML中，form标签被用于定义表单域，即创建一个表单，以实现用户信息的收集和传递，form中的所有内容都会被提交给服务器。创建表单的基本语法格式如下：
 
@@ -763,9 +763,9 @@ for 属性规定 label 与哪个表单元素绑定。
 注意： 每个表单都应该有自己表单域。
 
 ## HTML5新标签与特性                                        
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
 
-![](https://via.placeholder.com/800x600?text=Image+958b9f3932c2075a)
+
+![img_2736.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2736.png)
 
 ### 文档类型设定                                                                              
 
@@ -774,30 +774,30 @@ for 属性规定 label 与哪个表单元素绑定。
 
 
 ### 常用新标签                                                                                  
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
 
 
 
-![](https://via.placeholder.com/800x600?text=Image+0cf8d93579324988)     datalist 标签定义选项列表。请与 input 元素配合使用该元素
+
+![img_752.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_752.png)     datalist 标签定义选项列表。请与 input 元素配合使用该元素
 
 
 
 
 
 ### 新增的input type属性值：                                                         
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 | 类型**** | 使用示例**** | 含义**** |
 | --- | --- | --- |
-| email**** | ![](https://via.placeholder.com/800x600?text=Image+90fcd8bab459fef0) | 输入邮箱格式 |
-| tel**** | ![](https://via.placeholder.com/800x600?text=Image+90fcd8bab459fef0) | 输入手机号码格式 |
-| url**** | ![](https://via.placeholder.com/800x600?text=Image+90fcd8bab459fef0) | 输入url格式 |
-| number**** | ![](https://via.placeholder.com/800x600?text=Image+90fcd8bab459fef0) | 输入数字格式 |
-| search**** | ![](https://via.placeholder.com/800x600?text=Image+bdd2952c13647e32) | 搜索框（体现语义化） |
-| range**** | ![](https://via.placeholder.com/800x600?text=Image+66e4e1573f6c291c) | 自由拖动滑块 |
+| email**** | ![img_1888.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1888.png) | 输入邮箱格式 |
+| tel**** | ![img_1888.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1888.png) | 输入手机号码格式 |
+| url**** | ![img_1888.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1888.png) | 输入url格式 |
+| number**** | ![img_1888.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1888.png) | 输入数字格式 |
+| search**** | ![img_784.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_784.png) | 搜索框（体现语义化） |
+| range**** |  | 自由拖动滑块 |
 | time**** |   | 小时分钟 |
 | date**** |   | 年月日 |
-| datetime**** | ![](https://via.placeholder.com/800x600?text=Image+31681a8c221a837e) | 时间 |
+| datetime**** | ![img_3776.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3776.png) | 时间 |
 | month**** |   | 月年 |
 | week**** |   | 星期 年 |
 
@@ -805,22 +805,22 @@ for 属性规定 label 与哪个表单元素绑定。
 ##
 
 #### 常用新属性                                                                                  
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 | 属性**** | 用法**** | 含义**** |
 | --- | --- | --- |
 | placeholder**** |   | 占位符 当用户输入的时候 里面的文字消失 删除所有文字，自动返回 |
-| autofocus**** | ![](https://via.placeholder.com/800x600?text=Image+8a0c26c256e81938) | 规定当页面加载时 input 元素应该自动获得焦点 |
-| multiple**** | ![](https://via.placeholder.com/800x600?text=Image+3b2843fed98bb141)<font style="color:black;">选择文件 </font>未选择任何文件 | 多文件上传 |
-| autocomplete**** | ![](https://via.placeholder.com/800x600?text=Image+c732f7d2d8167c36) | 规定表单是否应该启用自动完成功能有2个值，一个是on 一个是off on 代表记录已经输入的值<br/>1.autocomplete 首先需要提交按钮 <br/>2.这个表单您必须给他名字 |
-| required**** | ![](https://via.placeholder.com/800x600?text=Image+90fcd8bab459fef0) | 必填项 内容不能为空 |
-| accesskey**** | ![](https://via.placeholder.com/800x600?text=Image+c732f7d2d8167c36) | 规定激活（使元素获得焦点）元素的快捷键 采用 alt + s的形式 |
+| autofocus**** |  | 规定当页面加载时 input 元素应该自动获得焦点 |
+| multiple**** | <font style="color:black;">选择文件 </font>未选择任何文件 | 多文件上传 |
+| autocomplete**** |  | 规定表单是否应该启用自动完成功能有2个值，一个是on 一个是off on 代表记录已经输入的值<br/>1.autocomplete 首先需要提交按钮 <br/>2.这个表单您必须给他名字 |
+| required**** | ![img_1888.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1888.png) | 必填项 内容不能为空 |
+| accesskey**** |  | 规定激活（使元素获得焦点）元素的快捷键 采用 alt + s的形式 |
 
 
  
 
 #### 综合案例                                                                                     
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 <form action="">
 
@@ -842,7 +842,7 @@ for 属性规定 label 与哪个表单元素绑定。
 
     <label for="collage">所属学院:</label>
 
-![](https://via.placeholder.com/800x600?text=Image+76e2850c5ce140cc)    <input type="text" name="collage" id="collage" list="cList" placeholder="请选择"><br>
+![img_2320.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2320.png)    <input type="text" name="collage" id="collage" list="cList" placeholder="请选择"><br>
 
     <datalist id="cList">
 
@@ -880,9 +880,9 @@ video：播放视频
 ##### 多媒体 embed（会使用）                                                                                  
 embed可以用来插入各种多媒体，格式可以是 Midi、Wav、AIFF、AU、MP3等等。url为音频或视频文件及其路径，可以是相对路径或绝对路径。因为兼容性问题，我们这里只讲解 插入网络视频， 后面H5会讲解 audio 和video 视频多媒体。
 
-![](https://via.placeholder.com/800x600?text=Image+3f4e27a60663c661)<embed undefined allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+<embed undefined allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 
-![](https://via.placeholder.com/800x600?text=Image+3bceb43b2d93cb48)
+![img_4240.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4240.png)
 
 优酷，土豆，爱奇艺，腾讯、乐视等等
 
@@ -895,7 +895,7 @@ HTML5通过
 
 使用相当简单，如下图所示
 
-![](https://via.placeholder.com/800x600?text=Image+d5e645f73fd42087)
+
 
 并且可以通过附加属性可以更友好控制音频的播放，如： autoplay 自动播放
 
@@ -905,11 +905,11 @@ loop 循环播放 loop = 2 就是循环2次 loop 或者 loop = "-1" 无�
 
 由于版权等原因，不同的浏览器可支持播放的格式是不一样的，如下图供参考
 
-![](https://via.placeholder.com/800x600?text=Image+aec52e44a5718620)
+
 
 多浏览器支持的方案，如下图
 
-![](https://via.placeholder.com/800x600?text=Image+377bb86db87836e4)
+
 
  
 
@@ -918,7 +918,7 @@ HTML5通过
 
 同音频播放一样，
 
-![](https://via.placeholder.com/800x600?text=Image+ff3faa55b00fd6af)
+
 
 同样，通过附加属性可以更友好的控制视频的播放 autoplay 自动播放
 
@@ -930,14 +930,14 @@ height 设置播放窗口的高度
 
 由于版权等原因，不同的浏览器可支持播放的格式是不一样的，如下图供参考
 
-![](https://via.placeholder.com/800x600?text=Image+4ba87d755021fb70)
+
 
 ���浏览器支持的方案，如下图****
 
-![](https://via.placeholder.com/800x600?text=Image+ddbc19cad8c0e015)
+![img_4288.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4288.png)
 
 ## 总结                                                                
-![](https://via.placeholder.com/800x600?text=Image+5460a1378817d722)
+
 
 HTML 第二天的主题：
 

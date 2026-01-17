@@ -53,7 +53,7 @@ WantedBy=multi-user.target
 5. 访问http://127.0.0.1:9115/probe?module=http_2xx&target=baidu.com对baidu.com进行探测。
 + 通过在URL中提供module参数指定了当前使用的探针，target参数指定探测目标，探针的探测结果通过Metrics的形式返回：
 
-![](https://via.placeholder.com/800x600?text=Image+51b4642035739582)
+
 
 ## 与Prometheus集成
 1. 修改/etc/prometheus/prometheus.yml，将Blackbox Exporter添加监控数据采集任务目标当中：
@@ -84,7 +84,7 @@ WantedBy=multi-user.target
 + 这里分别配置了名为baidu_http2x_probe和prometheus_http2xx_probe的采集任务，并且通过params指定使用的探针（module）以及探测目标（target）。
 2. 假如有N个目标站点且都需要M种探测方式，那么Prometheus中将包含N * M个采集任务，这里采用Relabling的方式对这些配置进行简化，配置方式如下
 
-![](https://via.placeholder.com/800x600?text=Image+3dd48bf14dab5c34)
+
 
 3. 这里针对每一个探针服务（如http_2xx）定义一个采集任务，并且直接将任务的采集目标定义为我们需要探测的站点。在采集样本数据之前通过relabel_configs对采集任务进行动态设置。
 + 第1步，根据Target实例的地址，写入__param_target标签中。__param_<name>形式的标签表示，在采集任务时会在请求目标地址中添加<name>参数，等同于params的设置；
@@ -93,10 +93,10 @@ WantedBy=multi-user.target
 4. 重新启动Prometheus服务:
 5. 在Prometheus UI中查看到当前所有的Target状态：
 
-## ![](https://via.placeholder.com/800x600?text=Image+52adfc000790931a)grfana查看数据
+## grfana查看数据
 导入仪表盘（id9965）
 
-![](https://via.placeholder.com/800x600?text=Image+4b6d41c1ab6a6730)
+
 
 # 完整配置示例
 ```bash

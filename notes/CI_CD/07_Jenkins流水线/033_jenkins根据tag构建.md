@@ -2,16 +2,16 @@
 # 发布与回滚思路
 正常功能发布时，是基于master分支发布的，所以我在成功发布后，会将当时的master分支自动打上tag，当需要回滚时，则基于tag分支进行发布即可。
 
-![](https://via.placeholder.com/800x600?text=Image+88545caa2a6e2237)
+![img_336.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_336.png)
 
 # 安装配置Git Parameter
 ## 安装插件
-要想出现tag模式的参数，需要[安装git](https://so.csdn.net/so/search?q=%E5%AE%89%E8%A3%85git&spm=1001.2101.3001.7020) Parameter 插件，在Jenkins的Manage Jenkins→Plugins→Available Plugins 中安装![](https://via.placeholder.com/800x600?text=Image+11c8c1500574414f)
+要想出现tag模式的参数，需要[安装git](https://so.csdn.net/so/search?q=%E5%AE%89%E8%A3%85git&spm=1001.2101.3001.7020) Parameter 插件，在Jenkins的Manage Jenkins→Plugins→Available Plugins 中安装
 
 ## 验证
 安装完成后在项目的配置页的This project is parameterized 中可以看到选项
 
-![](https://via.placeholder.com/800x600?text=Image+647245e2f9fc070a)
+
 
 ## 仓库添加tag
 初始化仓库，添加tag并提交
@@ -57,21 +57,21 @@ To http://192.168.10.72/develop/sprint-boot-demo.git
 
 查看gitlab tag信息，发现已经有v1.0，2.0tag
 
-![](https://via.placeholder.com/800x600?text=Image+ade9b41883bf8cf7)
+![img_96.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_96.png)
 
 # 使用tag变量发布
 ## 发布最新版本
 生成pipeline，指定分支为${tag}
 
-![](https://via.placeholder.com/800x600?text=Image+ab32e92793e1cec7)
+
 
 发布验证
 
-![](https://via.placeholder.com/800x600?text=Image+2efe713fa39c8d54)
+
 
 ## 手动发布指定版本
 点击立即构建，在版本标签列表中可以查看到所有tag
 
-![](https://via.placeholder.com/800x600?text=Image+2c59ebfbdb5f4d44)
+![img_2416.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2416.png)
 
 

@@ -5,7 +5,7 @@
 
 安装文档：[https://docs.sonarqube.org/9.9/requirements/prerequisites-and-overview/](https://docs.sonarqube.org/9.9/requirements/prerequisites-and-overview/)
 
-![](https://via.placeholder.com/800x600?text=Image+5b2d88c6bcc0b4d6)
+
 
 ## 软件版本
 从官方文档可知，<font style="color:rgba(0, 0, 0, 0.8);">SonarQube9.9.1支持的java版本为Oracle JRE17或OpenJDK17，数据库版本为PostgreSQL11-15，Microsoft SQL Server的MSSQL Server 12.0-16.0或者Oracle19c和21C</font>

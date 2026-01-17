@@ -1,10 +1,10 @@
 # Gitlab与SonarQube集成
 # SonarQube相关配置
 ## 禁用审查结果上传到SCM功能
-![](https://via.placeholder.com/800x600?text=Image+133e4237712ed21d)
+
 
 ## SonarQube生成token
-![](https://via.placeholder.com/800x600?text=Image+96af09da891b07cb)
+
 
 # runner配置
 ## 安装sonar-scanner
@@ -50,7 +50,7 @@ sonar.java.binaries=target/classes
 ```
 
 ## 新增token变量
-![](https://via.placeholder.com/800x600?text=Image+6c81e460418165a3)
+![img_3840.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3840.png)
 
 ## 创建流水线文件
 ```bash
@@ -86,6 +86,6 @@ code_scan:
 ```
 
 ## 查看SonarQube扫描结果
-![](https://via.placeholder.com/800x600?text=Image+6a61b9a813131707)
+
 
 

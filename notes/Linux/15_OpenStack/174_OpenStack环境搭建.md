@@ -29,7 +29,7 @@
 1. 控制节点（controller）服务器
 + ip配置
 
-![](https://via.placeholder.com/800x600?text=Image+ce3cd241fb56c950)
+
 
 + 主机名设置
 
@@ -48,7 +48,7 @@ controller ~# vim /etc/hosts
 1. 计算节点（compute）服务器
 + ip配置
 
-![](https://via.placeholder.com/800x600?text=Image+0ad979b4828def27)
+
 
 + 主机名设置
 
@@ -67,19 +67,19 @@ compute ~# vim /etc/hosts
 1. 验证连通性
 + controller联通外网
 
-![](https://via.placeholder.com/800x600?text=Image+f27c2ebc146d4a70)
+
 
 + controller联通compute
 
-![](https://via.placeholder.com/800x600?text=Image+f3a3d5c64c347ed3)
+
 
 + compute联通外网
 
-![](https://via.placeholder.com/800x600?text=Image+4132ab653a8b865e)
+
 
 + compute联通controller
 
-![](https://via.placeholder.com/800x600?text=Image+f6d04dfad81f922a)
+
 
 # 三、时间同步
 1. 控制节点服务器（controller）
@@ -91,11 +91,11 @@ controller ~# yum -y install chrony
 
 controller ~# vim /etc/chrony.conf
 
-![](https://via.placeholder.com/800x600?text=Image+88b8d142ed2a9984)
+
 
 控制节点服务器，阿里ntp服务器ip
 
-![](https://via.placeholder.com/800x600?text=Image+54e6704257c9b2f4)
+
 
 内网ip网段
 
@@ -112,7 +112,7 @@ controller ~# systemctl start chronyd.service
 
 + 编辑/etc/chrony.conf文件
 
-![](https://via.placeholder.com/800x600?text=Image+63ce27998f9c0130)
+
 
 注释其他ntf服务器，设置controller的ip地址
 
@@ -125,11 +125,11 @@ controller ~# systemctl start chronyd.service
 1. 验证操作
 + 控制节点服务器执行命令，将网络时间同步至本地
 
-![](https://via.placeholder.com/800x600?text=Image+30bac024ba6d9d18)
+![img_4640.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4640.png)
 
 + 其他节点执行命令，同步控制节点服务器时间
 
-![](https://via.placeholder.com/800x600?text=Image+ea76a8622a772393)
+
 
 # 四、OpenStack包安装
 1. 修改repo源
@@ -138,7 +138,7 @@ controller ~# systemctl start chronyd.service
 
 + 修改镜像站点为阿里云站点
 
-![](https://via.placeholder.com/800x600?text=Image+97afde8d558f072d)
+
 
 + 加载源
 
@@ -148,7 +148,7 @@ controller ~# yum makecache
 
 controller ~# yum repolist
 
-![](https://via.placeholder.com/800x600?text=Image+e5ec25b435554ac1)
+![img_4592.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4592.png)
 
 1. 升级软件包并重启
 

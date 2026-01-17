@@ -97,7 +97,7 @@ Hello MyApp | Version: v2 | <a href="hostname.html">Pod Name</a>
 ### 路由功能
 <font style="color:rgb(48, 49, 51);">参考文档：</font>[https://doc.traefik.io/traefik/routing/overview/](https://doc.traefik.io/traefik/routing/overview/)
 
-![](https://via.placeholder.com/800x600?text=Image+ad9f77194c1bf66d)
+
 
 <font style="color:rgb(48, 49, 51);">当启动Traefik时，需要定义</font><font style="color:rgb(48, 49, 51);">entrypoints</font><font style="color:rgb(48, 49, 51);">，然后通过entrypoints的路由来分析传入的请求，来查看他们是否是一组规则匹配，如果匹配，则路由可能将请求通过一系列的转换过来在发送到服务上去。</font>
 
@@ -150,7 +150,7 @@ myapp1      20s
 
 客户端添加hosts记录`192.168.93.128 myapp1.test.com`，然后访问验证
 
-![](https://via.placeholder.com/800x600?text=Image+5096b7962c92f8af)
+
 
 ### HTTPS域名路由(自有证书)
 公网服务的话，可以在云厂商那里购买证书。内部服务的话，就直接用 openssl 来创建一个自签名的证书即可，要注意证书文件名称必须是 tls.crt 和 tls.key。接下来演示自签证书的配置。
@@ -218,7 +218,7 @@ myapp2      2m55s
 
 客户端添加hosts记录`192.168.93.128 myapp2.test.com`，然后访问验证，<font style="color:rgb(53, 53, 53);">由于我们是自签名的证书，所以证书是不受信任的。</font>
 
-![](https://via.placeholder.com/800x600?text=Image+3b844b142e490d86)
+![img_3584.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3584.png)
 
 ### HTTPS域名路由(自动生成证书)
 > 参考文档：[https://doc.traefik.io/traefik-enterprise/tls/acme/](https://doc.traefik.io/traefik-enterprise/tls/acme/)
@@ -749,7 +749,7 @@ spec:
 
 查看traefik的dashboard页面是否生效
 
-![](https://via.placeholder.com/800x600?text=Image+015d6623ca3fc48b)
+![img_4176.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4176.png)
 
 集群外部客户端配置hosts解析`192.168.93.128 redis.test.com`（域名可以随意填写，只要能解析到traefik所在节点即可），然后通过redis-cli工具访问redis，记得指定tcpep的端口。
 
@@ -927,7 +927,7 @@ spec:
 
 traefik管理页查看
 
-![](https://via.placeholder.com/800x600?text=Image+9c36648959db1fb3)
+![img_3392.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3392.png)
 
 yum安装的redis-cli版本为5.0.3，不支持tls，需要编译安装6.0以上版本，并在编译时开启TLS
 
@@ -1066,7 +1066,7 @@ ingressrouteudp.traefik.containo.us/rsyslog created
 
 查看dashboard的udp信息
 
-![](https://via.placeholder.com/800x600?text=Image+fad5fdd61fa72e1c)
+![img_2896.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2896.png)
 
 集群外部访问udp服务，<font style="color:rgb(53, 53, 53);">通过 Traefik 所在节点的公网 IP（</font>192.168.93.128<font style="color:rgb(53, 53, 53);">）与 </font>entryPoints<font style="color:rgb(53, 53, 53);">端口（</font>9300<font style="color:rgb(53, 53, 53);">）来访问 UDP 应用进行测试</font>
 
@@ -1133,7 +1133,7 @@ ingressroute.traefik.containo.us/myapp created
 
 查看dashboard页面路由信息，发现已成功配置代理两个service服务，且权重均为1
 
-![](https://via.placeholder.com/800x600?text=Image+8db28c77d5000289)
+
 
 解析来访问测试，发现依次循环响应myapp1和myapp2的内容
 

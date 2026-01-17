@@ -12,7 +12,7 @@
 4. 接收人（receivers）：接收人是一个抽象的概念，它可以是一个邮箱也可以是微信，Slack或者Webhook等，接收人一般配合告警路由使用；
 5. 抑制规则（inhibit_rules）：合理设置抑制规则可以减少垃圾告警的产生
 
-![](https://via.placeholder.com/800x600?text=Image+fea66a7033e0d007)
+
 
  
 

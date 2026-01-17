@@ -16,7 +16,7 @@
 
 
 ## EDOT On K8S 架构
-![](https://via.placeholder.com/800x600?text=Image+2db450307ecb529c)
+![img_1504.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1504.png)
 
 在 Kubernetes 环境中，EDOT 的部署架构主要包括以下组件：
 
@@ -57,11 +57,11 @@ Elastic Stack在可观测性方面，社区版**和**白金版之间存在明显
 ## 生成安装 EDOT 指令
 在 observability 菜单——>主机——>添加数据
 
-![](https://via.placeholder.com/800x600?text=Image+52f63c0d32ecb89c)
+
 
 选择 OpenTelemetry 方式采集数据，系统会为我们自动创建 api key 并生成安装命令。
 
-![](https://via.placeholder.com/800x600?text=Image+0964e2eb3fec131b)
+
 
 ## 安装 EDOT
 1. [<font style="color:rgb(0, 0, 0);">将 OpenTelemetry 存储库添加到 Helm</font>](https://www.elastic.co/docs/reference/opentelemetry/quickstart/self-managed/k8s#add-the-opentelemetry-repository-to-helm)<font style="color:rgb(0, 0, 0);">仓库</font>
@@ -173,23 +173,23 @@ namespace/default annotated
 ## <font style="color:rgb(52, 55, 65);">查看数据</font>
 查看 k8s 集群与节点信息
 
-![](https://via.placeholder.com/800x600?text=Image+0b5cbc611839e779)
+
 
 查看应用 trace 信息
 
-![](https://via.placeholder.com/800x600?text=Image+828b11791998817a)
+![img_2512.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2512.png)
 
 查看 trace 详情
 
-![](https://via.placeholder.com/800x600?text=Image+6bdbb5f824d84263)
+![img_2640.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2640.png)
 
 查看 Metrics 信息
 
-![](https://via.placeholder.com/800x600?text=Image+66cbf9b607f5d4b6)
+
 
 查看日志信息
 
-![](https://via.placeholder.com/800x600?text=Image+6369bc092649fe67)
+
 
 # 总结
 Elastic Distributions of OpenTelemetry 是 Elastic 官方基于 OpenTelemetry 的集成方案，允许用户使用标准化的 OpenTelemetry 协议采集应用性能数据（Trace、Metrics、Logs），并将数据发送到 Elastic Stack 中进行统一的可观测性分析。

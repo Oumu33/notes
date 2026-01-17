@@ -7,7 +7,7 @@
 
 在仓库新增一个ci/localci.yml: 定义一个作业用于发布。
 
-![](https://via.placeholder.com/800x600?text=Image+507f4a465d131464)
+
 
 yml文件内容如下：
 
@@ -39,12 +39,12 @@ buildjob:
 
 流水线执行效果如下：
 
-![](https://via.placeholder.com/800x600?text=Image+d9d644320d7e3e2c)
+![img_3792.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3792.png)
 
 ## file
 另一个项目创建.gitlab-ci.yml文件。
 
-![](https://via.placeholder.com/800x600?text=Image+97fcf2856fe934f5)
+![img_1008.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1008.jpeg)
 
 文件内容如下：
 
@@ -78,7 +78,7 @@ buildjob:
 
 流水线执行效果如下：
 
-![](https://via.placeholder.com/800x600?text=Image+9aa90d501d162da2)
+![img_1120.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1120.png)
 
 ## template
 只能使用官方提供的模板 [https://gitlab.com/gitlab-org/gitlab/tree/master/lib/gitlab/ci/templates](https://gitlab.com/gitlab-org/gitlab/tree/master/lib/gitlab/ci/templates)
@@ -116,7 +116,7 @@ testjob:
 
 执行效果
 
-![](https://via.placeholder.com/800x600?text=Image+fcd529a9073636d4)
+
 
 继承后的流水线内容如下：
 

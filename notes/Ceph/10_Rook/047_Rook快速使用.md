@@ -193,7 +193,7 @@ spec:
 
 添加域名后访问测试
 
-![](https://via.placeholder.com/800x600?text=Image+c11a4ea1c88d427c)
+![img_48.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_48.png)
 
 获取admin用户默认密码
 

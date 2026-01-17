@@ -400,22 +400,22 @@ INFO
 ## 通过数据卷使用整个ConfigMap
 创建pod资源，将configmap挂载到/etc/config
 
-![](https://via.placeholder.com/800x600?text=Image+b6a58f3f80a128b4)
+
 
 进入pod容器查看文件内容
 
-![](https://via.placeholder.com/800x600?text=Image+313e65bef4eefdcb)
+![img_4448.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4448.png)
 
 ## 通过数据卷使用部分ConfigMap值
 
 
 创建pod资源，将configmap挂载到/etc/config
 
-![](https://via.placeholder.com/800x600?text=Image+6296ce4cba68748a)
+![img_96.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_96.png)
 
 进入pod查看文件内容
 
-![](https://via.placeholder.com/800x600?text=Image+c1e717d3612fb2f1)
+
 
 ## configmap权限问题
 k8s中configmap挂载文件的权限默认是420。这是十进制表示，转换成八进制就是644,如果容器中使用非root用户，此时文件没有可执行权限，需要修改文件权限。修改文件权限的方法如下：  
@@ -530,20 +530,20 @@ spec:
 # configmap热更新
 创建资源清单，变量log_level: INFO，数据卷挂载到deployment中
 
-![](https://via.placeholder.com/800x600?text=Image+46dced99afdfec4b)
+
 
 进入pod容器查看文件内容
 
-![](https://via.placeholder.com/800x600?text=Image+5591fc0c01e4d0e4)
+
 
 修改configmap  
 `# kubectl edit configmap log-config` 
 
-![](https://via.placeholder.com/800x600?text=Image+19be2cc80576ae27)
+
 
 进入pod查看文件内容
 
-![](https://via.placeholder.com/800x600?text=Image+d195b537bd94a4ab)
+![img_1264.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1264.png)
 
 # 注意事项
 1. ConfigMap是名称空间级的资源，因此，引用它的Pod必须处于同一名称空间中。

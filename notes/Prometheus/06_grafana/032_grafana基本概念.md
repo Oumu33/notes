@@ -4,7 +4,7 @@
 2. 对于Grafana管理员而言，只需要将这些对象以数据源的形式添加到Grafana中，Grafana便可以轻松的实现对这些数据的可视化工作。
 
 # 二、仪表盘（Dashboard）
-![](https://via.placeholder.com/800x600?text=Image+a5638c4fe9ea6490)
+![img_2784.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2784.png)
 
 1. DashBoard：仪表盘，就像汽车仪表盘一样可以展示很多信息，包括车速，水箱温度等。Grafana的DashBoard就是以各种图形的方式来展示从Datasource拿到的数据。
 2. Row：行，DashBoard的基本组成单元，一个DashBoard可以包含很多个row。一个row可以展示一种信息或者多种信息的组合，比如系统内存使用率，CPU五分钟及十分钟平均负载等。所以在一个DashBoard上可以集中展示很多内容。

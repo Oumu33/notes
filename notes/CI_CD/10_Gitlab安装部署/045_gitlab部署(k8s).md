@@ -193,7 +193,7 @@ service/gitlab-svc       ClusterIP   10.108.64.185    <none>        80/TCP,443/T
 ## 访问验证
 客户端新增hots记录`192.168.10.10 gitlab.cuiliangblog.cn`
 
-![](https://via.placeholder.com/800x600?text=Image+2d2686f47930524c)
+![img_4112.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4112.png)
 
 ## 添加集群 hosts 记录
 为了方便后续 gitlab runner、Jenkins、argocd 服务通过域名访问 gitlab 服务，可以将 hosts 记录添加到 coredns 中，具体可参考文档：[https://www.cuiliangblog.cn/detail/section/140980525](https://www.cuiliangblog.cn/detail/section/140980525)

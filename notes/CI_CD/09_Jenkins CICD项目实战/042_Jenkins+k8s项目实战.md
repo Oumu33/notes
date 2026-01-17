@@ -8,7 +8,7 @@
 ## 动态slave工作流程
 正因为上面的这些种种痛点，我们渴望一种更高效更可靠的方式来完成这个 CI/CD 流程，而 Docker虚拟化容器技术能很好的解决这个痛点，又特别是在 Kubernetes 集群环境下面能够更好来解决上面的问题，下图是基于 Kubernetes 搭建 Jenkins 集群的简单示意图：
 
-![](https://via.placeholder.com/800x600?text=Image+5429ff31be143df4)
+![img_1024.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1024.png)
 
 从图上可以看到 Jenkins Master 和 Jenkins Slave 以 Pod 形式运行在 Kubernetes 集群的 Node 上，Master 运行在其中一个节点，并且将其配置数据存储到一个 Volume 上去，Slave 运行在各个节点上，并且它不是一直处于运行状态，它会按照需求动态的创建并自动删除。 
 
@@ -45,17 +45,17 @@
 Harbor的项目分为公开和私有的:  
 公开项目:所有用户都可以访问，通常存放公共的镜像，默认有一个library公开项目。  
 私有项目:只有授权用户才可以访问，通常存放项目本身的镜像。 我们可以为微服务项目创建一个新的项目  
-![](https://via.placeholder.com/800x600?text=Image+00ba62ec7072ddb8)
+![img_1976.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1976.png)
 
 **创建用户**
 
 创建一个普通用户cuiliang。  
-![](https://via.placeholder.com/800x600?text=Image+fb12ba7889d7f644)
+
 
 **配置项目用户权限**
 
 在spring_boot_demo项目中添加普通用户cuiliang，并设置角色为开发者。  
-![](https://via.placeholder.com/800x600?text=Image+15a44bb58837c800)  
+  
 权限说明
 
 | 角色 | 权限 |
@@ -77,26 +77,26 @@ Harbor的项目分为公开和私有的:
 **创建组**
 
 管理员用户登录，创建群组，组名称为develop，组权限为私有  
-![](https://via.placeholder.com/800x600?text=Image+fb6cbf01f4ff4642)
+
 
 **创建项目**
 
 创建sprint boot demo项目，并指定develop，项目类型为私有  
-![](https://via.placeholder.com/800x600?text=Image+2730069e1e146e2b)
+
 
 **创建用户**
 
 创建一个普通用户cuiliang  
-![](https://via.placeholder.com/800x600?text=Image+f1c5aaa81d9fb2c5)
+![img_4000.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4000.jpeg)
 
 **用户添加到组中**
 
 将cuiliang添加到群组develop中，cuiliang角色为Developer  
-![](https://via.placeholder.com/800x600?text=Image+b84109189a938005)
+
 
 **配置分支权限**
 
-![](https://via.placeholder.com/800x600?text=Image+a69d53d78287485b)
+
 
 **用户权限验证**
 
@@ -142,7 +142,7 @@ To http://gitlab.local.com/develop/sprint-boot-demo.git
 
 查看验证
 
-![](https://via.placeholder.com/800x600?text=Image+e0161868943bc40d)
+![img_3296.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3296.png)
 
 # jenkins配置
 ## 插件安装与配置
@@ -239,11 +239,11 @@ harbor.local.com/cicd/jenkins-slave    v1.0       1d5c5b1572bc    6 minutes ago 
 ## job任务创建与配置
 配置webhook构建触发器，当分支代码提交时触发构建，具体配置如下：
 
-![](https://via.placeholder.com/800x600?text=Image+297d2b971d30385b)
+![img_2768.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2768.png)
 
 流水线选择SCM从代码仓库中获取jenkinsfile，脚本路径填写Jenkinsfile-k8s.groov
 
-![](https://via.placeholder.com/800x600?text=Image+aa195892c6a3d02b)
+
 
 # 效果演示
 ## 开发测试阶段
@@ -312,15 +312,15 @@ springbootdemo-275-rf832-h6jkq-630x8   3/3     Running   0               65s
 
 查看jenkins任务信息，已顺利完成了集成部署工作。
 
-![](https://via.placeholder.com/800x600?text=Image+008e24cccce73c3f)
+
 
 并且收到了jenkins自动发出的邮件，内容如下：
 
-![](https://via.placeholder.com/800x600?text=Image+5a734a82011c16a7)
+![img_1952.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1952.png)
 
 查看SonarQube代码扫描信息，未发现异常代码。
 
-![](https://via.placeholder.com/800x600?text=Image+f481037e0f4fc166)
+
 
 查看k8s，已成功创建相关资源。
 
@@ -341,7 +341,7 @@ replicaset.apps/demo-5d44f794d9   1         1         1       7m38s
 
 此时模拟测试人员，访问测试环境域名
 
-![](https://via.placeholder.com/800x600?text=Image+01357a8731db5e07)
+
 
 至此，开发测试阶段演示完成。
 
@@ -412,11 +412,11 @@ replicaset.apps/demo-7c57975bd8   1         1         1       41s
 
 此时访问生产环境域名，服务可以正常访问。
 
-![](https://via.placeholder.com/800x600?text=Image+fd88aec5c1874e61)
+
 
 此时查看Harbor仓库镜像信息，其中p开头的为生产环境镜像，t开头的为测试环境镜像。
 
-![](https://via.placeholder.com/800x600?text=Image+19f061ab4a59a06c)
+
 
 ## jenkinsfile
 完整的jenkinsfile如下所示，由于每个项目使用的开发语言和版本各不相同，因此建议将jenkinsfile存储在代码仓库随项目一同管理，使用yaml格式可以最大程度的定制slave容器。

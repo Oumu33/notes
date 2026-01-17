@@ -27,11 +27,11 @@
 
 2. 下面是一个定义在资源清单文件中的CronJob资源对象示例，它每隔2分钟运行一次由jobTemplate定义的简单任务：
 
-![](https://via.placeholder.com/800x600?text=Image+8b5ef3ced6e76c1c)
+
 
 3. 查看资源信息，命令结果中的SCHEDULE是指其调度时间点，SUSPEND表示后续任务是否处于挂起状态，即暂停任务的调度和运行，ACTIVE表示活动状态的Job对象的数量，而LAST SCHEDULE则表示上次调度运行至此刻的时长：
 
-![](https://via.placeholder.com/800x600?text=Image+b2170dcda5bfbdd4)
+![img_1632.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1632.png)
 
 
 
@@ -41,7 +41,7 @@
 1. CronJob控制器是一个更高级别的资源，它以Job控制器资源为其管控对象，并借助它管理Pod资源对象。
 2. 使用类似如下命令来查看某CronJob控制器创建的Job资源对象，其中的标签“mycronjob-jobs”是在创建cronjob-example时为其指定。不过，只有相关的Job对象被调度执行时，此命令才能将其正常列出。可列出的Job对象的数量取决于CronJob资源的．spec.successfulJobsHistoryLimit的属性值，默认为3。
 
-![](https://via.placeholder.com/800x600?text=Image+cc84665434de0df1)
+
 
 3. 如果作业重复执行时指定的时间点较近，而作业执行时长（普遍或偶尔）跨过了其两次执行的时间长度，则会出现两个Job对象同时存在的情形。有些Job对象可能会存在无法或不能同时运行的情况，这个时候就要通过．spec.concurrencyPolicy属性控制作业并存的机制，其默认值为“Allow”，即允许前后Job，甚至属于同一个CronJob的更多Job同时运行。
 4. 其他两个可用值中，“Forbid”用于禁止前后两个Job同时运行，如果前一个尚未结束，后一个则不予启动（跳过），“Replace”用于让后一个Job取代前一个，即终止前一个并启动后一个。

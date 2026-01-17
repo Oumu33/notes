@@ -189,17 +189,17 @@ spec:
 
 添加域名解析后访问验证
 
-![](https://via.placeholder.com/800x600?text=Image+276ec6a80244835c)
+![img_1712.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1712.png)
 
 # Mysql集群备份
 ## 创建备份密钥Secret
 创建<font style="color:rgb(48, 49, 51);">一个名为mysql-backup的bucket，并设置容量上限为1TB</font>
 
-![](https://via.placeholder.com/800x600?text=Image+9540336106d3fe31)
+
 
 创建ak sk并配置权限
 
-![](https://via.placeholder.com/800x600?text=Image+acc05ffff95d21cb)
+
 
 创建secret资源
 
@@ -306,7 +306,7 @@ Events:
 
 查看minio备份信息
 
-![](https://via.placeholder.com/800x600?text=Image+480367d4ad65a8e3)
+![img_1552.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1552.png)
 
 ## 定时备份
 修改mysql配置，新增定时备份配置
@@ -349,7 +349,7 @@ mysql-cluster-auto-2024-10-14t09-00-00   40m
 
 查看minio备份文件
 
-![](https://via.placeholder.com/800x600?text=Image+4d41451d4bbd73f0)
+
 
 # Mysql集群恢复
 ## 基于备份文件创建恢复集群
@@ -507,6 +507,6 @@ spec:
 ```
 
 ## 访问验证
-![](https://via.placeholder.com/800x600?text=Image+0dcba50c48399742)
+![img_816.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_816.jpeg)
 
 

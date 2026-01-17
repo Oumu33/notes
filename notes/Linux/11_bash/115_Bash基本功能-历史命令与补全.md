@@ -2,7 +2,7 @@
 # 1、历史命令
 1. [root@localhost ~]#      history [选项] [历史命令保存文件]
 
-![](https://via.placeholder.com/800x600?text=Image+4dbd6b001669554b)
+
 
 1. 选项：
 
@@ -12,7 +12,7 @@
 
 
 + 历史命令默认会保存1000条,可以在环境变量配置文件/etc/profile中进行修改
-+ ![](https://via.placeholder.com/800x600?text=Image+d7ec1bfbf6587ed4)
++ 
 
 # 二、历史命令的调用
 1. 使用上、下箭头调用以前的历史命令

@@ -13,7 +13,7 @@ artifacts:
     - target/
 ```
 
-![](https://via.placeholder.com/800x600?text=Image+37c094be20f65689)
+![img_4304.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4304.png)
 
 禁用工件传递
 
@@ -125,7 +125,7 @@ job:
 # dependencies
 定义要获取制品的作业列表，只能从当前阶段之前执行的阶段定义作业。定义一个空数组将跳过下载该作业的任何工件不会考虑先前作业的状态，因此，如果它失败或是未运行的手动作业，则不会发生错误。
 
-![](https://via.placeholder.com/800x600?text=Image+939c4e0f7480869f)
+
 
 如果设置为依赖项的作业的工件已过期或删除，那么依赖项作业将失败。
 
@@ -148,14 +148,14 @@ build: # 定义job
 ```
 
 查看build阶段日志，打包完成后上传制品  
-![](https://via.placeholder.com/800x600?text=Image+401bb30ef16ec34a)
+
 
 查看test阶段日志，下载了build阶段的制品并使用。
 
-![](https://via.placeholder.com/800x600?text=Image+086238da56ff2523)
+
 
 查看制品库信息
 
-![](https://via.placeholder.com/800x600?text=Image+3dc6251573113c31)
+![img_4224.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4224.png)
 
 

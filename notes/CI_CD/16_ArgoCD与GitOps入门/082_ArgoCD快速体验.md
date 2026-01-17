@@ -55,30 +55,30 @@ spec:
 
 gitlab仓库内容如下：
 
-![](https://via.placeholder.com/800x600?text=Image+e6d2ddcb94eee11e)
+
 
 # argocd配置
 ## 添加仓库地址
 <font style="color:rgb(18, 18, 18);">添加仓库地址，Settings → Repositories，点击 </font><font style="color:rgb(18, 18, 18);background-color:rgb(246, 246, 246);">CONNECT REPO</font><font style="color:rgb(18, 18, 18);"> 按钮添加仓库，填写以下信息</font>
 
-![](https://via.placeholder.com/800x600?text=Image+2103ff9dc9f9a234)
+![img_2560.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2560.png)
 
 如果集群连接失败，检查argocd-repo-server 日志，是否可以正常访问 git 仓库，账号密码是否正确，是否有权限访问仓库。
 
 验证通过后显示如下，点击创建应用。
 
-![](https://via.placeholder.com/800x600?text=Image+1415967e0391441f)
+
 
 ## 创建应用
 填写以下内容
 
-![](https://via.placeholder.com/800x600?text=Image+ba3bd8dd3c789af7)
+![img_3024.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3024.png)
 
-![](https://via.placeholder.com/800x600?text=Image+e35c79d843d2874d)
+
 
 创建完后如下所示：
 
-![](https://via.placeholder.com/800x600?text=Image+1592f9f5b52e9143)
+![img_4048.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4048.jpeg)
 
 # 访问验证
 ## 验证应用部署状态
@@ -98,33 +98,33 @@ myapp    78s
 
 访问web页面验证
 
-![](https://via.placeholder.com/800x600?text=Image+61ae3da4c45a147c)
+![img_2512.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2512.png)
 
 ## 版本更新
 接下来模拟配置变更，将镜像版本从v1改为v2
 
-![](https://via.placeholder.com/800x600?text=Image+ea61662df509a5c5)
+![img_2880.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2880.png)
 
 Argo CD默认每180秒同步一次，查看argocd信息，发现已经自动同步了yaml文件，并且正在进行发布
 
-![](https://via.placeholder.com/800x600?text=Image+f7e62874f652860f)
+![img_2352.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2352.png)
 
 访问web页面状态，发现已经完成了发布工作。
 
-![](https://via.placeholder.com/800x600?text=Image+0aec77624ef25fec)
+![img_1664.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1664.png)
 
 此时整个应用关联关系如下
 
-![](https://via.placeholder.com/800x600?text=Image+1fce78dccde51e89)
+![img_4352.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4352.png)
 
 ## 版本回退
 点击history and rollback即可看到整个应用的所有发布记录，并且可以选择指定版本进行回退操作。
 
-![](https://via.placeholder.com/800x600?text=Image+3556b35a2e00426b)
+![img_4400.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4400.png)
 
 再次访问发现已经回退到v1版本
 
-![](https://via.placeholder.com/800x600?text=Image+14e7a3f2f73c014b)
+
 
 # 
 

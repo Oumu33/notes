@@ -158,7 +158,7 @@ spec:
 ## 查看验证
 此时查看ArgoCD dashboard，已经创建了一个父app和两个子app。
 
-![](https://via.placeholder.com/800x600?text=Image+f2cae714ee90f772)
+![img_3280.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3280.png)
 
 查看部署资源信息，已成功创建两个app以及相关资源。
 

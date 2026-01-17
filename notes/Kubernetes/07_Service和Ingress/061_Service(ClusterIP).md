@@ -3,7 +3,7 @@
 1. 通过集群内部IP地址暴露服务，此地址仅在集群内部可达，而无法被集群外部的客户端访问
 2. clusterIP 主要在每个 node 节点使用 iptables，将发向 clusterIP对应端口的数据，转发到 kube-proxy 中。然后 kube-proxy自己内部实现有负载均衡的方法，并可以查询到这个 service 下对应 pod的地址和端口，进而把数据转发给对应的 pod 的地址和端口
 
-![](https://via.placeholder.com/800x600?text=Image+54eb8cb29a5dc4b7)
+![img_4400.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4400.png)
 
 ## 实现过程
 + apiserver  

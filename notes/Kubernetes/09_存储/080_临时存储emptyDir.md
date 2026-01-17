@@ -20,10 +20,10 @@
 
 1. 创建pod资源清单
 
-![](https://via.placeholder.com/800x600?text=Image+a362424b2e9f8156)
+![img_3200.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3200.png)
 
 2. 访问测试
 
-![](https://via.placeholder.com/800x600?text=Image+44b48d12d333dd90)
+
 
 

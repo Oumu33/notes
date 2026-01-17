@@ -37,7 +37,7 @@ strimzi-cluster-operator-56fdbb99cb-gznkw   1/1     Running   0          17m
 ## 获取示例文件
 Strimzi官方仓库为我们提供了各种场景下的示例文件，资源清单地址：[https://github.com/strimzi/strimzi-kafka-operator/tree/main/examples/kafka](https://github.com/strimzi/strimzi-kafka-operator/tree/main/examples/kafka)
 
-![](https://via.placeholder.com/800x600?text=Image+d0a6aec497bceeb0)
+![img_4448.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4448.png)
 
 示例文件说明：
 
@@ -196,6 +196,6 @@ NOTES:
 
 访问验证，添加hosts记录`192.168.10.100 kafka-ui.local.com`，然后访问测试。
 
-![](https://via.placeholder.com/800x600?text=Image+63ea5d075383d344)
+![img_1824.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1824.png)
 
 

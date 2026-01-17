@@ -23,57 +23,57 @@
 3. 6台电脑连接到同一局域网
 
 # 四、实验分析与设计思路
-![](https://via.placeholder.com/800x600?text=Image+b4249bfc2e19db88)
+![img_1600.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1600.png)
 
 # 五、主要实验过程
 1. 实验准备
 
 ① dhcp主机ip配置
 
-![](https://via.placeholder.com/800x600?text=Image+6469dab95d235e0b)
 
-![](https://via.placeholder.com/800x600?text=Image+a8e99eb50ee75fd9)
+
+
 
 ② 其他客户机设置
 
-![](https://via.placeholder.com/800x600?text=Image+1af4e3f83243b94b)
+![img_32.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_32.png)
 
-![](https://via.placeholder.com/800x600?text=Image+a8e87c13173872a5)
+![img_2944.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2944.png)
 
 2. 实验过程
 
 ①dhcp主机安装dhcp服务
 
-![](https://via.placeholder.com/800x600?text=Image+e92e712154c513e5)
+
 
 ②配置dhcp文件
 
-![](https://via.placeholder.com/800x600?text=Image+c7cd38a52f9564b6)
+![img_3680.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3680.png)
 
-![](https://via.placeholder.com/800x600?text=Image+f5a8416dae1e45af)
 
-![](https://via.placeholder.com/800x600?text=Image+0d96786cbb2599a1)
+
+
 
 ③启动dhcp服务
 
-![](https://via.placeholder.com/800x600?text=Image+c3bbfda701ed054e)
+
 
 # 六、实验结果及分析
 **<font style="color:blue;">   </font>**①查看服务器端口信息
 
-![](https://via.placeholder.com/800x600?text=Image+63b0bc52f3b444d3)
+
 
 ②查看服务器日志信息
 
-![](https://via.placeholder.com/800x600?text=Image+afe23e110505503a)
+
 
 ③查看客户机ip信息
 
-![](https://via.placeholder.com/800x600?text=Image+ee66156499b88f77)
 
-![](https://via.placeholder.com/800x600?text=Image+460291c0578ebc0b)
 
-![](https://via.placeholder.com/800x600?text=Image+9dca3b59868300bb)
+
+
+
 
 # 七、总结
    在本次实验中，实验过程很顺利，一次性做出了正确的结果，本次实验的关键在于/etc/dhcp/dhcpd.conf文件的配置。

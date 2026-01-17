@@ -6,11 +6,11 @@ prometheus的单机痛点简单来说就是存在性能瓶颈，不得不降低�
 ## thanos 架构
 Sidecar模式：绑定部署在Prometheus 实例上，当进行查询时，由thanos sidecar返回监控数据给Thanos QueryT对数据进行聚合与去重。最新的监控数据存放于Prometheus 本机（适用于Sidecar数量少，单个prometheus集群，查询响应快的场景）
 
-![](https://via.placeholder.com/800x600?text=Image+5e4c3c9f47fd6222)
+![img_1008.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1008.jpeg)
 
 Receive模式:Prometheus 实例实时将数据 push 到 Thanos Receiver，最新数据也得以集中起来，然后 Thanos Query 也不用去所有 Sidecar 查最新数据了，直接查 Thanos Receiver 即可（适用于集群规模大，多个prometheus节点，跨集群查询响应慢的场景）
 
-![](https://via.placeholder.com/800x600?text=Image+37ff2d1636e19c21)
+
 
 ## thanos组件
 + 边车组件（Sidecar）：连接 Prometheus，并把 Prometheus 暴露给查询网关（Querier/Query），以供实时查询，并且可以上传 Prometheus 数据给云存储，以供长期保存
@@ -95,7 +95,7 @@ ingressroute.traefik.io/thanos-query created
 
 访问验证
 
-![](https://via.placeholder.com/800x600?text=Image+31f35807174b5c2c)
+
 
 ## 部署 store 组件
 store 组件需要使用 s3 对象存储，此处以 minio 对象存储为例，创建 bucket、aksk、并配置权限，具体可参考[https://www.cuiliangblog.cn/detail/section/121560332](https://www.cuiliangblog.cn/detail/section/121560332)
@@ -197,7 +197,7 @@ ingressroute.traefik.io/thanos-store created
 
 访问验证
 
-![](https://via.placeholder.com/800x600?text=Image+4798e6b7bd8b9ead)
+![img_1104.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1104.png)
 
 # receive 模式配置
 ## 配置 pvc 资源
@@ -334,19 +334,19 @@ prometheus.monitoring.coreos.com/k8s configured
 ## 访问验证
 thanos-query 关联组件验证，如果显示为空可重启 thanos-query 后重试。
 
-![](https://via.placeholder.com/800x600?text=Image+5a9e36d41abc24e3)
+![img_2144.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2144.png)
 
 thanos-query 查询指标验证，可以看到指标中新增了 cluster 标签，用于区分不同 Prometheus 集群实例。
 
-![](https://via.placeholder.com/800x600?text=Image+c80384c824127f5d)
+
 
 访问 thanos-store 测试（默认两个小时生成一个 block 并上传，如果现在没数据可等 2 小时后再次查看）
 
-![](https://via.placeholder.com/800x600?text=Image+2606a0591a5050de)
+
 
 查看 minio 存储内容
 
-![](https://via.placeholder.com/800x600?text=Image+2299b48b8bc154df)
+
 
 # sidecar 模式配置
 > sidecar 与 receive 模式二选一，如果使用 sidecar 模式，先卸载 receive 相关资源。
@@ -444,9 +444,9 @@ deployment.apps/thanos-query configured
 ## 访问验证
 访问 thanos-query 即可获取 targets 信息以及 Prometheus 实例信息，这点是 receive 模式不具备的功能。
 
-![](https://via.placeholder.com/800x600?text=Image+94d2ae7cb52aeda1)
+![img_64.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_64.png)
 
-![](https://via.placeholder.com/800x600?text=Image+b93d7725ad2aaa96)
+
 
 # thanos-rule 安装
 在之前安装 kube-prometheus 时已经安装了 prometheus-operator，其中就包含ThanosRuler 的自定义资源，我们只需要启用配置即可。
@@ -572,11 +572,11 @@ spec:
 ## 访问验证
 访问 thanos-rule 组件，查看告警规则
 
-![](https://via.placeholder.com/800x600?text=Image+7bb34805b98b70f4)
+![img_3040.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3040.png)
 
 访问 thanos-query ，查看 thanos 组件信息。
 
-![](https://via.placeholder.com/800x600?text=Image+b02330130e0b0437)
+
 
 # thanos-compact 安装
 kube-prometheus 中并未包含 thanos-compact 组件，需要从 kube-thanos 库中拷贝示例文件并部署配置。
@@ -684,7 +684,7 @@ ingressroute.traefik.io/thanos-compact created
 ```
 
 ## 访问验证
-![](https://via.placeholder.com/800x600?text=Image+7daa56647fcf1b4f)
+![img_1408.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1408.png)
 
 # 其他集群配置
 以 receive 模式为例，演示如果跨集群采集上报监控指标数据。
@@ -719,7 +719,7 @@ prometheus.monitoring.coreos.com/k8s configured
 ## 访问验证
 查看 cluster 标签信息
 
-![](https://via.placeholder.com/800x600?text=Image+020394ba4434ee75)
+
 
 # 多副本配置
 为提高监控集群可用性，通常在生产环境所有组件至少都是 2 个副本运行。
@@ -778,6 +778,6 @@ spec:
 ```
 
 ## 访问验证
-![](https://via.placeholder.com/800x600?text=Image+0dfee3165dd8e728)
+![img_1456.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1456.png)
 
 

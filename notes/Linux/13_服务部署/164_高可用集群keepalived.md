@@ -10,141 +10,141 @@ Keepalived 以 VRRP 协议为实现基础，用 VRRP 协议来实现高可用性
 
 2.   调度器开启中继模式
 
-![](https://via.placeholder.com/800x600?text=Image+83305cab403de914)
+![img_3024.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3024.png)
 
 3.   Web服务器安装httpd，并编写测试页
 
-![](https://via.placeholder.com/800x600?text=Image+ed2d5650c4d80c0f)
 
-![](https://via.placeholder.com/800x600?text=Image+067f752b6e5af37b)
+
+
 
 4.   外网客户机访问测试页
 
-![](https://via.placeholder.com/800x600?text=Image+8d005f9a5cf73e78)
+
 
 5.   安装ipvsadm软件包
 
-![](https://via.placeholder.com/800x600?text=Image+b07b184599756adc)
+
 
 6.   装载LVS模块
 
-![](https://via.placeholder.com/800x600?text=Image+a1ae2b28aeac95ac)
+![img_4736.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4736.png)
 
 ## 时间同步
 1.   安装软件包
 
-![](https://via.placeholder.com/800x600?text=Image+be43315016b7d0a0)
+![img_1584.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1584.png)
 
 2.   将网络时间同步到ntf服务器
 
-![](https://via.placeholder.com/800x600?text=Image+6988ec57f990a397)
+
 
 3.   将系统时间写入硬件时间
 
-![](https://via.placeholder.com/800x600?text=Image+639ce66d722e014f)
+
 
 4.   修改ntp服务主配置文件
 
-![](https://via.placeholder.com/800x600?text=Image+6becab4a2aee4bc2)
+![img_3664.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3664.png)
 
-![](https://via.placeholder.com/800x600?text=Image+cfb20b29597186f8)
+
 
 5.   开启服务查看端口
 
-![](https://via.placeholder.com/800x600?text=Image+7fcb8069e2ce3c9c)
+
 
 6.   其他主机同步ntp服务器时间
 
-![](https://via.placeholder.com/800x600?text=Image+850eccfba5732fd7)
+![img_1840.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1840.png)
 
 # 漂移IP设置
-![](https://via.placeholder.com/800x600?text=Image+64770bfe1ffae38d)
+
 
 ## 部署配置
 1.   软件包安装
 
-![](https://via.placeholder.com/800x600?text=Image+d02192bccbc9576c)
+
 
 2.   修改主调度器配置文件
 
-![](https://via.placeholder.com/800x600?text=Image+9b2cdb0f4306093e)
+![img_64.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_64.png)
 
-![](https://via.placeholder.com/800x600?text=Image+f13232a017de754e)
+
 
 3.   修改备调度器配置文件
 
-![](https://via.placeholder.com/800x600?text=Image+4d27a22670bea384)
 
-![](https://via.placeholder.com/800x600?text=Image+e59c1456c84f7e7c)
+
+
 
 4.   启动服务，查看结果
 
-![](https://via.placeholder.com/800x600?text=Image+3f318d64855dad0e)
 
-![](https://via.placeholder.com/800x600?text=Image+8d7904cdd1ab4b6a)
+
+
 
 5.   停止主调度器，查看结果
 
-![](https://via.placeholder.com/800x600?text=Image+873805391f223346)
 
-![](https://via.placeholder.com/800x600?text=Image+765c33737661d39d)
 
-![](https://via.placeholder.com/800x600?text=Image+a7feac1847e60f2c)
+
+
+![img_4224.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4224.png)
 
 ## 手动开启keepalived日志
 1.   修改Keepalived日志配置文件
 
-![](https://via.placeholder.com/800x600?text=Image+c9d745fef52f3b72)
 
-![](https://via.placeholder.com/800x600?text=Image+9b4e591d8bf870b5)
+
+
 
 -S 3定义日志facility ID号
 
 2.   修改rsyslog配置文件
 
-![](https://via.placeholder.com/800x600?text=Image+032f64f41ec1969b)
 
-![](https://via.placeholder.com/800x600?text=Image+974b01ec7cca9d71)
+
+![img_1184.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1184.png)
 
 3.   验证测试
 
-![](https://via.placeholder.com/800x600?text=Image+48dad99fa2c7dcbd)
+
 
 ## 编写脚本，热切换主备节点
 1.   在Keepalived主配置文件中定义切换脚本
 
-![](https://via.placeholder.com/800x600?text=Image+0e45a82fcacd7ada)
+
 
 2.   在主配置文件的vrrp实例中调用脚本
 
-![](https://via.placeholder.com/800x600?text=Image+ab27ba6cf3bb2f8b)
+
 
 3.   备节点同样配置
 
-![](https://via.placeholder.com/800x600?text=Image+521c43c61d753967)
+
 
 4.   创建文件验证结果
 
 # 实现双主模型
 1.   修改原主服务器配置文件，增加备实例
 
-![](https://via.placeholder.com/800x600?text=Image+3446b13f7169565f)
+![img_3296.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3296.png)
 
 2.   修改原从服务器配置文件，增加主实例
 
-![](https://via.placeholder.com/800x600?text=Image+f750ee7cfeb69699)
+
 
 3.   将切换脚本放到主实例中，进行调用
 
-![](https://via.placeholder.com/800x600?text=Image+d26d47adb9a1dcaa)
+
 
 4.   重启服务验证
 
-![](https://via.placeholder.com/800x600?text=Image+b79c069c55161f93)
+![img_2800.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2800.png)
 
-![](https://via.placeholder.com/800x600?text=Image+2af4080b698cba04)
 
-![](https://via.placeholder.com/800x600?text=Image+4b7a543e51f86d1f)
+
+
 
 ①和备节点进行交叉，双方都属于一主一备，通过优先级进行控制（这样就形成了双主模型）。
 
@@ -157,27 +157,27 @@ Keepalived 以 VRRP 协议为实现基础，用 VRRP 协议来实现高可用性
 # 实现双主模型（LVS-DR）
 1.   两个后端web服务器运行自动配置网卡和内核脚本
 
-![](https://via.placeholder.com/800x600?text=Image+cbe4445c763855fe)
+![img_4608.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4608.png)
 
 2.   主备调度器安装ipvsadm
 
-![](https://via.placeholder.com/800x600?text=Image+6241d5c74d9bc36f)
+![img_2448.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2448.png)
 
-![](https://via.placeholder.com/800x600?text=Image+1880ba6822a32e9d)
+
 
 3.   配置主备调度器
 
-![](https://via.placeholder.com/800x600?text=Image+c15b008747c361cf)
+![img_2736.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2736.png)
 
 4.   查看虚拟ip
 
-![](https://via.placeholder.com/800x600?text=Image+2a54d8a589859c70)
+
 
 5.   验证操作
 
-![](https://via.placeholder.com/800x600?text=Image+ab09151391aeaa2d)
 
-![](https://via.placeholder.com/800x600?text=Image+68eb849f4a2bb547)
+
+![img_4112.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4112.png)
 
 # 配置nginx高可用集群
 **参见如下链接**

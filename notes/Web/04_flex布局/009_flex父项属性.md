@@ -4,10 +4,10 @@
 
 | 属性值 | 说明 | 效果 |
 | --- | --- | --- |
-| row | 从左到右（默认） | ![](https://via.placeholder.com/800x600?text=Image+4cec8017344eb5b3) |
-| row-reverse | 从右到左 | ![](https://via.placeholder.com/800x600?text=Image+e49d0edf23a1b941) |
-| column | 从上到下 | ![](https://via.placeholder.com/800x600?text=Image+ced7be6132e622f0) |
-| column-reverse | 从下到上 | ![](https://via.placeholder.com/800x600?text=Image+4b85f902662e0ace) |
+| row | 从左到右（默认） | ![img_4208.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4208.png) |
+| row-reverse | 从右到左 |  |
+| column | 从上到下 | ![img_3280.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3280.png) |
+| column-reverse | 从下到上 |  |
 
 
 ```html
@@ -55,11 +55,11 @@
 
 | 属性 | 说明 | 效果 |
 | --- | --- | --- |
-| flex-start | 从头开始，如果主轴x轴，则从左到右(默认值) | ![](https://via.placeholder.com/800x600?text=Image+af524ee3eeec12b1) |
-| flex-end | 从尾部开始排列 | ![](https://via.placeholder.com/800x600?text=Image+1512748884579dde) |
-| center | 在主轴居中对齐 | ![](https://via.placeholder.com/800x600?text=Image+85b4506a2963677f) |
-| space-around | 平分剩余空间 | ![](https://via.placeholder.com/800x600?text=Image+6691fd34c37a8a3e) |
-| space-between | 两边贴边，平分剩余空间 | ![](https://via.placeholder.com/800x600?text=Image+7816ef2ffb2ac573) |
+| flex-start | 从头开始，如果主轴x轴，则从左到右(默认值) | ![img_3312.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3312.png) |
+| flex-end | 从尾部开始排列 |  |
+| center | 在主轴居中对齐 |  |
+| space-around | 平分剩余空间 |  |
+| space-between | 两边贴边，平分剩余空间 | ![img_2032.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2032.png) |
 
 
 ```html
@@ -108,8 +108,8 @@
 
 | 属性 | 说明 | 效果 |
 | --- | --- | --- |
-| nowarp | 不换行（默认） | ![](https://via.placeholder.com/800x600?text=Image+2eba32f0dc2f7d96) |
-| warp | 换行 | ![](https://via.placeholder.com/800x600?text=Image+f0c2dbf9a2ac0619) |
+| nowarp | 不换行（默认） |  |
+| warp | 换行 | ![img_4784.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4784.jpeg) |
 
 
 ```html
@@ -155,10 +155,10 @@
 
 | 属性值 | 说明 | 效果 |
 | --- | --- | --- |
-| flex-start | 从上到下(默认) | ![](https://via.placeholder.com/800x600?text=Image+d52e6ba5a1d7897c) |
-| flex-end | 从下到上 | ![](https://via.placeholder.com/800x600?text=Image+1082a8fbabec1b56) |
-| center | 侧轴居中 | ![](https://via.placeholder.com/800x600?text=Image+6d8353f2634f6759) |
-| stretch | 拉伸(不要给子盒子设置高度) | ![](https://via.placeholder.com/800x600?text=Image+f40edcad97e7b9df) |
+| flex-start | 从上到下(默认) | ![img_3248.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3248.png) |
+| flex-end | 从下到上 |  |
+| center | 侧轴居中 | ![img_352.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_352.png) |
+| stretch | 拉伸(不要给子盒子设置高度) | ![img_4032.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4032.jpeg) |
 
 
 ```html
@@ -205,11 +205,11 @@
 
 | 属性值 | 说明 | 效果 |
 | --- | --- | --- |
-| flex-start | 从上到下（默认） | ![](https://via.placeholder.com/800x600?text=Image+edaa59d6b3c59b51) |
-| flex-end | 从下到上 | ![](https://via.placeholder.com/800x600?text=Image+8633c52c42742359) |
-| center | 居中 | ![](https://via.placeholder.com/800x600?text=Image+fb23379be493f9c5) |
-| space-between | 两边贴边，平分剩余空间 | ![](https://via.placeholder.com/800x600?text=Image+b0c11c47ba86b104) |
-| stretch | 拉伸（子盒子不要给高度） | ![](https://via.placeholder.com/800x600?text=Image+681ea1a5bc7e49c4) |
+| flex-start | 从上到下（默认） |  |
+| flex-end | 从下到上 |  |
+| center | 居中 |  |
+| space-between | 两边贴边，平分剩余空间 |  |
+| stretch | 拉伸（子盒子不要给高度） | ![img_3376.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3376.jpeg) |
 
 
 ```html
@@ -261,7 +261,7 @@
 # 六、flex-flow（复合属性，相当于同时设置flex-direction和flex-wrap）
 1. 设置以列主轴方向，并换行
 
-![](https://via.placeholder.com/800x600?text=Image+4e4a0c68c1417466)
+![img_1872.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1872.png)
 
 ```html
 <!DOCTYPE html>

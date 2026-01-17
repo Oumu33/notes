@@ -59,11 +59,11 @@ deployjob:
 
 在上游项目中查看管道信息
 
-![](https://via.placeholder.com/800x600?text=Image+fa7b874370e2ed28)
+![img_4048.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4048.jpeg)
 
 查看下游项目打印变量信息
 
-![](https://via.placeholder.com/800x600?text=Image+40d0ce6ab2051dd1)
+
 
 # 父子管道
 创建子管道ci/part1.yml，内容如下：
@@ -103,6 +103,6 @@ staging2:
 
 此时流水线任务如下图所示：
 
-![](https://via.placeholder.com/800x600?text=Image+615c411641c15aab)
+
 
 

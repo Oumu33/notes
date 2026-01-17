@@ -7,11 +7,11 @@
 
 #!/bin/bash
 
-![](https://via.placeholder.com/800x600?text=Image+74f6c0f5a97eef0f)
+![img_944.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_944.png)
 
 + 为脚本设置可执行权限，并执行脚本，输出结果如下所示：
 
-![](https://via.placeholder.com/800x600?text=Image+440fa3a7bb8734b4)
+
 
 1. 另外，还有几个特殊字符用来处理参数：
 
@@ -26,21 +26,21 @@
 | $? | 显示最后命令的退出状态。0表示没有错误，其他任何值表明有错误。 |
 
 
-![](https://via.placeholder.com/800x600?text=Image+653aa03a93248e31)
+![img_3824.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3824.png)
 
 执行脚本，输出结果如下所示：
 
-![](https://via.placeholder.com/800x600?text=Image+944ed675299d24b0)
+
 
 1. $* 与 $@ 区别：
 + 相同点：都是引用所有参数。
 + 不同点：只有在双引号中体现出来。假设在脚本运行时写了三个参数      1、2、3，，则 " * " 等价于 "1 2 3"（传递了一个参数），而 "@"      等价于 "1" "2" "3"（传递了三个参数）。
 
-![](https://via.placeholder.com/800x600?text=Image+995b9011b1da9dc9)
+![img_2720.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2720.png)
 
 执行脚本，输出结果如下所示：
 
-![](https://via.placeholder.com/800x600?text=Image+309e213dfc657dec)
+
 
 来自 <[http://www.runoob.com/linux/linux-shell-passing-arguments.html](http://www.runoob.com/linux/linux-shell-passing-arguments.html)>
 

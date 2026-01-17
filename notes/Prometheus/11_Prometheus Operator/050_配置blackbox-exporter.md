@@ -111,7 +111,7 @@ spec:
 ```
 
 ## 查看验证
-![](https://via.placeholder.com/800x600?text=Image+299bf27619e6431a)
+![img_864.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_864.png)
 
 # tcp 检测
 ## 资源清单
@@ -133,7 +133,7 @@ spec:
 ```
 
 ## 查看验证
-![](https://via.placeholder.com/800x600?text=Image+94c486e90ae4f9ee)
+![img_2912.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2912.png)
 
 # URL 检测
 ## 资源清单
@@ -155,6 +155,6 @@ spec:
 ```
 
 ## 查看验证
-![](https://via.placeholder.com/800x600?text=Image+5ce3bf914c716fe4)
+![img_4816.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4816.jpeg)
 
 

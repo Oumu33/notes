@@ -5,7 +5,7 @@
 3. 集合中最大的成员数为 232 - 1 (4294967295,      每个集合可存储40多亿个成员)。
 4. 举例
 
-![](https://via.placeholder.com/800x600?text=Image+3d036139a3d83394)
+![img_1504.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1504.png)
 
 # 二、命令
 1. 添加集合
@@ -40,32 +40,32 @@
 1. sadd设置key对应的value集合
 2. smembers查看key对应集合的成员
 
-![](https://via.placeholder.com/800x600?text=Image+a9fbbfe91a76b801)
+
 
 + 集合成员不会按照插入的顺序显示
 1. sismember查看指定元素是否属于一个集合
 
-![](https://via.placeholder.com/800x600?text=Image+e2bb5a0a5b699740)
+
 
 + c属于集合myset，x不属于
 
-![](https://via.placeholder.com/800x600?text=Image+ab86db4d6d8617b1)
+![img_4208.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4208.png)
 
 + 已有的集合元素不会重复添加
 1. sinter查看多个集合的交集
 
-![](https://via.placeholder.com/800x600?text=Image+e1cb33426ed98d2d)
+
 
 1. sdiff查看多个集合的差集
 
-![](https://via.placeholder.com/800x600?text=Image+2100ba5e47d88e39)
+
 
 1. sunion查看多个集合的合集
 
-![](https://via.placeholder.com/800x600?text=Image+39dc5aa4647fd24c)
+![img_1488.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1488.png)
 
 1. scard查看集合中元素的个数
 
-![](https://via.placeholder.com/800x600?text=Image+c31efe40e53f7ae9)
+![img_1200.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1200.png)
 
 

@@ -6,33 +6,33 @@
 4. SetUID权限只在该程序执行过程中有效，也就是说身份改变只在程序执行过程中有效
 5. passwd命令拥有SetUID权限，所以普通可以修改自己的密码
 
-![](https://via.placeholder.com/800x600?text=Image+32bf7f8d1eb2d7a2)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+17449a2f7a116868)
+
 
 1. cat命令没有SetUID权限，所以普通用户不能查看/etc/shadow文件内容
 
-![](https://via.placeholder.com/800x600?text=Image+87a57cb5fc202d24)
+![img_2272.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2272.png)
 
 # 二、设定SetUID的方法
 1. chmod 4755文件名（4代表SUID）
 
-![](https://via.placeholder.com/800x600?text=Image+4f52c94059836322)
+![img_3696.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3696.png)
 
 2. chmod u+s文件名
 
-![](https://via.placeholder.com/800x600?text=Image+1d238de4f3426f24)
+![img_288.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_288.png)
 
 # 三、取消setlJID的方法
 1. chmod 755文件名
 
-![](https://via.placeholder.com/800x600?text=Image+3b56bc5a46c4eaf1)
+![img_3248.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3248.png)
 
 2. chmod u-s文件名
 
-![](https://via.placeholder.com/800x600?text=Image+7468a7865290778f)
+![img_4672.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4672.png)
 
 # 四、危险的SetUlD
 1. 关键目录应严格控制写权限。比如"/"、"/usr"等
@@ -45,9 +45,9 @@
 3. 命令执行在执行程序的时候，组身份升级为该程序文件的属组
 4. SetGID权限同样只在该程序执行过程中有效，也就是说组身份改变只在程序执行过程中有效
 
-![](https://via.placeholder.com/800x600?text=Image+7d9b3ceef17e6ac1)
+![img_928.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_928.png)
 
-![](https://via.placeholder.com/800x600?text=Image+3e2144f9d61ccc8e)
+![img_608.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_608.png)
 
 1. /usr/bin/locate是可执行二进制程序，可以赋予SGID
 2. 执行用户lamp对/usr/bin/locate命令拥有执行权限
@@ -62,22 +62,22 @@
 # 七、设定SetGID
 1. chmod 2755文件名(2代表SGID)
 
-![](https://via.placeholder.com/800x600?text=Image+7ed350188ea0d0cb)
 
-![](https://via.placeholder.com/800x600?text=Image+4a8c1012ec111b01)
+
+
 
 2. chmod g+s文件名
 
-![](https://via.placeholder.com/800x600?text=Image+8015e53dacd5a8be)
+
 
 # 八、取消SetGID
 1. chmod 755 文件名
 
-![](https://via.placeholder.com/800x600?text=Image+0bf88269a4dd0de1)
+
 
 2. chmod g-s 文件名
 
-![](https://via.placeholder.com/800x600?text=Image+dffdc4dc5a5090ea)
+![img_4096.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4096.png)
 
  
 

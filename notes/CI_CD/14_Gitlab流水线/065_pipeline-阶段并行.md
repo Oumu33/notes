@@ -36,7 +36,7 @@ test2:
 
 查看流水线信息，如果不设置needs的话，必须build两个job都完成才会执行test的两个job。
 
-![](https://via.placeholder.com/800x600?text=Image+914ae97025bee0a0)
+![img_4400.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4400.png)
 
 # 
 

@@ -2,11 +2,11 @@
 # 一、命令别名
 1. 设定命令别名
 
-![](https://via.placeholder.com/800x600?text=Image+27ff254c4987d9c0)
+
 
 1. 查询命令别名
 
-![](https://via.placeholder.com/800x600?text=Image+10f99252fb923786)
+
 
 1. 命令执行时顺序
 2. 第一顺位执行用绝对路径或相对路径执行的命令。
@@ -15,13 +15,13 @@
 5. 第四顺位执行按照$PATH环境变量定义的目录查找顺序找到的第一个命令。
 6. 让别名永久生效
 
-![](https://via.placeholder.com/800x600?text=Image+43983adebf1f0f0e)
+
 
 1. 删除别名
 
 [root@localhost ~]# unalias 别名
 
-![](https://via.placeholder.com/800x600?text=Image+b17bb154cec34860)
+
 
 # 二、Bash常用快捷键
 | 快捷键 | 作 用 |

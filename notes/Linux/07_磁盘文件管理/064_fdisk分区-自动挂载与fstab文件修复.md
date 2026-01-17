@@ -1,6 +1,6 @@
 # fdisk分区-自动挂载与fstab文件修复
 # 一、/etc/fstab文件
-![](https://via.placeholder.com/800x600?text=Image+b6c46cb8d00d5f48)
+![img_2672.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2672.png)
 
 | /dev/mapper/centos00-root   / | 分区设备文件名或UUID（硬盘通用唯一识别码） |
 | --- | --- |

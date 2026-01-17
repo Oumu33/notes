@@ -10,15 +10,15 @@
 
 1. 变量sum的和是$1加$2
 
-![](https://via.placeholder.com/800x600?text=Image+107bbb71ec846477)
 
-![](https://via.placeholder.com/800x600?text=Image+b7b9ee6f610e3e84)
+
+
 
 1. 打印参数
 
-![](https://via.placeholder.com/800x600?text=Image+0b3b03344152d7e8)
 
-![](https://via.placeholder.com/800x600?text=Image+f81e31eb00157dcd)
+
+![img_2416.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2416.png)
 
 1. $*与$@的区别
 

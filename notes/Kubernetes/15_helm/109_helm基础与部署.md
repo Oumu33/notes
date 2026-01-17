@@ -30,7 +30,7 @@
 > Helm主要由Helm客户端、Tiller服务器和Charts仓库（repository）组成
 >
 
-![](https://via.placeholder.com/800x600?text=Image+e2badacfbbaea912)
+
 
 
 
@@ -50,7 +50,7 @@ server（V3已将Tiller的删除，通过ApiServer与k8s交互）是托管运行
 
 
 # Helm工作原理
-![](https://via.placeholder.com/800x600?text=Image+79257b8ea3599635)
+![img_4832.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4832.png)
 
 
 

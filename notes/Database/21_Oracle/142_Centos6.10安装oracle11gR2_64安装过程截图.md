@@ -24,7 +24,7 @@ root# vi /etc/selinux/config   
 
 默认enforcing修改为disabled
 
-![](https://via.placeholder.com/800x600?text=Image+f8d02c574b0e778d)
+![img_896.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_896.jpeg)
 
 root# reboot
 
@@ -41,15 +41,15 @@ Disabled
 
 l  查看网卡IP
 
-![](https://via.placeholder.com/800x600?text=Image+12bf61c0e0d24480)
+
 
 l  查看主机名
 
-![](https://via.placeholder.com/800x600?text=Image+1c2a439e7d304dda)
+![img_1216.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1216.png)
 
 l  修改/etc/hosts文件，添加一条记录
 
-![](https://via.placeholder.com/800x600?text=Image+8f0fbd822fd05eac)
+
 
 ## 建用户，用户组，目录，设置权限
 l  创建用户组
@@ -204,7 +204,7 @@ oracle$ source /home/oracle/.bash_profile
  
 
 ## 挂载oracle11gR2安装盘
-![](https://via.placeholder.com/800x600?text=Image+fa52cafca2e34c64)
+![img_3280.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3280.png)
 
  
 
@@ -212,7 +212,7 @@ root# mount /dev/cdrom /mnt
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+240b282e399801b6)
+![img_2864.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2864.png)
 
  
 
@@ -223,13 +223,13 @@ oracle默认安装过程需要图形界面支持，最小安装无图形界面�
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+1e9b3016af5b21ea)
+
 
  
 
 windows右下角图标tray中出现：
 
-![](https://via.placeholder.com/800x600?text=Image+cfcec1c3fb0574b3)
+![img_992.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_992.png)
 
  
 
@@ -260,7 +260,7 @@ oracle$ export LANG=en_US.UTF-8
 ## 设置Oracle用户DISPLAY环境变量
 选用知道Centos虚机对应windows这边网卡的ip; cmd> ipconfig
 
-![](https://via.placeholder.com/800x600?text=Image+d0355e3c31568af8)
+
 
  
 
@@ -278,59 +278,59 @@ oracle$ cd /mnt
 
 oracle$ ./runInstaller
 
-![](https://via.placeholder.com/800x600?text=Image+b773f7e2526f52e3)
+![img_3984.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3984.png)
 
  
 
 ## <font style="color:black;">开始安装</font><font style="color:black;">oracle</font><font style="color:black;">软件</font>
-![](https://via.placeholder.com/800x600?text=Image+79181e4104e1f374)
+![img_448.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_448.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+17e589ebd41ce67f)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+9b3c838a4592ab11)
+![img_4112.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4112.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+8c3566587b18b3b4)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+b54b5ff4a78c4ec6)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+3287731af5c86202)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+5f1b369ded287ed9)
+![img_1408.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1408.png)
 
  
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+e4ce966ee40dd4a6)
+
 
 /u01/app/oraInventory 目录下存放已安装的oracle各类软件（oracle不光有数据库还有其他软件，如：应用服务器，集群件，ERP等）的组件清单，一般是安装时需要这个目录
 
-![](https://via.placeholder.com/800x600?text=Image+9e747592a92cb209)
+![img_3136.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3136.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+0261b330db7e5501)
+![img_1216.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1216.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+4a44ea412663e1ff)
+
 
 ## <font style="color:black;">开启额外的会话，以</font><font style="color:black;">root</font><font style="color:black;">用户安装缺失软件包</font>
 <font style="color:black;">root# yum install gcc-4*</font>
 
-![](https://via.placeholder.com/800x600?text=Image+eeee7f0390233d0d)
+![img_3584.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3584.png)
 
 <font style="color:black;">root# yum install libaio-devel-*</font>
 
@@ -358,23 +358,23 @@ oracle$ ./runInstaller
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+aebef96eae9ffb06)
+![img_3584.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3584.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+79e42accfe55a6b5)
-
- 
-
- 
-
-![](https://via.placeholder.com/800x600?text=Image+08e55f3b9e25d28a)
+![img_1232.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1232.png)
 
  
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+2bdc2191adb8d83a)
+![img_1744.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1744.png)
+
+ 
+
+ 
+
+![img_2384.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2384.png)
 
  
 
@@ -387,17 +387,17 @@ root# /u01/app/oracle/product/11.2.0/dbhome_1/root.sh
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+3d3df63f0d9a64c2)
 
-![](https://via.placeholder.com/800x600?text=Image+2e058ea9cde72f60)
+
+
 
 执行完了，点击OK按钮
 
-![](https://via.placeholder.com/800x600?text=Image+3f33dd4287daa4b6)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+085e1c16df9bbdc5)
+
 
  
 
@@ -433,43 +433,43 @@ root# yum install unixODBC-devel-*
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+99cd4866b86b31f1)
+
 
  
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+2e6a359582246004)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+f42a951a05be31ac)
+![img_2464.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2464.png)
 
  
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+6d9c32ebccdf35d2)
+![img_624.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_624.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+b2d24f351d895d4e)
+![img_3632.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3632.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+e0b5900e8e6f26d0)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+9dd1a1ba232db8cb)
+![img_832.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_832.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+5f69961ccd4fd450)
+![img_4384.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4384.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+18cf3ee9356f3791)
+
 
  
 
@@ -478,77 +478,77 @@ root# yum install unixODBC-devel-*
 
 **oracle$ dbca**
 
-![](https://via.placeholder.com/800x600?text=Image+8f4476131198a0da)
+![img_752.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_752.png)
 
-![](https://via.placeholder.com/800x600?text=Image+a4ddb522d3be6d6b)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+f484a09c168c1ade)
+
 
 选择“一般用途和事务处理”这个选项，其他选项是定制和数据仓库(主要是select语句，只读操作多，dml少)，主要区别是启动参数的设置不太一样
 
-![](https://via.placeholder.com/800x600?text=Image+6d7707df1f673604)
+![img_2768.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2768.png)
 
 和系统oracle用户下的.bash_profile中的ORACLE_SID环境变量的值一致，如果更改需要调整ORACLE_SID的值，否则连接不了数据库
 
-![](https://via.placeholder.com/800x600?text=Image+4b612a8076480093)
+
 
 Oracle Enterprise Manager简称OEM，是oracle浏览器版客户端，功能强大但是耗费资源，bug也多
 
-![](https://via.placeholder.com/800x600?text=Image+b60c6025bbef0bce)
+![img_3216.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3216.png)
 
 给oracle内部用户设置密码
 
-![](https://via.placeholder.com/800x600?text=Image+d932bcc85213a991)
+
 
  
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+7335b2b7a9f559df)
+
 
  
 
 Oracle可以安装到文件系统、ASM(oracle的lvm)、裸设备上，当前场景只能选择文件系统
 
-![](https://via.placeholder.com/800x600?text=Image+3060c54b3b478f84)
+
 
 fast recovery area称为闪回恢复区，备份归档日志等如果没有指定路径会自动放到这个目录中，方便管理，oracle可以自动识别
 
-![](https://via.placeholder.com/800x600?text=Image+338dcc8a3fc6a405)
+![img_3104.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3104.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+8184095de73d6082)
+
 
 当前虚拟机内存2048M，如果不指定会分配2048*0.9的内存给oracle数据库用，教学用500M足够，最小大约400M
 
-![](https://via.placeholder.com/800x600?text=Image+308694fbd5c49380)
+![img_928.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_928.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+1f66fba71771f1f2)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+c6f1542364512bb7)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+f1b3848dcdb9e01a)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+4184a3652b93c7b8)
+![img_2096.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2096.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+1e257be577072f1c)
+
 
 点击“exit”按钮完成创建数据库
 
-![](https://via.placeholder.com/800x600?text=Image+90ecd9b551d350f2)
+
 
  
 
@@ -562,7 +562,7 @@ oracle$ lsnrctl status
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+82136b2e94a04eb4)
+
 
 如果出现Service.......等文字说明oracle实例prod已经注册到了监听器(listener)，可以通过网络访问数据库prod
 
@@ -575,7 +575,7 @@ oracle$ sqlplus / as sysdba
 
 ** **
 
-![](https://via.placeholder.com/800x600?text=Image+66223b9f0dc3c2a9)
+![img_4128.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4128.png)
 
 查看实例状态
 
@@ -583,13 +583,13 @@ SQL> select instance_name,status from v$instance;
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+77a08e1e5c28bc44)
+
 
 查看用户状态
 
 SQL> select username,account_status from dba_users;
 
-![](https://via.placeholder.com/800x600?text=Image+3eeba5018585f515)
+
 
  
 
@@ -600,7 +600,7 @@ SQL> alter user scott identified by tiger account unlock;
 
 SQL> select username,account_status from dba_users where username='SCOTT';
 
-![](https://via.placeholder.com/800x600?text=Image+991df6e0a9f55e68)
+![img_832.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_832.png)
 
  
 
@@ -629,33 +629,33 @@ define _editor=vi
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+048e76dd6b994b22)
+![img_3264.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3264.png)
 
  
 
 ## 以普通用户SCOTT登录
 oracle$ sqlplus scott/tiger
 
-![](https://via.placeholder.com/800x600?text=Image+5d5d95f6f3af99e3)
+![img_3696.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3696.png)
 
  
 
 ## 查看用户SCOTT有哪些表、视图等数据对象
 SCOTT@prod>select * from tab;
 
-![](https://via.placeholder.com/800x600?text=Image+a77eb597b9b0e990)
+
 
  
 
 ## 查看表中有哪些列
 SCOTT@prod>desc emp
 
-![](https://via.placeholder.com/800x600?text=Image+9738cd347e64e0bd)
+
 
 ## 查看表中有哪些行
 SCOTT@prod>select * from emp;
 
-![](https://via.placeholder.com/800x600?text=Image+d25db6a717a683f2)
+
 
  
 
@@ -666,7 +666,7 @@ SCOTT@prod>conn / as sysdba
 
 SYS@prod>show user;
 
-![](https://via.placeholder.com/800x600?text=Image+9d23a19158aeb4c0)
+![img_4144.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4144.png)
 
 **从****sys****切换到****system**
 
@@ -674,7 +674,7 @@ SYS@prod>conn system/oracle
 
 SYSTEM@prod>show user;
 
-![](https://via.placeholder.com/800x600?text=Image+d88af771be0649ba)
+![img_2512.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2512.png)
 
 **从****system****切换到****scott**
 
@@ -682,7 +682,7 @@ SYSTEM@prod>conn scott/tiger
 
 SCOTT@prod>show user;
 
-![](https://via.placeholder.com/800x600?text=Image+71210e32bca37ced)
+![img_2800.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2800.png)
 
  
 
@@ -699,7 +699,7 @@ SCOTT@prod>quit
 
 oracle$ sqlplus scott/tiger@localhost:1521/prod
 
-![](https://via.placeholder.com/800x600?text=Image+c98cba627612f082)
+![img_896.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_896.jpeg)
 
  
 
@@ -712,7 +712,7 @@ SCOTT@localhost:1521/prod>conn sys/oracle@192.168.2.138:1521/prod as sysdba
 
 SYS@192.168.2.138:1521/prod>conn system/oracle@localhost:1521/prod
 
-![](https://via.placeholder.com/800x600?text=Image+5bfcd43ea2fe37ff)
+
 
 如果是用户sys要加 as sysdba，其他用户不用加
 
@@ -723,7 +723,7 @@ SYSTEM@localhost:1521/prod>shutdown immediate;
 
 ORA-01031: 权限不足
 
-![](https://via.placeholder.com/800x600?text=Image+1e541ee4ae8e103a)
+
 
 本地切换到sys
 
@@ -731,14 +731,14 @@ SYSTEM@localhost:1521/prod>conn / as sysdba
 
 SYS@prod>shutdown immediate
 
-![](https://via.placeholder.com/800x600?text=Image+ddfe9ffc59d61289)
+
 
 关闭了数据库后，用户的数据表就访问不到了
 
 ## 开启数据库(只能sys用户做)
 SYS@prod>startup
 
-![](https://via.placeholder.com/800x600?text=Image+741dcb854c08896c)
+
 
  
 
@@ -753,7 +753,7 @@ oracle$ lsnrctl status
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+9ebed5d12f414c4a)
+
 
  
 
@@ -768,7 +768,7 @@ SYS@prod>startup
 
 SYS@prod>!lsnrctl status   # sqlplus调用系统命令可以用 ！或 host 后跟命令字
 
-![](https://via.placeholder.com/800x600?text=Image+c56a702ef839df92)
+![img_1920.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1920.png)
 
  
 

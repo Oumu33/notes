@@ -6,7 +6,7 @@
 + create  user zhang@localhost identified by ‘zhang’;
 + create  user ma identified by ‘ma’;
 + create  user ‘tom’@’192.168.2.1’identified by ‘tom’;
-+ ![](https://via.placeholder.com/800x600?text=Image+66d3cddc008bd959)
++ ![img_1888.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1888.png)
     1. 测试连接
     - 本地
 + #>mysql  -uzhang –p   --可以本地连接

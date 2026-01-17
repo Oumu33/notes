@@ -10,7 +10,7 @@
 + 即使你的监控已经下线，prometheus 还会拉取到旧的监控数据，需要手动清理 pushgateway 不要的数据。
 3. 拓扑图
 
-![](https://via.placeholder.com/800x600?text=Image+fd986c35b262ad85)
+
 
 # 二、部署pushgetway
 + [下载链接](https://prometheus.io/download/#pushgateway)
@@ -24,17 +24,17 @@
 
 1. 访问服务器9091端口
 
-![](https://via.placeholder.com/800x600?text=Image+b6b08c0370fdd0e1)
+![img_2384.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2384.png)
 
 # 三、与Prometheus集成
 1. 修改/etc/prometheus/prometheus.yml，将cAdvisor添加监控数据采集任务目标当中：
 
-![](https://via.placeholder.com/800x600?text=Image+d3a711868aa0b8bf)
+![img_2576.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2576.png)
 
 2. 重新启动Prometheus服务:
 3. 在Prometheus UI中查看到当前所有的Target状态：
 
-![](https://via.placeholder.com/800x600?text=Image+51b08420f1d5d385)
+![img_672.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_672.png)
 
 # 四、数据管理
 1. 向 {job="some_job"}      添加单条数据：
@@ -45,7 +45,7 @@
 +  --data-binary 表示发送二进制数据，它是使用POST方式发送的！
 + pushgetway查看数据
 
-![](https://via.placeholder.com/800x600?text=Image+d6f7e0b301c6bb6f)
+
 
 1. 删除某个组下的某实例的所有数据：
 
@@ -84,11 +84,11 @@ echo "$label $count_thread_sum" | curl --data-binary @- http://127.0.0.1:9091/me
 
 + pushgetway查看数据
 
-![](https://via.placeholder.com/800x600?text=Image+506f45ea5026fbe8)
+![img_3664.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3664.png)
 
 + 进入grafana页面，新建一个图表
 
-![](https://via.placeholder.com/800x600?text=Image+1bbe0829660b45cf)
+
 
 1. 监控每个进程资源使用情况
 

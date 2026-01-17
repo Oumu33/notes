@@ -6,7 +6,7 @@
 `npm install --save normalize.css`
 
 ## 新建style目录保存各种样式
-![](https://via.placeholder.com/800x600?text=Image+3aec89827ed10fac)
+
 
 ## variables.scss配置全局变量
 ```less

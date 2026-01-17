@@ -10,14 +10,14 @@ Password: BwoXKC3qGABwhtLOFERuMzA4ZK+baSr9NRKhDIwI3Xo=
 ## 修改root密码
 使用临时密码登录后依次点击Admin Area——>Overview——>Users——>Edit，然后修改密码即可。
 
-![](https://via.placeholder.com/800x600?text=Image+f46eac29f607835c)
+![img_1808.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1808.png)
 
-![](https://via.placeholder.com/800x600?text=Image+c1bf827cac0e8200)
+![img_3952.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3952.png)
 
 ## 更换为中文
 点击左上角头像——>Perferences——>Localization——>将language改为中文，然后刷新页面即可。
 
-![](https://via.placeholder.com/800x600?text=Image+e9610776336b0781)
+![img_496.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_496.png)
 
 ## 头像不显示问题
 <font style="color:rgb(77, 77, 77);">本地安装完GitLab服务后，会发现用户的头像部分显示不了。原因是因为GitLab默认使用了Gravatar的头像，而Gravatar目前是被墙的。所以访问不了，解决问题的办法就是更换其URL为国内的某个镜像URL。</font>

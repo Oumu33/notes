@@ -7,7 +7,7 @@
 `npm install vuex-along -S` 
 
 ## 创建配置文件
-![](https://via.placeholder.com/800x600?text=Image+009ac5fe0e3c969b)
+
 
 1. src/store/index.js
 

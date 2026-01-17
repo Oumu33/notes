@@ -34,11 +34,11 @@ Argo CD ApplicationSet 使用一个 ApplicationSet CRD（自定义资源定义�
 ## 前提条件
 同时将myapp项目分别发布至dev、test、uat、prod名称空间下。需要注意的是[http://gitlab.cuiliangblog.cn/devops/argo-demo.git](http://gitlab.cuiliangblog.cn/devops/argo-demo.git)仓库manifests 目录下的文件不要设置 namespace，由 argocd 统一管理。
 
-![](https://via.placeholder.com/800x600?text=Image+9e6ee0942d549521)
+
 
 提前创建 namespace 或者配置 devops 项目具备 namespace 管理权限。
 
-![](https://via.placeholder.com/800x600?text=Image+c7e574cfb241a16b)
+
 
 ## 创建应用集
 使用 一份 ApplicationSet，自动在两个不同集群、不同 namespace 下部署相同的一套应用，App资源清单如下：
@@ -85,7 +85,7 @@ applicationset.argoproj.io/applicationset-list created
 ## 查看验证
 创建后查看argoCD dashboard，已经成功在两个集群不同的名称空间下创建了app应用。
 
-![](https://via.placeholder.com/800x600?text=Image+9fc3722ed0fd457e)
+![img_1792.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1792.png)
 
 # Cluster生成器
 官方参考文档：[https://argo-cd.readthedocs.io/en/stable/operator-manual/applicationset/Generators-Cluster/](https://argo-cd.readthedocs.io/en/stable/operator-manual/applicationset/Generators-Cluster/)
@@ -103,7 +103,7 @@ Cluster生成器允许遍历由 `ArgoCD 配置和管理的 Kubernetes 集群`。
 ## 添加其他集群
 具体可参考文档[https://www.cuiliangblog.cn/detail/section/174841645](https://www.cuiliangblog.cn/detail/section/174841645)，此处不再赘述，添加集群后的效果如下：
 
-![](https://via.placeholder.com/800x600?text=Image+164a62860bce3644)
+
 
 ## 创建APP(全部集群)
 ```yaml
@@ -140,14 +140,14 @@ applicationset.argoproj.io/applicationset-cluster created
 
 查看部署信息，分别在 prod 和 test 集群创建了集群名-myapp 的应用。
 
-![](https://via.placeholder.com/800x600?text=Image+7e9d2666f6f1533b)
+![img_3424.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3424.png)
 
 ## 添加集群标签
 有时候我们并不需要所有集群都部署应用，我们可以通过标签选择器，让拥有指定标签的集群部署应用，例如只让具有prod=true标签的集群部署应用。
 
 修改集群配置，新增 env=prod 的标签
 
-![](https://via.placeholder.com/800x600?text=Image+92006a02c3a290cf)
+
 
 ## 创建APP(指定标签)
 ```yaml
@@ -187,7 +187,7 @@ applicationset.argoproj.io/applicationset-cluster created
 
 查看验证
 
-![](https://via.placeholder.com/800x600?text=Image+71612f1e49dbf94d)
+
 
 # Git生成器
 参考文档：[https://argo-cd.readthedocs.io/en/stable/operator-manual/applicationset/Generators-Git/](https://argo-cd.readthedocs.io/en/stable/operator-manual/applicationset/Generators-Git/)
@@ -197,7 +197,7 @@ Git 生成器包含两个子类型：Git 目录生成器和 Git 文件生成器�
 ## 目录生成器
 在apps目录下分别创建两个目录，分别存放生产和测试环境的yaml文件
 
-![](https://via.placeholder.com/800x600?text=Image+13379d130156ccaa)
+![img_2112.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2112.png)
 
 目录结构如下：
 
@@ -251,7 +251,7 @@ spec:
 
 效果如下所示，分别在 prod 和 test 名称空间创建了两个myapp应用。
 
-![](https://via.placeholder.com/800x600?text=Image+176715b70cb69bd9)
+![img_2640.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2640.png)
 
 git 目录生成器可以使用的变量如下
 
@@ -268,7 +268,7 @@ git 目录生成器可以使用的变量如下
 ## 文件生成器
 在config目录下分别创建 dev、prod、test 目录，模拟不同环境下的配置文件。
 
-![](https://via.placeholder.com/800x600?text=Image+903c72579b4c1ccc)  
+![img_768.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_768.png)  
 文件内容可以是 json 或者 yaml 文件格式，以 json 为例，内容和目录结构如下
 
 ```yaml
@@ -348,7 +348,7 @@ spec:
 
 效果如下所示，分别创建了 dev、test、prod 的 myapp应用。
 
-![](https://via.placeholder.com/800x600?text=Image+de01d79171ba1d35)
+
 
 # Matrix 生成器
 参考文档：[https://argo-cd.readthedocs.io/en/stable/operator-manual/applicationset/Generators-Matrix/](https://argo-cd.readthedocs.io/en/stable/operator-manual/applicationset/Generators-Matrix/)
@@ -407,6 +407,6 @@ spec:
 
 效果如下所示，分别在prod和test集群创建了2个myapp应用。
 
-![](https://via.placeholder.com/800x600?text=Image+e2c1986931d7adfa)
+
 
 

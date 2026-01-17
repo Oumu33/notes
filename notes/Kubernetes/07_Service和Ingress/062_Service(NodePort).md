@@ -3,7 +3,7 @@
 1. 这种类型建立在ClusterIP类型之上，其在每个node节点的IP地址的某静态端口（NodePort）暴露服务，因此，它依然会为Service分配集群IP地址，并将此作为NodePort的路由目标。
 2. NodePort类型就是在工作节点的IP地址上选择一个端口用于将集群外部的用户请求转发至目标Service的ClusterIP和Port，因此，这种类型的Service既可如ClusterIP一样受到集群内部客户端Pod的访问，也会受到集群外部客户端通过套接字<NodeIP>:<NodePort>进行的请求。
 
-![](https://via.placeholder.com/800x600?text=Image+921f43237d7b5dca)
+![img_2848.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2848.png)
 
 ## 操作实践
 ### 创建deployment资源
@@ -62,15 +62,15 @@ myapp        NodePort    10.101.173.202   <none>        80:30303/TCP   6s
 ### 访问验证
 + 集群外部客户端访问master节点ip+30303端口
 
-![](https://via.placeholder.com/800x600?text=Image+c84f4140543c2129)
+
 
 + 集群外部客户端访问node1节点ip+30303端口
 
-![](https://via.placeholder.com/800x600?text=Image+e9ee513dfc2cd820)
+
 
 + 集群外部客户端访问node2节点ip+30303端口
 
-![](https://via.placeholder.com/800x600?text=Image+bd0051d58e99c90d)
+
 
 ## 结果分析
 ### 查看ipvs规则

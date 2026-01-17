@@ -23,6 +23,6 @@ Pipeline 也有两种创建方法：可以直接在 Jenkins 的 Web UI 界面中
 # 获取示例
 实际工作中没必要学习每个pipeline写法，可以在jenkins中配置相关参数，即可生成pipeline。
 
-![](https://via.placeholder.com/800x600?text=Image+6475ef17c1796709)
+
 
 

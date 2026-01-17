@@ -121,7 +121,7 @@ pg_num: 32
 ## 访问radosgw服务
 访问radosgw服务所在的节点 IP+默认 80 端口既可。
 
-![](https://via.placeholder.com/800x600?text=Image+af975cc4c6a8eaae)
+![img_1472.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1472.png)
 
 # RadosGW https
 ## 生成自签证书
@@ -222,15 +222,15 @@ echo "192.168.10.90 ceph-rgw.local.com" >> /etc/hosts
 
 + 浏览器访问
 
-![](https://via.placeholder.com/800x600?text=Image+fa57452168d14d86)
+
 
 证书信息
 
-![](https://via.placeholder.com/800x600?text=Image+2f30ffc86da46b48)
+
 
 # RadosGW 高可用
 ## 高可用方案
-![](https://via.placeholder.com/800x600?text=Image+8852448b147be52e)
+![img_640.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_640.png)
 
 ## 自定义https 端口与副本数
 修改默认端口并指定运行在 ceph1 和 ceph2 节点
@@ -365,7 +365,7 @@ tcp     LISTEN   0        4096             0.0.0.0:8888           0.0.0.0:*     
 
 <font style="color:rgb(48, 49, 51);">确认无误后 ceph-2 和 ceph-3 服务器同样的步骤配置。</font>
 
-![](https://via.placeholder.com/800x600?text=Image+35e5143dceabdbaa)
+![img_880.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_880.png)
 
 ## <font style="color:rgb(48, 49, 51);">KeepAlived部署</font>
 <font style="color:rgb(106, 115, 125);">以下操作在</font><font style="color:rgb(48, 49, 51);">ceph-</font><font style="color:rgb(106, 115, 125);">1、2、3 机器执行，设备网卡名称为ens33，VIP为192.168.10.90。</font>
@@ -519,6 +519,6 @@ root@ceph-2:~# ip a | grep 192.168.10.90
 
 <font style="color:rgb(48, 49, 51);">访问vip的 443 端口，可正常提供服务</font>
 
-![](https://via.placeholder.com/800x600?text=Image+8feb0c5542adfcbf)
+![img_2000.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2000.png)
 
 

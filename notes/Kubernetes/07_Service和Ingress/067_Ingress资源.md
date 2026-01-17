@@ -7,7 +7,7 @@
 3. Ingress控制器可以由任何具有反向代理（HTTP/HTTPS）功能的服务程序实现，如Nginx、Envoy、HAProxy、Vulcand和Traefik等。Ingress控制器自身也是运行于集群中的Pod资源对象，它与被代理的运行为Pod资源的应用运行于同一网络中
 4. 使用Ingress资源进行流量分发时，Ingress控制器可基于某Ingress资源定义的规则将客户端的请求流量直接转发至与Service对应的后端Pod资源之上，这种转发机制会绕过Service资源，从而省去了由kube-proxy实现的端口代理开销。
 
-![](https://via.placeholder.com/800x600?text=Image+9aa3be52a6e96e59)
+![img_1200.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1200.png)
 
 
 
@@ -45,7 +45,7 @@ ingress-nginx官网
 
 `kubectl get svc -n ingress-nginx` 
 
-![](https://via.placeholder.com/800x600?text=Image+20dd6e35d02c9173)
+![img_2864.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2864.png)
 
 # 三、Ingress资源类型
 

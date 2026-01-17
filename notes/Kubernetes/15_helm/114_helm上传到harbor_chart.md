@@ -6,7 +6,7 @@
 ## 创建项目
 创建一个名为helm-charts 的项目仓库。
 
-![](https://via.placeholder.com/800x600?text=Image+e6040f878f1d4104)
+
 
 ## helm 登录 harbor
 --insecure 为跳过自签证书选项
@@ -33,7 +33,7 @@ Digest: sha256:3e22ac7d2735959b6c368a8d578664e4cd96febcf26fda5b64e1a53217b40bf7
 ```
 
 ## 查看 harbor 仓库验证
-![](https://via.placeholder.com/800x600?text=Image+d8269354ba34777f)
+
 
 # Harbor chart 下载
 ## 查看可用的 Chart  

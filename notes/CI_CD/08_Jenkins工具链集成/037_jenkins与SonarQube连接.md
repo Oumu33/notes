@@ -3,46 +3,46 @@
 ## **<font style="color:rgb(77, 77, 77);">下载SonarQube插件</font>**
 <font style="color:rgb(77, 77, 77);">进入Jenkins的系统管理->插件管理->可选插件，搜索框输入sonarqube，安装重启。</font>
 
-![](https://via.placeholder.com/800x600?text=Image+9b2709ed251b391f)
+
 
 ## 启用SonarQube
 <font style="color:rgb(77, 77, 77);">Jenkins的系统管理->系统配置，添加SonarQube服务。</font>
 
-![](https://via.placeholder.com/800x600?text=Image+ba3d0498dab93899)
+
 
 # SonarQube配置
 ## 禁用审查结果上传到SCM功能
-![](https://via.placeholder.com/800x600?text=Image+133e4237712ed21d)
+
 
 ## 生成token
-![](https://via.placeholder.com/800x600?text=Image+f24c8dd1a9a38f56)
+![img_384.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_384.png)
 
 # jenkins配置
 ## 添加令牌
 <font style="color:rgb(77, 77, 77);">Jenkins的系统管理->系统配置->添加token</font>
 
-![](https://via.placeholder.com/800x600?text=Image+034b0f3423bcef7f)
+![img_3680.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3680.png)
 
 <font style="color:rgb(77, 77, 77);">类型切换成Secret text，粘贴token，点击添加。</font>
 
-![](https://via.placeholder.com/800x600?text=Image+a4e6ee40f4495ad1)
+
 
 <font style="color:rgb(77, 77, 77);">选上刚刚添加的令牌凭证，点击应用保存。</font>
 
-![](https://via.placeholder.com/800x600?text=Image+f11fc7648f3d964f)
+
 
 <font style="color:rgb(77, 77, 77);"></font>
 
 ## <font style="color:rgb(77, 77, 77);">SonarQube Scanner 安装</font>
 <font style="color:rgb(77, 77, 77);">进入Jenkins的系统管理->全局工具配置，下滑找到图片里的地方，点击新增SonarQube Scanner，我们选择自动安装并选择最新的版本。</font>
 
-![](https://via.placeholder.com/800x600?text=Image+f20089ceb22978d6)
+![img_944.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_944.png)
 
 # <font style="color:rgb(77, 77, 77);">非流水线项目添加代码审查</font>
 ## 添加构建步骤
 编辑之前的自由风格构建的demo项目，在构建阶段新增步骤。
 
-![](https://via.placeholder.com/800x600?text=Image+dfc38ed028ae1257)
+
 
 analysis properties参数如下
 
@@ -68,11 +68,11 @@ sonar.java.binaries=target/classes
 ## 构建并查看结果
 jenkins点击立即构建，查看构建结果
 
-![](https://via.placeholder.com/800x600?text=Image+f94d3fba3945918f)
+![img_3680.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3680.png)
 
 查看SonarQube扫描结果
 
-![](https://via.placeholder.com/800x600?text=Image+133919ff62f7a0de)
+
 
 # 流水线项目添加代码审查
 ## 创建sonar-project.properties文件
@@ -150,7 +150,7 @@ pipeline {
 ```
 
 ## 构建测试
-![](https://via.placeholder.com/800x600?text=Image+35bcd5f5533ee29a)
+
 
  		
 

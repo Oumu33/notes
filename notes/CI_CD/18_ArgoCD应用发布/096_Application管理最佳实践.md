@@ -35,19 +35,19 @@ Group：product（产品线组）
 ### 创建部署文件项目
 依次创建 infra、model、product群组，并新建相关的项目，以cmdb-deploy 项目为例，内容如下：
 
-![](https://via.placeholder.com/800x600?text=Image+3eb44d75496086ea)
+
 
 其他 XXX-deploy 项目内容也是如此，我们可以提前规定所有部署文件必须位于项目根目录的manifests 目录下（也可以根据不同项目灵活指定，此处只是规范建议）
 
 ### 创建 project
 依次创建 infra、model、product 项目，并记得给 project 授予创建 k8s 的 namespace 资源权限。
 
-![](https://via.placeholder.com/800x600?text=Image+c48413c21b58e9b9)
+
 
 ### 创建 repo
 依次添加cmdb-deploy、vllm-deploy、backend-deploy、frontend-deploy 项目。
 
-![](https://via.placeholder.com/800x600?text=Image+88839100b234a9ac)
+
 
 至此，准备工作已经就绪，接下来开始通过 gitops 方式管理 Application 应用。
 
@@ -62,7 +62,7 @@ ArgoCD 同步父 App 时，就会自动创建/更新所有子 App。
 ## gitlab 项目结构
 创建 gitlab 项目，内容如下
 
-![](https://via.placeholder.com/800x600?text=Image+57ec51fa07120506)
+![img_288.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_288.png)
 
 ### 目录结构
 需要注意的是App of Apps 模式默认扫描该路径下的 YAML 是 Application 对象， 不会去递归扫描子目录 。  
@@ -131,7 +131,7 @@ spec:
 
 ## argocd 创建应用
 ### 添加 repo
-![](https://via.placeholder.com/800x600?text=Image+3ccd32682a2cd44c)
+
 
 ### 部署父应用
 ```yaml
@@ -144,20 +144,20 @@ application.argoproj.io/devops-app created
 ## 查看验证
 登录 argocd，查看 app-of-apps 应用信息。可以看到它自动创建了两个 Application。
 
-![](https://via.placeholder.com/800x600?text=Image+b72ee4854fe9cf4d)
 
-![](https://via.placeholder.com/800x600?text=Image+03408a8e3832b965)
+
+![img_3264.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3264.png)
 
 后续如果需要对应用进行新增或者修改，只需要修改 git 仓库 apps 目录下的文件即可。
 
 ## 应用更新验证
 假设 cmdb 应用新增 service 配置，我们只需要在 cmdb-deploy 项目的 manifests 目录下新增 service.yaml 文件。
 
-![](https://via.placeholder.com/800x600?text=Image+ff356539b89e21ae)
+![img_320.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_320.png)
 
 查看 argocd 应用状态，已经成功新增了 service 资源。
 
-![](https://via.placeholder.com/800x600?text=Image+47be0162eca620b0)
+![img_1024.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1024.png)
 
 ## 新增应用验证
 假设现在有product（产品线组）应用需要发布。他们的项目分别是backend-deploy（产品后端代码仓库）和 frontend-deploy（产品前端代码仓库）。
@@ -216,11 +216,11 @@ spec:
 
 git 提交后，我们登录 app-root 应用进行同步，然后就会新增两个 Application。
 
-![](https://via.placeholder.com/800x600?text=Image+a413dfbf317fc4dd)
+
 
 查看应用状态，已经全部完成发布。
 
-![](https://via.placeholder.com/800x600?text=Image+70fbfc7e68251327)
+![img_2752.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2752.png)
 
 # ApplicationSet 方式
 通过 app of apps 方式，我们虽然实现了指定项目下所有 Application 的统一管理与 gitops 发布，但我们观察各个 Application 配置就会发现有 90%以上的配置都是重复的，并且每当有新项目上线时，仍然需要手动拷贝并修改 Application 配置。此时使用 ApplicationSet 可以大幅降低配置工作量。
@@ -371,20 +371,20 @@ application.argoproj.io/root created
 ## 查看验证
 创建完 root 应用后进行同步，便可以自动创建出对应的 Application
 
-![](https://via.placeholder.com/800x600?text=Image+c7a135a19fc20914)
+
 
 此时应用发布状态如下
 
-![](https://via.placeholder.com/800x600?text=Image+6605b669ff94ca47)
+
 
 ## 应用更新验证
 假设 vllm 应用新增 service 配置，我们只需要在 vllm-deploy 项目的 manifests 目录下新增 service.yaml 文件。
 
-![](https://via.placeholder.com/800x600?text=Image+815888b9e1ff672e)
+![img_672.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_672.png)
 
 查看 argocd 应用状态，已经成功新增了 service 资源。
 
-![](https://via.placeholder.com/800x600?text=Image+1c29ce0139a69525)
+
 
 ## 新增应用验证
 假设现在有product（产品线组）应用需要发布。他们的项目分别是backend-deploy（产品后端代码仓库）和 frontend-deploy（产品前端代码仓库）。
@@ -452,11 +452,11 @@ spec:
 
 git 提交后，我们登录root 应用查看信息，就会新增一个 product 对应的 ApplicationSet。
 
-![](https://via.placeholder.com/800x600?text=Image+2a5f40b6020ad75c)
+
 
 查看应用状态，已经全部完成发布。
 
-![](https://via.placeholder.com/800x600?text=Image+fdb1cca51d3706fc)
+
 
 # 对比总结
 | 项目 | App-of-Apps 模式 | ApplicationSet 模式 |

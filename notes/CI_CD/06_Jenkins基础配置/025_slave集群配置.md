@@ -9,7 +9,7 @@ Jenkins的Master/Slave机制除了可以并发的执行构建任务，加速构�
 
 **Slave：**执行机(奴隶机)。执行Master分配的任务，并返回任务的进度和结果。
 
-![](https://via.placeholder.com/800x600?text=Image+8fa1003b1bd04318)
+![img_3632.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3632.png)
 
 Jenkins Master/Slave的搭建需要至少两台机器，一台Master节点，一台Slave节点（实际生产中会有多个Slave节点）。
 
@@ -26,7 +26,7 @@ Master不需要主动去建立，安装Jenkins，在登录到主界面时，这�
 
 选择“Manage Jenkins”->“Manage Nodes and Clouds”，可以看到Master节点相关信息：
 
-![](https://via.placeholder.com/800x600?text=Image+daf81bd752bf5ba2)
+![img_2944.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2944.png)
 
 # <font style="color:rgba(51, 51, 51, 1);">为Jenkins添加Slave Node</font>
 ## 开启tcp代理端口
@@ -34,16 +34,16 @@ jenkins web代理是指slave通过jenkins服务端提供的一个tcp端口，与
 
 jenkins web代理的tcp端口不是通过命令启动的而是通过在全局安全设置中配置的，配置成功后会在系统上运行一个指定的端口
 
-![](https://via.placeholder.com/800x600?text=Image+0f8dded8558eab02)
+
 
 ## 添加节点信息
 在Jenkins界面选择“Manage Jenkins”->“Manage Nodes and Clouds”->“New Node
 
-![](https://via.placeholder.com/800x600?text=Image+f0202a06585bad0f)
+
 
 配置Agent信息
 
-![](https://via.placeholder.com/800x600?text=Image+0fdae8d754e5a0e5)
+
 
 Name：Slave机器的名字
 
@@ -59,7 +59,7 @@ Usage：支持两种模式“Use this Node as much as possible”、“Only buil
 
 添加完毕后，在Jenkins主界面，可以看到新添加的Slave Node，但是红叉表示此时的Slave并未与Master建立起联系。
 
-![](https://via.placeholder.com/800x600?text=Image+f0cefd2e7caf3891)
+![img_640.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_640.png)
 
 ## slave节点配置
 安装jdk
@@ -82,12 +82,12 @@ OpenJDK 64-Bit Server VM (Red_Hat-17.0.10.0.7-1) (build 17.0.10+7-LTS, mixed mod
 ```
 
 ## 查看agent状态
-![](https://via.placeholder.com/800x600?text=Image+439fac5b75f1d251)
+![img_144.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_144.png)
 
 #   
 <font style="color:rgba(51, 51, 51, 1);">指定Node调度策略                                                    </font>
 创建Job的页面，“General”下勾选“Restric where this project can be run”，填写Label Expression。
 
-![](https://via.placeholder.com/800x600?text=Image+4a9f75423ef0e78c)
+
 
 

@@ -63,7 +63,7 @@ bash-5.1$ ceph -s
 
 查看fs信息
 
-![](https://via.placeholder.com/800x600?text=Image+ee8c187e84f7574b)
+
 
 ## 创建storageclass
 ```yaml

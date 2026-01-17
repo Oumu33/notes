@@ -16,14 +16,14 @@ MySQL Router，一种轻量级中间件，可在应用程序和 InnoDB Cluster �
 
 下图显示了这些技术如何协同工作的概述：
 
-![](https://via.placeholder.com/800x600?text=Image+5bf9e3b41e7a289a)
+
 
 基于MySQL Group Replication 构建，提供自动成员管理、容错、自动故障转移等功能。 InnoDB Cluster通常以单主模式运行，具有一个主实例（读写）和多个辅助实例（只读）。高级用户还可以利用多主模式，其中所有实例都是主实例。您甚至可以在 InnoDB Cluster 在线时更改集群的拓扑，以确保尽可能高的可用性。
 
 ## 集群角色规划
 集群架构
 
-![](https://via.placeholder.com/800x600?text=Image+2610bf7434396407)
+
 
 节点规划
 

@@ -151,6 +151,6 @@ spec:
 192.168.10.100 traefik.local.com
 ```
 
-![](https://via.placeholder.com/800x600?text=Image+9f5bb6ab35666ef6)
+![img_160.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_160.png)
 
 

@@ -12,34 +12,34 @@ traefik hub操作参考文档：[https://traefik.io/blog/publish-and-secure-appl
 ### traefik hub特性
 **一键服务发布**
 
-Traefik Hub 使发布和暴露任何应用程序到互联网变得容易。<font style="color:rgb(63, 63, 63);">对于每个发布的服务，Traefik Hub 提供了一个唯一的 DNS 名称，可以立即用于从互联网的任何地方访问该容器。</font>![](https://via.placeholder.com/800x600?text=Image+8b1dbdac008796f9)
+Traefik Hub 使发布和暴露任何应用程序到互联网变得容易。<font style="color:rgb(63, 63, 63);">对于每个发布的服务，Traefik Hub 提供了一个唯一的 DNS 名称，可以立即用于从互联网的任何地方访问该容器。</font>![img_2976.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2976.png)
 
 **<font style="color:rgb(63, 63, 63);">加密隧道</font>**
 
 <font style="color:rgb(63, 63, 63);">Traefik Hub 通过一个私有的、加密的隧道连接到你的集群。利用该隧道，你可以发布你的容器供外部访问，而不必担心复杂和不安全的公共 IP 或 NAT 配置。</font>
 
-![](https://via.placeholder.com/800x600?text=Image+7b098ddbd7360228)
+
 
 **<font style="color:rgb(63, 63, 63);">自动化证书管理</font>**
 
 <font style="color:rgb(63, 63, 63);">Traefik Hub 将请求、更新和传播 ACME 证书到你所有的集群，以便所有服务保持一致的安全配置。</font>
 
-![](https://via.placeholder.com/800x600?text=Image+5aca8e4892fb9d54)
+
 
 **<font style="color:rgb(63, 63, 63);">灵活地访问控制</font>**
 
 <font style="color:rgb(63, 63, 63);">无论你使用哪种容器编排工具，都能保护和保障对你的服务的访问。Traefik Hub 支持 JSON 网络令牌（JWT）、Basic Auth.</font>
 
-![](https://via.placeholder.com/800x600?text=Image+7fecf8c131a9e8ce)
+
 
 **<font style="color:rgb(63, 63, 63);">集中化多集群管理仪表板</font>**
 
 <font style="color:rgb(63, 63, 63);">在一个单一的窗口内，轻松地可视化所有关于你的所有集群、它们的配置以及服务性能和健康的入站流量的信息。</font>
 
-![](https://via.placeholder.com/800x600?text=Image+000647bac55a68a8)
+
 
 ### traefik hub工作原理
-![](https://via.placeholder.com/800x600?text=Image+f86cf22cc5b3f5b2)
+
 
 <font style="color:rgb(63, 63, 63);">首先在你自己的 Kubernetes 或 Docker 集群中，部署2 个 Traefik Hub 相关组件：</font>
 
@@ -55,22 +55,22 @@ Traefik Hub 使发布和暴露任何应用程序到互联网变得容易。<font
 ### 创建账户
 点击traefik dashboard右侧的`Go to Hub Dashboard`跳转到traefik hub登录页
 
-![](https://via.placeholder.com/800x600?text=Image+fa92969711f4a5e9)
+![img_4336.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4336.png)
 
 注册账号后登录traefik hub
 
-![](https://via.placeholder.com/800x600?text=Image+9628aab206340a01)
+![img_464.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_464.png)
 
 注册后traefik会自动为你的账号分配域名，安装traefik hub agent后，会自动创建通配符域名证书资源。
 
 ### 安装agent
 接下来点击agent页面，选择安装traefik hub agent
 
-![](https://via.placeholder.com/800x600?text=Image+b84809078acc7722)
+![img_4384.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4384.png)
 
 接下来按照提示，安装traefik proxy和traefik hub agent
 
-![](https://via.placeholder.com/800x600?text=Image+7a3d09b7d390c175)
+![img_2272.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2272.png)
 
 执行完成后查看资源信息
 
@@ -97,7 +97,7 @@ traefik-hub             ClusterIP      10.111.28.192   <none>           9100/TCP
 
 接下来查看traefik hub的agent详细信息
 
-![](https://via.placeholder.com/800x600?text=Image+203309a49b6b10db)
+
 
 ## 发布服务
 在本地的kubernetes集群有一个myapp1服务，并且创建了service资源(不需要创建ingressrouter资源)，此时访问myapp1只能通过本地svc访问，因为没有公网IP和域名，其他互联网用户无法访问。
@@ -120,40 +120,40 @@ traefik-ingress-controller-5d474997df-qnm4l   1/1     Running   0          23m
 
 接下来使用traefik hub发布myapp1服务。
 
-![](https://via.placeholder.com/800x600?text=Image+f24bf6f1c9563a11)
+![img_1792.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1792.png)
 
-![](https://via.placeholder.com/800x600?text=Image+d715db06dc16f7a0)
 
-![](https://via.placeholder.com/800x600?text=Image+42492d0716364e85)
+
+![img_832.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_832.png)
 
 应用发布成功时，traefik会为我们自动配置域名并设置ssl证书，接下来访问公网域名即可。访问测试[https://valid-hookworm-xmat3h.qitgjjol.traefikhub.io/](https://valid-hookworm-xmat3h.qitgjjol.traefikhub.io/)
 
-![](https://via.placeholder.com/800x600?text=Image+ceccb55a4d5cd684)
+![img_2976.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2976.png)
 
 ## 发布带访问控制策略的服务
 先在访问控制策略页面，点击创建访问控制策略
 
-![](https://via.placeholder.com/800x600?text=Image+9cd7d93036446fd0)
+![img_1440.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1440.png)
 
 选择基本身份验证服务，并设置账号密码
 
-![](https://via.placeholder.com/800x600?text=Image+4c2e4769f15eb97f)
+
 
 定义ACP后，我们可以在访问控制策略中看到详细信息
 
-![](https://via.placeholder.com/800x600?text=Image+7b940d32cecfb56b)
+
 
 接下来发布一个flask应用，在ACP选项中选择basic auth认证
 
-![](https://via.placeholder.com/800x600?text=Image+b74dd9cec95e8259)
+
 
 等待应用发布成功，访问公网域名
 
-![](https://via.placeholder.com/800x600?text=Image+350c85147183bb27)
+
 
 实际访问测试并没有出现认证策略，期待官方修复。
 
-![](https://via.placeholder.com/800x600?text=Image+028344165a1be41f)
+
 
 ## 发布非k8s服务
 除了docker k8s服务的直接暴露外，如果有内网服务与k8s互通的话，也可以通过<font style="color:rgb(63, 63, 63);">Kubernetes Service + Endpoint 的方式将非 Kubernetes 服务配置为 Kubernetes 服务，通过traefik hub发布服务。</font>
@@ -162,7 +162,7 @@ traefik-ingress-controller-5d474997df-qnm4l   1/1     Running   0          23m
 
 <font style="color:rgb(63, 63, 63);">例如我在k8s集群外的机器部署了青龙面板，由于没有公网IP，只能内网访问。但是运行青龙面板的机器和k8s机器可以互通，此时就可以通过traefik hub发布服务</font>
 
-![](https://via.placeholder.com/800x600?text=Image+ef315c97636178e7)
+
 
 创建青龙服务的service和endpoints
 
@@ -200,18 +200,18 @@ qinglong     ClusterIP      10.102.161.1     <none>           5700/TCP       6s
 
 接下来查看traefik hub控制台，已自动发现qinglong服务。
 
-![](https://via.placeholder.com/800x600?text=Image+fe48c321e67e0d16)
+![img_1376.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1376.png)
 
 配置qinglong服务发布
 
-![](https://via.placeholder.com/800x600?text=Image+2e88c66eff2366b4)
+
 
 提示qinglong服务发布成功
 
-![](https://via.placeholder.com/800x600?text=Image+5374c0c9a581bdbe)
+
 
 通过公网域名访问服务
 
-![](https://via.placeholder.com/800x600?text=Image+3b8a89fbfcf0d938)
+
 
 

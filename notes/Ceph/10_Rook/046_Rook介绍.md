@@ -30,7 +30,7 @@ Rook的主要组件有三个，功能如下：
 
 # 架构
 ## rook 功能
-![](https://via.placeholder.com/800x600?text=Image+7c8a5d40c06c8fb2)
+
 
 1. rook负责初始化和管理Ceph集群
 + monitor集群
@@ -48,7 +48,7 @@ Rook的主要组件有三个，功能如下：
 + S3/Swift⻛格对象存储
 
 ## rook 架构
-![](https://via.placeholder.com/800x600?text=Image+b606f7e994f119bb)
+
 
 1. 所有对象依托于kubernetes集群
 + mon

@@ -8,8 +8,8 @@
     - mysql> use test;
     - mysql>select * from t;
     - test数据库回到了原来备份时的状态
-+ ![](https://via.placeholder.com/800x600?text=Image+adc07f5c37faaa5d)
-+ ![](https://via.placeholder.com/800x600?text=Image+9c7004a3e4b48b2f)
++ ![img_1552.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1552.png)
++ 
     2. 使用 mysql       的source命令执行备份(里面都是SQL语句)
     3. db_test.sql       是包括了test数据库的备份，其中表t备份时包括了1,2,3三条记录
     - mysql>use test;
@@ -19,8 +19,8 @@
     - mysql> use test;
     - mysql>select * from t;
     - test数据库回到了原来备份时的状态
-+ ![](https://via.placeholder.com/800x600?text=Image+a1a4fa41d023f42c)
-+ ![](https://via.placeholder.com/800x600?text=Image+ddb137f33fb4c56c)
++ ![img_1696.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1696.png)
++ ![img_2864.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2864.png)
 +  
 +  
 

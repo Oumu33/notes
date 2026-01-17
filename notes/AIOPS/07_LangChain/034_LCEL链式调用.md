@@ -16,7 +16,7 @@ LangChain 链式调用可参考文档：[https://reference.langchain.com/python/
 ## 基本结构
 在LangChain中，一个基本的`Chain`结构主要由三部分构成，分别是提示词模板、大模型和结果解析器（结构化解析器），其数据流向正如下图所示：
 
-![](https://via.placeholder.com/800x600?text=Image+7896b806b0bcfd27)
+![img_576.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_576.png)
 
 + Prompt：Prompt 是一个 BasePromptTemplate，这意味着它接受一个模板变量的字典并生成一个PromptValue 。PromptValue 可以传递给 model（它以字符串作为输入）或 ChatModel（它以消息序列作为输入）。
 + Model：将 PromptValue 传递给 model。如果我们的 model 是一个 ChatModel，这意味着它将输出一个 BaseMessage 。
@@ -93,7 +93,7 @@ LCEL 强调组件之间的职责明确，Prompt 只负责模板化输入，Parse
 
 我们常用的Prompt、Parser、LLM 都继承自这个类，因而它们都可以被组合进 Chain / Graph 中。
 
-![](https://via.placeholder.com/800x600?text=Image+c53e144615fc6568)
+![img_3536.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3536.png)
 
 # 链式调用基础用法
 ## 顺序链
@@ -160,7 +160,7 @@ LangChain 是一个用于开发语言模型应用的框架，它提供工具和�
 ## 分支链
 在LangChain中提供了类RunnableBranch来完成LCEL中的条件分支判断，它可以根据输入的不同采用不同的处理逻辑，具体示例如下，在下方示例中程序会根据用户输入中是否包含英语、韩语等关键词，来选择对应的提示词进行处理。根据判断结果，再执行不同的逻辑分支。
 
-![画板](https://via.placeholder.com/800x600?text=Image+88fc713b8e4708b4)
+
 
 代码如下
 
@@ -269,7 +269,7 @@ for query_input in test_queries:
 ## 串行链
 例如我们需要多次调用大模型，将多个步骤串联起来实现功能，流程如下：
 
-![画板](https://via.placeholder.com/800x600?text=Image+fdfcd6697a223079)
+
 
 代码如下：
 
@@ -324,7 +324,7 @@ logger.info(result)
 + 多个 model 同时工作取最优答案
 + 多路径推理、多模态处理（如图片+文字）
 
-![画板](https://via.placeholder.com/800x600?text=Image+4baa8a3da2074d41)
+
 
 例如，根据用户输入内容，同时生成中文和英文回复。
 

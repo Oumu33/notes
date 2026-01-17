@@ -45,7 +45,7 @@ Velero 组件一共分两部分，分别是服务端和客户端。
 
 服务端开始执行恢复过程，根据备份数据调用API Server重新创建相关资源对象
 
-![](https://via.placeholder.com/800x600?text=Image+9590cd608f54fd0e)
+![img_3872.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3872.png)
 
 ## Velero后端存储
 `Velero`支持两种关于后端存储的`CRD`，分别是`BackupStorageLocation`和`VolumeSnapshotLocation`。
@@ -86,10 +86,10 @@ Velero支持很多种存储插件，可查看：[https://velero.io/docs/main/sup
 部署过程可参考文档：[https://www.cuiliangblog.cn/detail/section/121560332](https://www.cuiliangblog.cn/detail/section/121560332)
 
 ## 创建bucket
-![](https://via.placeholder.com/800x600?text=Image+fac024ab5fc14e06)
+![img_1952.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1952.png)
 
 ## 创建Access Key并配置权限
-![](https://via.placeholder.com/800x600?text=Image+2bfeacf21f24871a)
+
 
 # 安装velero
 ## 安装velero
@@ -379,7 +379,7 @@ redis-backup   Completed   0        0          2024-08-06 10:37:12 +0800 CST   2
 
 minio控制台查看备份内容
 
-![](https://via.placeholder.com/800x600?text=Image+af67c43c253d284e)
+![img_3152.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3152.png)
 
 删除备份
 

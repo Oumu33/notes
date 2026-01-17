@@ -14,11 +14,11 @@
 # 三、提示符显示用户名，主机名，库名
 1. 添加环境变量
 
-![](https://via.placeholder.com/800x600?text=Image+6bea004495981f1e)
+![img_3632.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3632.png)
 
 1. 重新打开cmd窗口，登录验证
 
-![](https://via.placeholder.com/800x600?text=Image+1f13f70bc34ed0f0)
+![img_1840.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1840.png)
 
  
 

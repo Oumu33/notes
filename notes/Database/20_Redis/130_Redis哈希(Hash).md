@@ -55,38 +55,38 @@
 
 uname zhangsan (uname为field1,zhangsan为其对应的值)
 
-![](https://via.placeholder.com/800x600?text=Image+a95b9187a84589dd)
+![img_2448.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2448.png)
 
 1. hget获取指定key中指定的一个field对应的value
 
-![](https://via.placeholder.com/800x600?text=Image+0134baa4b90a5553)
+
 
 1. hmget获取指定key中指定的多个field对应的value
 
-![](https://via.placeholder.com/800x600?text=Image+f394862f0aa7d645)
+![img_2400.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2400.png)
 
 1. hgetall获取指定key中所有field和value键值对数据
 
-![](https://via.placeholder.com/800x600?text=Image+2a940410e8b876b9)
+![img_1184.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1184.png)
 
 1. hlen获取指定key中所有field和value键值对的数量
 
-![](https://via.placeholder.com/800x600?text=Image+46d847a43dbd20c0)
+![img_528.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_528.png)
 
 1. hkeys获取指定key中所有field数据
 
-![](https://via.placeholder.com/800x600?text=Image+340dcf6145cbe375)
+
 
 1. hvals获取指定key中所有field对应value数据
 
-![](https://via.placeholder.com/800x600?text=Image+fc8ca89be07c2156)
+
 
 1. hdel删除指定key中多个field及其对应value数据
 
-![](https://via.placeholder.com/800x600?text=Image+7cbb283fc1756e14)
+
 
 1. hset或hmset修改key中一个或多个field对应的值
 
-![](https://via.placeholder.com/800x600?text=Image+f9f9909d32fc20e3)
+
 
 

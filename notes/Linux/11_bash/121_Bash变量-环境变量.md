@@ -5,15 +5,15 @@
 # 二、设置环境变量
 1. 申明变量（export 变量名=变量值）
 
-![](https://via.placeholder.com/800x600?text=Image+55a5063a3c3f88b0)
+
 
 1. 查询变量
 
-![](https://via.placeholder.com/800x600?text=Image+3c0e1f87c468374c)
+
 
 1. 删除变量
 
-![](https://via.placeholder.com/800x600?text=Image+d2963006c5f1a0e3)
+
 
 # 三、系统常见环境变量
 1. PATH：系统查找命令的路径 [root@localhost ~]# echo $PATH      /usr/lib/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin

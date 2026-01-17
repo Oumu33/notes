@@ -109,7 +109,7 @@ Ceph Dashboard is now available at:
 
 
 ## 访问验证
-![](https://via.placeholder.com/800x600?text=Image+4f738d852a43bfdc)
+![img_2304.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2304.png)
 
 ## 安装ceph命令行工具
 ```bash
@@ -138,7 +138,7 @@ root@ceph-1:~# ssh-copy-id -f -i /etc/ceph/ceph.pub ceph-3
 ```
 
 ### <font style="color:rgb(38, 38, 38);">dashboard添加主机</font>
-![](https://via.placeholder.com/800x600?text=Image+71a133f773f2927a)
+
 
 ### <font style="color:rgb(38, 38, 38);">命令行添加主机</font>
 ```bash
@@ -192,7 +192,7 @@ ceph-3  /dev/sdb  hdd              50.0G  Yes        3m ago
 添加OSD设备到集群
 
 ### dashboard添加设备
-![](https://via.placeholder.com/800x600?text=Image+f08ff3b133699840)
+
 
 ### 命令行添加设备
 ```bash

@@ -32,7 +32,7 @@ ln -s /usr/local/python3/bin/pip3.6 /usr/bin/pip3
 
 8. 查看Python3和pip3安装情况
 
-![](https://via.placeholder.com/800x600?text=Image+060db46a15e000a4)
+![img_992.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_992.png)
 
 ## 安装virtualenv，方便不同版本项目管理。
 1. 安装软件包
@@ -57,7 +57,7 @@ virtualenv --python=/usr/bin/python3 pyweb
 
 source activate
 
-![](https://via.placeholder.com/800x600?text=Image+7cab11fedd0240ef)
+![img_3808.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3808.png)
 
 + 留意我标记的位置，出现(pyweb)，说明是成功进入虚拟环境。
 
@@ -199,7 +199,7 @@ cd /data/wwwroot/mysite/
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+dd18b11d1256f926)
+
 
 ## 关于线上部署admin后台样式没有生效的问题
 方法一：

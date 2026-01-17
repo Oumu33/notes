@@ -29,7 +29,7 @@ MHA Node
 + 识别需要复制到其他节点的中继日志位置坐标
 + 应用日志中的变更事件到其他slave从库
 
-![](https://via.placeholder.com/800x600?text=Image+d7285b7af4f73ff0)
+![img_4688.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4688.jpeg)
 
 ## 主库故障切换的困境
 手工主从切换不是一件容易的事，往往需要花费很长时间，这意味着伴随着较长的宕机时间
@@ -44,7 +44,7 @@ MHA Node
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+34318a35ac8914ee)
+
 
  
 
@@ -344,7 +344,7 @@ masterha_manager --conf=/etc/app1.cnf
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+de0b151642a4b822)
+![img_4080.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4080.png)
 
  
 
@@ -359,7 +359,7 @@ systemctl stop mysqld
 
 主机24监控节点查看：
 
-![](https://via.placeholder.com/800x600?text=Image+b09e8674095c3c16)
+
 
  
 

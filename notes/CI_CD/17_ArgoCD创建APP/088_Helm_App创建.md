@@ -96,17 +96,17 @@ To http://gitlab.local.com/devops/argo-demo.git
 ```
 
 ## 查看验证
-![](https://via.placeholder.com/800x600?text=Image+7e5b3ddab9db2ab6)
+![img_3104.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3104.png)
 
 # Argo CD配置
 ## 创建helm类型的app（UI）
 通过Argo UI创建app，填写如下信息：
 
-![](https://via.placeholder.com/800x600?text=Image+b25b76c7c71f89c2)
+![img_4192.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4192.png)
 
 除了指定 yaml 文件外，也可以在 Application 中自定义 values 值。
 
-![](https://via.placeholder.com/800x600?text=Image+0e979a23029e6b74)
+
 
 ## 创建 helm 类型的 app（yaml）
 ```yaml
@@ -147,7 +147,7 @@ argocd app create demo-helm \
 ## 查看验证
 查看argo cd应用信息，已完成部署。
 
-![](https://via.placeholder.com/800x600?text=Image+b20e5d056751dd44)
+![img_448.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_448.png)
 
 登录k8s查看资源
 
@@ -185,7 +185,7 @@ image:
 
 查看argo cd更新记录
 
-![](https://via.placeholder.com/800x600?text=Image+a5a68436b2733514)
+![img_4176.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4176.png)
 
 访问验证
 

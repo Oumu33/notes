@@ -4,7 +4,7 @@
 
 jenkins——>系统管理——>插件管理——>avaliable plugins
 
-![](https://via.placeholder.com/800x600?text=Image+0a4c461ff1ba7ff1)
+![img_1232.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1232.png)
 
 # 本集群连接
 ## 创建sa账号
@@ -13,7 +13,7 @@ jenkins——>系统管理——>插件管理——>avaliable plugins
 ## 创建cloud资源
 然后在jenkins——>系统管理——>Clouds——>New cloud——>输入cloud name并勾选类型为kubernetes
 
-![](https://via.placeholder.com/800x600?text=Image+fbfb473ccb782692)
+
 
 点击kubernetes cloud details填写cloud详细信息
 
@@ -23,7 +23,7 @@ jenkins——>系统管理——>插件管理——>avaliable plugins
 
 配置完成后点击连接测试，显示k8s集群版本，证明配置无误。
 
-![](https://via.placeholder.com/800x600?text=Image+fa0e18fea3a861de)
+![img_3824.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3824.png)
 
 # 跨集群连接
 在某些情况下，jenkins部署在k8s集群外，通过二进制或者docker方式部署，如果想要连接k8s集群实现资源自动创建。或者当前jenkins部署在k8s集群A中，需要通过jenkins实现集群B资源的自动创建发布，使用此方式连接。
@@ -87,7 +87,7 @@ drwxr-xr-x. 6 root root   65 6月  10 20:37 ..
 
 凭据的类型选择Certificate，证书上传刚才生成的cert.pfx证书文件，输入通过openssl生成证书文件时输入的密码
 
-![](https://via.placeholder.com/800x600?text=Image+0d5bc76e9b09e049)
+
 
 ## 配置远程k8s集群地址
 jenkins——>系统管理——>Clouds——>New cloud——>输入cloud name并勾选类型为kubernetes
@@ -100,7 +100,7 @@ jenkins——>系统管理——>Clouds——>New cloud——>输入cloud name�
 + kubernetes服务证书key：ca.crt内容
 + 凭据：选择刚刚创建的Certificate凭据
 
-![](https://via.placeholder.com/800x600?text=Image+5d828a447e2fd4bf)
+
 
 配置完成后点击连接测试，显示k8s集群版本，证明配置无误。
 
@@ -115,7 +115,7 @@ jenkins——>系统管理——>Clouds——>New cloud——>输入cloud name�
 
 正因为上面的这些种种痛点，我们渴望一种更高效更可靠的方式来完成这个 CI/CD 流程，而 Docker虚拟化[容器](https://cloud.tencent.com/product/tke?from_column=20065&from=20065)技术能很好的解决这个痛点，又特别是在 Kubernetes 集群环境下面能够更好来解决上面的问题，下图是基于 Kubernetes 搭建 Jenkins 集群的简单示意图：
 
-![](https://via.placeholder.com/800x600?text=Image+5429ff31be143df4)
+![img_1024.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1024.png)
 
 从图上可以看到 Jenkins Master 和 Jenkins Slave 以 Pod 形式运行在 Kubernetes 集群的 Node 上，Master 运行在其中一个节点，并且将其配置数据存储到一个 Volume 上去，Slave 运行在各个节点上，并且它不是一直处于运行状态，它会按照需求动态的创建并自动删除。 
 
@@ -179,7 +179,7 @@ container容器运行时仅能运行容器，如果需要在CICD阶段构建镜�
 
 运行命令和命令参数为空。
 
-![](https://via.placeholder.com/800x600?text=Image+d24fe93e6db1ac63)
+![img_4016.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4016.png)
 
 另外需要注意我们这里需要在下面挂载三个目录
 
@@ -189,11 +189,11 @@ container容器运行时仅能运行容器，如果需要在CICD阶段构建镜�
 
 `/run/buildkit`：该文件是用于 Pod 中的容器能够共享buildkit进程，用于构建container镜像。
 
-![](https://via.placeholder.com/800x600?text=Image+a2dd6f4df1529fd6)
+
 
 同时指定Service Accoun为之前创建的jenkins
 
-![](https://via.placeholder.com/800x600?text=Image+030dedd58f294e78)
+
 
 除了在页面配置pod Template外，我们也可以通过pipeline配置。
 
@@ -203,11 +203,11 @@ Kubernetes 插件的配置工作完成了，接下来我们就来添加一个 Jo
 ## 自由流水线测试
 创建自由流水线任务，勾选限制项目的运行节点，标签表达式填写我们配置的 Slave Pod 中的 Label，这两个地方必须保持一致。
 
-![](https://via.placeholder.com/800x600?text=Image+b58d2d04eb4ee255)
+![img_2928.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2928.png)
 
 然后往下拉，在 Build 区域选择Execute shell
 
-![](https://via.placeholder.com/800x600?text=Image+822c70b05f1e88cf)
+![img_1968.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1968.png)
 
 然后输入我们测试命令
 
@@ -240,7 +240,7 @@ jenkins-agent-3p4j2        1/1     Running   0          6s
 
 我们可以看到在我们点击立刻构建的时候可以看到一个新的 Pod：jenkins-agent-3p4j2被创建了，这就是我们的 Jenkins Slave。任务执行完成后我们<font style="color:rgb(51, 51, 51);">可以查看到对应的控制台信息： </font>
 
-![](https://via.placeholder.com/800x600?text=Image+45cc36b6a0e59e8e)
+![img_2448.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2448.png)
 
 到这里证明我们的任务已经构建完成，然后这个时候我们再去集群查看我们的 Pod 列表，发现cicd这个 namespace 下面已经没有之前的 Slave 这个 Pod 了。
 
@@ -261,7 +261,7 @@ jenkins-59dfbb6854-dx42n   1/1     Running   0          149m
 ## pipeline-使用pod Template
 在流水线中指定pipeline脚本
 
-![](https://via.placeholder.com/800x600?text=Image+8e68d175add7ff6f)
+
 
 pipeline脚本如下：
 
@@ -286,7 +286,7 @@ podTemplate(label: 'jenkins-slave', inheritFrom: 'jenkins-agent', cloud: 'k8s-lo
 
 点击立即构建，查看控制台输出。
 
-![](https://via.placeholder.com/800x600?text=Image+9c6b1b9c2a409200)
+![img_576.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_576.png)
 
 ## pipeline-自定义pod Template
 ```groovy

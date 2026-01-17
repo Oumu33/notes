@@ -22,11 +22,11 @@ docker run -d -p 8080:8080 -e HF_HUB_OFFLINE=1 --add-host=host.docker.internal:h
 
 然后首次使用前，需要创建管理员账号：
 
-![](https://via.placeholder.com/800x600?text=Image+26d16eae98c21737)
+![img_496.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_496.png)
 
 然后点击登录即可。需要注意的是，此时Open-WebUI会自动检测后台是否启动了ollama服务，并列举当前可用的模型。即可进入到对话页面：
 
-![](https://via.placeholder.com/800x600?text=Image+985973ee9626cfa3)
+![img_1360.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1360.png)
 
 # Open-WebUI接入MCP流程
 参考文档：https://docs.openwebui.com/openapi-servers/mcp
@@ -72,15 +72,15 @@ uvx mcpo --port 8888 -- uvx mcp-server-time --local-timezone=Asia/Shanghai
 ## 添加 mcpo
 登录 open-webui，添加 mcpo 服务器
 
-![](https://via.placeholder.com/800x600?text=Image+9997b49783aef52b)
+
 
 查看可使用的 mcp
 
-![](https://via.placeholder.com/800x600?text=Image+6b556ae238e626ad)
+
 
 访问验证
 
-![](https://via.placeholder.com/800x600?text=Image+b985d2a588033e1a)
+
 
 # MCP 到 OpenAPI 代理的优势
 为什么通过代理使用 MCP 工具服务器是更优选择？

@@ -52,13 +52,13 @@ spec:
 ```
 
 ## 验证targets
-![](https://via.placeholder.com/800x600?text=Image+34e1380fee49c924)
+
 
 # grafana查看数据
 ## 导入dashboard
 参考文档：[https://grafana.com/grafana/dashboards/14584-argocd/](https://grafana.com/grafana/dashboards/14584-argocd/)
 
 ## 查看数据
-![](https://via.placeholder.com/800x600?text=Image+536ad9390c65136a)
+![img_2336.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2336.png)
 
 

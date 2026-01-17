@@ -22,7 +22,7 @@ Argo CD 的 Project 可以控制的权限有：
 
 # Project创建
 ## webUI创建
-![](https://via.placeholder.com/800x600?text=Image+dd74b1d95ad66183)
+
 
 ## CLI创建
 ```bash
@@ -86,7 +86,7 @@ spec:
 
 # project配置
 ## webUI配置
-![](https://via.placeholder.com/800x600?text=Image+64703483e73b8ced)
+
 
 ## CLI 配置
 ```yaml
@@ -129,7 +129,7 @@ ProjectRole 是一种用于定义在特定项目 (Project) 范围内的访问控
 ## 创建role
 我们在demo项目下创建名为dev的角色，配置权限为：允许get sync操作权限，不允许delete操作。
 
-![](https://via.placeholder.com/800x600?text=Image+c2b926d5aaf1bafc)
+
 
 ## 创建JWT Token
 ```bash

@@ -11,7 +11,7 @@
 
 通过在每个集群节点上运行 DNS 缓存，`NodeLocal DNSCache` 可以缩短 DNS 查找的延迟时间、使 DNS 查找时间更加一致，以及减少发送到 kube-dns 的 DNS 查询次数。
 
-![](https://via.placeholder.com/800x600?text=Image+87082389a42e4153)
+![img_2784.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2784.png)
 
 ## NodeLocal DNSCache好处
 + 如果本地没有 CoreDNS 实例，则具有最高 DNS QPS 的 Pod 可能必须到另一个节点进行解析，使用 `NodeLocal DNSCache` 后，拥有本地缓存将有助于改善延迟

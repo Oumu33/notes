@@ -1,6 +1,6 @@
 # Prometheus与服务发现
 1. 当云环境时，对于Prometheus这一类基于Pull模式的监控系统，无法继续使用的static_configs的方式静态的定义监控目标。而对于Prometheus而言其解决方案就是引入一个中间的代理人（服务注册中心），这个代理人掌握着当前所有监控目标的访问信息，Prometheus只需要向这个代理人询问有哪些监控目标即可， 这种模式被称为服务发现。
-+ ![](https://via.placeholder.com/800x600?text=Image+4f3847d8d2e859dc)
++ ![img_3952.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3952.png)
 2. 在不同的场景下，会有不同的东西扮演代理人（服务发现与注册中心）这一角色。
     - 比如在AWS公有云平台或者OpenStack的私有云平台中，由于这些平台自身掌握着所有资源的信息，此时这些云平台自身就扮演了代理人的角色。Prometheus通过使用平台提供的API就可以找到所有需要监控的云主机。
     - 在Kubernetes这类容器管理平台中，Kubernetes掌握并管理着所有的容器以及服务信息，那此时Prometheus只需要与Kubernetes打交道就可以找到所有需要监控的容器以及服务对象。

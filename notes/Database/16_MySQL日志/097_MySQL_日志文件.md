@@ -30,7 +30,7 @@
 
 mysql> show variables like 'log_error';
 
-![](https://via.placeholder.com/800x600?text=Image+d16e71f14637bda3)
+
 
 # 三、MySQL 常规日志
 + 默认关闭
@@ -52,11 +52,11 @@ root# cat /var/lib/mysql/hostname.log
 
 mysql> set global general_log=off; 关闭 
 
-![](https://via.placeholder.com/800x600?text=Image+1c5c5e7585a614c9)
+![img_1216.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1216.png)
 
-![](https://via.placeholder.com/800x600?text=Image+8ad17434d9279e90)
 
-![](https://via.placeholder.com/800x600?text=Image+759caefaa03358cd)
+
+
 
 # 四、MySQL 慢查询日志
 + 默认关闭
@@ -82,11 +82,11 @@ root# cat /var/lib/mysql/hostname-slow.log
 
 mysql> set global slow_query_log=off; 关闭 
 
-![](https://via.placeholder.com/800x600?text=Image+eebbba135547fb8c)
 
-![](https://via.placeholder.com/800x600?text=Image+641b20bde47dae52)
 
-![](https://via.placeholder.com/800x600?text=Image+5aa9950de7c50c0f)
+![img_1392.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1392.png)
+
+
 
 
 

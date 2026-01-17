@@ -24,23 +24,23 @@ MongoDB复制是将数据同步到多个服务器的过程；
 
 一个主库，两个从库组成，主库宕机时，这两个从库都可以被选为主库。
 
-![](https://via.placeholder.com/800x600?text=Image+2d16b7c4abb9c32d)
+![img_2848.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2848.png)
 
 当主库宕机后,两个从库都会进行竞选，其中一个变为主库，当原主库恢复后，作为从库加入当前的复制集群即可。
 
-![](https://via.placeholder.com/800x600?text=Image+329a699b27aeb9f8)
+
 
 + **当存在****arbiter****节点**
 
 在三个成员的复制集中，有两个正常的主从，及一台arbiter节点：一个主库，一个从库，可以在选举中成为主库，一个aribiter节点，在选举中，只进行投票，不能成为主库
 
-![](https://via.placeholder.com/800x600?text=Image+e5ae92c4c1a19d4e)
+![img_1744.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1744.png)
 
 说明：由于arbiter节点没有复制数据，因此这个架构中仅提供一个完整的数据副本。arbiter节点只需要更少的资源，代价是更有限的冗余和容错。
 
 当主库宕机时，将会选择从库成为主，主库修复后，将其加入到现有的复制集群中即可。
 
-![](https://via.placeholder.com/800x600?text=Image+e91a624944a7bdd8)
+
 
 1. 特点：
 + N 个节点的集群
@@ -242,7 +242,7 @@ _#复制默认实例的配置文件_
 
 <font style="color:#333333;">[root@localhost conf]</font>_# netstat -tunlp | grep mongod_
 
-![](https://via.placeholder.com/800x600?text=Image+347e8254157e03ab)
+
 
 **6.开始配置三个节点的复制集**
 
@@ -254,19 +254,19 @@ mongo
 
 **>**<font style="color:#333333;"> rs.status()</font>
 
-![](https://via.placeholder.com/800x600?text=Image+123dd712f3fd99b4)
+
 
 **6.3 定义cfg初始化参数(这里先加入三台，另一台后面实现添加节点功能)**
 
 **>**<font style="color:#333333;"> cfg={</font><font style="color:#DD1144;">"_id"</font><font style="color:#333333;">:</font><font style="color:#DD1144;">"test-rc"</font><font style="color:#333333;">,</font><font style="color:#DD1144;">"members"</font><font style="color:#333333;">:[{</font><font style="color:#DD1144;">"_id"</font><font style="color:#333333;">:0,</font><font style="color:#DD1144;">"host"</font><font style="color:#333333;">:</font><font style="color:#DD1144;">"192.168.100.100:27017"</font><font style="color:#333333;">},{</font><font style="color:#DD1144;">"_id"</font><font style="color:#333333;">:1,</font><font style="color:#DD1144;">"host"</font><font style="color:#333333;">:</font><font style="color:#DD1144;">"192.168.100.100:27018"</font><font style="color:#333333;">},{</font><font style="color:#DD1144;">"_id"</font><font style="color:#333333;">:2,</font><font style="color:#DD1144;">"host"</font><font style="color:#333333;">:</font><font style="color:#DD1144;">"192.168.100.100:27019"</font><font style="color:#333333;">}]}</font>
 
-![](https://via.placeholder.com/800x600?text=Image+d57d7838bce7a679)
+![img_2496.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2496.png)
 
 **6.4 启动复制集功能（初始化配置时保证从节点没有数据）**
 
 **>**<font style="color:#333333;"> rs.initiate(cfg)</font>
 
-![](https://via.placeholder.com/800x600?text=Image+ec7df6fbdfe6c393)
+![img_688.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_688.png)
 
 **6.5 查看复制集的状态信息**
 
@@ -397,19 +397,19 @@ mongo
 
 **test-rc**:PRIMARY>  **rs**.add("192.168.100.100:27020")
 
-![](https://via.placeholder.com/800x600?text=Image+22a75b8a56fa7697)
+
 
 **查看复制集的状态信息**
 
 **test-rc**:PRIMARY>  **rs**.status()
 
-![](https://via.placeholder.com/800x600?text=Image+724aa93e303768c1)
+
 
 **8. 删除节点**
 
 **test-rc**:PRIMARY>  **rs**.remove("192.168.100.100:27018")
 
-![](https://via.placeholder.com/800x600?text=Image+f0e48392483b41c2)
+![img_640.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_640.png)
 
 **查看复制集的状态信息**
 
@@ -427,7 +427,7 @@ mongo
 
 <font style="color:navy;">netstat</font><font style="color:#333333;"> -tunlp | grep mongod</font>
 
-![](https://via.placeholder.com/800x600?text=Image+4877d25744104bde)
+
 
 **可以查看到共有4个实例的进程信息**
 
@@ -435,7 +435,7 @@ mongo
 
 <font style="color:#0086B3;">kill</font><font style="color:#333333;"> -9 48211        </font>
 
-![](https://via.placeholder.com/800x600?text=Image+af8bd26de8092a26)
+![img_2384.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2384.png)
 
 **9.4 登录MongoDB端口号为27019的实例**
 

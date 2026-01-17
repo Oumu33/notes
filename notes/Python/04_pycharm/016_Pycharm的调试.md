@@ -7,9 +7,9 @@
 3. 选择想要的模式：进行逐步调试
 4. 查看调试结果
 
-![](https://via.placeholder.com/800x600?text=Image+74ba87ae952f8b21)
+![img_3072.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3072.jpeg)
 
-![](https://via.placeholder.com/800x600?text=Image+45a5026910959055)****
+![img_4640.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4640.png)****
 
 # 二、单步调试 step into/step out/step over 区别
 **step over**：单步执行时，在函数内遇到子函数时不会进入子函数内单步执行，而是将子函数整个执行完再停止，也就是把子函数整个作为一步。
@@ -21,33 +21,33 @@
 **step out**：当单步执行到子函数内时，用 step out 就可以执行完子函数余下部分，并返回到上一层函数。
 
 1. step over 示例：  
-![](https://via.placeholder.com/800x600?text=Image+872b38905d8226d2)
+
 2. step into 示例：
 
-![](https://via.placeholder.com/800x600?text=Image+151a2c698e4a4e19)
+
 
 3. step out 示例：
 
-![](https://via.placeholder.com/800x600?text=Image+5186385176219928)
+![img_240.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_240.png)
 
 # 三、调试时，查看日志
-![](https://via.placeholder.com/800x600?text=Image+a06f29d5555ca5a2)
+![img_1120.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1120.png)
 
 1. Run to Cursor 示例：
 
-![](https://via.placeholder.com/800x600?text=Image+624c9efa0dafa66f)
+
 
 2. F9 的作用：
 
-![](https://via.placeholder.com/800x600?text=Image+4ed07043638afa18)
+
 
 # 四、其他
 1. 查看所有断点
 
-![](https://via.placeholder.com/800x600?text=Image+fa4b168d6402de29)
+![img_3024.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3024.png)
 
 2. 禁用所有断点
 
-![](https://via.placeholder.com/800x600?text=Image+7545b725ffd2b22f)
+
 
 

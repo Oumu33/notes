@@ -68,7 +68,7 @@ replica-serve-stale-data no
 
 1. 执行info replication查看当前主从配置
 
-![](https://via.placeholder.com/800x600?text=Image+ddb0d661c24a204b)
+
 
 # 四、哨兵配置sentinel.conf 文件
 1. 复制配置文件并修改
@@ -108,23 +108,23 @@ sentinel down-after-milliseconds mymaster 5000
 # 五、测试主从复制
 1. 主节点添加数据
 
-![](https://via.placeholder.com/800x600?text=Image+286d44368633556b)
+![img_2992.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2992.png)
 
 1. 从节点获取数据
 
-![](https://via.placeholder.com/800x600?text=Image+76bf32ccc5ccf40b)
+![img_2288.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2288.png)
 
 # 六、测试故障转移
 1. 停掉主节点
 
-![](https://via.placeholder.com/800x600?text=Image+ee00977fa9af9940)
+
 
 1. 查看redis集群信息
 
-![](https://via.placeholder.com/800x600?text=Image+7b485d5351205c91)
+
 
 1. 从节点192.168.68.112升级为主节点
 
-![](https://via.placeholder.com/800x600?text=Image+fad34df7d0925f1c)
+
 
 

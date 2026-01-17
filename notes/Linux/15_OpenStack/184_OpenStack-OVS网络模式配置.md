@@ -386,8 +386,8 @@
 + compute ~#  systemctl enable neutron-linuxbridge-agent.service
 + compute ~#  systemctl start neutron-linuxbridge-agent.service
     - 启动服务报错
-+ ![](https://via.placeholder.com/800x600?text=Image+1643ea35f043a425)
-+ ![](https://via.placeholder.com/800x600?text=Image+3e4eff4dd996aff5)
++ 
++ 
 + 解决办法：
 + compute ~#  setenforce 0
 + compute ~# vim  /etc/selinux/config 

@@ -40,7 +40,7 @@ Agent 的核心是 推理 + 行动（Reason + Act），也就是 ReAct 模式。
 + Agent 就像“一个有判断力的工匠”，他知道什么时候用螺丝刀，什么时候用锤子，甚至知道先用螺丝刀再用锤子。
 
 ## Agent 工作原理
-![](https://via.placeholder.com/800x600?text=Image+9676a8f049b6c6f9)
+![img_736.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_736.png)
 
 代理的工作流程可以分为以下步骤：
 
@@ -65,13 +65,13 @@ Agent 的核心是 推理 + 行动（Reason + Act），也就是 ReAct 模式。
 
 在LangChain的Agents实际架构中，Agent的角色是接收输入并决定采取的操作，但它本身并不直接执行这些操作。这一任务是由AgentExecutor来完成的。将Agent（决策大脑）与AgentExecutor（执行操作的Runtime）结合使用，才构成了完整的Agents（智能体），其中AgentExecutor负责调用代理并执行指定的工具，以此来实现整个智能体的功能。这也就是为什么create_tool_calling_agent需要通过AgentExecutor才能够实际运行的原因。当然，在这种模式下，AgentExecutor的内部已经自动处理好了关于我们工具调用的所有逻辑，其中包含串行和并行工具调用的两种常用模式。
 
-![](https://via.placeholder.com/800x600?text=Image+1ae8eb9243a857d4)
+
 
 # 实践使用
 ## 多工具并行调用
 在大模型中，并行工具调用指的是在大模型调用外部工具时，可以在单次交互过程中可以同时调用多个工具，并行执行以解决用户的问题。如下图所示：
 
-![画板](https://via.placeholder.com/800x600?text=Image+2e2c61a729f4cd58)
+
 
 而在create_tool_calling_agent中，已经自动处理了并行工具调用的处理逻辑，并不需要我们在手动处理，比如接下来测试一些复杂的问题：
 
@@ -174,7 +174,7 @@ Invoking: `get_weather` with `{'loc': 'Shanghai'}`
 从这个过程中可以明显的看出，一次性发起了同一个外部函数的两次调用请求，并依次获得了北京和杭州两个城市的天气。这就是一次标准的parallel_function_call。
 
 ## 多工具串联调用
-![画板](https://via.placeholder.com/800x600?text=Image+a8f8de6d6a02047c)
+
 
 定义一个write_file函数，用于将文本写入本地，然后在tools列表中直接添加write_file工具，并修改提示模版，添加write_file工具的使用场景。代码如下所示：  
 
@@ -645,6 +645,6 @@ Invoking: `extract_text` with `{}`
 
 生成的文件如下
 
-![](https://via.placeholder.com/800x600?text=Image+a534c175089388dc)
+![img_4288.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4288.png)
 
 

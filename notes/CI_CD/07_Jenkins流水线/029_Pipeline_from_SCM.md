@@ -5,7 +5,7 @@
 ## 新增jenkinsfile文件
 在项目的根目录，建立Jenkinsfile文件，内容如下
 
-![](https://via.placeholder.com/800x600?text=Image+09119dd5fe2bb4d4)
+![img_4704.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4704.jpeg)
 
 ```bash
 pipeline {
@@ -35,15 +35,15 @@ pipeline {
 ## 修改流水线任务配置
 修改流水线定义，改为pipeline script from SCM，现在仓库地址并选择认证方式。
 
-![](https://via.placeholder.com/800x600?text=Image+f313465cfc8f495d)
+
 
 指定脚本路径为默认项目根目录下的Jenkinsfile
 
-![](https://via.placeholder.com/800x600?text=Image+df18dac52bff664e)
+
 
 ## 构建测试
 保存任务后，点击立即构建，此时构建状态试图如下所示，第一步变成了Checkout SCM
 
-![](https://via.placeholder.com/800x600?text=Image+87321e41f29ed92b)
+
 
 

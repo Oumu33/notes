@@ -4,7 +4,7 @@
     - 默认是使用firewalld来管理netfilter子系统，不过底层调用的命令仍然是iptables等。
     - firewalld跟iptables比起来，不好的地方是每个服务都需要去设置才能放行，因为默认是拒绝。
     - 而iptables里默认是每个服务是允许，需要拒绝的才去限制。
-+ ![](https://via.placeholder.com/800x600?text=Image+398ac591274a6164)
++ 
     2. firewalld相比iptables的优点
     - firewalld可以动态修改单条规则，而不需要像iptables那样，在修改了规则后必须得全部刷新才可以生效；
     - firewalld在使用上要比iptables人性化很多，即使不明白“五张表五条链”而且对TCP/IP协议也不理解也可以实现大部分功能。

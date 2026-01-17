@@ -28,11 +28,11 @@ deploy:
 
 此时观察build阶段日志，发现使用了maven镜像执行操作
 
-![](https://via.placeholder.com/800x600?text=Image+61060490ebe3cbc6)
+![img_112.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_112.png)
 
 观察deploy阶段日志，则使用默认的alpine镜像执行操作
 
-![](https://via.placeholder.com/800x600?text=Image+7cc9818e319726d2)
+![img_4816.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4816.jpeg)
 
 # services
 job运行期间运行的另一个Docker容器，并link到image关键字定义的Docker容器。这样，您就可以在构建期间访问服务容器.
@@ -59,6 +59,6 @@ build:
 
 观察执行日志，内容如下，成功访问到了redis服务。
 
-![](https://via.placeholder.com/800x600?text=Image+fe7165d7ddd00b8d)
+![img_2160.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2160.png)
 
 

@@ -101,6 +101,6 @@ ingressroute.traefik.containo.us/sonarqube created
 # 访问验证
 浏览器访问[http://sonarqube.local.com](http://sonarqube.local.com)，默认用户名密码为admin
 
-![](https://via.placeholder.com/800x600?text=Image+9551e3e4a30d3f30)
+
 
 

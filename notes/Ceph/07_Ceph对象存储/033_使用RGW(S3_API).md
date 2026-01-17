@@ -286,7 +286,7 @@ s3://images/: Policy updated
 ## 访问测试
 浏览器访问 vip:端口/bucket/name测试
 
-![](https://via.placeholder.com/800x600?text=Image+d391d5e895c73901)
+
 
 ## 配置nginx反向代理
 nginx服务器为192.168.10.95，实现访问www.cuiliangblog.cn 的图片内容将请求转向访问ceph 对象存储中的 image 资源
@@ -323,6 +323,6 @@ systemctl start nginx
 
 浏览器访问图片资源
 
-![](https://via.placeholder.com/800x600?text=Image+e38b246360dedafd)
+![img_1920.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1920.png)
 
 

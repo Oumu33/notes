@@ -22,7 +22,7 @@
 + 受保护的变量： 在部署期间使用受每个环境保护的变量安全地存储和使用机密。
 + 环境： 定义多个环境。
 
-![](https://via.placeholder.com/800x600?text=Image+da94ef5667d5c457)  
+  
 
 
 # Gitlab CI/CD架构
@@ -32,12 +32,12 @@ GitLab的一部分，GitLab是一个Web应用程序，具有将其状态存储�
 ## Gitlab Runner
 是一个处理构建的应用程序。 它可以单独部署，并通过API与GitLab CI / CD一起使用。
 
-![](https://via.placeholder.com/800x600?text=Image+d229cbf096dd7dec)
+![img_1648.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1648.png)
 
 ## .gitlab-ci.yml
 定义流水线作业运行，位于应用项目根目录下 。
 
-![](https://via.placeholder.com/800x600?text=Image+1fce52557a86e421)
+
 
 为了运行测试，至少需要一个 GitLab 实例、一个 GitLab Runner、一个gitlab-ci文件
 
@@ -49,14 +49,14 @@ GitLab的一部分，GitLab是一个Web应用程序，具有将其状态存储�
 + GitLab将检测到它并使用名为GitLab Runner的工具运行脚本。
 + 脚本被分组为作业，它们共同组成了一个管道。
 
-![](https://via.placeholder.com/800x600?text=Image+6d936be5e45dfe27)
+
 
 管道状态也会由GitLab显示：
 
-![](https://via.placeholder.com/800x600?text=Image+9b63ca824e6c49f6)
+![img_3424.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3424.png)
 
 最后，如果出现任何问题，可以轻松地 回滚所有更改：
 
-![](https://via.placeholder.com/800x600?text=Image+fe8696d13ad289c9)
+![img_816.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_816.jpeg)
 
 

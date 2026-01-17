@@ -59,28 +59,28 @@
 # 四、激活单元：新建target
 1. 建立文件（用户启动需要内核启动）
 
-![](https://via.placeholder.com/800x600?text=Image+ccf03dc09f9ad087)
+![img_4688.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4688.jpeg)
 
 1. 启动目标（启动用户，内核随之启动）
 
-![](https://via.placeholder.com/800x600?text=Image+af2de300c8883234)
+![img_1856.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1856.png)
 
 1. 停止目标（停止内核，用户正常运行）
 
-![](https://via.placeholder.com/800x600?text=Image+5e925f297252f48a)
+
 
 1. 设置自定义内核开机启动
 + 修改文件[install]需要开启
 
-![](https://via.placeholder.com/800x600?text=Image+38f0afd20f56f4e6)
+![img_1616.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1616.png)
 
 + 设置内核文件开机启动（**随着其它系统文件**）
 
-![](https://via.placeholder.com/800x600?text=Image+571e07e0789750cb)
+![img_1184.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1184.png)
 
 + 查看启动状态
 
-![](https://via.placeholder.com/800x600?text=Image+e4610c1e61b9f13a)
+![img_784.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_784.png)
 
 # 五、自定义服务设置自启动
 ## 存放路径

@@ -161,7 +161,7 @@ kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboar
 ### 登录访问
 [https://192.168.10.10:30010/#/login](https://192.168.10.10:30010/#/login)
 
-![](https://via.placeholder.com/800x600?text=Image+d1fb12e806a2c653)
+
 
 ### 添加ingress资源
 我们已经在集群部署了ingress-nginx，接下来部署ingress资源，通过域名访问。
@@ -247,7 +247,7 @@ spec:
 
 + 添加hosts地址访问验证
 
-![](https://via.placeholder.com/800x600?text=Image+29a08b62f6a8796c)
+![img_2624.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2624.png)
 
 ## kubeconfig方式验证
 ### 设置变量

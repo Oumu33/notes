@@ -14,7 +14,7 @@ OpenTelemetry +Prometheus+ Loki + Tempo + Grafana 是一套现代化、云原生
 
 
 ## 系统架构
-![](https://via.placeholder.com/800x600?text=Image+1b09a3648bb9ecdb)
+
 
 # 部署示例应用
 ## 应用介绍
@@ -152,7 +152,7 @@ spec:
 
 创建完 ingress 资源后添加 hosts 解析并访问验证。
 
-![](https://via.placeholder.com/800x600?text=Image+13c811ec25f28d25)
+
 
 ## 配置 Ingress 输出
 以 ingress 为例，从 Traefik v2.6 开始，Traefik 原生支持使用 OpenTelemetry 协议导出追踪数据（traces），这使你可以将 Traefik 的 tracing 数据发送到兼容 OTel 的后端 。Traefik 部署可参考文档：[https://www.cuiliangblog.cn/detail/section/140101250](https://www.cuiliangblog.cn/detail/section/140101250)，
@@ -262,7 +262,7 @@ spec:
 ## 部署 Loki
 具体可参考文档：[https://www.cuiliangblog.cn/detail/section/216677852](https://www.cuiliangblog.cn/detail/section/216677852)，此处不再赘述。
 
-## ![](https://via.placeholder.com/800x600?text=Image+cecafce678cd82af)
+## 
 # Grafana配置
 ## 实现步骤
 1. **<font style="color:rgb(51, 51, 51);">配置 Loki 、Temp、Prometheus</font>**<font style="color:rgb(51, 51, 51);"> ：按照上述步骤，分别部署 Prometheus、Loki 和 Tempo，并配置为 Grafana 的数据源。</font>
@@ -275,13 +275,13 @@ spec:
 
 + OTel SDK 支持自动注入（如在日志格式中添加 traceid 字段）
 
-![](https://via.placeholder.com/800x600?text=Image+c075b559caae04d9)
+![img_208.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_208.png)
 
 **Metrics 与 Traces 绑定**
 
 + 通过 labels（如 `service_name`、`span_id`）让时序指标和 Trace 关联。tempo开启metricsGenerator 功能后，可以将 traces 数据写入 prometheus。
 
-![](https://via.placeholder.com/800x600?text=Image+8d63c288b24f0efe)
+![img_608.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_608.png)
 
 # 关联查询实践
 ## Log->Trace
@@ -289,21 +289,21 @@ spec:
 
 loki 数据源配置派生字段，具体可参考文档：[https://grafana.com/docs/grafana/next/datasources/loki/configure-loki-data-source/#derived-fields](https://grafana.com/docs/grafana/next/datasources/loki/configure-loki-data-source/#derived-fields)。配置如下：
 
-![](https://via.placeholder.com/800x600?text=Image+7dfeb9d668809556)
+
 
 其中 TraceID 是变量名，type ���择标签匹配，标签是 trace_id。将匹配到的内容通过 `${__value.raw}`提取 trace 的值，然后拼接变量到 tempo 的 dashboard 中。
 
 此时我们查询 loki 日志，便可以通过 traceID 实现从日志到指标数据的关联与跳转查询。
 
-![](https://via.placeholder.com/800x600?text=Image+68105c42df6ec14b)
+![img_48.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_48.png)
 
 新建 名为 Tempo 的 dashboard，定义 trace_id 参数，通过 url 获取。
 
-![](https://via.placeholder.com/800x600?text=Image+fb40eb651e734edd)
+![img_1776.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1776.png)
 
 此时重新加载 dashboard，便可以根据 url 获取 trace_id 参数并查询 tempo 数据。
 
-![](https://via.placeholder.com/800x600?text=Image+3cce2a479fe3064d)
+![img_1456.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1456.png)
 
 ## Log->Metrics
  在 **Grafana 中实现 Log → Metrics（从日志跳转到指标）**，可以根据日志信息查询对应时间段指标数据，用于监控、告警和分析。 
@@ -339,34 +339,34 @@ traces_service_graph_request_client_seconds_bucket：请求延迟的 histogram �
 
 创建名为 metrics 的 dashboard，内容如下：
 
-![](https://via.placeholder.com/800x600?text=Image+01fa591fd86bb8e5)
+
 
 配置一个名为server 的变量，用于关联日志与指标数据
 
-![](https://via.placeholder.com/800x600?text=Image+84dd6c6a62448a6c)
+![img_4144.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4144.png)
 
 修改 loki 数据源配置，新增派生关联字段
 
-![](https://via.placeholder.com/800x600?text=Image+dfa7a5c887a6e3e4)
+![img_2000.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2000.png)
 
 查看 loki 日志，既可跳转至对应服务的 metrics 信息
 
-![](https://via.placeholder.com/800x600?text=Image+7a58b390f689abd8)
+
 
 ## Trace->Metrics
 在 Grafana 中实现 Trace → Metrics 查询，也就是从 链路追踪（Tracing）界面跳转到对应的 Metrics（指标）数据面板，可以用于从一个具体的 Trace 看到相关服务的性能指标，比如延迟、错误率、请求量等。这对于 SRE/DevOps 来说是非常有价值的。  
 
 接下来我们配置 tempo 数据源关联 prometheus 配置，具体可参考文档[https://grafana.com/docs/grafana/next/datasources/tempo/configure-tempo-data-source/#trace-to-metrics](https://grafana.com/docs/grafana/next/datasources/tempo/configure-tempo-data-source/#trace-to-metrics)。
 
-![](https://via.placeholder.com/800x600?text=Image+db43283db713ebae)
+![img_3136.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3136.png)
 
 查询 traces 标签信息
 
-![](https://via.placeholder.com/800x600?text=Image+5db0ed6ca0473b89)
+
 
 查询 metrics 标签信息
 
-![](https://via.placeholder.com/800x600?text=Image+9eef7b753ccb9774)
+
 
 添加 tags 转换，将 traces 的 server.name 转换为 metrics 的 server。
 
@@ -374,18 +374,18 @@ traces_service_graph_request_client_seconds_bucket：请求延迟的 histogram �
 
 接下来通过 traces 查询 metrics 数据。
 
-![](https://via.placeholder.com/800x600?text=Image+0e164767e27ab8cb)
+![img_2688.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2688.png)
 
 查询结果如下：
 
-![](https://via.placeholder.com/800x600?text=Image+642bdb889de549c7)
+
 
 ## Trace->Log
 在 **Grafana 中实现 Tracing → Logging 查询**（即从 Trace 页面跳转查看相关日志）是构建完整 Observability 的关键一环。实现从某个具体的 Trace span 跳转到相关时间段和服务的日志，进一步排查问题。  
 
 接下来我们配置 tempo 数据源关联 loki 配置，具体可参考文档[https://grafana.com/docs/grafana/next/datasources/tempo/configure-tempo-data-source/#trace-to-logs](https://grafana.com/docs/grafana/next/datasources/tempo/configure-tempo-data-source/#trace-to-logs)
 
-![](https://via.placeholder.com/800x600?text=Image+79f9c35835b9f96a)
+![img_2064.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2064.png)
 
 添加 tags 转换，将 traces 的 server.name 转换为 logging 的 server_name。
 
@@ -393,11 +393,11 @@ traces_service_graph_request_client_seconds_bucket：请求延迟的 histogram �
 
  接下来通过 tracing 查询 logging 数据。
 
-![](https://via.placeholder.com/800x600?text=Image+c214132d98cea4b1)
+
 
 查询结果如下：
 
-![](https://via.placeholder.com/800x600?text=Image+6701be2f2a00c251)
+![img_1664.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1664.png)
 
 # 告警配置
 在现代微服务架构中，服务数量众多、故障路径复杂、故障影响广泛，依靠人工排查日志和指标已无法满足快速定位问题的需求。借助 Grafana 配置 Prometheus 指标告警 和 Loki 日志关键字告警，能够实现问题的实时监测、自动预警、快速定位与响应，是构建高可用 Observability 系统的关键步骤。

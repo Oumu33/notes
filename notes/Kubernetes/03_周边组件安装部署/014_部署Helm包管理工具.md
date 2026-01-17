@@ -110,6 +110,6 @@ ingressroute.traefik.containo.us/helm-dashboard created
 ## 访问验证
 添加hosts解析记录`helm.local.com 192.168.10.10`，然后访问验证
 
-![](https://via.placeholder.com/800x600?text=Image+b3876ef6032913ea)
+![img_2000.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2000.png)
 
 

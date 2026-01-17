@@ -7,7 +7,7 @@
 GateWay：通过在节点上创建到达目标容器地址的路由直接完成报文转发，因此这种方式要求各节点本身必须在同一个二层网络中，故该方式不太适用于较大的网络规模（大二层网络除外）。host-gw有着较好的转发性能，且易于设定，推荐对报文转发性能要求较高的场景使用。
 + UDP：使用普通UDP报文封装完成隧道转发，其性能较前两种方式要低很多，仅应该在不支持前两种方式的环境中使用。
 
-![](https://via.placeholder.com/800x600?text=Image+f5abb4fa076244f0)
+![img_1648.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1648.png)
 
 # 二、配置清单
 1. 参考地址：[https://github.com/coreos/flannel/blob/master/Documentation/configuration.md](https://github.com/coreos/flannel/blob/master/Documentation/configuration.md)

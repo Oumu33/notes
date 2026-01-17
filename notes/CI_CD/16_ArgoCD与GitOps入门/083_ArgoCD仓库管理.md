@@ -21,28 +21,28 @@ Argo CD 的 “Repo 仓库管理（Repository Management）” 是 GitOps 工作
 
 查看 helm 仓库地址
 
-![](https://via.placeholder.com/800x600?text=Image+33dc87114b93afc7)
+![img_2896.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2896.png)
 
 创建机器人账户
 
-![](https://via.placeholder.com/800x600?text=Image+0bf68ee0cd9456cb)
+
 
 创建 repo
 
-![](https://via.placeholder.com/800x600?text=Image+0556b2e6cecfa313)
+![img_2480.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2480.png)
 
 查看仓库状态
 
-![](https://via.placeholder.com/800x600?text=Image+8caa6f0d21d34042)
+![img_3152.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3152.png)
 
 ## helm仓库配置
 创建 helm 仓库
 
-![](https://via.placeholder.com/800x600?text=Image+bbc9733d4eb2a797)
+
 
 查看仓库状态
 
-![](https://via.placeholder.com/800x600?text=Image+d813402fe4a56baa)
+![img_2528.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2528.png)
 
 # Yaml 管理仓库
  ArgoCD 的 **GitOps 思路**就是通过 YAML 文件（Kubernetes CRD）来管理所有配置，包括仓库的创建。

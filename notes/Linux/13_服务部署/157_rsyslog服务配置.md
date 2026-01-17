@@ -23,11 +23,11 @@
 # 四、实验分析与设计思路
 1.   网络拓扑图
 
-![](https://via.placeholder.com/800x600?text=Image+2b928fe74eb210d4)
+
 
 2.   实验思路
 
-![](https://via.placeholder.com/800x600?text=Image+be93d643d93d1f10)
+
 
 # 五、实验准备
 1.   设置环境为同一网段，连接公网，DHCP获取ip
@@ -147,67 +147,67 @@ Oct 24 22:50:08 tiaoban systemd[1]: run-reac9ba8499ab4b4e8e10b421f8400204.servic
 # 八、数据库方式存储日志
 1.   在rsyslog服务器上指定和数据库连接的模块
 
-![](https://via.placeholder.com/800x600?text=Image+0e3c76abf54f90fa)
 
-![](https://via.placeholder.com/800x600?text=Image+8c750e74532f9b96)
+
+![img_1024.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1024.png)
 
 2.   mysql服务器创建用户并进行授权
 
-![](https://via.placeholder.com/800x600?text=Image+e842c98b1cbd4cb5)
+![img_400.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_400.png)
 
 3.   mysql主配置文件中跳过域名解析
 
-![](https://via.placeholder.com/800x600?text=Image+72c19ea9d6624ec7)
+![img_176.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_176.png)
 
-![](https://via.placeholder.com/800x600?text=Image+135cd3c79dc5316a)
+
 
 4.   将数据库的模板库导入数据库服务器中
 
-![](https://via.placeholder.com/800x600?text=Image+939f37950423862d)
+![img_3120.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3120.png)
 
-![](https://via.placeholder.com/800x600?text=Image+6a9b70f5c2cf1440)
+![img_2304.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2304.png)
 
 5.   配置rsyslog主配置文件添加连接MySQL数据库的模块
 
-![](https://via.placeholder.com/800x600?text=Image+98c20edbcfb0eabb)
 
-![](https://via.placeholder.com/800x600?text=Image+30c30f480b331724)
 
-![](https://via.placeholder.com/800x600?text=Image+08e5c43ad37fec93)
+
+
+
 
 6.   操作验证
 
-![](https://via.placeholder.com/800x600?text=Image+d31b714ed0dc5a28)
+![img_1360.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1360.png)
 
 # 九、安装loganalyzer图形化工具
 1.   rsyslog服务器上搭建PHP和HTTP
 
-![](https://via.placeholder.com/800x600?text=Image+76f14b23abdf491b)
+
 
 2.   配置httpd和php，解析PHP和连接MySQL测试
 
-![](https://via.placeholder.com/800x600?text=Image+a2b2eb31076a8992)
+
 
 3.   将loganalyzer程序包进行解压
 
-![](https://via.placeholder.com/800x600?text=Image+004dd3bf517d2833)
+![img_1572.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1572.png)
 
 4.   通过浏览器进行安装Loganalyzer
 
-![](https://via.placeholder.com/800x600?text=Image+90b473ef8fb0bc91)
+![img_4224.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4224.png)
 
-![](https://via.placeholder.com/800x600?text=Image+5f212b64dd2c26ae)
 
-![](https://via.placeholder.com/800x600?text=Image+95042b0933a8a3d3)
+
+![img_4144.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4144.png)
 
 5.   设置账号和ip访问控制
 
-![](https://via.placeholder.com/800x600?text=Image+7fcec9943e0d244c)
+![img_4368.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4368.png)
 
-![](https://via.placeholder.com/800x600?text=Image+240a4961860269b7)
+![img_2768.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2768.png)
 
-![](https://via.placeholder.com/800x600?text=Image+54c954e39f3ccc54)
 
-![](https://via.placeholder.com/800x600?text=Image+1b54abd9f626dbd6)
+
+![img_4128.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4128.png)
 
 

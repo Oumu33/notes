@@ -7,11 +7,11 @@ mysql> show grants;                              �
 
 mysql> show grants for wang@localhost; --查看用户wang的权限
 
-![](https://via.placeholder.com/800x600?text=Image+ade29a23af5bb187)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+b9ba460236aa513f)
+![img_352.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_352.png)
 
  
 

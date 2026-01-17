@@ -17,7 +17,7 @@ LangChain中将大语言模型分为以下几种，我们主要使用的是聊�
 ## Model 继承关系
 在 LangChain 的类结构中，顶层基类是 `BaseLanguageModel`，用于定义模型的通用接口。它分为两支：`BaseChatModel` 和 `BaseLLM`。
 
-![](https://via.placeholder.com/800x600?text=Image+1753855df147ca7c)
+![img_3536.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3536.png)
 
 接入聊天模型时需继承 `BaseChatModel`，如常用的 `ChatOpenAI`；而文本生成模型则继承 `BaseLLM`，如 `OpenAI`。
 

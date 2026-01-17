@@ -97,7 +97,7 @@ dnf -y install harfbuzz
 
 2. jenkins提示离线
 
-![](https://via.placeholder.com/800x600?text=Image+3897aaebb0308946)
+![img_1024.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1024.png)
 
 访问http://ip:8080/pluginManager/advanced，改为国内源，地址为[https://mirrors.huaweicloud.com/jenkins/updates/update-center.json](https://mirrors.huaweicloud.com/jenkins/updates/update-center.json)
 

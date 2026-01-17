@@ -8,6 +8,6 @@ from public.models import SensorHistory, Sensor
 
 <font style="color:rgb(77, 77, 77);">将配置添加到pycharm中的python配置中</font>
 
-![](https://via.placeholder.com/800x600?text=Image+0666eac6a00cfbf0)
+![img_4224.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4224.png)
 
 

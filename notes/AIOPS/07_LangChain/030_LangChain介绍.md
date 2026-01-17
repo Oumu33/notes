@@ -43,7 +43,7 @@ LLM的上下文窗口（例如GPT-4最多支持32,768个tokens）限制了它处
 
 
 # LangChain技术体系
-![](https://via.placeholder.com/800x600?text=Image+d539258ea294905d)
+
 
 LangChain技术体系主要包括以下模块：
 
@@ -161,7 +161,7 @@ LangChain 提供多种文档加载器和文本处理工具，通常在 `langchai
     - `TokenTextSplitter`：按 token 数分割。
 
 # LangChain核心模块
-![](https://via.placeholder.com/800x600?text=Image+519c29fe55c7b4e0)
+
 
 ## LLM 大模型接口
 LangChain 封装了不同模型的调用方式，它统一了各种模型的接口，切换不同模型变得轻松。

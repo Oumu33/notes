@@ -135,7 +135,7 @@
 + controller  ~# systemctl enable  openstack-nova-api.service openstack-nova-consoleauth.service  openstack-nova-scheduler.service openstack-nova-conductor.service  openstack-nova-novncproxy.service
 + controller  ~# systemctl start  openstack-nova-api.service openstack-nova-consoleauth.service  openstack-nova-scheduler.service openstack-nova-conductor.service  openstack-nova-novncproxy.service
     - 在启动服务时因为消息队列导致服务无法正常启动
-+ ![](https://via.placeholder.com/800x600?text=Image+e5e53e3dbfe6ff2a)
++ ![img_1808.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1808.png)
     - 删除OpenStack用户
 + controller  ~# rabbitmqctl  delete_user openstack
     - 添加OpenStack用户

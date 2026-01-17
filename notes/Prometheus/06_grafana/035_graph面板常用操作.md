@@ -1,11 +1,11 @@
 # graph面板常用操作
 1. 自定义每条线的图例名称
 
-![](https://via.placeholder.com/800x600?text=Image+c10b1b1a77ca61fb)
+![img_64.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_64.png)
 
 2. Y轴按百分比显示数值
 
-![](https://via.placeholder.com/800x600?text=Image+849185c345c36b80)
+![img_3648.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3648.png)
 
 | 数据类型 | 使用场景 |
 | --- | --- |
@@ -18,15 +18,15 @@
 
 3. 显示当前时间序列的最小 最大 平均值，并设置显示时保留1位小数
 
-![](https://via.placeholder.com/800x600?text=Image+8f06b1b936b5cdbd)
+
 
 4. 自定义规则，指定某主机以点的形式显示在图表中
 
-![](https://via.placeholder.com/800x600?text=Image+3e473c24847d9ddb)
+![img_2784.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2784.png)
 
 5. 定义一个Threshold规则，如果CPU超过50%的区域显示为warning状态
 
-![](https://via.placeholder.com/800x600?text=Image+f78174cdccc4facd)
+![img_3120.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3120.png)
 
 + Graph面板则会在图表中显示一条阈值，并且将所有高于该阈值的区域显示为warining状态，通过可视化的方式直观的在图表中显示一些可能出现异常的区域。
 

@@ -48,6 +48,6 @@ spec:
 ```
 
 # 访问验证
-![](https://via.placeholder.com/800x600?text=Image+919d4fda273f5f11)
+![img_3312.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3312.png)
 
 

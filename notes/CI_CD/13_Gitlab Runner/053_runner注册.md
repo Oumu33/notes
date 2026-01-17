@@ -8,20 +8,20 @@
 ## shared类型
 依次点击主页——>管理中心——>CI/CD——>Runner——>新建实例runner
 
-![](https://via.placeholder.com/800x600?text=Image+1692a844aa337206)
+![img_1104.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1104.png)
 
 ## group类型
 依次点击主页——>群组——>指定组——>设置——>构建——>runner——>新建群组runner
 
-![](https://via.placeholder.com/800x600?text=Image+0db91e1840e1e1a3)
+
 
 ## specific类型
 依次点击主页——>项目——>指定项目——>设置——>CI/CD——>Runner——>新建项目runner
 
-![](https://via.placeholder.com/800x600?text=Image+a5360cefe0cfc1f6)
+![img_3408.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3408.png)
 
 ## 生成注册命令
-![](https://via.placeholder.com/800x600?text=Image+4148298d0a6c1f7f)
+
 
 # 注册runner(shell类型)
 ## 注册runner（Linux）
@@ -158,7 +158,7 @@ ExecStart=/usr/bin/gitlab-runner "run" "--working-directory" "/home/gitlab-runne
 ```
 
 # 查看runner状态
-![](https://via.placeholder.com/800x600?text=Image+d8d9592f79289e8c)
+
 
 ## 
 ## 

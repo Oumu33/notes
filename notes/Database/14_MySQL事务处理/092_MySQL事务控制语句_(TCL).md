@@ -13,13 +13,13 @@
 # 一、示例1
 1. 修改提示符，查看表内容
 
-![](https://via.placeholder.com/800x600?text=Image+1afc38f5538e16e9)
+
 
 1. 查看当前事务数
 
 没有事务，表information_schema.innodb_trx表记录数为0
 
-![](https://via.placeholder.com/800x600?text=Image+01cf136380df0228)
+![img_2496.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2496.png)
 
 1. 开始一个事务：
 
@@ -29,9 +29,9 @@ class表插入一条记录；DML产生事务
 
 查看information_schema.innodb_trx表记录数
 
-![](https://via.placeholder.com/800x600?text=Image+86fbaab3a4381d5f)
 
-![](https://via.placeholder.com/800x600?text=Image+9ef04438cb06b031)
+
+![img_1792.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1792.png)
 
 1. 把class表teacher列置空；
 
@@ -49,7 +49,7 @@ class表插入一条记录；DML产生事务
 
 class表没有变化，事务具有隔离性；未完成的事务对于其他会话不可见
 
-![](https://via.placeholder.com/800x600?text=Image+c971fd0f2d734e35)
+
 
 1. 会话1中用rollback命令结束事务：
 
@@ -67,6 +67,6 @@ class表恢复原状
 
 innodb_trx表记录数为0
 
-![](https://via.placeholder.com/800x600?text=Image+1f7f6ccb442a2b36)
+![img_4432.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4432.png)
 
 

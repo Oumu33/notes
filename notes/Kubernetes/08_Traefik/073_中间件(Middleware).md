@@ -1,6 +1,6 @@
 # 中间件(Middleware)
 ## <font style="color:rgb(18, 18, 18);">简介</font>
-![](https://via.placeholder.com/800x600?text=Image+abc4050ff210bd24)
+
 
 Traefik Middlewares 是一个处于路由和后端服务之前的中间件，在外部流量进入 Traefik，且路由规则匹配成功后，将流量发送到对应的后端服务前，先将其发给中间件进行一系列处理（类似于过滤器链 Filter，进行一系列处理），例如，添加 Header 头信息、鉴权、流量转发、处理访问路径前缀、IP 白名单等等，经过一个或者多个中间件处理完成后，再发送给后端服务，这个就是中间件的作用。
 
@@ -97,7 +97,7 @@ ingressroute.traefik.containo.us/myapp1 created
 
 访问测试，当用户访问`http://myapp.test.com`时会强制跳转到`https://myapp.test.com`
 
-![](https://via.placeholder.com/800x600?text=Image+acfbe042658170b3)
+![img_4640.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4640.png)
 
 ## 去除请求路径前缀
 假设现在有这样一个需求，当访问`http://myapp.test.com/v1`时，流量调度至myapp1。当访问`http://myapp.test.com/v2`时，流量调度至myapp2。<font style="color:rgb(18, 18, 18);">这种需求是非常常见的，在</font><font style="color:rgb(18, 18, 18);background-color:rgb(246, 246, 246);">NGINX</font><font style="color:rgb(18, 18, 18);">中，我们可以配置多个</font><font style="color:rgb(18, 18, 18);background-color:rgb(246, 246, 246);">Location</font><font style="color:rgb(18, 18, 18);">来定制规则，使用</font><font style="color:rgb(18, 18, 18);background-color:rgb(246, 246, 246);">Traefik</font><font style="color:rgb(18, 18, 18);">也可以这么做。但是定制不同的前缀后，由于应用本身并没有这些前缀，导致请求返回</font><font style="color:rgb(18, 18, 18);background-color:rgb(246, 246, 246);">404</font><font style="color:rgb(18, 18, 18);">，这时候我们就需要对请求的</font><font style="color:rgb(18, 18, 18);background-color:rgb(246, 246, 246);">path</font><font style="color:rgb(18, 18, 18);">进行处理。</font>
@@ -132,9 +132,9 @@ ingressroute.traefik.containo.us/myapp created
 
 进行访问测试`http://myapp.test.com/v1`，虽然traefik配置无误，但是由于myapp1应用并没有v1这个路径，因此返回404页面
 
-![](https://via.placeholder.com/800x600?text=Image+fe25504343de90fc)
+![img_256.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_256.png)
 
-![](https://via.placeholder.com/800x600?text=Image+113f3b3bc54bbabc)
+![img_112.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_112.png)
 
 接下来定义**<font style="color:rgb(18, 18, 18);">去除前缀的中间件</font>**stripPrefix，指定将请求路径中的v1、v2去除。
 
@@ -185,13 +185,13 @@ ingressroute.traefik.containo.us/myapp configured
 
 查看traefik的dashboard，已添加了中间件
 
-![](https://via.placeholder.com/800x600?text=Image+b80bbc161925ca4b)
+
 
 接下来进行访问测试
 
-![](https://via.placeholder.com/800x600?text=Image+96e055b687382ca0)
+![img_2640.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2640.png)
 
-![](https://via.placeholder.com/800x600?text=Image+8512fdaba1911c9a)
+
 
 ## 添加IP白名单
 <font style="color:rgb(18, 18, 18);">为提高安全性，通常情况下一些管理员界面会设置ip访问白名单，只希望个别用户可以访问，例如访问traefik的dashboard的url，这时候就可以使用</font><font style="color:rgb(18, 18, 18);background-color:rgb(246, 246, 246);">Traefik</font><font style="color:rgb(18, 18, 18);">中的</font><font style="color:rgb(18, 18, 18);background-color:rgb(246, 246, 246);">ipWhiteList</font><font style="color:rgb(18, 18, 18);">中间件来完成。</font>
@@ -262,7 +262,7 @@ Content-Type: text/plain; charset=utf-8
 
 参考文档：[https://doc.traefik.io/traefik/middlewares/http/basicauth/](https://doc.traefik.io/traefik/middlewares/http/basicauth/)
 
-![](https://via.placeholder.com/800x600?text=Image+782feead384454a4)
+
 
 使用basicAuth认证需要使用htpasswd工具生成密码文件，因此先安装httpd软件包
 
@@ -336,12 +336,12 @@ middleware.traefik.containo.us/basic-auth-middleware created
 
 客户端访问验证，刷新页面后，弹出用户登录认证页面。
 
-![](https://via.placeholder.com/800x600?text=Image+246312304c744a60)
+![img_352.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_352.png)
 
 ## 修改请求/响应头信息
 为了提高业务的安全性，安全团队会定期进行漏洞扫描，其中有些web漏洞就需要通过修改响应头处理，traefik的Headers中间件不仅可以修改返回客户端的响应头信息，还能修改反向代理后端service服务的请求头信息。
 
-![](https://via.placeholder.com/800x600?text=Image+486767a38e738e5d)
+
 
 例如对`https://myapp2.test.com`提高安全策略，强制启用HSTS
 
@@ -393,7 +393,7 @@ ingressroute.traefik.containo.us/myapp2-tls configured
 
 客户端访问验证，查看响应头信息
 
-![](https://via.placeholder.com/800x600?text=Image+3b84ca1e73401b44)
+
 
 ## <font style="color:rgb(18, 18, 18);">限流</font>
 <font style="color:rgb(51, 51, 51);">在实际生产环境中，流量限制也是经常用到的，它可以用作安全目的，比如可以减慢暴力密码破解的速率。通过将传入请求的速率限制为真实用户的典型值，并标识目标URL地址(通过日志)，还可以用来抵御 DDOS 攻击。更常见的情况，该功能被用来保护下游应</font>用服务器不被<font style="color:rgb(51, 51, 51);">同时太多用户请求所压垮。</font>
@@ -538,7 +538,7 @@ Percentage of the requests served within a certain time (ms)
 ```
 
 ## <font style="color:rgb(18, 18, 18);">熔断</font>
-![](https://via.placeholder.com/800x600?text=Image+b9dcf330acad3483)
+
 
 **熔断简介**
 
@@ -666,7 +666,7 @@ Percentage of the requests served within a certain time (ms)
 ## 自定义错误页
 在实际的业务中，肯定会存在4XX 5XX相关的错误异常，如果每个应用都开发一个单独的错误页，无疑大大增加了开发成本，traefik同样也支持自定义错误页，但是需要注意的是，错误页面不是有traefik存储处理，而是通过定义中间件，将错误的请求重定向到其他的页面。
 
-![](https://via.placeholder.com/800x600?text=Image+0b7c8b0157e349c0)
+![img_208.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_208.png)
 
 参考文档：[https://doc.traefik.io/traefik/middlewares/http/errorpages/](https://doc.traefik.io/traefik/middlewares/http/errorpages/)
 
@@ -951,7 +951,7 @@ Hello MyApp | Version: v1 | <a href="hostname.html">Pod Name</a>
 
 <font style="color:rgb(34, 34, 34);"></font>
 
-![](https://via.placeholder.com/800x600?text=Image+874b2b4657538c8f)
+
 
 参考文档：[https://doc.traefik.io/traefik/middlewares/http/compress/](https://doc.traefik.io/traefik/middlewares/http/compress/)
 
@@ -998,11 +998,11 @@ ingressroute.traefik.containo.us/flask created
 
 + 图片资源大于1024字节，开启了压缩
 
-![](https://via.placeholder.com/800x600?text=Image+a0d5f52838d5e700)
+
 
 + html资源小于1024字节，未启用压缩
 
-![](https://via.placeholder.com/800x600?text=Image+c2a2bbdee9eb35b3)
+
 
 ## [  
 ](https://nosaid.com/article/use-traefik#%E6%B5%81%E9%87%8F%E6%B5%81%E8%BD%AC)

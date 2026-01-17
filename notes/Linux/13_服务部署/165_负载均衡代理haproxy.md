@@ -73,7 +73,7 @@ Hello MyApp | Version: v3 | <a href="hostname.html">Pod Name</a>
 
 # 全局配置
 ## 默认全局配置
-![](https://via.placeholder.com/800x600?text=Image+4dfa1b4e66ba333c)
+![img_3152.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3152.png)
 
 ## 其他全局配置
 | nbproc <number> | 指定启动的haproxy守护进程的个数，不加此选项默认一个 |
@@ -97,83 +97,83 @@ Hello MyApp | Version: v3 | <a href="hostname.html">Pod Name</a>
 
 <font style="color:white;">       </font>① 源地址hash
 
-              ![](https://via.placeholder.com/800x600?text=Image+f4a97f8b4d6b56c1)
+              
 
 + 访问测试
 
-              ![](https://via.placeholder.com/800x600?text=Image+6ac847fa75f2849f)
+              
 
        ③ uri（uri与web服务器绑定）
 
-              ![](https://via.placeholder.com/800x600?text=Image+d6c98695ddb1c322)
+              ![img_3008.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3008.png)
 
 + 访问资源为test1时
 
-![](https://via.placeholder.com/800x600?text=Image+11d590d56a6f32f5)
+![img_880.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_880.png)
 
-![](https://via.placeholder.com/800x600?text=Image+4d1f736ad5b9c4d0)
+![img_368.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_368.png)
 
 + 访问资源为test3时
 
-![](https://via.placeholder.com/800x600?text=Image+daaef6c64eb585eb)
+![img_1376.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1376.png)
 
-![](https://via.placeholder.com/800x600?text=Image+8e1b9a549ec977df)
+
 
        ④ hdr（根据请求报文头部，例如浏览器类型调度）
 
-              ![](https://via.placeholder.com/800x600?text=Image+a74ad0488f70691d)
+              
 
 + Google浏览器访问
 
-![](https://via.placeholder.com/800x600?text=Image+a74ad0488f70691d)
+
 
 + IE浏览器访问
 
-![](https://via.placeholder.com/800x600?text=Image+e1215cec1c85409b)
+
 
 ## Bind（绑定监听地址）
 ① 绑定8080端口
 
-![](https://via.placeholder.com/800x600?text=Image+1d47ebe54cb73e6f)
+![img_2240.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2240.png)
 
        ② 访问8080端口
 
-![](https://via.placeholder.com/800x600?text=Image+4d9e07a7562c2d33)
+![img_3008.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3008.png)
 
 ## 使用备用服务器
 ① 添加备用服务器
 
-       ![](https://via.placeholder.com/800x600?text=Image+23fcf05a315469b7)
+       ![img_1696.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1696.png)
 
 l  停止web1服务
 
-       ![](https://via.placeholder.com/800x600?text=Image+6efe8e919761077a)
+       ![img_352.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_352.png)
 
 l  停止web2服务
 
-![](https://via.placeholder.com/800x600?text=Image+2c0d96cb9d0366a6)
+![img_832.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_832.png)
 
 l  启动web1服务
 
-![](https://via.placeholder.com/800x600?text=Image+47676ab7f840e7a6)
+![img_3712.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3712.png)
 
 ## cookie（会话绑定、持久连接）
 ① 添加备用服务器
 
-![](https://via.placeholder.com/800x600?text=Image+4660930002ce0338)
+
 
 l  访问测试
 
-![](https://via.placeholder.com/800x600?text=Image+ba9620b1c8bb4a32)
+![img_1584.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1584.png)
 
 ## 加权轮循调度
 ① 添加备用服务器
 
-       ![](https://via.placeholder.com/800x600?text=Image+fe328e56c0982848)
+       
 
 l  访问测试
 
-![](https://via.placeholder.com/800x600?text=Image+107188daa1bf2f37)
+![img_352.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_352.png)
 
 # 其他配置
 ## Haproxy日志记录
@@ -181,37 +181,37 @@ l  访问测试
 
 ①  查看haproxy日志记录local号
 
-![](https://via.placeholder.com/800x600?text=Image+be0ed3c9e69f42fe)
+![img_544.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_544.png)
 
 ②  修改日志配置文件
 
-![](https://via.placeholder.com/800x600?text=Image+d0786376abd573d4)
+![img_1936.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1936.png)
 
-![](https://via.placeholder.com/800x600?text=Image+c3d892545c904dff)
 
-![](https://via.placeholder.com/800x600?text=Image+75c079748484b6ee)
+
+![img_2064.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2064.png)
 
 ③  重启服务查看日志
 
-![](https://via.placeholder.com/800x600?text=Image+746aa18e989ea25d)
+![img_1584.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1584.png)
 
 2.   将前端客户的访问地址发给后端web服务器记录日志
 
 ①  默认后端服务器记录haproxy服务器地址信息
 
-       ![](https://via.placeholder.com/800x600?text=Image+16789160155e9e2b)
+       ![img_3616.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3616.png)
 
 ②  修改haproxy配置文件
 
-       ![](https://via.placeholder.com/800x600?text=Image+138a8349fa1a983e)
+       
 
 ③  修改web服务器日志格式
 
-       ![](https://via.placeholder.com/800x600?text=Image+ed2878515b939ee5)
+       ![img_2576.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2576.png)
 
 ④  访问查看日志
 
-       ![](https://via.placeholder.com/800x600?text=Image+284a28dfbf11edfa)
+       
 
  
 
@@ -232,6 +232,6 @@ listen admin_stats
 
 访问验证
 
-![](https://via.placeholder.com/800x600?text=Image+0e49aca852187a3e)
+
 
 

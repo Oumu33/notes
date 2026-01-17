@@ -50,7 +50,7 @@ print(chain.invoke({"question": "你知道我是谁吗?"}))
 + 在链执行完毕后，将用户的输入和大语言模型输出，一起写入到记忆组件中
 + 下一次调用大语言模型时，重复这个过程。
 
-![](https://via.placeholder.com/800x600?text=Image+4e0bcc175c3f672c)
+
 
 更多 langchain 记忆存储相关内容，可参考文档：[https://docs.langchain.com/oss/python/langchain/short-term-memory](https://docs.langchain.com/oss/python/langchain/short-term-memory)
 
@@ -91,7 +91,7 @@ print(chain.invoke({"question": "你知道我是谁吗?"}))
 
 而 `InMemoryChatMessageHistory` 是具体实现，定义了 “记忆存在哪、怎么存”  
 
-![](https://via.placeholder.com/800x600?text=Image+1665ccb80c12b40f)
+![img_1936.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1936.png)
 
 下面是LangChain中常用的消息历史组件以及它们的特性，其中`InMemoryChatMessageHistory`是`BaseChatMemory`默认使用的聊天消息历史组件。
 
@@ -449,9 +449,9 @@ Rap 不仅是一种音乐风格，更是一种表达自我、传递情感、展�
 
 查看 redis 数据库信息，发现他只会记住最近 4 条聊天记录。
 
-![](https://via.placeholder.com/800x600?text=Image+45a26009da4d745a)
 
-![](https://via.placeholder.com/800x600?text=Image+4272b8e47323212b)
+
+![img_4624.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4624.png)
 
 # 项目实践：聊天机器人开发
 ## 项目描述
@@ -468,7 +468,7 @@ Rap 不仅是一种音乐风格，更是一种表达自我、传递情感、展�
 + 会话历史记忆与追溯（使用 Memory 模块）
 
 ## 项目效果
-![](https://via.placeholder.com/800x600?text=Image+8f3c78041a39b42a)
+
 
 ## 代码实现
 完整代码如下
@@ -620,6 +620,6 @@ if __name__ == "__main__":
 
 redis 查看会话历史记录，可以看到与各个不同角色的 AI 对话的详细聊天记录内容。
 
-![](https://via.placeholder.com/800x600?text=Image+34e37e5cbbbda8b6)
+![img_1296.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1296.png)
 
 

@@ -10,30 +10,30 @@
 4. 利用BINLOG日志最终起到从库和主库数据保持一致的状态，即复制了和主数据库一模一样的从数据库
 + 数据库复制
 
-![](https://via.placeholder.com/800x600?text=Image+ca690dcaed97e5ab)
+![img_2352.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2352.png)
 
 + 数据库恢复
 
-![](https://via.placeholder.com/800x600?text=Image+a330fcda16d04178)
+![img_1760.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1760.png)
 
 # 三、MySQL 开启BINLOG
 1. MySQL默认没有开启BINLOG
 2. 查看BINLOG是否开启
 + mysql>  show variables like '%log_bin%';
-+ ![](https://via.placeholder.com/800x600?text=Image+f18627fc06f04951)
++ ![img_2704.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2704.png)
 + 如果log_bin的值为OFF说明没有开启binlog
 3. 开启BINLOG
 + root# vi /etc/my.cnf
 + 在[mysqld]下面添加下面2行内容
 + server-id=1     #mysql5.7以上需要添加
 + log-bin=mysql-bin
-+ ![](https://via.placeholder.com/800x600?text=Image+e6cd52d0da33e62b)
++ 
     - root# systemctl       restart mysqld
     - mysql> show       variables like '%log_bin%';
-+ ![](https://via.placeholder.com/800x600?text=Image+6c7523bd673e5587)
++ ![img_2928.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2928.png)
 + 如果log_bin的值为ON说明binlog已开启
 + root#  ls -l /var/lib/mysql/mysql-bin*
-+ ![](https://via.placeholder.com/800x600?text=Image+0ed0be7ce2b2d6ad)
++ ![img_832.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_832.png)
 
 # 四、MySQL  BINLOG记录格式
 1. binlog记录格式分为：
@@ -41,7 +41,7 @@
 + 行级 （row）   (5.5, 5.6, 5.7版本默认)
 + 混合级 （mixed）
 2. mysql> show variables like       '%binlog_format%';
-+ ![](https://via.placeholder.com/800x600?text=Image+f4c6d1928d8f62c4)
++ ![img_352.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_352.png)
 2. 基于语句（STATEMENT）的二进制日志记录：
 + 包含实际 SQL 语句
 + 包括 DDL（CREATE、 DROP 等）和       DML（UPDATE、 DELETE 等）语句
@@ -61,21 +61,21 @@
 # 五、列出BINLOG文件
 1. 列出所有binlog日志
 + mysql>  show binary logs;
-+ ![](https://via.placeholder.com/800x600?text=Image+02be1c1baf1b8d9a)
++ ![img_3760.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3760.png)
 2. 列出当前binlog日志
 + mysql>  show master status;
-+ ![](https://via.placeholder.com/800x600?text=Image+668475dcb23f4af7)
++ ![img_3648.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3648.png)
 
 # 六、BINLOG日志切换
 + 下列3种情况会导致BINLOG日志切换：
 1. MySQL启动或重启
-+ ![](https://via.placeholder.com/800x600?text=Image+b9ec75535101ae68)
-+ ![](https://via.placeholder.com/800x600?text=Image+e3087288501034d4)
++ ![img_3424.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3424.png)
++ 
 2. 日志量到达了max_binlog_size的设定值
-+ ![](https://via.placeholder.com/800x600?text=Image+6dbc684aea972b47)
++ ![img_2704.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2704.png)
 3. 执行flush logs;命令手动切换日志
 + mysql>  flush logs;
-+ ![](https://via.placeholder.com/800x600?text=Image+392bc61defd29199)
++ 
 
 # 七、查看BINLOG内容
 1. binlog以紧凑的二进制方式存储
@@ -85,26 +85,26 @@
 + 可将二进制数据转成SQL文本格式
 3. 在标准输出中查看binlog内容
 + root# mysqlbinlog       /var/lib/mysql/mysql-bin.000001
-+ ![](https://via.placeholder.com/800x600?text=Image+eada30bf6b4aa5ad)
++ ![img_1600.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1600.png)
 4. 结合more命令查看binlog内容
 + root# mysqlbinlog       /var/lib/mysql/mysql-bin.000001 | more
 5. 将binlog内容的SQL语句重定向到文件
 + root# mysqlbinlog       /var/lib/mysql/mysql-bin.000003 > /root/3.sql
 6. mysqlbinlog       输出中，事件前面会提供相关信息的头注释： 
 + cat /root/3.sql
-+ ![](https://via.placeholder.com/800x600?text=Image+db6609ac175ff146)
++ ![img_3120.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3120.png)
 7. 查看binlog中部分内容，自定义起始和结束头标注
 + mysqlbinlog  --start-position=219 --stop-position=546   /var/lib/mysql/mysql-bin.000005
-+ ![](https://via.placeholder.com/800x600?text=Image+21f6ab5d68b9b134)
++ ![img_1680.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1680.png)
 
 # 八、查看BINLOG中的事件
 1. 查看第一个binlog日志中的事件
 + mysql> show binlog events;
 2. 查看指定binlog日志中的事件
 + mysql> show binlog events in       'mysql-bin.000005';
-+ ![](https://via.placeholder.com/800x600?text=Image+514f4464a7b0295c)
++ ![img_2656.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2656.png)
 3. 查看指定binlog日志中的事件，指定事件起始头注释
 + mysql> show binlog       events in 'mysql-bin.000005' from 219;
-+ ![](https://via.placeholder.com/800x600?text=Image+fbc86bba5f23a51e)
++ ![img_4512.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4512.png)
 
 

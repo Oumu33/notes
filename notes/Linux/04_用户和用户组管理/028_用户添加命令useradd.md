@@ -16,9 +16,9 @@
 
 
 # 二、添加默认用户
-![](https://via.placeholder.com/800x600?text=Image+3bfeaf36be8667a6)
+
 
 # 三、指定选项添加用户
-![](https://via.placeholder.com/800x600?text=Image+31facc8f853eb76d)
+![img_2560.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2560.png)
 
 

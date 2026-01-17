@@ -7,7 +7,7 @@
 
 以1.24.X为例，查看[https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.24.md](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.24.md)
 
-![](https://via.placeholder.com/800x600?text=Image+638cca406ac64e1c)
+
 
 由更新日志可知，支持的最低版本Containerd为1.4.12
 

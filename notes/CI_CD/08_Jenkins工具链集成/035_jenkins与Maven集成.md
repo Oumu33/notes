@@ -47,54 +47,54 @@ jenkis——>manage jenkins——>tools
 
 如遇yum安装jdk无法识别，可尝试下载二进制openjdk安装
 
-![](https://via.placeholder.com/800x600?text=Image+17b458578f08b319)
+![img_1648.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1648.png)
 
-![](https://via.placeholder.com/800x600?text=Image+06c95d9b166336cc)
+![img_4352.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4352.png)
 
 ## 添加jenkins全局变量
 jenkis——>manage jenkins——>System
 
 新增JAVA_HOME、M2_HOME、PATH+EXTRA
 
-![](https://via.placeholder.com/800x600?text=Image+816645f2153c848d)
+![img_1344.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1344.png)
 
 # 拉取java项目
 ## 创建项目
 此处以springboot项目为例，项目地址[https://gitee.com/cuiliang0302/sprint_boot_demo](https://gitee.com/cuiliang0302/sprint_boot_demo)
 
-![](https://via.placeholder.com/800x600?text=Image+f8ce8ee7970fdd60)
+
 
 ## 创建凭据
 1. 依次点击jenkins——>系统管理——>Credentials——> Add Credentials，类型选择username with password
 
-![](https://via.placeholder.com/800x600?text=Image+6b02bb9bab022c8e)
+![img_1728.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1728.png)
 
 # 创建任务
 ## 创建流水线任务
 新建一个类型为自由风格的任务
 
-![](https://via.placeholder.com/800x600?text=Image+f92fdcc073ea0553)
+
 
 ## 配置git仓库信息
 gitee的主分支名称为main，记得更改。
 
-![](https://via.placeholder.com/800x600?text=Image+4796fb862ee4a5fa)
+
 
 ## 构建测试
 点击立即构建，查看构建信息
 
-![](https://via.placeholder.com/800x600?text=Image+292792da5893018b)
+
 
 # 打包测试
 ## 修改任务
 修改gitlab与gitee连接中配置的任务，新增构建步骤。配置如下
 
-![](https://via.placeholder.com/800x600?text=Image+3933c4a11c0e57e6)
+
 
 ## 构建测试
 可以看到控制台成功打印了打包信息
 
-![](https://via.placeholder.com/800x600?text=Image+58493ce7576019de)
+![img_3584.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3584.png)
 
 # 读取pom.xml参数
 <font style="color:rgb(37, 53, 53);">在执行 Java 项目的流水线时，我们经常要动态获取项目中的属性，很多属性都配置在项目的 pom.xml 中，使用Pipeline Utility Steps 插件提供能够读取 pom.xml 的方法，pipeline如下</font>

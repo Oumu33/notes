@@ -175,51 +175,51 @@ export DISPLAY=192.168.3.100:0.0
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+c887d3eb427abb9f)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+568b5bb18c24c80c)
+![img_3424.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3424.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+87edbae882be9fcc)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+9dddc476a0afff72)
+![img_4848.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4848.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+edd2ab499753b55f)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+2ce34642075d7920)
+![img_544.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_544.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+80eed793121e7555)
+![img_2976.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2976.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+fa2469a0c91e0546)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+bdf0b46652e2b4bb)
+![img_1168.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1168.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+7187c61fe26791ff)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+d8d539c5b5a80000)
+![img_592.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_592.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+4a58a2b70cc72926)
+
 
  
 
@@ -229,23 +229,23 @@ export DISPLAY=192.168.3.100:0.0
 #### * 配置监听
 netca
 
-![](https://via.placeholder.com/800x600?text=Image+ccad14b3c07e81ba)
 
-![](https://via.placeholder.com/800x600?text=Image+6332758b3b84c415)
 
-![](https://via.placeholder.com/800x600?text=Image+b509c5e264816b07)
 
-![](https://via.placeholder.com/800x600?text=Image+eb501988444ee054)
+
+
+
+![img_3936.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3936.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+541d342533614f99)
 
-![](https://via.placeholder.com/800x600?text=Image+da565a14893bc78d)
 
-![](https://via.placeholder.com/800x600?text=Image+5383844b046e8daf)
 
-![](https://via.placeholder.com/800x600?text=Image+7c94f2c2a6138894)
+
+![img_1920.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1920.png)
+
+
 
  
 
@@ -257,71 +257,71 @@ dbca
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+cef8a10b3c08a5cc)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+1291e36a4bbfc21d)
+![img_4736.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4736.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+d08eef31e4de2027)
+![img_2240.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2240.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+43d540c20a77b4f7)
+![img_1552.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1552.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+1ac524b8d2e3e605)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+cec6ef1b11d9766c)
+![img_4864.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4864.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+7ba5daa4513a4c25)
+![img_1120.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1120.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+c39722a3cc97f89c)
+![img_1696.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1696.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+f38034739d16dfc3)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+10f0a06894b2d1f3)
+![img_4496.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4496.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+9a5bd4eb78592d6b)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+5b34c29e96bcb56b)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+34833843e8030819)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+1e9e3b28d2e620d4)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+f8159903fa5ce8fc)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+b83f826d2d5cf2fe)
+![img_3168.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3168.png)
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+66c58aca5e9c8e06)
+![img_4368.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4368.png)
 
  
 
@@ -340,31 +340,31 @@ set sqlprompt "_user'@'_connect_identifier>"
 #### * 用sqlplus连接数据库实例
 [oracle@offcn ~]$ sqlplus / as sysdba
 
-![](https://via.placeholder.com/800x600?text=Image+fe9355572b2f5052)
+
 
  
 
 #### * 查看监听器状态
 [oracle@offcn ~]$ lsnrctl status
 
-![](https://via.placeholder.com/800x600?text=Image+a69170f16c612ec0)
+![img_352.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_352.png)
 
 #### * 查看用户状态
-![](https://via.placeholder.com/800x600?text=Image+63aa3dc6f7a7c116)
+![img_2144.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2144.png)
 
  
 
 #### * 测试使用监听器连接数据库实例
 [oracle@offcn ~]$ sqlplus sys/oracle@192.168.3.88:1521/prod.localdomain as sysdba
 
-![](https://via.placeholder.com/800x600?text=Image+5a0b6a65aeb3268c)
+
 
  
 
 #### * 添加SCOTT用户
 sqlplus / as sysdba @$ORACLE_HOME/rdbms/admin/utlsampl.sql
 
-![](https://via.placeholder.com/800x600?text=Image+2a3e03d0828bf23c)
+![img_4416.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4416.png)
 
 scott用户密码：tiger
 

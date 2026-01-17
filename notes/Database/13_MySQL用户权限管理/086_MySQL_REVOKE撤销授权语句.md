@@ -11,11 +11,11 @@ mysql> revoke select(sno) on test.stu from wang@localhost;
 
 mysql> show grants for wang@localhost;
 
-![](https://via.placeholder.com/800x600?text=Image+5dd372be3c3e2fcc)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+29f388b9c630433e)
+![img_3984.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3984.png)
 
  
 

@@ -63,7 +63,7 @@ repo add命令将其添加进本地可用仓库。
 + 若需要对依赖关系进行更多的控制，则所有被依赖到的Charts都能以手工方式直接复制到Charts目录中。一个被依赖到的Charts既可以是归档格式，也可以是展开的目录格式，不过，其名称不能以下划线（_）或点号（.）开头，此类文件会被Charts装载器自动忽略。  
 例如，Wordpress Charts依赖关系在其Charts目录中的反映类似如下所示：
 
-![](https://via.placeholder.com/800x600?text=Image+33fbd740036e3fd1)
+
 
 + Helm  
 Charts模板（template）遵循Go模板语言格式，并支持50种以上的来自Spring库的模板函数附件，以及为数不少的其他专用函数。所有的模板文件都存储于Templates目录中，在当前Charts被Helm引用时，此目录中的所有模板文件都会传递给模板引擎进行处理。模板文件中用到的值（value）有如下两种提供方式。□通过Charts的values.yaml文件提供，通常用于提供默认值。□在运行“helm  

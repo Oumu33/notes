@@ -3,7 +3,7 @@
 1. redis的key用来定位数据，可以想象成引用数据的标签
 2. key在当前数据库中不能有重值（默认16个数据库，数据库可以想象成分类目录，一般情况一个业务系统的数据放在一个数据库中）
 
-![](https://via.placeholder.com/800x600?text=Image+e6419fc10103c4c8)
+
 
 1. key的名字不宜过长（超过1024），否则影响性能
 2. key最多可以存512M
@@ -64,36 +64,36 @@ Redis 键命令的基本语法如下：
 # 三、示例
 1. keys *查询所有key
 
-![](https://via.placeholder.com/800x600?text=Image+aa2cfd87d6f4fa48)
+
 
 1. exists查看key是否存在
 
-![](https://via.placeholder.com/800x600?text=Image+d9d1d776fe01c3e0)
+
 
 + 返回1为存在，0为不存在
 1. absize查看当前数据库数量
 
-![](https://via.placeholder.com/800x600?text=Image+02550fd433f17b45)
+
 
 1. type key查看key对应value的数据类型
 
-![](https://via.placeholder.com/800x600?text=Image+31e80f4af81f86b1)
+![img_3088.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3088.png)
 
 1. del删除指定key
 
-![](https://via.placeholder.com/800x600?text=Image+a880471f2418616a)
+![img_2704.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2704.png)
 
 1. rename重命名key
 
-![](https://via.placeholder.com/800x600?text=Image+45363c3c9896f29b)
+
 
 1. expire设置key过期时间
 
-![](https://via.placeholder.com/800x600?text=Image+85d3a7de78003373)
+![img_416.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_416.png)
 
 1. ttl查看key过期时间
 
-![](https://via.placeholder.com/800x600?text=Image+7c91c3088ff1961c)
+
 
  
 

@@ -12,11 +12,11 @@
 
     其中的hashofthecontainer是docker镜像的hash值，可以通过docker ps或者docker inspect containername查看。（CONTAINER ID就可以看出来）
 
-![](https://via.placeholder.com/800x600?text=Image+554d76814478e401)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+b1c75da5b7400ec5)
+![img_1152.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1152.png)
 
     如上图，文件中其中有一项是PortBindings，其中8080/tcp对应的是容器内部的8080端口，HostPort对应的是映射到宿主机的端口9190。8361/tcp对应的是容器内部的8361端口，HostPort对应的是映射到宿主机的端口9191。按需修改端口，然后重启docker服务，再启动容器服务就可以了。
 

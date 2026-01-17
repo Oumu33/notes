@@ -47,22 +47,22 @@
 3. zrange显示有序集合的元素(score从小到大)
 + zrange myzset 0 -1  从第一个到最后一个元素 （-1代表最后一个元素，-2倒数第二个元素）
 
-![](https://via.placeholder.com/800x600?text=Image+56e8c9863ea2fda2)
+![img_4064.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4064.png)
 
 + 默认score小的排在前面
 + zrange myzset 0 -1      withscores 显示分值
 
-![](https://via.placeholder.com/800x600?text=Image+7a839707bfba4f41)
+
 
 1. zrevrange显示有序集合的元素(score从大到小)
 
-![](https://via.placeholder.com/800x600?text=Image+98833799b962389f)
 
-![](https://via.placeholder.com/800x600?text=Image+e61b6ca226aef739)
+
+
 
 1. 修改score值，再次使用zadd
 + 例如：zadd myzset 100 a （a原值为1）
 
-![](https://via.placeholder.com/800x600?text=Image+0996bfd15d6b9c3b)
+![img_3280.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3280.png)
 
 

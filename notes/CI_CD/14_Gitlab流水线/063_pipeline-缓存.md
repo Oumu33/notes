@@ -4,7 +4,7 @@
 
 如果在job范围之外定义了cache ，则意味着它是全局设置，所有job都将使用该定义。如果未全局定义或未按job定义则禁用该功能。
 
-![](https://via.placeholder.com/800x600?text=Image+c33daf9d66af7f1a)
+![img_1408.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1408.png)
 
 ## cache:path目录
 使用paths指令选择要缓存的文件或目录，路径是相对于项目目录，不能直接链接到项目目录之外。
@@ -156,19 +156,19 @@ deploy: # 定义job
 ### Pipeline日志分析
 build作业运行时会对项目代码打包，然后生成target目录。作业结束创建缓存。
 
-![](https://via.placeholder.com/800x600?text=Image+59a6a24946883dc4)
+![img_896.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_896.jpeg)
 
 开始第二个作业test，此时会把当前目录中的target目录删除掉（因为做了git 对比）。然后获取到第一个作业生成的缓存target目录。
 
-![](https://via.placeholder.com/800x600?text=Image+b8bf5c007f5d2993)
+![img_2432.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2432.png)
 
 开始第三个作业，同样先删除了target目录，然后获取了第二个作业的缓存。最后生成了当前的缓存。
 
-![](https://via.placeholder.com/800x600?text=Image+580b5c04045adb16)
+![img_3584.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3584.png)
 
 当我们再次重新运行流水线时，查看build日志发现，使用的是上一次流水线的缓存。
 
-![](https://via.placeholder.com/800x600?text=Image+5eeb1ee7ae87bc66)
+
 
 结论： 全局缓存生效于未在作业中定义缓存的所有作业，这种情况如果每个作业都对缓存目录做了更改，会出现缓存被覆盖的场景。
 
@@ -214,7 +214,7 @@ deploy: # 定义job
 
 查看build阶段日志，不再使用上一次流水线的缓存
 
-![](https://via.placeholder.com/800x600?text=Image+2ddd0e5dd7ef84d9)
+
 
 ## 
 

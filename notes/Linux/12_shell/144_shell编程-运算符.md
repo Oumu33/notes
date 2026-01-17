@@ -11,7 +11,7 @@
 
 例如，两个数相加(**注意使用的是反引号 ` 而不是单引号 '**)：
 
-![](https://via.placeholder.com/800x600?text=Image+0222b43fed2cf379)
+![img_3616.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3616.png)
 
 两点注意：
 
@@ -37,7 +37,7 @@
 
 **实例**
 
-![](https://via.placeholder.com/800x600?text=Image+0ca288602c780b9e)
+![img_4224.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4224.png)
 
 **注意：**
 
@@ -60,7 +60,7 @@
 
 **实例**
 
-![](https://via.placeholder.com/800x600?text=Image+00a27c547e287f17)
+
 
 # 四、布尔运算符
 下表列出了常用的布尔运算符，假定变量 a 为 10，变量 b 为 20：
@@ -74,7 +74,7 @@
 
 **实例**
 
-![](https://via.placeholder.com/800x600?text=Image+076b1dc5b86fb3b1)
+
 
 # 五、逻辑运算符
 以下介绍 Shell 的逻辑运算符，假定变量 a 为 10，变量 b 为 20:
@@ -89,7 +89,7 @@
 
 逻辑运算符实例如下：
 
-![](https://via.placeholder.com/800x600?text=Image+6419546e2baef945)
+![img_2784.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2784.png)
 
 # 六、字符串运算符
 下表列出了常用的字符串运算符，假定变量 a 为 "abc"，变量 b 为 "efg"：
@@ -105,7 +105,7 @@
 
 **实例**
 
-![](https://via.placeholder.com/800x600?text=Image+71318fbafb381eda)
+
 
 # 七、文件测试运算符
 文件测试运算符用于检测 Unix 文件的各种属性。
@@ -131,13 +131,13 @@
 
 **实例**
 
-![](https://via.placeholder.com/800x600?text=Image+23bfc14c3c3aa6e7)
+![img_4864.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4864.png)
 
-![](https://via.placeholder.com/800x600?text=Image+d9228b99450813dd)
+
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+965fbf80bf46d814)
+![img_2896.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2896.png)
 
 来自 <[http://www.runoob.com/linux/linux-shell-basic-operators.html](http://www.runoob.com/linux/linux-shell-basic-operators.html)>
 

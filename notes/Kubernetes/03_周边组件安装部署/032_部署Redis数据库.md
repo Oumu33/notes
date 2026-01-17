@@ -519,6 +519,6 @@ spec:
 ## 访问验证
 添加域名解析后访问验证
 
-![](https://via.placeholder.com/800x600?text=Image+54414ebca112fce5)
+![img_3376.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3376.jpeg)
 
 

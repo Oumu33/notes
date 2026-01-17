@@ -1,11 +1,11 @@
 # vscode同步文件到服务器
 # 安装插件
-![](https://via.placeholder.com/800x600?text=Image+afd2020c679e7e20)
+![img_368.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_368.png)
 
 # 配置同步
 打开命令面板，搜索配置项
 
-![](https://via.placeholder.com/800x600?text=Image+ceb4f20e3aff6581)
+![img_3664.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3664.png)
 
 修改sftp配置文件
 
@@ -38,6 +38,6 @@
 
 打开命令面板，连接服务器
 
-![](https://via.placeholder.com/800x600?text=Image+beec01be0b7e0134)
+![img_3584.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3584.png)
 
 

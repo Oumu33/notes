@@ -93,19 +93,19 @@ LANGSERVE: See all available routes at /docs/
 ## 访问接口文档
 访问[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)获取接口文档内容，如果提示pydantic.errors.PydanticUserError，可尝试降低 fastapi 版本。
 
-![](https://via.placeholder.com/800x600?text=Image+58aef7ab852901ef)
+
 
 ## 访问程序 web 页面
 直接访问[http://127.0.0.1:8000/translation/playground/](http://127.0.0.1:8000/translation/playground/)即可通过浏览器进行交互
 
-![](https://via.placeholder.com/800x600?text=Image+bf20382791bc47e9)
+![img_2288.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2288.png)
 
 ## 访问 API 接口
 除了支持 web 界面访问外，同样也支持 api 接口调用。
 
 获取请求示例：
 
-![](https://via.placeholder.com/800x600?text=Image+0b3130221c4fc10f)
+
 
 访问验证：
 

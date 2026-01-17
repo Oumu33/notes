@@ -4,7 +4,7 @@
 2. 简而言之，一个LoadBalancer类型的Service会指向关联至Kubernetes集群外部的、切实存在的某个负载均衡设备，该设备通过工作节点之上的NodePort向集群内部发送请求流量。
 3. 例如Amazon云计算环境中的ELB实例即为此类的负载均衡设备。此类型的优势在于，它能够把来自于集群外部客户端的请求调度至所有节点（或部分节点）的NodePort之上，而不是依赖于客户端自行决定连接至哪个节点，从而避免了因客户端指定的节点故障而导致的服务不可用。
 
-![](https://via.placeholder.com/800x600?text=Image+e62faada1d89caea)
+
 
 ## 公有云(以阿里云为例)配置
 参考文档：[https://help.aliyun.com/zh/ack/ack-managed-and-ack-dedicated/user-guide/add-annotations-to-the-yaml-file-of-a-service-to-configure-clb-instances?spm=a2c4g.11186623.help-menu-85222.d_2_3_3_3.22542dbcn4SlOF&scm=20140722.H_86531._.OR_help-T_cn~zh-V_1](https://help.aliyun.com/zh/ack/ack-managed-and-ack-dedicated/user-guide/add-annotations-to-the-yaml-file-of-a-service-to-configure-clb-instances?spm=a2c4g.11186623.help-menu-85222.d_2_3_3_3.22542dbcn4SlOF&scm=20140722.H_86531._.OR_help-T_cn~zh-V_1)
@@ -16,13 +16,13 @@ MetalLB 是为裸机Kubernetes集群实现的负载均衡器，使用标准路�
 ### 工作模式
 layer 2模式：也就是工作在2层来负责相应arp请求，对于局域网中的人来说仿佛就是给服务分配了一个ip，但是2层模式不是真正的负载均衡，因为所有的流量会经过集群中的一个节点，当这个节点挂了的话，metallb会迁移ip到另外一个节点上。<font style="color:rgb(51, 51, 51);">Layer 2模式更为通用，不需要用户有额外的设备；但由于Layer 2模式使用ARP/ND，地址池分配需要跟客户端在同一子网，地址分配略为繁琐。</font>
 
-![](https://via.placeholder.com/800x600?text=Image+c8220d15591d5b6a)
+
 
 bgp模式：<font style="color:rgb(51, 51, 51);">集群中所有node都会跟上联路由器建立BGP连接，并且会告知路由器应该如何转发service的流量。</font>
 
 <font style="color:rgb(51, 51, 51);">BGP模式是真正的LoadBalancer。</font>但是需要你的路由器支持bgp，此处使用layer 2模式。
 
-![](https://via.placeholder.com/800x600?text=Image+d645de91999c00fa)
+
 
 ### 文档
 安装：[https://metallb.universe.tf/installation/](https://metallb.universe.tf/installation/)
@@ -118,6 +118,6 @@ Hello MyApp | Version: v1 | <a href="hostname.html">Pod Name</a>
 http://192.168.10.222:80
 ```
 
-![](https://via.placeholder.com/800x600?text=Image+786ff516810b5f8d)
+
 
 

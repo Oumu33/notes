@@ -8,17 +8,17 @@ redis为了内部数据的安全，会把本身的数据以文件的形式保存
 
 1. 文件位置
 
-![](https://via.placeholder.com/800x600?text=Image+82ca20cf225e9da2)
+
 
 1. Redis快照持久化频率，配置文件修改
 
-![](https://via.placeholder.com/800x600?text=Image+a640187c1daede01)
+![img_560.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_560.png)
 
 满足在X秒内，超过Ykb大小的数据改变，则保存
 
 1. 快照文件配置
 
-![](https://via.placeholder.com/800x600?text=Image+4daee1962b29d996)
+![img_1776.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1776.png)
 
 1. 手动建立快照
 + 本地备份
@@ -36,12 +36,12 @@ redis为了内部数据的安全，会把本身的数据以文件的形式保存
 
 1. 开启AOF持久化（会清空数据库）
 
-![](https://via.placeholder.com/800x600?text=Image+1f8d5009fef9b370)
+![img_3408.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3408.png)
 
 + 修改配置后重启服务
 1. AOF追加持久化备份频率
 
-![](https://via.placeholder.com/800x600?text=Image+fb9dee4afc096409)
+![img_400.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_400.png)
 
 | 选项 | 说明 | 性能损耗 | 安全性 |
 | --- | --- | --- | --- |

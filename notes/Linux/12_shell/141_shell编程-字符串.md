@@ -25,15 +25,15 @@
 <font style="color:black;">your_name</font><font style="color:#666600;">=</font><font style="color:#008800;">"runoob"</font><font style="color:black;">  
 </font><font style="color:#880000;"># 使用双引号拼接</font>
 
-![](https://via.placeholder.com/800x600?text=Image+60fda0b41eabc6d7)
 
-![](https://via.placeholder.com/800x600?text=Image+873200dad0d5675b)
+
+![img_1408.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1408.png)
 
 # 使用单引号拼接
 
-![](https://via.placeholder.com/800x600?text=Image+0a52d28d26d54700)
 
-![](https://via.placeholder.com/800x600?text=Image+fe487fe8c27178cf)
+
+
 
 # 五、获取字符串长度
 <font style="color:#000088;">string</font><font style="color:#666600;">=</font><font style="color:#008800;">"abcd"</font><font style="color:black;">  
@@ -44,9 +44,9 @@
 
 从字符串第3个字符开始截取输出：
 
-![](https://via.placeholder.com/800x600?text=Image+d98ff44088369c39)
+![img_1488.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1488.png)
 
-![](https://via.placeholder.com/800x600?text=Image+2d9047862ece70dd)
+![img_2368.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2368.png)
 
 # 七、查找子字符串
 查找字符 **i** 或 **o** 的位置(哪个字母先出现就计算哪个)：

@@ -7,12 +7,12 @@ OpenTelemetry Collector 按部署方式分为 Agent 和Gateway 模式。
 
 收集器可以通过 sidecar 方式部署为代理，sidecar 可以配置为直接将数据发送到存储后端。
 
-![](https://via.placeholder.com/800x600?text=Image+819404d5647e79ec)
+
 
 ## Gateway 模式
 Gateway 模式则是将数据发送到另一个 OpenTelemetry 收集器，然后从（中心）收集器进一步将数据发送到存储后端。在这种配置中，我们有一个中心的 OpenTelemetry 收集器，它使用 `deployment/statefulset/daemonset` 模式部署，具有许多优势，如自动扩展。
 
-![](https://via.placeholder.com/800x600?text=Image+910b236c067966c0)
+
 
 发送遥测数据最佳实践是将数据发送到OpenTelemetry Collector而不是直接发送到后端。Collector可以帮助简化密钥管理，将数据导出与应用程序解耦，并允许您在遥测数据中添加其他数据。
 

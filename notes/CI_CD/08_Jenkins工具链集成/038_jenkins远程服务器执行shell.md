@@ -1,7 +1,7 @@
 # jenkins远程服务器执行shell
 # jenkins免密登录配置
 ## 安装插件
-![](https://via.placeholder.com/800x600?text=Image+5963d3167e07096c)
+![img_2512.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2512.png)
 
 ## 配置SSH免密登录
 在jenkins主机执行操作。
@@ -52,7 +52,7 @@ Last login: Fri Apr 19 10:28:53 2024 from 192.168.10.100
 ## 插件配置
 在Jenkins中【系统管理】—【系统配置】，找到“Publish over SSH”来配置该插件信息。
 
-![](https://via.placeholder.com/800x600?text=Image+1daabb15634613ef)
+
 
 key通过查看jenkins服务器`cat .ssh/id_rsa`获取。
 
@@ -60,7 +60,7 @@ key通过查看jenkins服务器`cat .ssh/id_rsa`获取。
 
 # <font style="color:rgb(51, 51, 51);">验证测试</font>
 ## 创建自由风格项目
-![](https://via.placeholder.com/800x600?text=Image+a9bf6eea768bcd23)
+![img_3344.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3344.png)
 
 ## 创建测试脚本
 在jenkins服务器ssh-test目录下
@@ -74,7 +74,7 @@ date >> /tmp/date.txt
 ```
 
 ## 添加构建步骤
-![](https://via.placeholder.com/800x600?text=Image+dcbbd1f5c50f53ef)
+
 
 Name：“系统管理>系统配置”设置的SSH Sverver的名字Name。
 
@@ -87,7 +87,7 @@ Remote directory：允许为空，文件得到到远程机上的目录，如果�
 Exec command：在这里填写在远程主机上执行的命令。
 
 ## 构建查看结果
-![](https://via.placeholder.com/800x600?text=Image+f21965d4c8c8bbdb)
+
 
 由控制台打印内容可知，已经成功传输一个文件。
 

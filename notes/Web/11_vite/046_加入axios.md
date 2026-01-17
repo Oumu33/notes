@@ -3,7 +3,7 @@
 `npm i axios -D` 
 
 ## 封装axios
-![](https://via.placeholder.com/800x600?text=Image+45e9d894b956f0d5)
+![img_2352.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2352.png)
 
 1. src/api/home.js
 

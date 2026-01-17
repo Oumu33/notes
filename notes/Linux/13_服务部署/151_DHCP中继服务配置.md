@@ -31,96 +31,96 @@
 # 四、实验分析与设计思路
 1.   网络拓扑图
 
-![](https://via.placeholder.com/800x600?text=Image+9969f89f9fefba9f)
+
 
 2.   实验思路
 
-![](https://via.placeholder.com/800x600?text=Image+b2deda1a8c9b142e)
+
 
 # 五、实验准备
 1.  设置两个不同网段
 
-![](https://via.placeholder.com/800x600?text=Image+c52a89675adfb0de)
+
 
 2.  关闭所有主机防火墙
 
-![](https://via.placeholder.com/800x600?text=Image+4fdc3ee33eaa94c8)
+
 
 3.  指定DHCP服务器地址
 
-![](https://via.placeholder.com/800x600?text=Image+d806b7ac703727f3)
+
 
 4.  指定DHCP中继器地址
 
-![](https://via.placeholder.com/800x600?text=Image+10878bb719083c37)
+![img_1616.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1616.png)
 
 5.  开启中继模式
 
-![](https://via.placeholder.com/800x600?text=Image+172c5f5b76d57292)
+![img_4144.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4144.png)
 
 6.  测试网段连通
 
 ①  Ping同一网段
 
-![](https://via.placeholder.com/800x600?text=Image+c620bd2d5f53056b)
+
 
 ②  Ping不同网段
 
-![](https://via.placeholder.com/800x600?text=Image+49f85bd14552d605)
+![img_1648.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1648.png)
 
 # 六、实验过程
 1.  安装DHCP相关软件
 
-![](https://via.placeholder.com/800x600?text=Image+dd677abe56df8444)
+
 
 2.  配置DHCP文件
 
 ①  配置DHCP服务文件
 
-![](https://via.placeholder.com/800x600?text=Image+443c77f635948a5b)
+
 
 ②  配置DHCP中继文件
 
-![](https://via.placeholder.com/800x600?text=Image+ece550f99fd747ed)
+
 
 3.  启动DHCP相关服务
 
 ①  启动DHCP服务
 
-![](https://via.placeholder.com/800x600?text=Image+56b28ddfa5736477)
+
 
 ②  启动DHCP中继服务
 
-![](https://via.placeholder.com/800x600?text=Image+2ea8043644c14023)
+
 
 # 七、实验结果及分析
 1.  查看服务器端口信息
 
-![](https://via.placeholder.com/800x600?text=Image+caec0035dd016a74)
+![img_1472.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1472.png)
 
 2.  查看服务器日志信息
 
-![](https://via.placeholder.com/800x600?text=Image+9b562d55d9432fbd)
+
 
 3.  查看客户机IP信息
 
 ①  10网段centos7
 
-![](https://via.placeholder.com/800x600?text=Image+9de614e614fb5cee)
+
 
 ②  10网段windows7
 
-![](https://via.placeholder.com/800x600?text=Image+fddb30f917ea450f)
+![img_1248.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1248.png)
 
 ③  20网段centos6
 
-![](https://via.placeholder.com/800x600?text=Image+d35ca2684c90557c)
+![img_1472.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1472.png)
 
 ④  20网段windowsxp
 
  
 
-![](https://via.placeholder.com/800x600?text=Image+310c57cd17561bc5)
+
 
 # 八、总结
 1.  本次实验的前提是不同网段通过中继可以通信，使用中继模式需要开启核心转发功能  echo "1" > /proc/sys/net/ipv4/ip_forward

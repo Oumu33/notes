@@ -17,123 +17,123 @@
 
 ①  yum安装
 
-![](https://via.placeholder.com/800x600?text=Image+59f0b5485a89c76d)
+
 
        ②  rpm安装
 
-              ![](https://via.placeholder.com/800x600?text=Image+031f70cb02da0484)
+              
 
 2.   安装tomcat
 
-![](https://via.placeholder.com/800x600?text=Image+5e80902b0726596d)
+
 
 3.   配置环境变量
 
-![](https://via.placeholder.com/800x600?text=Image+7dc4b8405d4e4141)
 
-![](https://via.placeholder.com/800x600?text=Image+ca51692d14d10d0e)
 
-![](https://via.placeholder.com/800x600?text=Image+111d27092672c168)
+
+
+
 
 4.   检查配置文件语法
 
-![](https://via.placeholder.com/800x600?text=Image+c76d0bd981f8859b)
+
 
 5.   启动服务
 
-![](https://via.placeholder.com/800x600?text=Image+b711ca46b182e31e)
+
 
 6.   访问验证
 
-![](https://via.placeholder.com/800x600?text=Image+dfec1b4d2e531f99)
+
 
 7.   查看文件树
 
-![](https://via.placeholder.com/800x600?text=Image+4ba7d40b9f0663c1)
+
 
 # 五、部署第一个web应用
 1.   在webapps文件夹下创建项目目录
 
-![](https://via.placeholder.com/800x600?text=Image+ad06609c20f3bea4)
+
 
 2.   在项目文件夹下编写测试页
 
-![](https://via.placeholder.com/800x600?text=Image+6abb55a9e7a52f0a)
+![img_496.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_496.png)
 
-![](https://via.placeholder.com/800x600?text=Image+6dbf5d6f49b23555)
+
 
 3.   访问测试
 
-![](https://via.placeholder.com/800x600?text=Image+08c743ed218ec3d3)
+
 
 4.   查看work文件树
 
-![](https://via.placeholder.com/800x600?text=Image+b976cd3c5af2124a)
+![img_656.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_656.png)
 
 # 六、其他配置
 1.   显示服务管理员页面
 
 ①  编辑webapps管理功能配置文件
 
-       ![](https://via.placeholder.com/800x600?text=Image+478c71dfaed5f836)
+       
 
 ②  注释掉ip地址限制
 
-       ![](https://via.placeholder.com/800x600?text=Image+e49e750676e3ab15)
+       
 
 ③  编辑用户认证配置文件
 
-       ![](https://via.placeholder.com/800x600?text=Image+831fb2b988a75061)
+       ![img_208.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_208.png)
 
 ④  添加账号密码信息
 
-       ![](https://via.placeholder.com/800x600?text=Image+d541498c59bc4992)
+       ![img_3520.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3520.png)
 
 ⑤  访问验证
 
-       ![](https://via.placeholder.com/800x600?text=Image+becd104c4dcae7dd)
+       ![img_4528.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4528.png)
 
 2.   显示虚拟主机管理页面
 
 ①  编辑虚拟主机管理功能配置文件
 
-        ![](https://via.placeholder.com/800x600?text=Image+597950d15915473d)
+        
 
 ②  注释掉ip地址限制
 
-        ![](https://via.placeholder.com/800x600?text=Image+bd84d60c99721998)
+        
 
 ③  编辑用户认证配置文件
 
-        ![](https://via.placeholder.com/800x600?text=Image+3638b3fa73153cba)
+        ![img_2640.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2640.png)
 
 ④  添加账号密码信息
 
-       ![](https://via.placeholder.com/800x600?text=Image+7dcf785d7e075dd9)
+       ![img_960.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_960.png)
 
 ⑤  访问验证
 
-       ![](https://via.placeholder.com/800x600?text=Image+f2ec46b7adb0ce66)
+       ![img_768.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_768.png)
 
 3.   修改端口号
 
 ①  编辑主配置文件
 
-       ![](https://via.placeholder.com/800x600?text=Image+09285b1d58b83992)
+       
 
 ②  修改端口号
 
-       ![](https://via.placeholder.com/800x600?text=Image+9d5223ced591ff22)
+       ![img_144.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_144.png)
 
 ③  访问验证
 
-       ![](https://via.placeholder.com/800x600?text=Image+b4a1e23a934b1f49)
+       
 
 4.   https连接
 
 ①  使用keytool为tomcat生成密钥
 
-             ![](https://via.placeholder.com/800x600?text=Image+2fb109852872afae)
+             ![img_4256.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4256.png)
 
               -genkey 表示生成密钥
 
@@ -147,25 +147,25 @@
 
 ②  修改端口号
 
-             ![](https://via.placeholder.com/800x600?text=Image+7cccd126f7792715)
+             ![img_2768.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2768.png)
 
 ③  修改https配置
 
-       ![](https://via.placeholder.com/800x600?text=Image+c8b3e7e315dd2fab)
+       ![img_4352.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4352.png)
 
 ④  抓包工具给客户端信任根证书
 
-       ![](https://via.placeholder.com/800x600?text=Image+1c73d512ba5e6a16)
+       
 
 ⑤  访问验证
 
-             ![](https://via.placeholder.com/800x600?text=Image+7a5722e4954b9cc0)
+             ![img_3456.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3456.png)
 
 5.   定义虚拟主机
 
 ①  修改主配置文件host区域
 
-       ![](https://via.placeholder.com/800x600?text=Image+2e6ce96cd5aa2643)
+       ![img_3536.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3536.png)
 
 name="www.cuiliang123.com" （网站名称）
 
@@ -185,137 +185,137 @@ pattern="% %l %u %t &quot; %r&quot; %s %b" （日志格式）
 
 ②  创建对应的文件夹
 
-       ![](https://via.placeholder.com/800x600?text=Image+c9b55c124bdff223)
+       
 
 ③  创建web应用
 
-       ![](https://via.placeholder.com/800x600?text=Image+383a35aad342996c)
+       ![img_2288.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2288.png)
 
-       ![](https://via.placeholder.com/800x600?text=Image+9c1021e113485c9b)
+       
 
 ④  访问验证
 
-       ![](https://via.placeholder.com/800x600?text=Image+66150de619ed9246)
+       ![img_2736.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2736.png)
 
 ⑤  查看日志
 
-       ![](https://via.placeholder.com/800x600?text=Image+82dd3f201076a9e8)
+       ![img_1728.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1728.png)
 
 6.   定义默认web应用
 
 ①  修改主配置文件host区域
 
-      ![](https://via.placeholder.com/800x600?text=Image+39ceebfc8be4f697)
+      ![img_1648.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1648.png)
 
 ②  创建ROOT文件夹,并将项目移动至ROOT文件夹中
 
-      ![](https://via.placeholder.com/800x600?text=Image+ec31e7ee8a04ad3e)
+      ![img_752.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_752.png)
 
 ③  访问验证
 
-      ![](https://via.placeholder.com/800x600?text=Image+db2b0aaa4c6aae44)
+      ![img_4560.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4560.png)
 
 7.   定义别名访问
 
 ①  修改主配置文件host区域，定义别名
 
-       ![](https://via.placeholder.com/800x600?text=Image+6eb6636fbfac947c)
+       ![img_368.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_368.png)
 
 ②  创建shangcheng文件夹,并将项目移动至shangcheng文件夹中
 
-       ![](https://via.placeholder.com/800x600?text=Image+9a0025607817e45f)
+       ![img_2912.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2912.png)
 
 ③  创建链接文件
 
-       ![](https://via.placeholder.com/800x600?text=Image+64bef7d1e890d3f2)
+       
 
 ④  访问验证
 
-       ![](https://via.placeholder.com/800x600?text=Image+8f2653f5b0886a31)
+       ![img_2240.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2240.png)
 
 8.   设置访问控制
 
 ①  在host区域定义访问控制类
 
-       ![](https://via.placeholder.com/800x600?text=Image+b200df942af63cd0)
+       
 
 ②  访问验证
 
-       ![](https://via.placeholder.com/800x600?text=Image+970762936edb60e8)
+       
 
 9.   搭建项目勾连数据库
 
 ①  查看lib中是否有支持数据库的jar包
 
-       ![](https://via.placeholder.com/800x600?text=Image+8e883c853e0ec324)
+       
 
 ②  在数据库服务器中创建相应表及账号授权
 
 ③  jdbc文件中配置数据库
 
-       ![](https://via.placeholder.com/800x600?text=Image+dda8cf2607544ecb)
+       
 
-       ![](https://via.placeholder.com/800x600?text=Image+83bb024e77c3275a)
+       
 
 ④  访问验证
 
-       ![](https://via.placeholder.com/800x600?text=Image+07fc6099eb1dc44c)
+       ![img_192.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_192.png)
 
 # 七、LNMT架构
 1.   实现动静分离
 
 ①  修改nginx服务器配置文件
 
-       ![](https://via.placeholder.com/800x600?text=Image+4b0c578e4894bfa3)
+       ![img_3648.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3648.png)
 
 ②  访问静态资源
 
-       ![](https://via.placeholder.com/800x600?text=Image+bda2ae730ec35f9a)
+       ![img_3360.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3360.png)
 
 ③  访问动态资源
 
-       ![](https://via.placeholder.com/800x600?text=Image+561966621a8df91a)
+       
 
 2.   通过URL重写，默认访问index.jsp
 
 ①  修改nginx服务器配置文件
 
-       ![](https://via.placeholder.com/800x600?text=Image+a8da7f202b860d66)
+       ![img_3488.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3488.png)
 
 ②  访问测试
 
-       ![](https://via.placeholder.com/800x600?text=Image+d4966389862f7ed1)
+       ![img_112.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_112.png)
 
 3.   Nginx调度tomcat
 
 ①  修改nginx服务器配置文件
 
-![](https://via.placeholder.com/800x600?text=Image+e2fa0d68101bd408)
 
-![](https://via.placeholder.com/800x600?text=Image+d187d7effb127f75)
+
+
 
        ②  访问测试
 
-![](https://via.placeholder.com/800x600?text=Image+fdaeb2dff16ed639)
 
-![](https://via.placeholder.com/800x600?text=Image+3af6d21f7923aff1)
+
+![img_2752.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2752.png)
 
 # 八、LAMT架构
 1.   使用apache虚拟主机，基于proxy_module模块代理
 
 ①  查看是否安装proxy_module模块
 
-       ![](https://via.placeholder.com/800x600?text=Image+3bcac5fb8f94120b)
+       
 
 ②  Apache服务器子文件配置
 
-       ![](https://via.placeholder.com/800x600?text=Image+51b242601d06d65e)
+       ![img_992.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_992.png)
 
-       ![](https://via.placeholder.com/800x600?text=Image+1d166974d4bbb993)
+       ![img_32.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_32.png)
 
 ③  访问测试
 
-       ![](https://via.placeholder.com/800x600?text=Image+244fc441b5344ab6)
+       
 
       
 

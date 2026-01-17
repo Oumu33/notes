@@ -22,7 +22,7 @@ Function Calling 最早是 OpenAI 在其 API 中引入的一项功能，允许�
 ## Function calling 原理
 在发送信息给大模型的时候，携带着“工具”列表，这些工具列表代表着大模型能使用的工具。当大模型遇到用户提出的问题时，会先思考是否应该调用工具解决问题，如果需要调用工具，和普通消息不同，这种情况下会返回“function_call”类型的消息，请求方根据返回结果调用对应的工具得到工具输出，然后将之前的信息加上工具输出的信息一起发送给大模型，让大模型整合起来综合判断给出结果。
 
-![](https://via.placeholder.com/800x600?text=Image+4cf350d2a6e3cb87)
+![img_3536.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3536.png)
 
 ## Tool 工作原理
 工具的工作流程如下：
@@ -41,7 +41,7 @@ Function Calling 最早是 OpenAI 在其 API 中引入的一项功能，允许�
 ## Tool 类继承关系
 分析LangChain源码可知，在 LangChain 的类结构中，tool 的顶层基类是 `Runnable`，定义可执行的对象，实现了通用的执行接口。然后又通过 `Serializable` 提供 LangChain内部的可序列化能力，从而实现了允许工具、链、模型被保存或导出，供后续加载。最后通过 `BaseTool` 定义工具的统一规范 ，实现了同步 / 异步支持，参数校验等功能。
 
-![](https://via.placeholder.com/800x600?text=Image+e947f40843b61366)
+
 
 # 使用内置 Tool
 在MCP爆火之前，LangChian生态中就已经内置集成了非常多的实用工具，开发者可以快速调用这些工具完成更加复杂工作流的开发。

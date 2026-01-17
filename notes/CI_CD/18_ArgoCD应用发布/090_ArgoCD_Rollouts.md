@@ -15,7 +15,7 @@ Argo Rollouts 基于 Kubernetes 自定义资源 (CRD) 来定义和管理部署�
 + **Experiment**：用于定义和执行实验性部署。
 + **AnalysisTemplate** 和 **AnalysisRun**：用于定义和运行分析任务，以在部署过程中进行自动化验证。
 
-![](https://via.placeholder.com/800x600?text=Image+28c4c05fe2d02ca5)
+
 
 ## <font style="color:rgb(49, 70, 89);">实现原理</font>
 与 Deployment 对象类似，Argo Rollouts 控制器将管理 ReplicaSets 的创建、缩放和删除，这些 ReplicaSet 由 Rollout 资源中的 spec.template 定义，使用与 Deployment 对象相同的 pod 模板。
@@ -121,6 +121,6 @@ spec:
 
 绑定 hosts 后访问验证
 
-![](https://via.placeholder.com/800x600?text=Image+12e745a1b496fd45)
+
 
 

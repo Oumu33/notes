@@ -5,17 +5,17 @@ Harbor的项目分为公开和私有的:
 公开项目:所有用户都可以访问，通常存放公共的镜像，默认有一个library公开项目。  
 私有项目:只有授权用户才可以访问，通常存放项目本身的镜像。 我们可以为devops项目创建一个新的项目
 
-![](https://via.placeholder.com/800x600?text=Image+e38f943810d0d703)
+
 
 ## 创建用户
 创建一个普通用户cuiliang。
 
-![](https://via.placeholder.com/800x600?text=Image+fa4bd31b66ae4ae5)
+
 
 ## 配置项目用户权限
 在devops项目中添加普通用户cuiliang，并设置角色为开发者。
 
-![](https://via.placeholder.com/800x600?text=Image+53ca176ae0221db2)  
+  
 权限说明
 
 | 角色 | 权限 |
@@ -53,7 +53,7 @@ CMD ["java","-jar","/app.jar"]
 ```
 
 ## 创建Harbor密码变量
-![](https://via.placeholder.com/800x600?text=Image+11f4baca3cd88fa4)
+![img_704.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_704.png)
 
 ## 编辑流水线
 ```yaml
@@ -104,7 +104,7 @@ deploy:
 ## 查看验证
 查看harbor镜像仓库信息，已成功上传至harbor仓库
 
-![](https://via.placeholder.com/800x600?text=Image+f1b348de30f62a86)
+
 
 查看linux机器，容器已正常运行
 

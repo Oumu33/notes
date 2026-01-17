@@ -20,7 +20,7 @@ pip install django-environ
 # 新增配置文件
 如下图所示，在项目的根目录下创建envc目录，并新建.env.dev文件用于开发环境配置，.env.prod用于生产环境配置
 
-![](https://via.placeholder.com/800x600?text=Image+c3439a5621efedcf)
+
 
 ## 开发环境配置
 ```bash

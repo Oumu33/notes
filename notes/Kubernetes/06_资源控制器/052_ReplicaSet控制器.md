@@ -31,18 +31,18 @@
 
 + 创建rs-example.yaml文件
 
-![](https://via.placeholder.com/800x600?text=Image+4fe5f8b773307568)
+
 
 + 创建rs资源：  
 `$ kubectl apply -f rs-example.yaml` 
 + 查看名称为"rs-demo"的pod资源  
 `$ kubectl get pods -l app=rs-demo` 
 
-![](https://via.placeholder.com/800x600?text=Image+d91b498601fbf41d)
+
 
 + 查看replicaset控制器资源状态
 
-![](https://via.placeholder.com/800x600?text=Image+1eb1ed29ae11af95)
+![img_992.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_992.png)
 
 
 
@@ -58,12 +58,12 @@
 `$ kubectl delete pods rs-example-5ncrr` 
 + 再次列出相关Pod对象的信息，可以看到rs-example-5ncrr被删除，而新的Pod对象rs-example-jfp4k被rs-example控制器创建：
 
-![](https://via.placeholder.com/800x600?text=Image+aa9a55c03779e9e4)
+
 
 + 强行修改隶属于控制器rs-example的Pod资源标签，会导致它不再被控制器作为副本计数，这也将触发控制器的Pod对象副本缺失补足机制。  
 例如，将rs-example-26fnb的标签app的值改为rs：
 
-![](https://via.placeholder.com/800x600?text=Image+a6f20bfa24e65274)
+
 
 
 
@@ -77,7 +77,7 @@
 + 例如，为pod-example手动为其添加“app: rs-demo”标签：  
 `$ kubectl label pods rs-example-26fnb app=rs-demp --overwrite` 
 + 再次列出相关的Pod资源，可以看到rs-example控制器启动了删除多余Pod的操作，pod-example正处于终止过程中：  
-![](https://via.placeholder.com/800x600?text=Image+0eb6bf32d7d841d3)  
+![img_4624.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4624.png)  
 这就意味着，任何自主式的或本隶属于其他控制器的Pod资源其标签变动的结果一旦匹配到了其他的副本数足额的控制器，就会导致这类Pod资源被删除。
 
 
@@ -87,7 +87,7 @@
 
 1. 查看所有replicaset（子资源）信息
 
-![](https://via.placeholder.com/800x600?text=Image+cb5f6c04f15ccf62)
+![img_3936.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3936.png)
 
 2. 查看所有replicaset（子资源）详细信息  
 `$ kubectl describe replicasets`   
@@ -105,15 +105,15 @@ ReplicaSet控制器的Pod模板可随时按需修改，但它仅影响这之后�
 
 + 修改原ReplicaSet.yaml文件镜像
 
-![](https://via.placeholder.com/800x600?text=Image+f16fb56873ae10f1) 
+ 
 
 + apply文件，查看image信息  
 `kubectl get pod -o custom-columns=pod_name:metadata.name,pod_image:spec.containers[0].image`   
-![](https://via.placeholder.com/800x600?text=Image+1716fa25073ef5f6)  
+  
 rs-example管控的现存Pod对象使用的仍然是原来版本中定义的镜像
 + 删除pod后自动生成新版pod
 
-![](https://via.placeholder.com/800x600?text=Image+a3211e57859e422e)
+![img_4048.jpeg](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4048.jpeg)
 
 
 
@@ -122,9 +122,9 @@ rs-example管控的现存Pod对象使用的仍然是原来版本中定义的镜�
 kubectl还提供了一个专用的子命令scale用于实现应用规模的伸缩，它支持从资源清单文件中获取新的目标副本数量，也可以直接在命令行通过“--replicas”选项进行读取，
 + 将rs-example控制器的Pod副本数量提升至5个：  
 `$ kubectl scale replicasets rs-example --replicas=5`   
-![](https://via.placeholder.com/800x600?text=Image+8de342f15c284f7f)
+
 + 由下面显示的rs-example资源的状态可以看出，将其Pod资源副本数量扩展至5个的操作已经成功完成：  
-![](https://via.placeholder.com/800x600?text=Image+98ee31ca7e693591)
+![img_2048.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2048.png)
 + 收缩规模的方式与扩展相同，只需要明确指定目标副本数量即可。
 
 
@@ -142,20 +142,20 @@ kubectl还提供了一个专用的子命令scale用于实现应用规模的伸�
 
 1. 目前有3个副本分别运行在node1和node2上。
 
-![](https://via.placeholder.com/800x600?text=Image+8837ad3baaf384cb)
+
 
 2. 现在模拟 k8s-node2 故障，关闭该节点。
 
-![](https://via.placeholder.com/800x600?text=Image+c53e1fdd99df0f57)
+![img_208.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_208.png)
 
 3. 等待一段时间，Kubernetes 会检查到 k8s-node2 不可用，将 k8s-node2 上的 Pod 标记为 terminating 状态，并在 k8s-node1 上新创建两个 Pod，维持总副本数为 3。
 
-![](https://via.placeholder.com/800x600?text=Image+26f740dfffe43f92)
+
 
 4. 当 k8s-node2 恢复后，terminating的 Pod 会被删除，不过已经运行的 Pod不会重新调度回 k8s-node2。
 
-![](https://via.placeholder.com/800x600?text=Image+769ec4cb53735315)
+![img_2352.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2352.png)
 
-![](https://via.placeholder.com/800x600?text=Image+1b4cf1fb7d8dcf3a)
+
 
 

@@ -85,7 +85,7 @@ argocd-server-metrics                     ClusterIP   10.110.61.94     <none>   
 
 访问[https://192.168.10.10:32640/](https://192.168.10.10:32640/)
 
-![](https://via.placeholder.com/800x600?text=Image+8d88130668e12b5f)
+
 
 ## 获取admin密码
 用户名为<font style="color:rgb(18, 18, 18);">admin，密码通过以下方式获取。</font>
@@ -150,13 +150,13 @@ ingressroute.traefik.containo.us/argocd create
 
 添加hosts解析记录 `192.168.10.10 argocd.cuiliangblog.cn`
 
-![](https://via.placeholder.com/800x600?text=Image+a62d6314e3a6356f)
+![img_3984.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3984.png)
 
 # <font style="color:rgb(18, 18, 18);">客户端工具访问argocd</font>
 ## 下载argocd客户端工具
 获取下载包地址
 
-![](https://via.placeholder.com/800x600?text=Image+b07ba7380621cffd)
+![img_3824.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_3824.png)
 
 或者直接gitlab下载，地址为https://github.com/argoproj/argo-cd/releases/tag/v3.1.9
 

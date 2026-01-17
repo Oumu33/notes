@@ -1,6 +1,6 @@
 # 服务(TraefikService)
 # 简介
-![](https://via.placeholder.com/800x600?text=Image+30e8fe8caa6764a3)
+![img_2192.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2192.png)
 
 traefik的路由规则就可以实现4层和7层的基本负载均衡操作，使用[IngressRoute](https://doc.traefik.io/traefik/routing/providers/kubernetes-crd/#kind-ingressroute)/[IngressRouteTCP](https://doc.traefik.io/traefik/routing/providers/kubernetes-crd/#kind-ingressroutetcp)/[IngressRouteUDP](https://doc.traefik.io/traefik/routing/providers/kubernetes-crd/#kind-ingressrouteudp)资源即可。但是如果想要实现加权轮询、流量复制等高级操作，traefik抽象出了一个[TraefikService](https://doc.traefik.io/traefik/routing/providers/kubernetes-crd/#kind-traefikservice)资源。此时整体流量走向为：外部流量先通过entryPoints<font style="color:rgb(53, 53, 53);">端口进入traefik，然后由</font>[IngressRoute](https://doc.traefik.io/traefik/routing/providers/kubernetes-crd/#kind-ingressroute)/[IngressRouteTCP](https://doc.traefik.io/traefik/routing/providers/kubernetes-crd/#kind-ingressroutetcp)/[IngressRouteUDP](https://doc.traefik.io/traefik/routing/providers/kubernetes-crd/#kind-ingressrouteudp)匹配后进入[TraefikService](https://doc.traefik.io/traefik/routing/providers/kubernetes-crd/#kind-traefikservice)，在[TraefikService](https://doc.traefik.io/traefik/routing/providers/kubernetes-crd/#kind-traefikservice)这一层实现加权轮循和流量复制，最后将请求转发至kubernetes的service。
 
@@ -74,7 +74,7 @@ traefikservice.traefik.containo.us/wrr unchanged
 
 查看dashboard的配置信息，此时myapp2权重为2，myapp1权重为1。
 
-![](https://via.placeholder.com/800x600?text=Image+d3dd7ac23e75c92e)
+
 
 客户端访问测试，验证无误。
 
@@ -158,7 +158,7 @@ traefikservice.traefik.containo.us/mirror created
 
 查看dashboard的配置信息，此时myapp2类型为mirroring，比例为50%
 
-![](https://via.placeholder.com/800x600?text=Image+b5a6d47e277ae9a3)
+
 
 客户端访问测试，只响应了myapp1的内容。
 

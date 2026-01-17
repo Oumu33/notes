@@ -17,16 +17,16 @@ root ALL=(ALL) ALL
 # 三、授权sc用户可以重启服务器
 [root@localhost~]#visudo
 
-![](https://via.placeholder.com/800x600?text=Image+fd77f7dbdb07122e)
+
 
 # 四、普通用户执行sudo赋予的命令
 1. 查看可用的sudo命令
 
-![](https://via.placeholder.com/800x600?text=Image+8ba20366557312fe)
+![img_992.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_992.png)
 
 2. 普通用户执行sudo赋予的命令
 
-![](https://via.placeholder.com/800x600?text=Image+62af1e44b50b66e4)
+
 
  
 

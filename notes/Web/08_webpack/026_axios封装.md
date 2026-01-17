@@ -3,7 +3,7 @@
 `npm install axios -S` 
 
 ## 创建相关目录文件
-![](https://via.placeholder.com/800x600?text=Image+086e3fafa83185a3)
+![img_64.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_64.png)
 
 ## request.js配置
 ```javascript

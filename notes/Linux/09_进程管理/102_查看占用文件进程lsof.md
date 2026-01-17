@@ -6,7 +6,7 @@
 1. 在终端下输入lsof即可显示系统打开的文件，因为 lsof      需要访问核心内存和各种文件，所以必须以 root 用户的身份运行它才能够充分地发挥其功能。
 2. 直接输入lsof部分输出为:
 
-![](https://via.placeholder.com/800x600?text=Image+4590e528646c9eb3)
+
 
 + COMMAND：进程的名称 PID：进程标识符
 + USER：进程所有者

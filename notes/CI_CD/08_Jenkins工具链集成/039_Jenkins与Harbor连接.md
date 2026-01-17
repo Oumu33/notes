@@ -29,15 +29,15 @@
 ## 安装插件
 **安装Docker Pipeline插件**
 
-![](https://via.placeholder.com/800x600?text=Image+b71a00a02ab0c621)
+
 
 ## 为Harbor添加凭证
-![](https://via.placeholder.com/800x600?text=Image+baa241428636bc53)
+![img_4384.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4384.png)
 
 ## 安装Version Number插件
 因为要自动给镜像打上tag，所以这里涉及到tag的取名规则，我用了一个Version Number 的插件，它能够获取到当天的年，月，日数据，我可以利用它来为tag进行取名。
 
-![](https://via.placeholder.com/800x600?text=Image+d77c6b6d58dfa31b)
+
 
 # 修改pipeline
 ## 修改pipeline脚本
@@ -86,9 +86,9 @@ pipeline {
 ```
 
 ## 完成构建
-![](https://via.placeholder.com/800x600?text=Image+4d6d27b8a001184c)
+![img_4544.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_4544.png)
 
 ## 验证Harbor仓库镜像
-![](https://via.placeholder.com/800x600?text=Image+7ae5f70f9d6183a1)
+![img_2224.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_2224.png)
 
 

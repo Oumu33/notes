@@ -2,29 +2,29 @@
 # 一、显示普通字符串:
 1. 这里的双引号完全可以省略，以下命令与上面实例效果一致：
 
-![](https://via.placeholder.com/800x600?text=Image+1fce6d362b81549c)
+
 
 # 二、显示转义字符
-![](https://via.placeholder.com/800x600?text=Image+d689a0c21b4b73b8)
+
 
 # 三、显示变量
 read 命令从标准输入中读取一行,并把输入行的每个字段的值指定给 shell 变量
 
-![](https://via.placeholder.com/800x600?text=Image+f32bb46ad7fb78d2)
+![img_1408.png](https://raw.githubusercontent.com/Oumu33/notes/main/notes/images/img_1408.png)
 
 name 接收标准输入的变量，结果将是:
 
-![](https://via.placeholder.com/800x600?text=Image+adea1dea38f436ed)
+
 
 # 四、显示换行
  -e 开启转义
 
-![](https://via.placeholder.com/800x600?text=Image+be9ad7ca3abf73ca)
+
 
 # 五、显示不换行
 -e 开启转义 \c 不换行
 
-![](https://via.placeholder.com/800x600?text=Image+2e066264e33a1bed)
+
 
 # 六、显示结果定向至文件
 <font style="color:black;">echo </font><font style="color:#008800;">"It is a test" </font><font style="color:#666600;">></font><font style="color:black;">myfile</font>
